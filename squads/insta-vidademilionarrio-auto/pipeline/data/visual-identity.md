@@ -7,6 +7,11 @@
 - **Text:** #FFFFFF (Pure White) — Primary readability.
 - **Accent:** #D4AF37 (Bright Gold) — Used sparingly for icons or small borders.
 
+## Accessibility & Contrast
+- **WCAG AA Standard:** Text must maintain a 4.5:1 contrast ratio against the background.
+- **Background Luminance:** Background images must be darkened to a maximum luminance of 25% in text areas.
+- **Empire Gold Safety:** Secondary gold color (#C5A059) must ALWAYS have a `text-shadow` or be placed over a black overlay to prevent "washing out".
+
 ## Typography
 - **Headings (Hooks):** 'Playfair Display', Serif, 700 weight.
   - Size range: 64px - 84px.
@@ -28,6 +33,7 @@
 - **Minimalist Aesthetic**: Never clutter the slide. Max 3 ideas per slide.
 - **High-End Assets**: When using images, focus on "B-Roll" of luxury (watch macros, leather textures, cityscapes at night) with 60% black overlay.
 - **Typography Emphasis**: Highlight key words in **Empire Gold**.
+- **Text Protection**: Every text element must use a subtle `text-shadow` (e.g., `0px 2px 4px rgba(0,0,0,0.8)`).
 - **Footer**: Profile ID (@vidademilionarrio) in 24px gray, bottom-left.
 
 ## Adaptation Rules

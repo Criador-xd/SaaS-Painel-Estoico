@@ -15,10 +15,10 @@ Transforma texto em visão. Define o que será visto em cada segundo do conteúd
 ## Process
 
 1. **Análise de Mood**: Determine se o post pede um fundo escuro absoluto ou uma textura de material nobre (pedra, metal).
-2. **Prompts de Imagem**: Crie prompts detalhados para o DALL-E/Midjourney que gerem imagens de "B-Roll" de luxo. (Ex: "Macro shot of a high-end mechanical watch movement, gold and silver gears, shallow depth of field, cinematic lighting, 8k").
+2. **Prompts de Imagem**: Crie prompts detalhados que gerem imagens de "B-Roll" de luxo. **Obrigatoriamente** inclua tags de qualidade: "hyper-realistic, photorealistic, 8k, cinematic lighting, sharp focus, high contrast". Evite fundos com muitos detalhes claros onde o texto ficará posicionado.
 3. **Mapeamento Tipográfico**: Defina qual parte do texto será Playfair Display (Serif) e qual será Inter (Sans).
 4. **Keyword Highlight**: Selecione a palavra ou frase em cada slide que receberá a cor "Empire Gold" (#C5A059).
-5. **Layout Blueprint**: Especifique o alinhamento (Esquerda, Centro ou Direita) com base na densidade do texto.
+5. **Layout & Overlay**: Especifique o alinhamento e a força do overlay preto (60%, 70% ou 80%) necessário para garantir legibilidade.
 
 ## Output Format
 
@@ -30,6 +30,7 @@ design:
       font_pairing: "Playfair Hook / Inter Body"
       gold_keywords: ["...", "..."]
       layout: "Centered"
+      background_overlay: "70%"
 ```
 
 ## Output Example

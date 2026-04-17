@@ -11,7 +11,8 @@
       width: 1080px;
       height: 1440px;
       overflow: hidden;
-      background: #000000;
+      background: #111;
+      background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'); /* Fundo propositalmente ruidoso para teste */
       background-size: cover;
       background-position: center;
       color: #FFFFFF;
@@ -23,20 +24,13 @@
       position: relative;
     }
 
+    /* Nova Proteção de Background */
     body::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+      background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%);
       z-index: 1;
-    }
-
-    .border-frame {
-      position: absolute;
-      top: 40px; left: 40px; right: 40px; bottom: 40px;
-      border: 1px solid #C5A059;
-      opacity: 0.3;
-      pointer-events: none;
     }
 
     .hook-container {
@@ -51,6 +45,7 @@
       text-transform: uppercase;
       letter-spacing: 4px;
       margin-bottom: 24px;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
     }
 
     h1 {
@@ -59,7 +54,7 @@
       font-weight: 700;
       line-height: 1.1;
       margin-bottom: 48px;
-      text-shadow: 0px 4px 12px rgba(0,0,0,0.9);
+      text-shadow: 0px 4px 12px rgba(0,0,0,1); /* Proteção pesada de texto */
     }
 
     .highlight {
@@ -69,51 +64,39 @@
     .subtitle {
       font-size: 38px;
       font-weight: 500;
-      color: #CCCCCC;
+      color: #EEEEEE;
       line-height: 1.5;
       max-width: 800px;
-      text-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+      text-shadow: 0px 2px 8px rgba(0,0,0,1);
     }
 
     .footer {
       position: absolute;
       bottom: 80px;
       left: 80px;
+      z-index: 2;
       display: flex;
       align-items: center;
       gap: 12px;
       font-size: 24px;
-      color: #666666;
+      color: #CCCCCC;
     }
 
     .brand-id {
       font-weight: 600;
       letter-spacing: 1px;
     }
-
-    .swipe {
-      position: absolute;
-      bottom: 80px;
-      right: 80px;
-      font-size: 24px;
-      color: #C5A059;
-      letter-spacing: 2px;
-    }
   </style>
 </head>
 <body>
-  <div class="border-frame"></div>
-  
   <div class="hook-container">
-    <div class="tag">Mentalidade de Elite</div>
+    <div class="tag">Teste de Legibilidade Upgrade</div>
     <h1>O luxo que as pessoas <span class="highlight">ignoram</span>, mas os ricos dominam.</h1>
-    <p class="subtitle">Deslize para descobrir os 5 ativos invisíveis que constroem impérios geracionais.</p>
+    <p class="subtitle">Deslize para descobrir os ativos invisíveis que constroem impérios geracionais.</p>
   </div>
 
   <div class="footer">
     <span class="brand-id">@vidademilionarrio</span>
   </div>
-
-  <div class="swipe">DESLIZE →</div>
 </body>
 </html>
