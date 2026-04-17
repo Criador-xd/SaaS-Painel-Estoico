@@ -1,0 +1,38 @@
+squad_code: "insta-vidademilionarrio-auto"
+purpose: "Criação e postagem diária automatizada de carrosséis e stories de alto desempenho, com base em análise de tendências, dados e comportamento de audiência para a marca Vida de Milionário."
+domain: "content"
+
+company:
+  name: "Vida de Milionário (vidademilionarrio)"
+  tone: "Inspiradora, direta, ambiciosa e 'sem desculpas'"
+  products: "Conteúdo educacional e motivacional sobre finanças e empreendedorismo"
+
+language: "Português (Brasil)"
+
+context:
+  audience: "Jovens, iniciantes no empreendimento e interessados em sucesso financeiro"
+  platforms: "Instagram"
+  tone: "Educativo, viral, de alto engajamento e focado em vendas automáticas"
+
+tools_needed:
+  - "apify"
+  - "instagram-publisher"
+  - "image-creator"
+  - "template-designer"
+
+investigation:
+  enabled: true
+  profiles:
+    - url: "https://www.instagram.com/mentalidade_autoritaria"
+      platform: "instagram"
+      investigation_mode: "profile_3"
+    - url: "https://www.instagram.com/soziinhooo"
+      platform: "instagram"
+      investigation_mode: "profile_3"
+    - url: "https://www.instagram.com/eomavy"
+      platform: "instagram"
+      investigation_mode: "profile_3"
+
+target_formats:
+  - "instagram-feed"
+  - "instagram-stories"

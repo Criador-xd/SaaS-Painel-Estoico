@@ -1,0 +1,22 @@
+{
+  "squad": "insta-vidademilionarrio-auto",
+  "status": "running",
+  "step": { "current": 11, "total": 11, "label": "Publicação" },
+  "agents": [
+    { "id": "researcher", "name": "Renato Raio-X", "icon": "🔍", "status": "done", "desk": { "col": 1, "row": 1 } },
+    { "id": "strategist", "name": "Silvia Strategia", "icon": "🧩", "status": "done", "desk": { "col": 2, "row": 1 } },
+    { "id": "copywriter", "name": "Cadu Copy", "icon": "✍️", "status": "done", "desk": { "col": 3, "row": 1 } },
+    { "id": "designer", "name": "Dante Designer", "icon": "🎨", "status": "done", "desk": { "col": 1, "row": 2 } },
+    { "id": "generator", "name": "Gabi Geradora", "icon": "🛠️", "status": "done", "desk": { "col": 2, "row": 2 } },
+    { "id": "reviewer", "name": "Queila Qualidade", "icon": "✅", "status": "done", "desk": { "col": 3, "row": 2 } },
+    { "id": "poster", "name": "Paula Postagem", "icon": "📱", "status": "working", "desk": { "col": 1, "row": 3 } }
+  ],
+  "handoff": {
+    "from": "user",
+    "to": "poster",
+    "message": "Aprovação final recebida. Paula preparando o upload.",
+    "completedAt": "2026-04-17T05:06:15Z"
+  },
+  "startedAt": "2026-04-17T04:23:00Z",
+  "updatedAt": "2026-04-17T05:06:15Z"
+}

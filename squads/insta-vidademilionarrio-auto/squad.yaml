@@ -1,0 +1,33 @@
+# Squad: Vida de Milionário Automática
+code: "insta-vidademilionarrio-auto"
+name: "Vida de Milionário Automática"
+description: "Produção e postagem automatizada de conteúdo de elite para Instagram."
+
+skills:
+  - web_search
+  - web_fetch
+  - image-creator
+  - instagram-publisher
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+  - pipeline/data/visual-identity.md
+  - pipeline/data/template-reference.html
+
+pipeline:
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-01-foco-pesquisa.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-02-pesquisa.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-03-selecao-pauta.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-04-estrategia-angulos.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-05-selecao-angulo.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-06-producao-copy.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-07-aprovacao-conteudo.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-08-geracao-visual.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-09-revisao-final.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-10-aprovacao-final.md
+  - squads/insta-vidademilionarrio-auto/pipeline/steps/step-11-publicacao.md

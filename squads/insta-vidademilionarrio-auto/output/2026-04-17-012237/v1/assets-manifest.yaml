@@ -1,0 +1,31 @@
+assets:
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide01.png
+    type: image/png
+    label: Capa (Hook)
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide02.png
+    type: image/png
+    label: O Jogo
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide03.png
+    type: image/png
+    label: Filtro de Ambiente
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide04.png
+    type: image/png
+    label: ROI do Networking
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide05.png
+    type: image/png
+    label: Proximidade
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide06.png
+    type: image/png
+    label: Escassez
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide07.png
+    type: image/png
+    label: Poder vs Status
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide08.png
+    type: image/png
+    label: Distorção da Realidade
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide09.png
+    type: image/png
+    label: Ecossistema
+  - path: squads/insta-vidademilionarrio-auto/output/2026-04-17-012237/v1/assets/slide10.png
+    type: image/png
+    label: CTA (COPA)

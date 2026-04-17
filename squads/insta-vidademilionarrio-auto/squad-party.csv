@@ -1,0 +1,8 @@
+id,name,role,path
+researcher,Renato Raio-X,Investigador de Tendências,./agents/researcher.agent.md
+strategist,Silvia Strategia,Arquiteta de Narrativa,./agents/strategist.agent.md
+copywriter,Cadu Copy,Mestre da Persuasão,./agents/copywriter.agent.md
+designer,Dante Designer,Diretor de Arte,./agents/designer.agent.md
+generator,Gabi Geradora,Engenheira de Conteúdo,./agents/generator.agent.md
+reviewer,Queila Qualidade,Inspetora de Elite,./agents/reviewer.agent.md
+poster,Paula Postagem,Operadora de Distribuição,./agents/poster.agent.md
