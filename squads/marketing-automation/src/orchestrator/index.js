@@ -76,6 +76,7 @@ class Orchestrator {
         if (file.endsWith('.json')) {
           const video = await fs.readJson(path.join(queueFolder, file));
           if (video.status === 'pending') {
+            video.filepath = video.filepath || path.join(config.WATCH_FOLDER, video.filename);
             pendingVideos.push(video);
           }
         }

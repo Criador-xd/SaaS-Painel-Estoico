@@ -72,6 +72,7 @@ class VideoWatcher {
     const video = {
       id: this.generateId(),
       filename: path.basename(filePath),
+      filepath: filePath,
       path: filePath,
       size: validation.size,
       duration: validation.duration,

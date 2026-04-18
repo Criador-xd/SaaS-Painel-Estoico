@@ -5,6 +5,7 @@
  * - Aprova a publicação
  * - Agenda para o próximo slot
  */
+const path = require('path');
 const { createClient } = require('@supabase/supabase-js');
 const ContentGenerator = require('../content-generator');
 const Scheduler = require('../scheduler');
@@ -29,8 +30,9 @@ class Publisher {
 
   // Criar rascunho de publicação com todo o conteúdo
   async createPublicationDraft(video) {
-    // Gerar todo o conteúdo (título, legendas, hashtags, CTA)
-    const content = this.contentGenerator.generateAllContent(video.filename);
+    const videoPath = video.filepath || path.join(this.config.WATCH_FOLDER, video.filename);
+    
+    const content = await this.contentGenerator.generateAllContent(videoPath);
     
     console.log(`📝 Gerando conteúdo para: ${video.filename}`);
     console.log(`   Título: ${content.title}`);
