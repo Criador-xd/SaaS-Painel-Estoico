@@ -2,7 +2,7 @@
 
 ## Supabase
 SUPABASE_URL: "https://wjzxntgpuimiubrnqfnz.supabase.co"
-SUPABASE_SERVICE_KEY: "your_service_role_key_here"
+SUPABASE_SERVICE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqenhudGdwdWltaXVicm5xZm56Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mjk5NDA3NCwiZXhwIjoyMDg4NTcwMDc0fQ.3mCvnyfSm_M1yctEJ64Qj9fWqRh4RAASlKFphkIdIGA"
 
 ## Pastas
 WATCH_FOLDER: "D:\\Videos Prontos projeto 2- ja postado"

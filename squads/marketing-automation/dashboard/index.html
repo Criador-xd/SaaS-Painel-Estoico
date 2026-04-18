@@ -117,6 +117,30 @@
     .log div { margin: 5px 0; }
     .log .time { color: #4ade80; }
 
+    .next-post {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+    }
+    .next-post-item {
+      flex: 1;
+    }
+    .next-post-item h4 {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .next-post-item .info {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .next-post-item .info.youtube { color: #ff0000; }
+    .next-post-item .info.instagram { color: #e6683c; }
+    .next-post-item .time { font-size: 0.9rem; color: #4ade80; }
     .last-update {
       text-align: center;
       margin-top: 20px;
@@ -158,6 +182,17 @@
         <h3>✅ Publicados</h3>
         <div class="value" id="publishedVideos">0</div>
         <div class="sub">Já publicados nas plataformas</div>
+      </div>
+    </div>
+
+    <div class="next-post" id="nextPostSection">
+      <div class="next-post-item">
+        <h4>📺 Próximo YouTube</h4>
+        <div id="nextYoutube">Carregando...</div>
+      </div>
+      <div class="next-post-item">
+        <h4>📸 Próximo Instagram</h4>
+        <div id="nextInstagram">Carregando...</div>
       </div>
     </div>
 
@@ -239,6 +274,39 @@
         document.getElementById('scheduledVideos').textContent = data.scheduledVideos || 0;
         document.getElementById('publishedVideos').textContent = data.publishedVideos || 0;
         updateStatus(data.supabaseConnected);
+
+        // Processar último e próximo por plataforma
+        const allScheduled = (data.nextToPublish || []).sort((a, b) => new Date(a.scheduledAt) - new Date(b.scheduledAt));
+        const now = new Date();
+        
+        const youtubeVideos = allScheduled.filter(v => v.platform === 'youtube');
+        const instagramVideos = allScheduled.filter(v => v.platform === 'instagram');
+        
+        function formatSchedule(videos, now, platform) {
+          const past = videos.filter(v => new Date(v.scheduledAt) < now);
+          const future = videos.filter(v => new Date(v.scheduledAt) >= now);
+          
+          let last = past.length > 0 ? past[past.length - 1] : null;
+          let next = future.length > 0 ? future[0] : null;
+          
+          let html = '';
+          if (last) {
+            const d = new Date(last.scheduledAt);
+            html += `<div class="time">Último ${platform}: ${d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'})}, ${d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'})}</div>`;
+          } else {
+            html += `<div class="time">Último ${platform}: --</div>`;
+          }
+          if (next) {
+            const d = new Date(next.scheduledAt);
+            html += `<div class="info ${platform}">Próximo ${platform}: ${d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'})}, ${d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'})}</div>`;
+          } else {
+            html += `<div class="info ${platform}">Próximo ${platform}: --</div>`;
+          }
+          return html;
+        }
+        
+        document.getElementById('nextYoutube').innerHTML = formatSchedule(youtubeVideos, now, 'youtube');
+        document.getElementById('nextInstagram').innerHTML = formatSchedule(instagramVideos, now, 'instagram');
 
         // Próximos a publicar
         const nextHtml = (data.nextToPublish || []).map(v => `

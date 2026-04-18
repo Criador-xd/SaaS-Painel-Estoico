@@ -34,16 +34,16 @@ class SupabaseClient {
     return this.initialized && this.client !== null;
   }
 
-  // Obter vídeos agendados
+  // Obter vídeos agendados da plataforma Sparkle
   async getScheduledVideos() {
     if (!this.isConnected()) return [];
 
     try {
       const { data, error } = await this.client
-        .from('videos')
-        .select('*')
-        .eq('status', 'scheduled')
-        .order('scheduled_at', { ascending: true });
+        .from('publications')
+        .select('*, publication_targets(*)')
+        .eq('overall_status', 'scheduled')
+        .order('scheduled_for', { ascending: true });
 
       if (error) throw error;
       return data || [];
@@ -59,25 +59,28 @@ class SupabaseClient {
 
     try {
       const { data, error } = await this.client
-        .from('videos')
-        .select('*')
-        .eq('status', 'scheduled')
-        .lte('scheduled_at', new Date().toISOString())
-        .order('scheduled_at', { ascending: true })
+        .from('publications')
+        .select('*, publication_targets(*)')
+        .eq('overall_status', 'scheduled')
+        .lte('scheduled_for', new Date().toISOString())
+        .order('scheduled_for', { ascending: true })
         .limit(1)
         .single();
 
       if (error) throw error;
       return data;
     } catch (error) {
-      if (error.code !== 'PGRST116') { // PGRST116 = no rows returned
+      if (error.code !== 'PGRST116') {
         console.error('Erro ao buscar próximo vídeo:', error.message);
       }
       return null;
     }
   }
 
-  // Criar/agendar vídeo
+  // USER_ID CORRETO DO SAAS (Vida de Milionário)
+  const SYSTEM_USER_ID = 'ca424590-39cc-4e47-a5fc-a0b72fdcf131';
+
+  // Criar/agendar vídeo na plataforma Sparkle
   async scheduleVideo(videoData) {
     if (!this.isConnected()) {
       console.log('📝 Vídeo agendado (modo offline):', videoData.filename);
@@ -85,28 +88,34 @@ class SupabaseClient {
     }
 
     try {
-      const { data, error } = await this.client
-        .from('videos')
+      // 1. Criar publicação na tabela publications
+      const { data: publication, error: pubError } = await this.client
+        .from('publications')
         .insert({
-          filename: videoData.filename,
-          filepath: videoData.path,
-          platform: videoData.platform,
-          scheduled_at: videoData.scheduledAt,
-          status: 'scheduled',
-          priority: videoData.priority,
-          category: videoData.category,
-          metadata: {
-            size: videoData.size,
-            hash: videoData.hash,
-            scheduled_reason: videoData.scheduleReason
-          }
+          user_id: SYSTEM_USER_ID,
+          title: videoData.filename.replace('.mp4', ''),
+          caption: videoData.scheduleReason || 'Agendado via Marketing Automation',
+          scheduled_for: videoData.scheduledAt,
+          overall_status: 'scheduled'
         })
         .select()
         .single();
 
-      if (error) throw error;
-      console.log(`✅ Vídeo agendado na plataforma: ${videoData.filename}`);
-      return data;
+      if (pubError) throw pubError;
+
+      // 2. Criar publication_targets para cada plataforma
+      const platforms = ['youtube', 'instagram'];
+      for (const platform of platforms) {
+        await this.client.from('publication_targets').insert({
+          publication_id: publication.id,
+          platform: platform,
+          status: 'pendente',
+          privacy_status: 'public'
+        });
+      }
+
+      console.log(`✅ Vídeo agendado na plataforma Sparkle: ${videoData.filename}`);
+      return { publication_id: publication.id, ...videoData };
     } catch (error) {
       console.error('Erro ao agendar vídeo:', error.message);
       return { error: error.message };
@@ -121,16 +130,17 @@ class SupabaseClient {
     }
 
     try {
+      // Atualizar publication_targets
       const { data, error } = await this.client
-        .from('videos')
+        .from('publication_targets')
         .update({
-          status: 'published',
+          status: 'publicado',
           published_at: new Date().toISOString(),
-          platform_response: platformResponse
+          platform_post_id: platformResponse?.platform_post_id || null,
+          platform_post_url: platformResponse?.platform_post_url || null
         })
-        .eq('id', videoId)
-        .select()
-        .single();
+        .eq('publication_id', videoId)
+        .select();
 
       if (error) throw error;
       console.log(`✅ Vídeo marcado como publicado: ${videoId}`);
@@ -141,7 +151,7 @@ class SupabaseClient {
     }
   }
 
-  // Obter estatísticas
+  // Obter estatísticas da plataforma Sparkle
   async getStats() {
     if (!this.isConnected()) {
       return { offline: true, message: 'Modo offline - estatísticas não disponíveis' };
@@ -149,8 +159,8 @@ class SupabaseClient {
 
     try {
       const [scheduled, published] = await Promise.all([
-        this.client.from('videos').select('id', { count: 'exact' }).eq('status', 'scheduled'),
-        this.client.from('videos').select('id', { count: 'exact' }).eq('status', 'published')
+        this.client.from('publications').select('id', { count: 'exact' }).eq('overall_status', 'scheduled'),
+        this.client.from('publication_targets').select('id', { count: 'exact' }).eq('status', 'publicado')
       ]);
 
       return {

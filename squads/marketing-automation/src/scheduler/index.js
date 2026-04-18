@@ -111,7 +111,7 @@ class Scheduler {
 
       return {
         ...video,
-        priority: finalScore,
+        priority: Math.round(finalScore * 100),
         urgency,
         quality,
         relevance,
