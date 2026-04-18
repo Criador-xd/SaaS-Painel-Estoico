@@ -1,16 +1,16 @@
 /**
  * ORQUESTRADOR - Coordena todo o pipeline de automação
+ * Workflow: Detectar vídeo → Gerar conteúdo → Criar rascunho → Aprovar → Agendar
  */
 const path = require('path');
 const fs = require('fs-extra');
 const cron = require('node-cron');
 
 class Orchestrator {
-  constructor(config, watcher, scheduler, supabase) {
+  constructor(config, watcher, publisher) {
     this.config = config;
     this.watcher = watcher;
-    this.scheduler = scheduler;
-    this.supabase = supabase;
+    this.publisher = publisher;
     this.isRunning = false;
     this.cronJobs = [];
   }
@@ -19,6 +19,9 @@ class Orchestrator {
   async start() {
     console.log('🎯 Starting Marketing Automation Orchestrator...');
     this.isRunning = true;
+
+    // Inicializar publisher
+    this.publisher.initialize();
 
     // Iniciar watcher
     await this.watcher.start();
@@ -37,10 +40,7 @@ class Orchestrator {
     console.log('🛑 Parando orchestrator...');
     this.isRunning = false;
     
-    // Parar cron jobs
     this.cronJobs.forEach(job => job.stop());
-    
-    // Parar watcher
     await this.watcher.stop();
     
     console.log('✅ Orchestrator parado');
@@ -55,13 +55,7 @@ class Orchestrator {
     });
     this.cronJobs.push(pipelineJob);
 
-    // Executar publicação a cada 5 minutos
-    const publishJob = cron.schedule('*/5 * * * *', async () => {
-      await this.checkAndPublish();
-    });
-    this.cronJobs.push(publishJob);
-
-    console.log('⏰ Cron jobs configurados: pipeline (15min), publish (5min)');
+    console.log('⏰ Cron jobs configurados: pipeline (15min)');
   }
 
   // Executar pipeline completo
@@ -75,7 +69,18 @@ class Orchestrator {
       const queueFolder = path.join(this.config.OUTPUT_FOLDER, 'queue');
       await fs.ensureDir(queueFolder);
 
-      const pendingVideos = await this.scheduler.processQueue(queueFolder);
+      const queueFiles = await fs.readdir(queueFolder).catch(() => []);
+      const pendingVideos = [];
+
+      for (const file of queueFiles) {
+        if (file.endsWith('.json')) {
+          const video = await fs.readJson(path.join(queueFolder, file));
+          if (video.status === 'pending') {
+            pendingVideos.push(video);
+          }
+        }
+      }
+
       console.log(`📋 Vídeos pendentes: ${pendingVideos.length}`);
 
       if (pendingVideos.length === 0) {
@@ -83,73 +88,41 @@ class Orchestrator {
         return;
       }
 
-      // 2. Obter programação existente
-      const existingSchedule = await this.supabase.getScheduledVideos();
+      // 2. Obter programação existente para evitar conflito de horários
+      const existingSchedule = await this.publisher.getExistingSchedule();
       console.log(`📅 Já agendados: ${existingSchedule.length}`);
 
-      // 3. Criar nova programação
-      const newSchedule = this.scheduler.createSchedule(pendingVideos, existingSchedule);
-      console.log(`🆕 Novos agendamentos: ${newSchedule.length}`);
-
-      // 4. Agendar vídeos na plataforma
-      for (const video of newSchedule) {
-        const result = await this.supabase.scheduleVideo(video);
-        if (!result.error && !result.offline) {
-          // Marcar como processado no watcher
+      // 3. Processar cada vídeo: criar rascunho → aprovar → agendar
+      for (const video of pendingVideos.slice(0, 4)) { // Máximo 4 por execução
+        console.log(`\n🎬 Processando: ${video.filename}`);
+        
+        const result = await this.publisher.publishVideo(video, existingSchedule);
+        
+        if (result.success) {
+          console.log(`   ✅ Título: ${result.title}`);
+          console.log(`   📅 Agendado: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}`);
+          console.log(`   ⏰ Slot: ${result.slotName}`);
+          
+          // Marcar como processado
           await this.watcher.markAsProcessed(video.id);
+          
+          // Adicionar ao schedule existente para evitar conflito
+          existingSchedule.push({
+            scheduled_for: result.scheduledFor
+          });
+        } else {
+          console.error(`   ❌ Erro em ${result.stage}: ${result.error}`);
         }
       }
 
-      // 5. Salvar programação local
-      await this.saveSchedule(newSchedule);
-
-      console.log('--- PIPELINE COMPLETO ---\n');
+      console.log('\n--- PIPELINE COMPLETO ---\n');
     } catch (error) {
       console.error('❌ Erro no pipeline:', error.message);
     }
   }
 
-  // Verificar e publicar vídeos prontos
-  async checkAndPublish() {
-    if (!this.isRunning) return;
-
-    try {
-      // Obter próximo vídeo para publicar
-      const nextVideo = await this.supabase.getNextVideoToPublish();
-
-      if (!nextVideo) {
-        return; // Nenhum vídeo pronto para publicar
-      }
-
-      console.log(`📤 Publicando: ${nextVideo.filename}`);
-
-      // Aqui entraria a lógica de publicação na plataforma
-      // Por enquanto, apenas marca como publicado
-      const publishResult = await this.supabase.markAsPublished(nextVideo.id, {
-        published: true,
-        platform: nextVideo.platform,
-        timestamp: new Date().toISOString()
-      });
-
-      console.log(`✅ Vídeo publicado: ${nextVideo.filename}`);
-    } catch (error) {
-      console.error('❌ Erro ao publicar:', error.message);
-    }
-  }
-
-  // Salvar programação localmente
-  async saveSchedule(schedule) {
-    const scheduleFile = path.join(this.config.OUTPUT_FOLDER, 'schedule.json');
-    await fs.ensureDir(path.dirname(scheduleFile));
-    await fs.writeJson(scheduleFile, {
-      schedule,
-      generatedAt: new Date().toISOString()
-    }, { spaces: 2 });
-  }
-
   // Obter status do sistema
   async getStatus() {
-    const stats = await this.supabase.getStats();
     const queueFolder = path.join(this.config.OUTPUT_FOLDER, 'queue');
     
     let pendingCount = 0;
@@ -162,8 +135,6 @@ class Orchestrator {
 
     return {
       running: this.isRunning,
-      supabaseConnected: this.supabase.isConnected(),
-      stats,
       pendingVideos: pendingCount
     };
   }
@@ -172,12 +143,6 @@ class Orchestrator {
   async forceRun() {
     console.log('🔄 Execução forçada iniciada...');
     await this.runPipeline();
-  }
-
-  // Forçar verificação de publicação
-  async forcePublish() {
-    console.log('🔄 Verificação de publicação forçada...');
-    await this.checkAndPublish();
   }
 }
 

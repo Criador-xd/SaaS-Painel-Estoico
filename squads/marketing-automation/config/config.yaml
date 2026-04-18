@@ -2,7 +2,10 @@
 
 ## Supabase
 SUPABASE_URL: "https://wjzxntgpuimiubrnqfnz.supabase.co"
-SUPABASE_SERVICE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqenhudGdwdWltaXVicm5xZm56Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mjk5NDA3NCwiZXhwIjoyMDg4NTcwMDc0fQ.3mCvnyfSm_M1yctEJ64Qj9fWqRh4RAASlKFphkIdIGA"
+SUPABASE_SERVICE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqenhudGdwdWltaXVicm5xZn56Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mjk5NDA3NCwiZXhwIjoyMDg4NTcwMDc0fQ.3mCvnyfSm_M1yctEJ64Qj9fWqRh4RAASlKFphkIdIGA"
+
+## User ID do SaaS
+USER_ID: "ca424590-39cc-4e47-a5fc-a0b72fdcf131"
 
 ## Pastas
 WATCH_FOLDER: "D:\\Videos Prontos projeto 2- ja postado"
@@ -11,38 +14,48 @@ OUTPUT_FOLDER: "G:\\Open Squad\\squads\\marketing-automation\\_output"
 ## Regras de Programação
 MAX_VIDEOS_PER_DAY: 4
 MAX_VIDEOS_PER_WEEK: 28
-MIN_HOURS_BETWEEN_POSTS: 4
 
-## Plataformas
+## Horários de Publicação (BR - São Paulo)
+# 4 publicações por dia:
+# - Manhã: 10h - 11h
+# - Tarde: 12h - 14h
+# - Noite: 18h - 22h
+# - Madrugada: 2h - 3h
+
+POST_SLOTS:
+  Manha:
+    start: 10
+    end: 11
+  Tarde:
+    start: 12
+    end: 14
+  Noite:
+    start: 18
+    end: 22
+  Madrugada:
+    start: 2
+    end: 3
+
+## Plataformas (mesmo conteúdo para ambas)
 PLATFORMS:
   - youtube
   - instagram
 
-## YouTube
-YOUTUBE_POST_HOURS:
-  - 18
-  - 19
-  - 20
-  - 21
-YOUTUBE_DAYS:
-  - terca
-  - quarta
-  - quinta
-  - sexta
-  - sabado
-
-## Instagram
-INSTAGRAM_POST_HOURS:
-  - 12
-  - 13
-  - 14
-  - 19
-  - 20
-  - 21
-INSTAGRAM_DAYS:
+## Dias de publicação (todos os dias)
+POST_DAYS:
+  - segunda
   - terca
   - quarta
   - quinta
   - sexta
   - sabado
   - domingo
+
+## Workflow de Publicação
+# 1. Detectar vídeo novo
+# 2. Gerar títulos, legendas, hashtags, CTA
+# 3. Criar publicação como rascunho (approval_status: draft)
+# 4. Criar publication_targets para YouTube e Instagram
+# 5. Preencher platform_specific_title e platform_specific_caption
+# 6. Aprovar publicação (approval_status: approved / overall_status: pendente)
+# 7. Agendar para próximo slot disponível

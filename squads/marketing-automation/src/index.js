@@ -1,6 +1,13 @@
 /**
  * MARKETING AUTOMATION - Ponto de entrada principal
  * Sistema autônomo de marketing para YouTube e Instagram
+ * 
+ * Workflow:
+ * 1. Detectar vídeo novo na pasta
+ * 2. Gerar conteúdo (título, legendas, hashtags, CTA)
+ * 3. Criar rascunho no Supabase
+ * 4. Aprovar publicação
+ * 5. Agendar para próximo slot (10-11h, 12-14h, 18-22h, 2-3h)
  */
 const path = require('path');
 const fs = require('fs-extra');
@@ -16,13 +23,11 @@ try {
   console.log('📄 Configuração carregada');
 } catch (error) {
   console.error('❌ Erro ao carregar config:', error.message);
-  console.log('Usando configuração padrão...');
 }
 
 // Importar módulos
 const VideoWatcher = require('./watcher');
-const Scheduler = require('./scheduler');
-const SupabaseClient = require('./supabase');
+const Publisher = require('./publisher');
 const Orchestrator = require('./orchestrator');
 const { server: dashboardServer, addLog } = require('./server');
 
@@ -32,33 +37,23 @@ const watcher = new VideoWatcher({
   OUTPUT_FOLDER: config.OUTPUT_FOLDER || path.join(__dirname, '..', '_output')
 });
 
-const scheduler = new Scheduler(config);
+const publisher = new Publisher(config);
 
-const supabase = new SupabaseClient(
-  config.SUPABASE_URL || 'https://wjzxntgpuimiubrnqfnz.supabase.co',
-  config.SUPABASE_SERVICE_KEY || 'your_service_role_key_here'
-);
-
-const orchestrator = new Orchestrator(config, watcher, scheduler, supabase);
-
-// Interceptar logs do orchestrator
-const originalRunPipeline = orchestrator.runPipeline.bind(orchestrator);
-orchestrator.runPipeline = async function() {
-  addLog('Pipeline executado');
-  return originalRunPipeline();
-};
+const orchestrator = new Orchestrator(config, watcher, publisher);
 
 // Função principal
 async function main() {
   console.log('\n========================================');
   console.log('🎬 MARKETING AUTOMATION SYSTEM');
   console.log('========================================\n');
-
-  // Inicializar Supabase
-  supabase.initialize();
-  if (!supabase.isConnected()) {
-    addLog('Supabase não configurado - modo offline');
-  }
+  
+  console.log('📋 Regras de Publicação:');
+  console.log('   • 4 publicações por dia');
+  console.log('   • Manhã: 10h - 11h');
+  console.log('   • Tarde: 12h - 14h');
+  console.log('   • Noite: 18h - 22h');
+  console.log('   • Madrugada: 2h - 3h');
+  console.log('   • Conteúdo: YouTube + Instagram\n');
 
   // Iniciar orchestrador
   await orchestrator.start();
@@ -67,10 +62,7 @@ async function main() {
   const status = await orchestrator.getStatus();
   console.log('\n📊 STATUS DO SISTEMA:');
   console.log(`   • Executando: ${status.running ? '✅ Sim' : '❌ Não'}`);
-  console.log(`   • Supabase: ${status.supabaseConnected ? '✅ Conectado' : '⚠️ Não configurado'}`);
   console.log(`   • Vídeos pendentes: ${status.pendingVideos}`);
-  console.log(`   • Agendados: ${status.stats?.scheduled || 0}`);
-  console.log(`   • Publicados: ${status.stats?.published || 0}`);
 
   console.log('\n🌐 Dashboard: http://localhost:3000');
   console.log('⏰ Sistema rodando... Pressione Ctrl+C para parar.');
