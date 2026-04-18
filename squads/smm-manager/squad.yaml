@@ -1,0 +1,127 @@
+# Squad: Social Media Manager (SMM)
+
+## Visão Geral
+Sistema autônomo de gestão de mídias sociais que automatiza a programação de vídeos entre computador e plataforma de agendamento, com inteligência para decisão, priorização e adaptação por plataforma.
+
+## Versão
+MVP v1.0 - Baseada em regras
+
+## Domínio
+automation
+
+## Empresa
+Vida de Milionário (vidademilionarrio)
+
+## Objetivo
+Automatizar a programação de vídeos do computador local para YouTube e Instagram através da plataforma existente, operando como um time autônomo de marketing.
+
+---
+
+## Arquitetura
+
+### Agentes
+
+1. **Watcher** (Observador)
+   - Responsabilidade: Monitorar pasta de origem, detectar novos vídeos, validar formato
+   - Input: Pasta local de vídeos
+   - Output: Queue de vídeos validados
+
+2. **Scheduler** (Agendador)
+   - Responsabilidade: Definir dia/hora de publicação conforme regras
+   - Input: Queue de vídeos validados
+   - Output: Schedule com data/hora definida
+
+3. **Adapter** (Adaptador)
+   - Responsabilidade: Adaptar título, descrição, hashtags por plataforma
+   - Input: Vídeo + plataforma alvo
+   - Output: Metadata adaptada
+
+4. **Publisher** (Publicador)
+   - Responsabilidade: Enviar vídeo + metadata para plataforma
+   - Input: Vídeo adaptado + schedule
+   - Output: Publicação Confirmada
+
+5. **Guardian** (Guardião)
+   - Responsabilidade: Verificar conflitos, evitar duplicatas, validar regras
+   - Input: Próxima publicação agendada
+   - Output: Aprovação ou rejeição
+
+### Pipeline
+
+```
+[Watcher] → [Guardian] → [Scheduler] → [Adapter] → [Publisher]
+     ↑                                               ↓
+     └────────────── Feedback Loop ←─────────────────┘
+```
+
+---
+
+## Regras de Negócio
+
+### Validação (Watcher)
+- Formatos aceitos: MP4, MOV, WEBM
+- Resolução mínima: 720p
+- Duração mínima: 10s
+- Duração máxima: 15min
+
+### Programação (Scheduler)
+- Janela de publicação: 8h-22h
+- Intervalo mínimo entre posts: 4h
+- Limite diário: YouTube 3, Instagram 4
+- Cooldown temático: 24h mesmo tema
+
+### Conflito (Guardian)
+- Verificar duplicata por checksum
+- Verificar tema repetido no mesmo dia
+- Verificar limite diário atingido
+
+### Adaptação (Adapter)
+- YouTube: título completo, descrição longa, hashtags limitadas
+- Instagram: título curto, emojis, hashtags múltiplas
+
+---
+
+## Configurações
+
+### Plataformas
+- YouTube
+- Instagram
+
+### Frequência
+- On-demand (acionado por novos vídeos na pasta)
+
+### Modo
+- Automático com alertas
+
+---
+
+## Estrutura de Diretórios
+
+```
+squads/smm-manager/
+├── agents/
+│   ├── watcher.agent.md
+│   ├── guardian.agent.md
+│   ├── scheduler.agent.md
+│   ├── adapter.agent.md
+│   └── publisher.agent.md
+├── pipeline/
+│   ├── steps.yaml
+│   └── config.yaml
+└── _memory/
+    └── memories.md
+```
+
+---
+
+## Próximas Evoluções
+
+### Versão Intermediária (v1.5)
+- Score de prioridade automático
+- Calendário editorial dinâmico
+- Dashboard de visualização
+
+### Versão Avançada (v2.0)
+- ML para predição de engajamento
+- Otimização por performance
+- Feedback loop completo

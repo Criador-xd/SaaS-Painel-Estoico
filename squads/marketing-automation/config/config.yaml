@@ -1,0 +1,48 @@
+# Configuração do Sistema de Automação de Marketing
+
+## Supabase
+SUPABASE_URL: "https://wjzxntgpuimiubrnqfnz.supabase.co"
+SUPABASE_SERVICE_KEY: "your_service_role_key_here"
+
+## Pastas
+WATCH_FOLDER: "D:\\Videos Prontos projeto 2- ja postado"
+OUTPUT_FOLDER: "G:\\Open Squad\\squads\\marketing-automation\\_output"
+
+## Regras de Programação
+MAX_VIDEOS_PER_DAY: 4
+MAX_VIDEOS_PER_WEEK: 28
+MIN_HOURS_BETWEEN_POSTS: 4
+
+## Plataformas
+PLATFORMS:
+  - youtube
+  - instagram
+
+## YouTube
+YOUTUBE_POST_HOURS:
+  - 18
+  - 19
+  - 20
+  - 21
+YOUTUBE_DAYS:
+  - terca
+  - quarta
+  - quinta
+  - sexta
+  - sabado
+
+## Instagram
+INSTAGRAM_POST_HOURS:
+  - 12
+  - 13
+  - 14
+  - 19
+  - 20
+  - 21
+INSTAGRAM_DAYS:
+  - terca
+  - quarta
+  - quinta
+  - sexta
+  - sabado
+  - domingo

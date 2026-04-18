@@ -1,0 +1,92 @@
+# Pipeline: Marketing Automation
+
+## Fluxo de Execução
+
+### Etapa 1: Detecção
+```
+[Watch Folder] → [Watcher] → Detectar novos vídeos
+```
+
+### Etapa 2: Análise
+```
+[Vídeos Detectados] → [Analista de Conteúdo] → Classificar
+                                        ↓
+[Gerente de Fila] → Definir prioridade
+```
+
+### Etapa 3: Programação
+```
+[Fila Priorizada] → [Especialista em Programação] → Definir horário
+                           ↓
+[Estrategista de Plataforma] → Adaptar por plataforma
+```
+
+### Etapa 4: Validação
+```
+[Programação] → [Coordenador de Calendário] → Consolidar calendário
+                           ↓
+[Guardião de Qualidade] → Validar publicação
+```
+
+### Etapa 5: Execução
+```
+[Publicação Validada] → [Publisher] → Enviar para plataforma
+                           ↓
+[Analista de Performance] → Registrar resultado
+```
+
+### Etapa 6: Feedback
+```
+[Métricas] → [Analista de Performance] → Ajustar regras
+                         ↓
+[Repetir ciclo]
+```
+
+---
+
+## Configurações do Pipeline
+
+### Frequência de Execução
+- Verificar novos vídeos: A cada 15 minutos
+- Reprocessar fila: A cada hora
+- Análise de performance: Diário
+
+### Timeout
+- Detecção: 30s
+- Classificação: 60s
+- Programação: 60s
+- Validação: 30s
+- Publicação: 120s
+
+### Retry
+- Máximo de 3 tentativas por etapa
+- Backoff exponencial (1min, 2min, 4min)
+- Notificar após falha definitiva
+
+---
+
+## Checkpoints
+
+1. **Pós-classificação:** Verificar se vídeos foram classificados
+2. **Pós-programação:** Confirmar que horários foram atribuídos
+3. **Pós-validação:**确保 publicação foi aprovada
+4. **Pós-publicação:** Confirmar que vídeo foi publicado
+
+---
+
+## Alertas
+
+### Crítico
+- Publicação falhou após 3 tentativas
+- Plataforma indisponível
+- Erro crítico no sistema
+
+### Warn
+- Capacidade diária atingida
+- Vídeo rejeitado por qualidade
+- Conflito de horário detectado
+
+### Info
+- Novo vídeo adicionado
+- Publicação realizada com sucesso
+- Calendário atualizado
