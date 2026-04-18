@@ -102,7 +102,7 @@ const server = http.createServer((req, res) => {
   
   // Dashboard HTML
   if (url === '/' || url === '/dashboard') {
-    const dashboardPath = path.join(__dirname, 'dashboard', 'index.html');
+    const dashboardPath = path.join(__dirname, '..', 'dashboard', 'index.html');
     fs.readFile(dashboardPath, (err, data) => {
       if (err) {
         res.writeHead(500);
@@ -120,7 +120,7 @@ const server = http.createServer((req, res) => {
   res.end('Not Found');
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🌐 Dashboard disponível em: http://localhost:${PORT}`);
   console.log(`📊 API Status em: http://localhost:${PORT}/api/status\n`);
 });
