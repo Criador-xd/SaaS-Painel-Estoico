@@ -24,6 +24,7 @@ const VideoWatcher = require('./watcher');
 const Scheduler = require('./scheduler');
 const SupabaseClient = require('./supabase');
 const Orchestrator = require('./orchestrator');
+const { server: dashboardServer, addLog } = require('./server');
 
 // Inicializar componentes
 const watcher = new VideoWatcher({
@@ -40,6 +41,13 @@ const supabase = new SupabaseClient(
 
 const orchestrator = new Orchestrator(config, watcher, scheduler, supabase);
 
+// Interceptar logs do orchestrator
+const originalRunPipeline = orchestrator.runPipeline.bind(orchestrator);
+orchestrator.runPipeline = async function() {
+  addLog('Pipeline executado');
+  return originalRunPipeline();
+};
+
 // Função principal
 async function main() {
   console.log('\n========================================');
@@ -48,6 +56,9 @@ async function main() {
 
   // Inicializar Supabase
   supabase.initialize();
+  if (!supabase.isConnected()) {
+    addLog('Supabase não configurado - modo offline');
+  }
 
   // Iniciar orchestrador
   await orchestrator.start();
@@ -61,19 +72,24 @@ async function main() {
   console.log(`   • Agendados: ${status.stats?.scheduled || 0}`);
   console.log(`   • Publicados: ${status.stats?.published || 0}`);
 
-  console.log('\n⏰ Sistema rodando... Pressione Ctrl+C para parar.');
+  console.log('\n🌐 Dashboard: http://localhost:3000');
+  console.log('⏰ Sistema rodando... Pressione Ctrl+C para parar.');
+  
+  addLog('Sistema iniciado');
 }
 
 // Tratamento de encerramento gracioso
 process.on('SIGINT', async () => {
   console.log('\n\n🛑 Encerrando sistema...');
   await orchestrator.stop();
+  dashboardServer.close();
   process.exit(0);
 });
 
 process.on('SIGTERM', async () => {
   console.log('\n\n🛑 Encerrando sistema...');
   await orchestrator.stop();
+  dashboardServer.close();
   process.exit(0);
 });
 
