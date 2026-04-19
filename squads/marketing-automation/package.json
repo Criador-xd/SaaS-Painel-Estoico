@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "start:full": "node src/index.js && start squads/marketing-automation/dashboard/index.html",
     "watch": "node src/watcher/index.js",
     "schedule": "node src/scheduler/index.js"
   },
