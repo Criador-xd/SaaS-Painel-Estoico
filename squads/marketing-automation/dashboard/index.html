@@ -118,29 +118,38 @@
     .log .time { color: #4ade80; }
 
     .next-post {
-      display: flex;
-      gap: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
       margin-bottom: 30px;
+    }
+    .post-card {
       padding: 20px;
       background: rgba(255,255,255,0.05);
       border-radius: 12px;
     }
-    .next-post-item {
-      flex: 1;
-    }
-    .next-post-item h4 {
+    .post-card h4 {
       font-size: 0.8rem;
       color: #888;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       text-transform: uppercase;
     }
-    .next-post-item .info {
-      font-size: 1.2rem;
+    .post-card .title {
+      font-size: 1.1rem;
       font-weight: 600;
+      margin-bottom: 8px;
     }
-    .next-post-item .info.youtube { color: #ff0000; }
-    .next-post-item .info.instagram { color: #e6683c; }
-    .next-post-item .time { font-size: 0.9rem; color: #4ade80; }
+    .post-card .time {
+      font-size: 0.9rem;
+      color: #4ade80;
+    }
+    .post-card .platforms {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .last-post { border-left: 3px solid #4ade80; }
+    .next-post { border-left: 3px solid #f59e0b; }
     .last-update {
       text-align: center;
       margin-top: 20px;
@@ -185,14 +194,17 @@
       </div>
     </div>
 
-    <div class="next-post" id="nextPostSection">
-      <div class="next-post-item">
-        <h4>📺 Próximo YouTube</h4>
-        <div id="nextYoutube">Carregando...</div>
+    <div class="next-post">
+      <div class="post-card last-post">
+        <h4>✅ Último Post</h4>
+        <div id="lastPostTitle">Carregando...</div>
+        <div class="time" id="lastPostTime">--</div>
       </div>
-      <div class="next-post-item">
-        <h4>📸 Próximo Instagram</h4>
-        <div id="nextInstagram">Carregando...</div>
+      <div class="post-card next-post">
+        <h4>⏭️ Próximo Post</h4>
+        <div id="nextPostTitle">Carregando...</div>
+        <div class="time" id="nextPostTime">--</div>
+        <div class="platforms" id="nextPostPlatforms"></div>
       </div>
     </div>
 
@@ -264,6 +276,46 @@
       }
     }
 
+    async function fetchPostInfo() {
+      try {
+        const res = await fetch(`${API_URL}/api/post-info`);
+        const data = await res.json();
+        
+        // Última post (do Supabase ou arquivo local)
+        const lastPost = data.lastPostFromSupabase || data.lastPost;
+        if (lastPost) {
+          document.getElementById('lastPostTitle').textContent = lastPost.title || lastPost.hash || 'Vídeo publicado';
+          if (lastPost.publishedAt) {
+            const d = new Date(lastPost.publishedAt);
+            document.getElementById('lastPostTime').textContent = d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'}) + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+          }
+        } else {
+          document.getElementById('lastPostTitle').textContent = 'Nenhum post encontrado';
+          document.getElementById('lastPostTime').textContent = '--';
+        }
+        
+        // Próximo post (do Supabase ou arquivo local)
+        const nextPost = data.nextPostFromSupabase || data.nextPost;
+        if (nextPost) {
+          document.getElementById('nextPostTitle').textContent = nextPost.title || nextPost.filename || 'Vídeo agendado';
+          const scheduledTime = nextPost.scheduledFor || nextPost.scheduledAt;
+          if (scheduledTime) {
+            const d = new Date(scheduledTime);
+            document.getElementById('nextPostTime').textContent = d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'}) + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+          }
+          if (nextPost.platforms) {
+            document.getElementById('nextPostPlatforms').innerHTML = nextPost.platforms.map(p => `<span class="platform-badge ${p}">${p}</span>`).join('');
+          }
+        } else {
+          document.getElementById('nextPostTitle').textContent = 'Nenhum post agendado';
+          document.getElementById('nextPostTime').textContent = '--';
+        }
+        
+      } catch (e) {
+        console.log('Erro ao buscar post-info:', e);
+      }
+    }
+
     async function fetchData() {
       try {
         const res = await fetch(`${API_URL}/api/status`);
@@ -274,39 +326,6 @@
         document.getElementById('scheduledVideos').textContent = data.scheduledVideos || 0;
         document.getElementById('publishedVideos').textContent = data.publishedVideos || 0;
         updateStatus(data.supabaseConnected);
-
-        // Processar último e próximo por plataforma
-        const allScheduled = (data.nextToPublish || []).sort((a, b) => new Date(a.scheduledAt) - new Date(b.scheduledAt));
-        const now = new Date();
-        
-        const youtubeVideos = allScheduled.filter(v => v.platform === 'youtube');
-        const instagramVideos = allScheduled.filter(v => v.platform === 'instagram');
-        
-        function formatSchedule(videos, now, platform) {
-          const past = videos.filter(v => new Date(v.scheduledAt) < now);
-          const future = videos.filter(v => new Date(v.scheduledAt) >= now);
-          
-          let last = past.length > 0 ? past[past.length - 1] : null;
-          let next = future.length > 0 ? future[0] : null;
-          
-          let html = '';
-          if (last) {
-            const d = new Date(last.scheduledAt);
-            html += `<div class="time">Último ${platform}: ${d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'})}, ${d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'})}</div>`;
-          } else {
-            html += `<div class="time">Último ${platform}: --</div>`;
-          }
-          if (next) {
-            const d = new Date(next.scheduledAt);
-            html += `<div class="info ${platform}">Próximo ${platform}: ${d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'})}, ${d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'})}</div>`;
-          } else {
-            html += `<div class="info ${platform}">Próximo ${platform}: --</div>`;
-          }
-          return html;
-        }
-        
-        document.getElementById('nextYoutube').innerHTML = formatSchedule(youtubeVideos, now, 'youtube');
-        document.getElementById('nextInstagram').innerHTML = formatSchedule(instagramVideos, now, 'instagram');
 
         // Próximos a publicar
         const nextHtml = (data.nextToPublish || []).map(v => `
@@ -335,6 +354,9 @@
         updateStatus(false);
         addLog('Erro ao conectar com o sistema - modo offline');
       }
+      
+      // Buscar informações do último e próximo post
+      await fetchPostInfo();
     }
 
     addLog('Dashboard iniciado');

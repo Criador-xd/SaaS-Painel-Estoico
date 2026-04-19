@@ -4,8 +4,26 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { createClient } = require('@supabase/supabase-js');
 
 const PORT = 3000;
+
+// Configuração do Supabase
+let supabaseClient = null;
+try {
+  const configPath = path.join(__dirname, '..', '..', 'config', 'config.yaml');
+  if (fs.existsSync(configPath)) {
+    const configContent = fs.readFileSync(configPath, 'utf8');
+    const urlMatch = configContent.match(/SUPABASE_URL:\s*(.+)/);
+    const keyMatch = configContent.match(/SUPABASE_SERVICE_KEY:\s*(.+)/);
+    if (urlMatch && keyMatch) {
+      supabaseClient = createClient(urlMatch[1].trim(), keyMatch[1].trim());
+      console.log('✅ Supabase configurado no server');
+    }
+  }
+} catch (e) {
+  console.log('Supabase não configurado no server');
+}
 
 // Estado global (seria melhor usar banco de dados real)
 let systemStatus = {
@@ -79,6 +97,93 @@ const server = http.createServer((req, res) => {
     loadStatus();
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(systemStatus));
+    return;
+  }
+  
+  // API Post Info - Último post e próximo post
+  if (url === '/api/post-info') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    const outputFolder = path.join(__dirname, '..', '_output');
+    const result = { lastPost: null, nextPost: null, lastPostFromSupabase: null, nextPostFromSupabase: null };
+    
+    // Buscar último post publicado (arquivo local)
+    const processedFile = path.join(outputFolder, 'processed-files.json');
+    if (fs.existsSync(processedFile)) {
+      const processed = JSON.parse(fs.readFileSync(processedFile, 'utf8'));
+      if (processed.hashes && processed.hashes.length > 0) {
+        const lastHash = processed.hashes.filter(h => h)[processed.hashes.length - 1];
+        if (lastHash) {
+          result.lastPost = { hash: lastHash, publishedAt: processed.lastUpdated };
+        }
+      }
+    }
+    
+    // Buscar próximo post agendado (arquivo local)
+    const scheduleFile = path.join(outputFolder, 'schedule.json');
+    if (fs.existsSync(scheduleFile)) {
+      const schedule = JSON.parse(fs.readFileSync(scheduleFile, 'utf8'));
+      if (schedule.schedule && schedule.schedule.length > 0) {
+        const saoPauloNow = new Date(Date.now() - (3 * 60 * 60 * 1000));
+        const upcoming = schedule.schedule.filter(s => new Date(s.scheduledAt) > saoPauloNow);
+        if (upcoming.length > 0) {
+          result.nextPost = upcoming[0];
+        }
+      }
+    }
+    
+    // Buscar do Supabase se disponível
+    if (supabaseClient) {
+      const SYSTEM_USER_ID = 'ca424590-39cc-4e47-a5fc-a0b72fdcf131';
+      const saoPauloNow = new Date(Date.now() - (3 * 60 * 60 * 1000)).toISOString();
+      
+      // Último post publicado
+      supabaseClient
+        .from('publication_targets')
+        .select('*, publications(title)')
+        .eq('status', 'publicado')
+        .eq('platform', 'youtube')
+        .order('published_at', { ascending: false })
+        .limit(1)
+        .then(({ data: lastPub }) => {
+          if (lastPub && lastPub.length > 0) {
+            result.lastPostFromSupabase = {
+              title: lastPub[0].publications?.title,
+              publishedAt: lastPub[0].published_at,
+              platform: lastPub[0].platform,
+              url: lastPub[0].platform_post_url
+            };
+          }
+        })
+        .then(() => {
+          // Próximo post agendado
+          return supabaseClient
+            .from('publications')
+            .select('*, publication_targets(*)')
+            .eq('user_id', SYSTEM_USER_ID)
+            .eq('overall_status', 'pendente')
+            .gte('scheduled_for', saoPauloNow)
+            .order('scheduled_for', { ascending: true })
+            .limit(1);
+        })
+        .then(({ data: nextPub }) => {
+          if (nextPub && nextPub.length > 0) {
+            result.nextPostFromSupabase = {
+              title: nextPub[0].title,
+              scheduledFor: nextPub[0].scheduled_for,
+              platforms: nextPub[0].publication_targets?.map(t => t.platform)
+            };
+          }
+        })
+        .then(() => {
+          res.end(JSON.stringify(result));
+        })
+        .catch(() => {
+          res.end(JSON.stringify(result));
+        });
+      return;
+    }
+    
+    res.end(JSON.stringify(result));
     return;
   }
   

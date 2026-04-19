@@ -21,6 +21,9 @@ class VideoWatcher {
     // Carregar arquivos já processados
     await this.loadProcessedFiles();
 
+    // Escanear vídeos existentes na pasta
+    await this.scanExistingVideos();
+
     // Iniciar watcher
     this.watcher = chokidar.watch(this.watchFolder, {
       ignored: /^\./,
@@ -37,6 +40,51 @@ class VideoWatcher {
       .on('error', (error) => console.error('Watcher error:', error));
 
     console.log('✅ Watcher iniciado');
+  }
+
+  // Escanear vídeos existentes na pasta
+  async scanExistingVideos() {
+    const files = await fs.readdir(this.watchFolder).catch(() => []);
+    const validExtensions = ['.mp4', '.mov', '.webm', '.avi'];
+    
+    let newCount = 0;
+    for (const file of files) {
+      const ext = path.extname(file).toLowerCase();
+      if (!validExtensions.includes(ext)) continue;
+      
+      const filePath = path.join(this.watchFolder, file);
+      try {
+        const fileHash = await this.getFileHash(filePath);
+        if (this.processedFiles.has(fileHash)) {
+          continue;
+        }
+        
+        const stats = await fs.stat(filePath);
+        const sizeMB = stats.size / (1024 * 1024);
+        
+        if (sizeMB < 0.5 || sizeMB > 500) continue;
+        
+        const video = {
+          id: this.generateId(),
+          filename: file,
+          filepath: filePath,
+          path: filePath,
+          size: sizeMB,
+          duration: null,
+          hash: fileHash,
+          detectedAt: new Date().toISOString(),
+          status: 'pending'
+        };
+        
+        this.queue.push(video);
+        await this.saveVideoToQueue(video);
+        newCount++;
+      } catch (e) {}
+    }
+    
+    if (newCount > 0) {
+      console.log(`📹 ${newCount} vídeos encontrados na pasta`);
+    }
   }
 
   // Parar monitoramento
