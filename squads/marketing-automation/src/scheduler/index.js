@@ -72,7 +72,7 @@ class Scheduler {
     for (let attempt = 0; attempt < 14; attempt++) {
       const candidateDate = new Date(baseDate);
       candidateDate.setDate(candidateDate.getDate() + dayOffset + attempt);
-      
+
       const dayOfWeek = candidateDate.getDay();
       if (!this.postDays.includes(dayOfWeek)) continue;
 
@@ -80,10 +80,11 @@ class Scheduler {
       for (let i = 0; i < this.postSlots.length; i++) {
         const slotIndex = (nextSlotIndex + i) % this.postSlots.length;
         const slot = this.postSlots[slotIndex];
-        
-        // Se é madrugada (3h), sempre próxima data
-        const currentDayOffset = (slot.hour < 10 && slotIndex === 3) ? 1 : 0;
-        
+
+        // Se é madrugada (3h) e estamos em um dia onde já aplicamos offset,
+        // não aplicamos offset adicional para evitar duplicação
+        const currentDayOffset = (slot.hour < 10 && slotIndex === 3 && dayOffset === 0) ? 1 : 0;
+
         const slotDate = new Date(candidateDate);
         slotDate.setDate(slotDate.getDate() + currentDayOffset);
         slotDate.setHours(slot.hour, 0, 0, 0);
