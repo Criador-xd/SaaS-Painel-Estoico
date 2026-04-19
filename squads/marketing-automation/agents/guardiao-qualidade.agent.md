@@ -1,4 +1,4 @@
-# Agente: Guardião de Qualidade
+# Agente: Juliana - Guardião de Qualidade
 
 ## Persona
 

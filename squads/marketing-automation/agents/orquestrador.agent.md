@@ -1,4 +1,4 @@
-# Agente: Orquestrador Central
+# Agente: Thiago - Orquestrador Central
 
 ## Persona
 
