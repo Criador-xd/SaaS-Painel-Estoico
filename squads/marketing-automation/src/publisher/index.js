@@ -127,8 +127,8 @@ class Publisher {
   // Agendar publicação para o próximo slot disponível
   async schedulePublication(publicationId, existingSchedule, lastPublishedDate = null) {
     try {
-      // Encontrar próximo slot (usando a data do último vídeo publicado)
-      const nextSlot = await this.scheduler.findNextSlot(existingSchedule, lastPublishedDate);
+      // Encontrar próximo slot (usando a data do último vídeo agendado)
+      const nextSlot = this.scheduler.findNextSlot(lastPublishedDate, existingSchedule);
       
       console.log(`   📅 Agendando para: ${nextSlot.datetime.toLocaleString('pt-BR')}`);
 
@@ -158,8 +158,8 @@ class Publisher {
     }
   }
 
-  // Pipeline completo: criar -> aprobar -> agendar
-  async publishVideo(video, existingSchedule = [], lastPublishedDate = null) {
+  // Pipeline completo: criar -> aprovar -> agendar
+  async publishVideo(video, existingSchedule = [], lastScheduledDate = null) {
     console.log(`\n🚀 Processando: ${video.filename}`);
 
     // 1. Criar rascunho com conteúdo completo
@@ -178,7 +178,7 @@ class Publisher {
     const scheduleResult = await this.schedulePublication(
       draftResult.publicationId, 
       existingSchedule,
-      lastPublishedDate
+      lastScheduledDate
     );
     if (scheduleResult.error) {
       return { error: scheduleResult.error, stage: 'schedule' };

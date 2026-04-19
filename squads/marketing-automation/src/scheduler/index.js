@@ -1,6 +1,8 @@
 /**
  * SCHEDULER - Lógica de priorização e programação
- * 4 publicações por dia: Manhã (10-11), Tarde (12-14), Noite (18-22), Madrugada (2-3)
+ * Slots: 10h (Manhã), 14h (Tarde), 22h (Noite), 3h (Madrugada próximo dia)
+ * Sequência: 10h → 14h → 22h → 3h(dia seguinte) → 10h → ...
+ * Regra: Usar o último scheduled_for do banco como referência
  */
 const path = require('path');
 const fs = require('fs-extra');
@@ -11,69 +13,107 @@ class Scheduler {
     this.maxPerWeek = parseInt(config.MAX_VIDEOS_PER_WEEK) || 28;
     this.userId = config.USER_ID || 'ca424590-39cc-4e47-a5fc-a0b72fdcf131';
     
-    // Slots de publicação (BR - São Paulo)
+    // Slots de publicação (BR - São Paulo) - ordem sequencial
+    // 10h → 14h → 22h → 3h (próximo dia) → 10h → ...
     this.postSlots = [
-      { name: 'Madrugada', start: 2, end: 3 },
-      { name: 'Manha', start: 10, end: 11 },
-      { name: 'Tarde', start: 12, end: 14 },
-      { name: 'Noite', start: 18, end: 22 }
+      { name: 'Manha', hour: 10 },
+      { name: 'Tarde', hour: 14 },
+      { name: 'Noite', hour: 22 },
+      { name: 'Madrugada', hour: 3 }
     ];
     
     // Todos os dias da semana
     this.postDays = [0, 1, 2, 3, 4, 5, 6]; // Domingo a Sábado
   }
 
-  // Encontrar próximo slot disponível
-  async findNextSlot(existingSchedule, lastPublishedDate = null) {
-    const baseDate = lastPublishedDate || new Date();
-    // Ajustar para São Paulo (UTC-3)
-    const saoPauloTime = new Date(baseDate.getTime() - (3 * 60 * 60 * 1000));
+  // Encontrar próximo slot após o último agendamento
+  findNextSlot(lastScheduledDate, existingSchedule = []) {
+    // Converter para São Paulo (UTC-3)
+    const toSaoPaulo = (date) => {
+      return new Date(date.getTime() - (3 * 60 * 60 * 1000));
+    };
+
+    const now = toSaoPaulo(new Date());
+
+    // Se não tem último agendamento, usar data atual
+    let baseDate = lastScheduledDate ? toSaoPaulo(lastScheduledDate) : now;
     
-    // Procurar nos próximos 7 dias
-    for (let dayOffset = 0; dayOffset < 7; dayOffset++) {
-      const candidateDate = new Date(saoPauloTime);
-      candidateDate.setDate(candidateDate.getDate() + dayOffset);
-      candidateDate.setHours(0, 0, 0, 0);
+    // Se a base for no passado, usar agora
+    if (baseDate < now) {
+      baseDate = now;
+    }
+
+    // Determinar o próximo slot baseado no último horário
+    let nextSlotIndex = 0;
+    let dayOffset = 0;
+    
+    if (lastScheduledDate) {
+      const lastHour = baseDate.getHours();
+      
+      // Se último foi às 22h ou mais, próximo é 3h do dia seguinte
+      if (lastHour >= 22) {
+        nextSlotIndex = 3; // Madrugada
+        dayOffset = 1; // Próximo dia
+      } 
+      // Se último foi entre 14h e 22h, próximo é 22h
+      else if (lastHour >= 14) {
+        nextSlotIndex = 2; // Noite
+        dayOffset = 0;
+      }
+      // Se último foi entre 10h e 14h, próximo é 14h
+      else if (lastHour >= 10) {
+        nextSlotIndex = 1; // Tarde
+        dayOffset = 0;
+      }
+      // Se último foi antes das 10h (ou 3h), próximo é 10h
+      else {
+        nextSlotIndex = 0; // Manhã
+        dayOffset = 0;
+      }
+    }
+
+    // Procurar próximo slot livre nos próximos dias
+    for (let attempt = 0; attempt < 14; attempt++) {
+      const candidateDate = new Date(baseDate);
+      candidateDate.setDate(candidateDate.getDate() + dayOffset + attempt);
       
       const dayOfWeek = candidateDate.getDay();
-      
-      // Verificar se é dia de postagem
       if (!this.postDays.includes(dayOfWeek)) continue;
-      
-      // Verificar cada slot
-      for (const slot of this.postSlots) {
-        // Para slots com múltiplas horas (Tarde e Noite), escolher hora específica
-        const hoursInSlot = [];
-        for (let h = slot.start; h <= slot.end; h++) {
-          hoursInSlot.push(h);
-        }
+
+      // Tentar cada slot a partir do índice determinado
+      for (let i = 0; i < this.postSlots.length; i++) {
+        const slotIndex = (nextSlotIndex + i) % this.postSlots.length;
+        const slot = this.postSlots[slotIndex];
         
-        for (const hour of hoursInSlot) {
-          const slotDate = new Date(candidateDate);
-          slotDate.setHours(hour, 0, 0, 0);
-          
-          // Se o slot for no passado hoje, pular
-          if (slotDate <= saoPauloTime) continue;
-          
-          // Verificar se já existe publicação nesse horário
-          const isOccupied = existingSchedule.some(s => {
-            const sDate = new Date(s.scheduled_for);
-            return sDate.getTime() === slotDate.getTime();
-          });
-          
-          if (!isOccupied) {
-            return {
-              datetime: slotDate,
-              slotName: slot.name,
-              hour: hour
-            };
-          }
+        // Se é madrugada (3h), sempre próxima data
+        const currentDayOffset = (slot.hour < 10 && slotIndex === 3) ? 1 : 0;
+        
+        const slotDate = new Date(candidateDate);
+        slotDate.setDate(slotDate.getDate() + currentDayOffset);
+        slotDate.setHours(slot.hour, 0, 0, 0);
+        
+        // Se o slot for no passado, pular
+        if (slotDate <= now) continue;
+        
+        // Verificar se já está ocupado no schedule existente
+        const isOccupied = existingSchedule.some(s => {
+          if (!s.scheduled_for) return false;
+          const sDate = toSaoPaulo(new Date(s.scheduled_for));
+          return sDate.getTime() === slotDate.getTime();
+        });
+        
+        if (!isOccupied) {
+          return {
+            datetime: slotDate,
+            slotName: slot.name,
+            hour: slot.hour
+          };
         }
       }
     }
-    
-    // Se não encontrar slot, retornar o próximo dia disponível às 10h
-    const fallback = new Date(saoPauloTime);
+
+    // Fallback: retornar 10h do próximo dia
+    const fallback = new Date(now);
     fallback.setDate(fallback.getDate() + 1);
     fallback.setHours(10, 0, 0, 0);
     
@@ -81,6 +121,86 @@ class Scheduler {
       datetime: fallback,
       slotName: 'Manha',
       hour: 10
+    };
+  }
+
+  // Encontrar próximo slot após o último agendamento
+  findNextSlot(lastScheduledDate, existingSchedule = []) {
+    // Converter para São Paulo (UTC-3)
+    const toSaoPaulo = (date) => {
+      return new Date(date.getTime() - (3 * 60 * 60 * 1000));
+    };
+
+    // Se não tem último agendamento, usar data atual
+    let baseDate = lastScheduledDate ? toSaoPaulo(lastScheduledDate) : toSaoPaulo(new Date());
+    
+    // Se a base for no passado, usar agora
+    const now = toSaoPaulo(new Date());
+    if (baseDate < now) {
+      baseDate = now;
+    }
+
+    // Procurar próximo slot livre
+    for (let dayOffset = 0; dayOffset < 14; dayOffset++) {
+      const candidateDate = new Date(baseDate);
+      candidateDate.setDate(candidateDate.getDate() + dayOffset);
+      
+      const dayOfWeek = candidateDate.getDay();
+      if (!this.postDays.includes(dayOfWeek)) continue;
+
+      // Encontrar índice do último slot usado
+      let startIndex = 0;
+      if (lastScheduledDate && dayOffset === 0) {
+        const lastHour = baseDate.getHours();
+        for (let i = 0; i < this.postSlots.length; i++) {
+          if (this.postSlots[i].hour <= lastHour) {
+            startIndex = i + 1;
+          }
+        }
+      }
+
+      // Tentar cada slot a partir do início
+      for (let i = 0; i < this.postSlots.length; i++) {
+        const slotIndex = (startIndex + i) % this.postSlots.length;
+        const slot = this.postSlots[slotIndex];
+        
+        const slotDate = new Date(candidateDate);
+        slotDate.setHours(slot.hour, 0, 0, 0);
+        
+        // Se o slot for no passado hoje, pular
+        if (slotDate <= now && dayOffset === 0) continue;
+        
+        // Verificar se já está ocupado no schedule existente
+        const isOccupied = existingSchedule.some(s => {
+          if (!s.scheduled_for) return false;
+          const sDate = toSaoPaulo(new Date(s.scheduled_for));
+          return sDate.getTime() === slotDate.getTime();
+        });
+        
+        if (!isOccupied) {
+          return {
+            datetime: slotDate,
+            slotName: slot.name,
+            hour: slot.hour
+          };
+        }
+        
+        // Se reachou o final da lista, começar do início no próximo dia
+        if (slotIndex === this.postSlots.length - 1) {
+          startIndex = 0;
+        }
+      }
+    }
+
+    // Fallback: retornar 3h do próximo dia
+    const fallback = toSaoPaulo(new Date());
+    fallback.setDate(fallback.getDate() + 1);
+    fallback.setHours(3, 0, 0, 0);
+    
+    return {
+      datetime: fallback,
+      slotName: 'Madrugada',
+      hour: 3
     };
   }
 
@@ -125,7 +245,7 @@ class Scheduler {
       const scheduledVideo = {
         ...video,
         scheduled_for: nextSlot.datetime.toISOString(),
-        platform: 'both', // YouTube + Instagram
+        platform: 'both',
         slotName: nextSlot.slotName,
         hour: nextSlot.hour
       };

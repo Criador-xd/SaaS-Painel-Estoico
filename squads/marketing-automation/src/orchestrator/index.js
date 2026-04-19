@@ -133,21 +133,23 @@ class Orchestrator {
       const existingSchedule = await this.publisher.getExistingSchedule();
       console.log(`📅 Já agendados: ${existingSchedule.length}`);
 
-      // 3. Buscar a data do último vídeo publicado para continuar a partir dele
-      let lastPublishedDate = null;
-      if (this.supabase && this.supabase.getLastPublishedDate) {
-        lastPublishedDate = await this.supabase.getLastPublishedDate();
-        if (lastPublishedDate) {
-          console.log(`📅 Último vídeo publicado: ${lastPublishedDate.toLocaleString('pt-BR')}`);
-          this.reportToBoss(`Último vídeo encontrado no banco: ${lastPublishedDate.toLocaleDateString('pt-BR')}`, AGENTS.ESPECIALISTA);
+// 3. Buscar a data do último VÍDEO AGENDADO no banco
+      let lastScheduledDate = null;
+      if (this.supabase && this.supabase.getLastScheduledDate) {
+        lastScheduledDate = await this.supabase.getLastScheduledDate();
+        if (lastScheduledDate) {
+          console.log(`📅 Último vídeo agendado: ${lastScheduledDate.toLocaleString('pt-BR')}`);
+          this.reportToBoss(`Último agendamento encontrado: ${lastScheduledDate.toLocaleDateString('pt-BR')} às ${lastScheduledDate.getHours()}h`, AGENTS.ESPECIALISTA);
+        } else {
+          console.log(`📅 Nenhum vídeo agendado - iniciando a partir de agora`);
         }
       }
 
-      // 4. Processar cada vídeo: criar rascunho → aprovar → agendar
+      // 4. Processar cada vídeo: criar rascunho → aprobar → agendar
       for (const video of pendingVideos.slice(0, 4)) { // Máximo 4 por execução
         console.log(`\n🎬 ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} processando: ${video.filename}`);
         
-        const result = await this.publisher.publishVideo(video, existingSchedule, lastPublishedDate);
+        const result = await this.publisher.publishVideo(video, existingSchedule, lastScheduledDate);
         
         if (result.success) {
           console.log(`   ${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} aprovou: ${result.title}`);
@@ -160,8 +162,8 @@ class Orchestrator {
           // Marcar como processado
           await this.watcher.markAsProcessed(video.id);
           
-          // Atualizar lastPublishedDate para o próximo vídeo
-          lastPublishedDate = new Date(result.scheduledFor);
+          // Atualizar lastScheduledDate para o próximo vídeo
+          lastScheduledDate = new Date(result.scheduledFor);
           
           // Adicionar ao schedule existente para evitar conflito
           existingSchedule.push({

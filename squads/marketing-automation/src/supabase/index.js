@@ -173,8 +173,8 @@ class SupabaseClient {
     }
   }
 
-  // Obter data do último vídeo publicado
-  async getLastPublishedDate() {
+  // Obter data do último vídeo AGENDADO (scheduled_for mais recente no banco)
+  async getLastScheduledDate() {
     if (!this.isConnected()) return null;
 
     try {
@@ -182,7 +182,6 @@ class SupabaseClient {
         .from('publications')
         .select('scheduled_for')
         .eq('user_id', this.userId || 'ca424590-39cc-4e47-a5fc-a0b72fdcf131')
-        .eq('overall_status', 'publicado')
         .not('scheduled_for', 'is', null)
         .order('scheduled_for', { ascending: false })
         .limit(1)
@@ -192,10 +191,15 @@ class SupabaseClient {
       return data ? new Date(data.scheduled_for) : null;
     } catch (error) {
       if (error.code !== 'PGRST116') {
-        console.error('Erro ao buscar último vídeo:', error.message);
+        console.error('Erro ao buscar último agendamento:', error.message);
       }
       return null;
     }
+  }
+
+  // Manter compatibilidade com código antigo
+  async getLastPublishedDate() {
+    return this.getLastScheduledDate();
   }
 
   // Verificar estrutura da tabela (para debug)
