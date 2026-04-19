@@ -3,495 +3,660 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketing Automation Dashboard</title>
+  <title>Marketing Automation | Pipeline Vivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      min-height: 100vh;
-      color: #fff;
-      padding: 20px;
+
+    :root {
+      --bg: #030306;
+      --panel: #0a0a0f;
+      --panel-mid: #101018;
+      --cyan: #00e5ff;
+      --purple: #a855f7;
+      --green: #22c55e;
+      --amber: #fbbf24;
+      --rose: #f43f5e;
+      --blue: #3b82f6;
+      --text: #f0f0f5;
+      --text-dim: #5a5a70;
+      --glow-cyan: 0 0 30px rgba(0, 229, 255, 0.4);
     }
-    .container { max-width: 1200px; margin: 0 auto; }
-    
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 100% 60% at 50% 100%, rgba(0, 229, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 30% at 80% 0%, rgba(168, 85, 247, 0.04) 0%, transparent 40%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .app {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-rows: auto 1fr auto auto;
+      min-height: 100vh;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    /* Header */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #333;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 14px;
     }
-    h1 { font-size: 1.8rem; }
-    .status-badge {
+
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: #000;
+    }
+    .logo-text { font-weight: 700; font-size: 1rem; }
+    .logo-text span { color: var(--cyan); }
+
+    .metrics { display: flex; gap: 28px; }
+    .metric { text-align: center; }
+    .metric-val { font-family: 'JetBrains Mono', monospace; font-size: 1.3rem; font-weight: 600; color: var(--cyan); }
+    .metric-lbl { font-size: 0.5rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Main Pipeline */
+    .pipeline-area {
+      background: linear-gradient(180deg, var(--panel), var(--bg));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 18px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pipeline-header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: #1e3a2f;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-    .status-badge.connected { background: #1e3a2f; }
-    .status-badge.disconnected { background: #3a1e1e; }
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #4ade80;
-    }
-    .status-badge.disconnected .dot { background: #ef4444; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-    .card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 20px;
-      backdrop-filter: blur(10px);
-    }
-    .card h3 {
-      font-size: 0.85rem;
-      color: #888;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .card .value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #4ade80;
-    }
-    .card .sub { font-size: 0.8rem; color: #666; margin-top: 5px; }
-
-    .tables { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .table-card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .table-card h3 {
-      font-size: 1rem;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.85rem;
-    }
-    th { text-align: left; color: #666; padding: 10px 5px; border-bottom: 1px solid #333; }
-    td { padding: 10px 5px; border-bottom: 1px solid #222; }
-    tr:hover { background: rgba(255,255,255,0.02); }
-    
-    .platform-badge {
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-    }
-    .platform-badge.youtube { background: #ff0000; color: #fff; }
-    .platform-badge.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-
-    .log-area {
-      margin-top: 30px;
-      background: rgba(0,0,0,0.3);
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .log-area h3 { margin-bottom: 15px; }
-    .log {
-      height: 200px;
-      overflow-y: auto;
-      font-family: monospace;
-      font-size: 0.8rem;
-      color: #888;
-    }
-    .log div { margin: 5px 0; }
-    .log .time { color: #4ade80; }
-
-    .next-post {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-    .post-card {
-      padding: 20px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-    }
-    .post-card h4 {
-      font-size: 0.8rem;
-      color: #888;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-    .post-card .title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card .time {
-      font-size: 0.9rem;
-      color: #4ade80;
-    }
-    .post-card .platforms {
-      display: flex;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    .last-post { border-left: 3px solid #4ade80; }
-    .next-post { border-left: 3px solid #f59e0b; }
-    .last-update {
-      text-align: center;
-      margin-top: 20px;
-      color: #666;
-      font-size: 0.8rem;
+      margin-bottom: 16px;
     }
 
+    .pipeline-title { font-size: 0.75rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+    .live-badge { display: flex; align-items: center; gap: 6px; font-size: 0.65rem; color: var(--green); }
+    .live-dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: pulse 1.5s infinite; box-shadow: 0 0 8px var(--green); }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
-    .updating .dot { animation: pulse 1s infinite; }
 
-    .agents-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-    .agent-card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.2s, background 0.2s;
-      cursor: pointer;
-    }
-    .agent-card:hover {
-      transform: translateY(-3px);
-      background: rgba(255,255,255,0.1);
-    }
-    .agent-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #4ade80, #22c55e);
-      margin: 0 auto 10px;
+    /* Pipeline Flow */
+    .pipeline-flow {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1a1a2e;
+      gap: 0;
+      padding: 16px 0;
+      overflow-x: auto;
     }
-    .agent-name {
-      font-weight: 600;
-      margin-bottom: 5px;
+
+    .agent-station {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
     }
-    .agent-role {
-      font-size: 0.75rem;
-      color: #888;
-      margin-bottom: 10px;
+
+    .station-card {
+      width: 140px;
+      background: linear-gradient(145deg, var(--panel-mid), var(--panel));
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 12px;
+      transition: all 0.4s ease;
+      position: relative;
     }
-    .agent-status {
-      font-size: 0.7rem;
-      padding: 4px 8px;
+
+    .station-card::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 12px;
+      padding: 1px;
+      background: linear-gradient(135deg, transparent 30%, var(--cyan) 50%, transparent 70%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .station-card.active::before { opacity: 1; animation: glow-anim 2s linear infinite; }
+    @keyframes glow-anim { 0%,100%{opacity:0.4} 50%{opacity:1} }
+
+    .station-card.active { border-color: var(--cyan); box-shadow: var(--glow-cyan); }
+    .station-card.queued { border-color: var(--amber); opacity: 0.9; }
+    .station-card.waiting { border-color: var(--text-dim); opacity: 0.6; }
+
+    .station-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .station-avatar {
+      width: 28px; height: 28px;
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.75rem; color: #000;
+    }
+    .station-name { font-weight: 600; font-size: 0.75rem; }
+    .station-role { font-size: 0.48rem; color: var(--text-dim); }
+
+    .station-screen {
+      background: #000;
+      border-radius: 6px;
+      padding: 6px;
+      height: 48px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.42rem;
+      overflow: hidden;
+    }
+
+    .screen-line { margin: 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .screen-line.run { color: var(--cyan); }
+    .screen-line.queue { color: var(--amber); }
+    .screen-line.done { color: var(--green); }
+    .screen-line.dim { color: var(--text-dim); }
+
+    .station-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; }
+    .station-status { display: flex; align-items: center; gap: 4px; font-size: 0.5rem; }
+    .status-pill { width: 5px; height: 5px; border-radius: 50%; background: var(--green); animation: pulse 1s infinite; }
+    .status-pill.queue { background: var(--amber); animation: none; }
+    .status-pill.wait { background: var(--text-dim); }
+    .status-text { color: var(--text-dim); }
+
+    .station-badge {
+      font-size: 0.45rem; padding: 2px 6px; border-radius: 4px;
+      background: rgba(0, 229, 255, 0.15); color: var(--cyan);
+    }
+    .station-badge.queue { background: rgba(251, 191, 36, 0.15); color: var(--amber); }
+    .station-badge.wait { background: rgba(90, 90, 112, 0.15); color: var(--text-dim); }
+
+    /* Flow Connector */
+    .flow-connector {
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+      position: relative;
+    }
+
+    .flow-track {
+      width: 28px; height: 2px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(0, 229, 255, 0.4), rgba(255,255,255,0.08));
+      position: relative;
+    }
+
+    .flow-particle {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 6px; height: 6px;
+      background: var(--cyan);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--cyan);
+      animation: flow-move 1.8s ease-in-out infinite;
+    }
+
+    .flow-particle.paused { background: var(--amber); box-shadow: 0 0 12px var(--amber); animation: none; left: 50%; transform: translateX(-50%); }
+
+    @keyframes flow-move { 0%{left:0;opacity:0} 15%{left:10%;opacity:1} 85%{left:90%;opacity:1} 100%{left:100%;opacity:0} }
+
+    /* Video Card Moving */
+    .video-card {
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--panel-mid), var(--panel));
+      border: 1px solid var(--cyan);
+      border-radius: 8px;
+      padding: 6px 10px;
+      min-width: 120px;
+      box-shadow: var(--glow-cyan);
+      z-index: 10;
+      animation: card-pulse 2s infinite;
+    }
+
+    @keyframes card-pulse { 0%,100%{box-shadow:var(--glow-cyan)} 50%{box-shadow:0 0 40px rgba(0,229,255,0.6)} }
+
+    .video-card-title { font-size: 0.55rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; }
+    .video-card-status { font-size: 0.4rem; color: var(--cyan); margin-top: 2px; }
+
+    /* Queue Panel */
+    .queue-panel {
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 12px 16px;
+    }
+
+    .queue-title { font-size: 0.65rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .queue-list { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+    .queue-item {
+      flex-shrink: 0;
+      background: var(--panel-mid);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 8px 12px;
+      min-width: 100px;
+    }
+    .queue-num { font-size: 0.5rem; color: var(--text-dim); }
+    .queue-name { font-size: 0.6rem; font-weight: 600; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80px; }
+
+    /* Timeline */
+    .timeline-panel {
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 12px 16px;
+    }
+
+    .timeline-title { font-size: 0.65rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .timeline-track { display: flex; align-items: center; gap: 0; }
+    .timeline-slot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 12px;
+      position: relative;
+    }
+    .timeline-slot::after {
+      content: '';
+      position: absolute;
+      right: -2px;
+      top: 50%;
+      width: 4px; height: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+    .timeline-slot:last-child::after { display: none; }
+    .timeline-time { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; font-weight: 600; }
+    .timeline-time.next { color: var(--cyan); }
+    .timeline-time.last { color: var(--green); }
+    .timeline-time.normal { color: var(--text-dim); }
+    .timeline-label { font-size: 0.4rem; color: var(--text-dim); margin-top: 2px; }
+    .timeline-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-dim); margin-top: 4px; }
+    .timeline-dot.next { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
+    .timeline-dot.last { background: var(--green); }
+
+    /* Stats */
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .stat-tile {
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
       border-radius: 10px;
-      display: inline-block;
+      padding: 12px;
+      text-align: center;
     }
-    .agent-status.online { background: #1e3a2f; color: #4ade80; }
-    .agent-status.offline { background: #3a1e1e; color: #ef4444; }
-    .boss-link {
+    .stat-icon { font-size: 1.2rem; margin-bottom: 4px; }
+    .stat-val { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700; }
+    .stat-val.c { color: var(--cyan); }
+    .stat-val.a { color: var(--amber); }
+    .stat-val.p { color: var(--purple); }
+    .stat-val.g { color: var(--green); }
+    .stat-lbl { font-size: 0.55rem; color: var(--text-dim); margin-top: 2px; }
+
+    /* Activity Log */
+    .log-panel {
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 12px;
+      max-height: 100px;
+      overflow-y: auto;
+    }
+    .log-title { font-size: 0.6rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+    .log-entry { display: flex; gap: 8px; padding: 4px 0; font-size: 0.65rem; border-bottom: 1px solid rgba(255,255,255,0.02); }
+    .log-entry:last-child { border: none; }
+    .log-time { font-family: 'JetBrains Mono', monospace; font-size: 0.55rem; color: var(--cyan); }
+    .log-agent { color: var(--purple); font-weight: 500; }
+    .log-msg { color: var(--text-dim); }
+
+    /* Boss Button */
+    .boss-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: linear-gradient(135deg, #4ade80, #22c55e);
-      color: #1a1a2e;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--amber), #d97706);
+      border: none; border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      box-shadow: 0 6px 24px rgba(251, 191, 36, 0.4);
+      transition: all 0.3s;
       z-index: 100;
     }
-    .boss-link:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(74, 222, 128, 0.4);
+    .boss-btn:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(251, 191, 36, 0.5); }
+
+    /* Footer */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, var(--panel), var(--panel-mid));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 10px;
+      font-size: 0.6rem;
+      color: var(--text-dim);
     }
+    .conn { display: flex; align-items: center; gap: 6px; }
+    .conn-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
+    .conn-dot.off { background: var(--rose); }
+
+    ::-webkit-scrollbar { width: 3px; height: 3px; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="app">
     <header>
-      <h1>🎬 Marketing Automation Dashboard</h1>
-      <div class="status-badge" id="connectionStatus">
-        <span class="dot"></span>
-        <span id="statusText">Conectando...</span>
+      <div class="logo">
+        <div class="logo-icon">▶</div>
+        <div class="logo-text">Marketing <span>Automation</span></div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-val" id="m-new">0</div><div class="metric-lbl">Novos</div></div>
+        <div class="metric"><div class="metric-val" id="m-queue">0</div><div class="metric-lbl">Fila</div></div>
+        <div class="metric"><div class="metric-val" id="m-sched">0</div><div class="metric-lbl">Agendados</div></div>
+        <div class="metric"><div class="metric-val" id="m-pub">0</div><div class="metric-lbl">Publicados</div></div>
       </div>
     </header>
 
-    <div class="agents-grid">
-      <div class="agent-card" onclick="contactAgent('thiago')">
-        <div class="agent-avatar">T</div>
-        <div class="agent-name">Thiago</div>
-        <div class="agent-role">Orquestrador</div>
-        <div class="agent-status online" id="status-thiago">Online</div>
+    <div class="pipeline-area">
+      <div class="pipeline-header">
+        <div class="pipeline-title">Pipeline de Processamento</div>
+        <div class="live-badge"><span class="live-dot"></span>Processando</div>
       </div>
-      <div class="agent-card" onclick="contactAgent('carla')">
-        <div class="agent-avatar" style="background: linear-gradient(135deg, #60a5fa, #3b82f6)">C</div>
-        <div class="agent-name">Carla</div>
-        <div class="agent-role">Analista de Conteúdo</div>
-        <div class="agent-status online" id="status-carla">Online</div>
-      </div>
-      <div class="agent-card" onclick="contactAgent('marcos')">
-        <div class="agent-avatar" style="background: linear-gradient(135deg, #f59e0b, #f97316)">M</div>
-        <div class="agent-name">Marcos</div>
-        <div class="agent-role">Gerente de Fila</div>
-        <div class="agent-status online" id="status-marcos">Online</div>
-      </div>
-      <div class="agent-card" onclick="contactAgent('rafael')">
-        <div class="agent-avatar" style="background: linear-gradient(135deg, #a855f7, #8b5cf6)">R</div>
-        <div class="agent-name">Rafael</div>
-        <div class="agent-role">Especialista em Programação</div>
-        <div class="agent-status online" id="status-rafael">Online</div>
-      </div>
-      <div class="agent-card" onclick="contactAgent('juliana')">
-        <div class="agent-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777)">J</div>
-        <div class="agent-name">Juliana</div>
-        <div class="agent-role">Guardião de Qualidade</div>
-        <div class="agent-status online" id="status-juliana">Online</div>
+      <div class="pipeline-flow" id="pipeline"></div>
+    </div>
+
+    <div class="queue-panel">
+      <div class="queue-title">Fila de Processamento</div>
+      <div class="queue-list" id="queueList"></div>
+    </div>
+
+    <div class="timeline-panel">
+      <div class="timeline-title">Timeline de Agendamento</div>
+      <div class="timeline-track" id="timeline"></div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-tile"><div class="stat-icon">📁</div><div class="stat-val c" id="s-new">0</div><div class="stat-lbl">Novos Vídeos</div></div>
+      <div class="stat-tile"><div class="stat-icon">⏳</div><div class="stat-val a" id="s-queue">0</div><div class="stat-lbl">Processando</div></div>
+      <div class="stat-tile"><div class="stat-icon">📅</div><div class="stat-val p" id="s-sched">0</div><div class="stat-lbl">Agendados</div></div>
+      <div class="stat-tile"><div class="stat-icon">✅</div><div class="stat-val g" id="s-today">0</div><div class="stat-lbl">Publicados Hoje</div></div>
+    </div>
+
+    <div class="log-panel">
+      <div class="log-title">Registro de Atividades</div>
+      <div id="log">
+        <div class="log-entry"><span class="log-time">--:--</span><span class="log-agent">Sistema</span><span class="log-msg">Pipeline iniciado</span></div>
       </div>
     </div>
 
-    <a href="#" class="boss-link" onclick="notifyBoss()">👑 Falar com Lucas (Boss)</a>
-
-    <div class="grid">
-      <div class="card">
-        <h3>📹 Vídeos Detectados</h3>
-        <div class="value" id="totalVideos">0</div>
-        <div class="sub">Na pasta monitorada</div>
-      </div>
-      <div class="card">
-        <h3>⏳ Na Fila</h3>
-        <div class="value" id="pendingVideos">0</div>
-        <div class="sub">Aguardando agendamento</div>
-      </div>
-      <div class="card">
-        <h3>📅 Agendados</h3>
-        <div class="value" id="scheduledVideos">0</div>
-        <div class="sub">Programados para publicação</div>
-      </div>
-      <div class="card">
-        <h3>✅ Publicados</h3>
-        <div class="value" id="publishedVideos">0</div>
-        <div class="sub">Já publicados nas plataformas</div>
-      </div>
-    </div>
-
-    <div class="next-post">
-      <div class="post-card last-post">
-        <h4>✅ Último Post</h4>
-        <div id="lastPostTitle">Carregando...</div>
-        <div class="time" id="lastPostTime">--</div>
-      </div>
-      <div class="post-card next-post">
-        <h4>⏭️ Próximo Post</h4>
-        <div id="nextPostTitle">Carregando...</div>
-        <div class="time" id="nextPostTime">--</div>
-        <div class="platforms" id="nextPostPlatforms"></div>
-      </div>
-    </div>
-
-    <div class="tables">
-      <div class="table-card">
-        <h3>📋 Próximos a Publicar</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Vídeo</th>
-              <th>Plataforma</th>
-              <th>Horário</th>
-              <th>Prioridade</th>
-            </tr>
-          </thead>
-          <tbody id="nextToPublish">
-            <tr><td colspan="4" style="text-align:center;color:#666">Nenhum vídeo agendado</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="table-card">
-        <h3>📁 Vídeos na Fila</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Arquivo</th>
-              <th>Categoria</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody id="queueList">
-            <tr><td colspan="3" style="text-align:center;color:#666">Nenhum vídeo na fila</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="log-area">
-      <h3>📝 Log em Tempo Real</h3>
-      <div class="log" id="logArea"></div>
-    </div>
-
-    <div class="last-update">
-      Última atualização: <span id="lastUpdate">--</span>
-    </div>
+    <footer>
+      <div class="conn"><span class="conn-dot" id="connDot"></span><span id="connText">Online</span></div>
+      <div id="lastUpd">--</div>
+    </footer>
   </div>
 
+  <button class="boss-btn" onclick="msgBoss()">👑</button>
+
   <script>
-    const logArea = document.getElementById('logArea');
-    const API_URL = 'http://localhost:3000';
+    const API = 'http://localhost:3000';
 
-    function addLog(message) {
-      const time = new Date().toLocaleTimeString('pt-BR');
-      const div = document.createElement('div');
-      div.innerHTML = `<span class="time">[${time}]</span> ${message}`;
-      logArea.insertBefore(div, logArea.firstChild);
-      if (logArea.children.length > 50) logArea.lastChild.remove();
-    }
+    const agents = [
+      { id: 'analista', name: 'Carla', role: 'Analista', color: '#3b82f6', task: 'Classificando conteúdo' },
+      { id: 'gerente', name: 'Marcos', role: 'Gerente', color: '#f59e0b', task: 'Organizando prioridade' },
+      { id: 'programador', name: 'Rafael', role: 'Programador', color: '#8b5cf6', task: 'Definindo horário' },
+      { id: 'estrategista', name: 'Paula', role: 'Estrategista', color: '#06b6d4', task: 'Planejando distribuição' },
+      { id: 'calendario', name: 'Lucas', role: 'Calendário', color: '#22c55e', task: 'Agendando publicação' },
+      { id: 'performance', name: 'Sofia', role: 'Performance', color: '#f43f5e', task: 'Analisando métricas' }
+    ];
 
-    function updateStatus(connected) {
-      const badge = document.getElementById('connectionStatus');
-      const text = document.getElementById('statusText');
-      if (connected) {
-        badge.className = 'status-badge connected';
-        text.textContent = 'Sistema Online';
-      } else {
-        badge.className = 'status-badge disconnected';
-        text.textContent = 'Modo Offline';
-      }
-    }
+    const timelineSlots = [
+      { time: '03:00', label: 'Madrugada' },
+      { time: '10:00', label: 'Manhã' },
+      { time: '14:00', label: 'Tarde' },
+      { time: '18:00', label: 'Happy Hour' },
+      { time: '22:00', label: 'Noite' }
+    ];
 
-    async function fetchPostInfo() {
-      try {
-        const res = await fetch(`${API_URL}/api/post-info`);
-        const data = await res.json();
+    let currentVideo = null;
+    let processingStage = 0;
+    let lastQueueLen = 0;
+
+    function renderPipeline() {
+      const p = document.getElementById('pipeline');
+      let h = '';
+
+      agents.forEach((a, i) => {
+        const isActive = i === processingStage;
+        const isNext = i === processingStage + 1;
         
-        // Última post (do Supabase ou arquivo local)
-        const lastPost = data.lastPostFromSupabase || data.lastPost;
-        if (lastPost) {
-          document.getElementById('lastPostTitle').textContent = lastPost.title || lastPost.hash || 'Vídeo publicado';
-          if (lastPost.publishedAt) {
-            const d = new Date(lastPost.publishedAt);
-            document.getElementById('lastPostTime').textContent = d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'}) + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
-          }
-        } else {
-          document.getElementById('lastPostTitle').textContent = 'Nenhum post encontrado';
-          document.getElementById('lastPostTime').textContent = '--';
+        h += `
+          <div class="agent-station">
+            <div class="station-card ${isActive ? 'active' : isNext ? 'queued' : 'waiting'}" id="card-${a.id}">
+              ${isActive ? `<div class="video-card" id="videoCard"><div class="video-card-title" id="cardTitle">Carregando...</div><div class="video-card-status" id="cardStatus">Processando</div></div>` : ''}
+              <div class="station-header">
+                <div class="station-avatar" style="background:${a.color}">${a.name[0]}</div>
+                <div>
+                  <div class="station-name">${a.name}</div>
+                  <div class="station-role">${a.role}</div>
+                </div>
+              </div>
+              <div class="station-screen" id="screen-${a.id}">
+                <div class="screen-line dim">Aguardando...</div>
+              </div>
+              <div class="station-footer">
+                <div class="station-status">
+                  <span class="status-pill ${isActive ? '' : isNext ? 'queue' : 'wait'}" id="pill-${a.id}"></span>
+                  <span class="status-text" id="txt-${a.id}">${isActive ? 'Processando' : isNext ? 'Na fila' : 'Aguardando'}</span>
+                </div>
+                <span class="station-badge ${isActive ? '' : isNext ? 'queue' : 'wait'}" id="badge-${a.id}">${isActive ? 'Executando' : isNext ? 'Aguardando' : 'Ocioso'}</span>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        if (i < agents.length - 1) {
+          h += `
+            <div class="flow-connector">
+              <div class="flow-track">
+                <div class="flow-particle ${i < processingStage ? '' : i === processingStage ? '' : 'paused'}" id="flow-${i}"></div>
+              </div>
+            </div>
+          `;
         }
-        
-        // Próximo post (do Supabase ou arquivo local)
-        const nextPost = data.nextPostFromSupabase || data.nextPost;
-        if (nextPost) {
-          document.getElementById('nextPostTitle').textContent = nextPost.title || nextPost.filename || 'Vídeo agendado';
-          const scheduledTime = nextPost.scheduledFor || nextPost.scheduledAt;
-          if (scheduledTime) {
-            const d = new Date(scheduledTime);
-            document.getElementById('nextPostTime').textContent = d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'}) + ' às ' + d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
-          }
-          if (nextPost.platforms) {
-            document.getElementById('nextPostPlatforms').innerHTML = nextPost.platforms.map(p => `<span class="platform-badge ${p}">${p}</span>`).join('');
-          }
-        } else {
-          document.getElementById('nextPostTitle').textContent = 'Nenhum post agendado';
-          document.getElementById('nextPostTime').textContent = '--';
-        }
-        
-      } catch (e) {
-        console.log('Erro ao buscar post-info:', e);
-      }
+      });
+
+      p.innerHTML = h;
     }
 
-    async function fetchData() {
-      try {
-        const res = await fetch(`${API_URL}/api/status`);
-        const data = await res.json();
-        
-        document.getElementById('totalVideos').textContent = data.totalVideos || 0;
-        document.getElementById('pendingVideos').textContent = data.pendingVideos || 0;
-        document.getElementById('scheduledVideos').textContent = data.scheduledVideos || 0;
-        document.getElementById('publishedVideos').textContent = data.publishedVideos || 0;
-        updateStatus(data.supabaseConnected);
+    function renderTimeline(nextSlot, lastSlot) {
+      const t = document.getElementById('timeline');
+      t.innerHTML = timelineSlots.map((slot, i) => {
+        const isNext = slot.time === nextSlot;
+        const isLast = slot.time === lastSlot;
+        return `
+          <div class="timeline-slot">
+            <div class="timeline-time ${isNext ? 'next' : isLast ? 'last' : 'normal'}">${slot.time}</div>
+            <div class="timeline-label">${slot.label}</div>
+            <div class="timeline-dot ${isNext ? 'next' : isLast ? 'last' : ''}"></div>
+          </div>
+        `;
+      }).join('');
+    }
 
-        // Próximos a publicar
-        const nextHtml = (data.nextToPublish || []).map(v => `
-          <tr>
-            <td>${v.filename}</td>
-            <td><span class="platform-badge ${v.platform}">${v.platform}</span></td>
-            <td>${v.scheduledAt || '--'}</td>
-            <td>${(v.priority || 0).toFixed(2)}</td>
-          </tr>
-        `).join('') || '<tr><td colspan="4" style="text-align:center;color:#666">Nenhum vídeo agendado</td></tr>';
-        document.getElementById('nextToPublish').innerHTML = nextHtml;
-
-        // Fila
-        const queueHtml = (data.queue || []).slice(0, 10).map(v => `
-          <tr>
-            <td>${v.filename}</td>
-            <td>${v.category || '--'}</td>
-            <td>${(v.priority || 0).toFixed(2)}</td>
-          </tr>
-        `).join('') || '<tr><td colspan="3" style="text-align:center;color:#666">Nenhum vídeo na fila</td></tr>';
-        document.getElementById('queueList').innerHTML = queueHtml;
-
-        document.getElementById('lastUpdate').textContent = new Date().toLocaleString('pt-BR');
-        
-      } catch (e) {
-        updateStatus(false);
-        addLog('Erro ao conectar com o sistema - modo offline');
+    function renderQueue(queue) {
+      const q = document.getElementById('queueList');
+      if (!queue || queue.length === 0) {
+        q.innerHTML = '<div class="queue-item"><div class="queue-num">#0</div><div class="queue-name">Fila vazia</div></div>';
+        return;
       }
+      q.innerHTML = queue.slice(0, 8).map((v, i) => `
+        <div class="queue-item">
+          <div class="queue-num">#${i + 1}</div>
+          <div class="queue-name">${v.filename || 'Vídeo'}</div>
+        </div>
+      `).join('');
+    }
+
+    function updateStage(agentId, status, taskName, details) {
+      const screen = document.getElementById(`screen-${agentId}`);
+      const txt = document.getElementById(`txt-${agentId}`);
+      const badge = document.getElementById(`badge-${agentId}`);
       
-      // Buscar informações do último e próximo post
-      await fetchPostInfo();
+      txt.textContent = status;
+      badge.textContent = status === 'Processando' ? 'Executando' : status === 'Na fila' ? 'Aguardando' : 'Aguardando';
+      
+      screen.innerHTML = `
+        <div class="screen-line run">▶ ${taskName}</div>
+        <div class="screen-line dim">${details}</div>
+      `;
     }
 
-    addLog('Dashboard iniciado');
-    fetchData();
-    setInterval(fetchData, 5000);
+    function log(who, msg) {
+      const l = document.getElementById('log');
+      const t = new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+      const item = document.createElement('div');
+      item.className = 'log-entry';
+      item.innerHTML = `<span class="log-time">${t}</span><span class="log-agent">${who}</span><span class="log-msg">${msg}</span>`;
+      l.insertBefore(item, l.firstChild);
+      if (l.children.length > 10) l.lastChild.remove();
+    }
 
-    const agentNames = {
-      thiago: 'Thiago - Orquestrador',
-      carla: 'Carla - Analista de Conteúdo',
-      marcos: 'Marcos - Gerente de Fila',
-      rafael: 'Rafael - Especialista em Programação',
-      juliana: 'Juliana - Guardião de Qualidade'
-    };
+    function refresh(data) {
+      const queue = data.queue || [];
+      const next = data.nextToPublish || [];
 
-    function contactAgent(agent) {
-      const message = prompt(`Enviar mensagem para ${agentNames[agent]}:`);
-      if (message) {
-        addLog(`📤 Mensagem para ${agentNames[agent]}: ${message}`);
-        fetch(`${API_URL}/api/message-agent`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ agent, message })
-        }).catch(e => addLog('⚠️ Sistema offline - mensagem não enviada'));
+      // Update metrics
+      document.getElementById('m-new').textContent = data.totalVideos || 0;
+      document.getElementById('m-queue').textContent = data.pendingVideos || 0;
+      document.getElementById('m-sched').textContent = data.scheduledVideos || 0;
+      document.getElementById('m-pub').textContent = data.publishedVideos || 0;
+      document.getElementById('s-new').textContent = data.totalVideos || 0;
+      document.getElementById('s-queue').textContent = data.pendingVideos || 0;
+      document.getElementById('s-sched').textContent = data.scheduledVideos || 0;
+      document.getElementById('s-today').textContent = data.publishedVideos || 0;
+
+      // Render queue
+      renderQueue(queue);
+
+      // Timeline
+      const nextSlot = next[0]?.scheduledAt?.substring(11, 16) || null;
+      const lastSlot = data.lastScheduled || null;
+      renderTimeline(nextSlot, lastSlot);
+
+      // Determine current processing stage
+      if (queue.length > 0) {
+        const currentItem = queue[0];
+        
+        if (currentItem.category) {
+          processingStage = 1; // Gerente
+          updateStage('analista', 'Processando', 'Classificando conteúdo', `Categoria: ${currentItem.category}`);
+        } else {
+          processingStage = 0; // Analista
+          updateStage('analista', 'Processando', 'Analisando vídeo', currentItem.filename?.slice(0, 20) || 'Vídeo');
+        }
+
+        // Check priority
+        if (currentItem.priority) {
+          updateStage('gerente', 'Na fila', 'Organizando prioridade', `Score: ${currentItem.priority.toFixed(2)}`);
+        } else {
+          updateStage('gerente', 'Aguardando', 'Aguardando classificação', 'Aguardando');
+        }
+      } else if (next.length > 0) {
+        processingStage = 2; // Programador
+        updateStage('analista', 'Aguardando', 'Aguardando vídeos', 'Pasta vazia');
+        updateStage('gerente', 'Aguardando', 'Fila vazia', 'Aguardando');
+        updateStage('programador', 'Processando', 'Definindo horário', `Próximo: ${next[0].scheduledAt?.slice(11, 16) || '--:--'}`);
+      } else {
+        processingStage = 0;
+        agents.forEach(a => {
+          updateStage(a.id, 'Aguardando', 'Aguardando', 'Sistema ocioso');
+        });
+      }
+
+      // Update remaining agents
+      agents.slice(2).forEach((a, i) => {
+        const idx = i + 2;
+        if (idx === processingStage) {
+          const taskNames = ['Definindo horário', 'Planejando distribuição', 'Agendando publicação', 'Analisando métricas'];
+          updateStage(a.id, 'Processando', taskNames[i] || 'Trabalhando', next[0]?.filename?.slice(0, 15) || 'Aguardando');
+        } else if (idx === processingStage + 1) {
+          updateStage(a.id, 'Na fila', 'Aguardando', 'Na fila de processamento');
+        } else {
+          updateStage(a.id, 'Aguardando', 'Aguardando', 'Aguardando');
+        }
+      });
+
+      // Update video card if exists
+      const card = document.getElementById('videoCard');
+      const cardTitle = document.getElementById('cardTitle');
+      const cardStatus = document.getElementById('cardStatus');
+      if (card && queue[0]) {
+        cardTitle.textContent = queue[0].filename?.slice(0, 15) || 'Vídeo';
+        cardStatus.textContent = agents[processingStage]?.task || 'Processando';
+      }
+
+      // Log new items
+      if (queue.length > lastQueueLen && lastQueueLen === 0) {
+        log('Sistema', `Novo vídeo detectado: ${queue[0]?.filename || 'vídeo'}`);
+      }
+      lastQueueLen = queue.length;
+
+      // Update flow particles
+      for (let i = 0; i < agents.length - 1; i++) {
+        const flow = document.getElementById(`flow-${i}`);
+        if (flow) {
+          flow.className = `flow-particle ${i < processingStage ? '' : i === processingStage ? '' : 'paused'}`;
+        }
+      }
+
+      document.getElementById('connDot').className = 'conn-dot';
+      document.getElementById('connText').textContent = 'Online';
+      document.getElementById('lastUpd').textContent = `Atualizado: ${new Date().toLocaleTimeString('pt-BR')}`;
+    }
+
+    async function fetch() {
+      try {
+        const r = await fetch(`${API}/api/status`);
+        const d = await r.json();
+        refresh(d);
+      } catch (e) {
+        document.getElementById('connDot').className = 'conn-dot off';
+        document.getElementById('connText').textContent = 'Offline';
       }
     }
 
-    function notifyBoss() {
-      const message = prompt('Mensagem para Lucas (Boss):');
-      if (message) {
-        addLog(`📢 MENSAGEM PARA LUCAS: ${message}`);
-        alert('Mensagem enviada para Lucas!');
-      }
+    function msgBoss() {
+      const m = prompt('Msg para Lucas:');
+      if (m) log('LUCAS', m);
     }
+
+    renderPipeline();
+    renderTimeline(null, null);
+    fetch();
+    setInterval(fetch, 3500);
+    setTimeout(() => { log('Carla', 'Monitorando pasta'); log('Marcos', 'Pronto para processar'); }, 500);
   </script>
 </body>
 </html>
