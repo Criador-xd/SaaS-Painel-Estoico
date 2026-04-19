@@ -77,9 +77,6 @@ class SupabaseClient {
     }
   }
 
-  // USER_ID CORRETO DO SAAS (Vida de Milionário)
-  const SYSTEM_USER_ID = 'ca424590-39cc-4e47-a5fc-a0b72fdcf131';
-
   // Criar/agendar vídeo na plataforma Sparkle
   async scheduleVideo(videoData) {
     if (!this.isConnected()) {
@@ -87,12 +84,14 @@ class SupabaseClient {
       return { offline: true, ...videoData };
     }
 
+    const systemUserId = 'ca424590-39cc-4e47-a5fc-a0b72fdcf131';
+
     try {
       // 1. Criar publicação na tabela publications
       const { data: publication, error: pubError } = await this.client
         .from('publications')
         .insert({
-          user_id: SYSTEM_USER_ID,
+          user_id: systemUserId,
           title: videoData.filename.replace('.mp4', ''),
           caption: videoData.scheduleReason || 'Agendado via Marketing Automation',
           scheduled_for: videoData.scheduledAt,
@@ -171,6 +170,31 @@ class SupabaseClient {
     } catch (error) {
       console.error('Erro ao buscar estatísticas:', error.message);
       return { error: error.message };
+    }
+  }
+
+  // Obter data do último vídeo publicado
+  async getLastPublishedDate() {
+    if (!this.isConnected()) return null;
+
+    try {
+      const { data, error } = await this.client
+        .from('publications')
+        .select('scheduled_for')
+        .eq('user_id', this.userId || 'ca424590-39cc-4e47-a5fc-a0b72fdcf131')
+        .eq('overall_status', 'publicado')
+        .not('scheduled_for', 'is', null)
+        .order('scheduled_for', { ascending: false })
+        .limit(1)
+        .single();
+
+      if (error) throw error;
+      return data ? new Date(data.scheduled_for) : null;
+    } catch (error) {
+      if (error.code !== 'PGRST116') {
+        console.error('Erro ao buscar último vídeo:', error.message);
+      }
+      return null;
     }
   }
 

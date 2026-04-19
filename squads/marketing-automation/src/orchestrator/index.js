@@ -1,23 +1,62 @@
 /**
  * ORQUESTRADOR - Coordena todo o pipeline de automação
  * Workflow: Detectar vídeo → Gerar conteúdo → Criar rascunho → Aprovar → Agendar
+ * 
+ * EQUIPE DE AGENTES:
+ * - 🧠 DONO (Boss): Lucas - O chefão que recebe os relatórios
+ * - 🎬 Analista de Conteúdo: MARINA - Classifica vídeos
+ * - 📋 Gerente de Fila: RODRIGO - Gerencia prioridade
+ * - 📅 Especialista em Programação: BRUNO - Define horários
+ * - 📱 Estrategista de Plataforma: CAROL - Adapta para cada plataforma
+ * - 📆 Coordenador de Calendário: PEDRO - Consolida calendário
+ * - 🔍 Guardião de Qualidade: LUANA - Valida publicações
+ * - 📊 Analista de Performance: GUSTAVO - Monitora resultados
  */
 const path = require('path');
 const fs = require('fs-extra');
 const cron = require('node-cron');
 
+// Agentes nomeados
+const AGENTS = {
+  BOSS: { name: 'Lucas', role: 'DONO', emoji: '👑' },
+  ANALISTA: { name: 'Marina', role: 'Analista de Conteúdo', emoji: '🎬' },
+  GERENTE: { name: 'Rodrigo', role: 'Gerente de Fila', emoji: '📋' },
+  ESPECIALISTA: { name: 'Bruno', role: 'Especialista em Programação', emoji: '📅' },
+  ESTRATEGISTA: { name: 'Carol', role: 'Estrategista de Plataforma', emoji: '📱' },
+  COORDENADOR: { name: 'Pedro', role: 'Coordenador de Calendário', emoji: '📆' },
+  GUARDIAO: { name: 'Luana', role: 'Guardião de Qualidade', emoji: '🔍' },
+  ANALISTA_PERF: { name: 'Gustavo', role: 'Analista de Performance', emoji: '📊' }
+};
+
 class Orchestrator {
-  constructor(config, watcher, publisher) {
+  constructor(config, watcher, publisher, supabase) {
     this.config = config;
     this.watcher = watcher;
     this.publisher = publisher;
+    this.supabase = supabase;
     this.isRunning = false;
     this.cronJobs = [];
   }
 
+  // Reportar ao boss (Lucas)
+  reportToBoss(message, agent = null) {
+    if (agent) {
+      console.log(`\n${agent.emoji} ${agent.name} (${agent.role}) → 👑 Lucas: ${message}`);
+    } else {
+      console.log(`\n👑 DONO LUCAS: ${message}`);
+    }
+  }
+
   // Iniciar o orchestrador
   async start() {
-    console.log('🎯 Starting Marketing Automation Orchestrator...');
+    console.log('\n========================================');
+    console.log('🎯 EQUIPE DE MARKETING AUTOMATION');
+    console.log('========================================');
+    console.log(`${AGENTS.BOSS.emoji} Chefe: ${AGENTS.BOSS.name}`);
+    console.log(`${AGENTS.ESPECIALISTA.emoji} ${AGENTS.ESPECIALISTA.name} - ${AGENTS.ESPECIALISTA.role}`);
+    console.log(`${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} - ${AGENTS.GUARDIAO.role}`);
+    console.log('========================================\n');
+
     this.isRunning = true;
 
     // Inicializar publisher
@@ -32,6 +71,7 @@ class Orchestrator {
     // Executar pipeline inicial
     await this.runPipeline();
 
+    this.reportToBoss('Sistema iniciado e rodando! ✅');
     console.log('✅ Orchestrator iniciado e rodando');
   }
 
@@ -89,23 +129,39 @@ class Orchestrator {
         return;
       }
 
-      // 2. Obter programação existente para evitar conflito de horários
+// 2. Obter programming existente para evitar conflito de horários
       const existingSchedule = await this.publisher.getExistingSchedule();
       console.log(`📅 Já agendados: ${existingSchedule.length}`);
 
-      // 3. Processar cada vídeo: criar rascunho → aprovar → agendar
+      // 3. Buscar a data do último vídeo publicado para continuar a partir dele
+      let lastPublishedDate = null;
+      if (this.supabase && this.supabase.getLastPublishedDate) {
+        lastPublishedDate = await this.supabase.getLastPublishedDate();
+        if (lastPublishedDate) {
+          console.log(`📅 Último vídeo publicado: ${lastPublishedDate.toLocaleString('pt-BR')}`);
+          this.reportToBoss(`Último vídeo encontrado no banco: ${lastPublishedDate.toLocaleDateString('pt-BR')}`, AGENTS.ESPECIALISTA);
+        }
+      }
+
+      // 4. Processar cada vídeo: criar rascunho → aprovar → agendar
       for (const video of pendingVideos.slice(0, 4)) { // Máximo 4 por execução
-        console.log(`\n🎬 Processando: ${video.filename}`);
+        console.log(`\n🎬 ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} processando: ${video.filename}`);
         
-        const result = await this.publisher.publishVideo(video, existingSchedule);
+        const result = await this.publisher.publishVideo(video, existingSchedule, lastPublishedDate);
         
         if (result.success) {
-          console.log(`   ✅ Título: ${result.title}`);
+          console.log(`   ${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} aprovou: ${result.title}`);
           console.log(`   📅 Agendado: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}`);
           console.log(`   ⏰ Slot: ${result.slotName}`);
           
+          // Reportar ao boss
+          this.reportToBoss(`Novo vídeo agendado!\n   📺 Título: ${result.title}\n   📅 Data: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}\n   ⏰ Horário: ${result.slotName}`, AGENTS.ESPECIALISTA);
+          
           // Marcar como processado
           await this.watcher.markAsProcessed(video.id);
+          
+          // Atualizar lastPublishedDate para o próximo vídeo
+          lastPublishedDate = new Date(result.scheduledFor);
           
           // Adicionar ao schedule existente para evitar conflito
           existingSchedule.push({

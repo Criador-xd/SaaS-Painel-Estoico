@@ -24,10 +24,10 @@ class Scheduler {
   }
 
   // Encontrar próximo slot disponível
-  findNextSlot(existingSchedule) {
-    const now = new Date();
+  async findNextSlot(existingSchedule, lastPublishedDate = null) {
+    const baseDate = lastPublishedDate || new Date();
     // Ajustar para São Paulo (UTC-3)
-    const saoPauloTime = new Date(now.getTime() - (3 * 60 * 60 * 1000));
+    const saoPauloTime = new Date(baseDate.getTime() - (3 * 60 * 60 * 1000));
     
     // Procurar nos próximos 7 dias
     for (let dayOffset = 0; dayOffset < 7; dayOffset++) {

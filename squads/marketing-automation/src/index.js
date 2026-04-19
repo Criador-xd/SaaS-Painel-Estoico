@@ -29,6 +29,7 @@ try {
 const VideoWatcher = require('./watcher');
 const Publisher = require('./publisher');
 const Orchestrator = require('./orchestrator');
+const SupabaseClient = require('./supabase');
 const { server: dashboardServer, addLog } = require('./server');
 
 // Inicializar componentes
@@ -39,7 +40,9 @@ const watcher = new VideoWatcher({
 
 const publisher = new Publisher(config);
 
-const orchestrator = new Orchestrator(config, watcher, publisher);
+const supabase = new SupabaseClient(config.SUPABASE_URL, config.SUPABASE_SERVICE_KEY);
+
+const orchestrator = new Orchestrator(config, watcher, publisher, supabase);
 
 // Função principal
 async function main() {
