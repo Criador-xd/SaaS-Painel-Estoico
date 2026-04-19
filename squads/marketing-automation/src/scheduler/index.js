@@ -28,19 +28,15 @@ class Scheduler {
 
   // Encontrar próximo slot após o último agendamento
   findNextSlot(lastScheduledDate, existingSchedule = []) {
-    // Converter para São Paulo (UTC-3)
-    const toSaoPaulo = (date) => {
-      return new Date(date.getTime() - (3 * 60 * 60 * 1000));
-    };
-
-    const now = toSaoPaulo(new Date());
+    // O banco já armazena em UTC-3 (São Paulo), não precisa converter
+    const now = new Date(new Date().getTime() - (3 * 60 * 60 * 1000));
 
     // Se não tem último agendamento, usar data atual
-    let baseDate = lastScheduledDate ? toSaoPaulo(lastScheduledDate) : now;
+    let baseDate = lastScheduledDate ? new Date(lastScheduledDate) : new Date(now);
     
     // Se a base for no passado, usar agora
     if (baseDate < now) {
-      baseDate = now;
+      baseDate = new Date(now);
     }
 
     // Determinar o próximo slot baseado no último horário
@@ -50,24 +46,24 @@ class Scheduler {
     if (lastScheduledDate) {
       const lastHour = baseDate.getHours();
       
-      // Se último foi às 22h ou mais, próximo é 3h do dia seguinte
+      // Se último foi 22h ou mais, próximo é 3h (índice 3)
       if (lastHour >= 22) {
-        nextSlotIndex = 3; // Madrugada
-        dayOffset = 1; // Próximo dia
+        nextSlotIndex = 3; // Madrugada (3h) - Próximo after 22h
+        dayOffset = 1;
       } 
-      // Se último foi entre 14h e 22h, próximo é 22h
+      // Se último foi 14h ou mais, próximo é 22h (índice 2)
       else if (lastHour >= 14) {
-        nextSlotIndex = 2; // Noite
+        nextSlotIndex = 2; // Noite (22h) - Próximo after 14h
         dayOffset = 0;
       }
-      // Se último foi entre 10h e 14h, próximo é 14h
+      // Se último foi 10h ou mais, próximo é 14h (índice 1)
       else if (lastHour >= 10) {
-        nextSlotIndex = 1; // Tarde
+        nextSlotIndex = 1; // Tarde (14h) - Próximo after 10h
         dayOffset = 0;
       }
-      // Se último foi antes das 10h (ou 3h), próximo é 10h
+      // Se último foi antes das 10h, próximo é 10h (índice 0)
       else {
-        nextSlotIndex = 0; // Manhã
+        nextSlotIndex = 0; // Manhã (10h)
         dayOffset = 0;
       }
     }
@@ -98,7 +94,7 @@ class Scheduler {
         // Verificar se já está ocupado no schedule existente
         const isOccupied = existingSchedule.some(s => {
           if (!s.scheduled_for) return false;
-          const sDate = toSaoPaulo(new Date(s.scheduled_for));
+          const sDate = new Date(s.scheduled_for);
           return sDate.getTime() === slotDate.getTime();
         });
         
@@ -124,86 +120,6 @@ class Scheduler {
     };
   }
 
-  // Encontrar próximo slot após o último agendamento
-  findNextSlot(lastScheduledDate, existingSchedule = []) {
-    // Converter para São Paulo (UTC-3)
-    const toSaoPaulo = (date) => {
-      return new Date(date.getTime() - (3 * 60 * 60 * 1000));
-    };
-
-    // Se não tem último agendamento, usar data atual
-    let baseDate = lastScheduledDate ? toSaoPaulo(lastScheduledDate) : toSaoPaulo(new Date());
-    
-    // Se a base for no passado, usar agora
-    const now = toSaoPaulo(new Date());
-    if (baseDate < now) {
-      baseDate = now;
-    }
-
-    // Procurar próximo slot livre
-    for (let dayOffset = 0; dayOffset < 14; dayOffset++) {
-      const candidateDate = new Date(baseDate);
-      candidateDate.setDate(candidateDate.getDate() + dayOffset);
-      
-      const dayOfWeek = candidateDate.getDay();
-      if (!this.postDays.includes(dayOfWeek)) continue;
-
-      // Encontrar índice do último slot usado
-      let startIndex = 0;
-      if (lastScheduledDate && dayOffset === 0) {
-        const lastHour = baseDate.getHours();
-        for (let i = 0; i < this.postSlots.length; i++) {
-          if (this.postSlots[i].hour <= lastHour) {
-            startIndex = i + 1;
-          }
-        }
-      }
-
-      // Tentar cada slot a partir do início
-      for (let i = 0; i < this.postSlots.length; i++) {
-        const slotIndex = (startIndex + i) % this.postSlots.length;
-        const slot = this.postSlots[slotIndex];
-        
-        const slotDate = new Date(candidateDate);
-        slotDate.setHours(slot.hour, 0, 0, 0);
-        
-        // Se o slot for no passado hoje, pular
-        if (slotDate <= now && dayOffset === 0) continue;
-        
-        // Verificar se já está ocupado no schedule existente
-        const isOccupied = existingSchedule.some(s => {
-          if (!s.scheduled_for) return false;
-          const sDate = toSaoPaulo(new Date(s.scheduled_for));
-          return sDate.getTime() === slotDate.getTime();
-        });
-        
-        if (!isOccupied) {
-          return {
-            datetime: slotDate,
-            slotName: slot.name,
-            hour: slot.hour
-          };
-        }
-        
-        // Se reachou o final da lista, começar do início no próximo dia
-        if (slotIndex === this.postSlots.length - 1) {
-          startIndex = 0;
-        }
-      }
-    }
-
-    // Fallback: retornar 3h do próximo dia
-    const fallback = toSaoPaulo(new Date());
-    fallback.setDate(fallback.getDate() + 1);
-    fallback.setHours(3, 0, 0, 0);
-    
-    return {
-      datetime: fallback,
-      slotName: 'Madrugada',
-      hour: 3
-    };
-  }
-
   // Processar fila de vídeos
   async processQueue(queueFolder) {
     const queueFiles = await fs.readdir(queueFolder).catch(() => []);
@@ -219,42 +135,6 @@ class Scheduler {
     }
 
     return videos.sort((a, b) => b.priority - a.priority);
-  }
-
-  // Criar programação completa para os vídeos
-  createSchedule(videos, existingSchedule = []) {
-    const scheduled = [];
-    const today = new Date();
-    
-    // Filtrar schedule existente para próximos 7 dias
-    const upcomingSchedule = existingSchedule.filter(s => {
-      const d = new Date(s.scheduled_for);
-      const diff = 7 * 24 * 60 * 60 * 1000;
-      return (today.getTime() - d.getTime()) < diff;
-    });
-
-    let count = 0;
-    
-    for (const video of videos) {
-      if (count >= this.maxPerDay) break;
-      if (scheduled.length >= this.maxPerWeek) break;
-
-      // Encontrar próximo slot disponível
-      const nextSlot = this.findNextSlot([...upcomingSchedule, ...scheduled]);
-      
-      const scheduledVideo = {
-        ...video,
-        scheduled_for: nextSlot.datetime.toISOString(),
-        platform: 'both',
-        slotName: nextSlot.slotName,
-        hour: nextSlot.hour
-      };
-      
-      scheduled.push(scheduledVideo);
-      count++;
-    }
-
-    return scheduled;
   }
 
   // Calcular prioridade baseada no vídeo

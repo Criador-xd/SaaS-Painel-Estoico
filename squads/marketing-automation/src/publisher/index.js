@@ -125,10 +125,10 @@ class Publisher {
   }
 
   // Agendar publicação para o próximo slot disponível
-  async schedulePublication(publicationId, existingSchedule, lastPublishedDate = null) {
+  async schedulePublication(publicationId, existingSchedule, lastScheduledDate = null) {
     try {
       // Encontrar próximo slot (usando a data do último vídeo agendado)
-      const nextSlot = this.scheduler.findNextSlot(lastPublishedDate, existingSchedule);
+      const nextSlot = this.scheduler.findNextSlot(lastScheduledDate, existingSchedule);
       
       console.log(`   📅 Agendando para: ${nextSlot.datetime.toLocaleString('pt-BR')}`);
 
