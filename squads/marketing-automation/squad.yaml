@@ -1,160 +1,19 @@
-# Squad: Marketing Automation (Autonomous Social Media Team)
+squad:
+  code: "marketing-automation"
+  name: "Marketing Automation"
+  description: "Sistema autônomo de marketing para YouTube e Instagram com equipe de agentes."
+  icon: "🎬"
 
-## Visão Geral
-Sistema autônomo de marketing que opera como um time de gerentes de mídias sociais, decidindo o que, quando e onde publicar no YouTube e Instagram.
+agents:
+  - orchestrator
+  - analista
+  - gerente
+  - especialista
+  - guardiao
 
-## Versão
-v1.0 - MVP (Baseada em Regras)
-
-## Domínio
-automation
-
-## Empresa
-Vida de Milionário (vidademilionarrio)
-
-## Objetivo
-Automatizar completamente a programação de vídeos do computador local para YouTube e Instagram através da plataforma existente, operando como um time autônomo de marketing que decide prioridades, horários e estratégias.
-
----
-
-## Arquitetura
-
-### Orquestrador Central
-Responsável por coordenar todos os agentes, garantir fluxo contínuo e tomar decisões de alto nível.
-
-### Agentes
-
-1. **Analista de Conteúdo**
-   - Responsabilidade: Classificar vídeos por tema, validar qualidade, definir categoria
-   - Input: Vídeos da pasta de origem
-   - Output: Vídeos classificados com tags e categorias
-
-2. **Gerente de Fila**
-   - Responsabilidade: Decidir quais vídeos entram na fila e definir prioridade
-   - Input: Vídeos classificados
-   - Output: Fila priorizada de publicação
-
-3. **Especialista em Programação**
-   - Responsabilidade: Definir melhor dia e horário para cada publicação
-   - Input: Fila priorizada + calendário
-   - Output: Schedule com data/hora definida
-
-4. **Estrategista de Plataforma**
-   - Responsabilidade: Adaptar estratégia para YouTube vs Instagram
-   - Input: Vídeo + plataforma alvo
-   - Output: Estratégia de publicação por plataforma
-
-5. **Coordenador de Calendário**
-   - Responsabilidade: Organizar calendário editorial, evitar conflitos
-   - Input: Schedule proposto
-   - Output: Calendário editorial consolidado
-
-6. **Analista de Performance**
-   - Responsabilidade: Monitorar resultados, sugerir melhorias
-   - Input: Dados de publicações anteriores
-   - Output: Relatórios e ajustes recomendados
-
-7. **Guardião de Qualidade**
-   - Responsabilidade: Evitar repetição, validar consistência de marca
-   - Input: Próxima publicação
-   - Output: Aprovação ou rejeição com justificativa
-
-### Pipeline
-
-```
-[Pasta de Origem]
-       ↓
-[Analista de Conteúdo] → [Gerente de Fila] → [Especialista em Programação]
-       ↓                                                   ↓
-[Guardião de Qualidade] ← [Coordenador de Calendário] ← [Estrategista de Plataforma]
-       ↓
-[Publisher] → [Analista de Feedback]
-       ↓
-[Repetir ciclo]
-```
-
----
-
-## Regras de Negócio
-
-### Programação
-- **Limite diário:** 4 vídeos por dia
-- **Limite semanal:** 28 vídeos por semana
-- **Frequência:** Postamos todo dia
-- **Espaçamento mínimo:** Definido por plataforma
-- **Horário de pico:** Priorizar horários de maior engajamento
-- **Balanceamento:** Sempre postar nas duas plataformas
-
-### Balanceamento por Tipo
-- Vídeos principais → YouTube + Instagram
-- Stories/Carrossel → Apenas Instagram
-
-### Regras de Bloqueio
-- Evitar eventos importantes
-- Evitar horários críticos
-- Evitar crises de marca
-
-### Priorização (Score)
-Cada vídeo recebe pontuação baseada em:
-- Urgência (tempo desde criação)
-- Qualidade (avaliação técnica)
-- Relevância (tendência do tema)
-- Novidade (diferenciação do existente)
-
----
-
-## Configurações
-
-### Plataformas
-- YouTube (Shorts)
-- Instagram (Reels, Stories, Carrossel)
-
-### Meta de Publicação
-- 4 vídeos/dia
-- 28 vídeos/semana
-- Postar todos os dias
-
-### Modo
-- Automático autônomo
-- Alertas para exceções
-
----
-
-## Estrutura de Diretórios
-
-```
-squads/marketing-automation/
-├── planejamento-estrategico.md
-├── agents/
-│   ├── orquestrador.agent.md
-│   ├── analista-conteudo.agent.md
-│   ├── gerente-fila.agent.md
-│   ├── especialista-programacao.agent.md
-│   ├── estrategista-plataforma.agent.md
-│   ├── coordenador-calendario.agent.md
-│   ├── analista-performance.agent.md
-│   └── guardiao-qualidade.agent.md
-├── pipeline/
-│   └── steps.yaml
-└── _memory/
-    └── memories.md
-```
-
----
-
-## Evolução do Sistema
-
-### Versão 1.0 - MVP (Atual)
-- Regras simples
-- Automação básica
-- Programação fixa
-
-### Versão 1.5 - Intermediária
-- Sistema de pontuação
-- Calendário inteligente
-- Priorização dinâmica
-
-### Versão 2.0 - Avançada
-- Uso de inteligência artificial
-- Aprendizado com dados
-- Otimização automática
+pipeline:
+  - Detectar vídeo novo
+  - Gerar conteúdo
+  - Criar rascunho
+  - Aprovar publicação
+  - Agendar para próximo slot

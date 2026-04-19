@@ -1,7 +1,17 @@
-# Squad: Vida de Milionário Automática
-code: "insta-vidademilionarrio-auto"
-name: "Vida de Milionário Automática"
-description: "Produção e postagem automatizada de conteúdo de elite para Instagram."
+squad:
+  code: "insta-vidademilionarrio-auto"
+  name: "Vida de Milionário Automática"
+  description: "Produção e postagem automatizada de conteúdo de elite para Instagram."
+  icon: "📸"
+
+agents:
+  - researcher
+  - strategist
+  - copywriter
+  - designer
+  - generator
+  - reviewer
+  - poster
 
 skills:
   - web_search
