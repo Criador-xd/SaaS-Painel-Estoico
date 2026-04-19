@@ -68,8 +68,21 @@ async function main() {
   console.log(`   • Vídeos pendentes: ${status.pendingVideos}`);
 
   console.log('\n🌐 Dashboard: http://localhost:3000');
+  console.log('🚀 Abrindo dashboard automaticamente...');
+
+  // Abrir dashboard automaticamente no navegador padrão
+  const { exec } = require('child_process');
+  exec('start http://localhost:3000', (error) => {
+    if (error) {
+      console.log('⚠️  Não foi possível abrir o dashboard automaticamente');
+      console.log('    Acesse manualmente: http://localhost:3000');
+    } else {
+      console.log('✅ Dashboard aberto com sucesso!');
+    }
+  });
+
   console.log('⏰ Sistema rodando... Pressione Ctrl+C para parar.');
-  
+
   addLog('Sistema iniciado');
 }
 

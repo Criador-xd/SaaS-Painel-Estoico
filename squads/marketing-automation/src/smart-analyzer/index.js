@@ -95,26 +95,31 @@ class SmartAnalyzer {
 
   async analyze(videoPath) {
     const filename = path.basename(videoPath, path.extname(videoPath));
-    
+
     // 1. Extrair contexto do nome do arquivo
     const filenameAnalysis = this.analyzeFilename(filename);
-    
+
     // 2. Buscar transcript ou contexto
     const context = await this.findContext(videoPath);
-    
+
     // 3. Detectar nicho/tema principal
     const theme = this.detectTheme(filenameAnalysis, context);
-    
+
     // 4. Extrair keywords do conteúdo
     const keywords = this.extractKeywords(filenameAnalysis, context);
-    
+
+    // 5. Evitar repetição analisando conteúdo real vs nome do arquivo
+    const contentAnalysis = this.analyzeContentRepetitionRisk(filenameAnalysis, context);
+
     return {
       filename,
       originalName: filename,
       theme,
       keywords,
       context,
-      confidence: this.calculateConfidence(theme, keywords)
+      confidence: this.calculateConfidence(theme, keywords),
+      repetitionRisk: contentAnalysis.risk,
+      suggestedVariations: contentAnalysis.variations
     };
   }
 
@@ -229,6 +234,151 @@ class SmartAnalyzer {
     if (keywords.length >= 5 && theme !== 'sucesso') return 'high';
     if (keywords.length >= 3) return 'medium';
     return 'low';
+  }
+
+  // Analisar risco de repetição entre nome do arquivo e conteúdo real
+  analyzeContentRepetitionRisk(filenameAnalysis, context) {
+    const filenameWords = new Set(filenameAnalysis.words.map(w => w.toLowerCase()));
+    let contextWords = new Set();
+
+    // Extrair palavras do contexto
+    if (context.transcript) {
+      const transcriptWords = context.transcript.toLowerCase()
+        .replace(/[^\w\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .split(' ');
+
+      // Filtrar stop words e palavras muito curtas
+      const stopWords = ['se', 'alguem', 'ninguem', 'eu', 'tambem', 'consigo', 'serei', 'primeiro', 'que', 'o', 'a', 'de', 'da', 'do', 'em', 'um', 'uma', 'para', 'com', 'nao', 'e', 'os', 'as', 'me', 'te', 'lhe', 'nos', 'vos', 'e', 'foi', 'ser', 'tem', 'por', 'mais', 'como', 'mas', 'sao', 'sua', 'esse', 'essa', 'isso', 'ele', 'ela', 'esta', 'estao', 'voce', 'nos', 'voces', 'meu', 'teu', 'seu', 'nosso', 'vosso', 'minha', 'tua', 'sua', 'nossa', 'vossa'];
+
+      contextWords = new Set(transcriptWords.filter(w =>
+        w.length > 3 &&
+        !stopWords.includes(w)
+      ));
+    }
+
+    // Se temos descrição no JSON
+    if (context.description) {
+      const descWords = context.description.toLowerCase()
+        .replace(/[^\w\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .split(' ');
+
+      const stopWords = ['se', 'alguem', 'ninguem', 'eu', 'tambem', 'consigo', 'serei', 'primeiro', 'que', 'o', 'a', 'de', 'da', 'do', 'em', 'um', 'uma', 'para', 'com', 'nao', 'e', 'os', 'as', 'me', 'te', 'lhe', 'nos', 'vos', 'e', 'foi', 'ser', 'tem', 'por', 'mais', 'como', 'mas', 'sao', 'sua', 'esse', 'essa', 'isso', 'ele', 'ela', 'esta', 'estao', 'voce', 'nos', 'voces', 'meu', 'teu', 'seu', 'nosso', 'vosso', 'minha', 'tua', 'sua', 'nossa', 'vossa'];
+
+      descWords.forEach(w => {
+        if (w.length > 3 && !stopWords.includes(w)) {
+          contextWords.add(w);
+        }
+      });
+    }
+
+    // Se temos keywords extraídas
+    if (context.keywords && Array.isArray(context.keywords)) {
+      context.keywords.forEach(k => {
+        if (typeof k === 'string' && k.length > 3) {
+          contextWords.add(k.toLowerCase());
+        }
+      });
+    }
+
+    // Calcular sobreposição
+    let overlapCount = 0;
+    filenameWords.forEach(word => {
+      if (contextWords.has(word)) {
+        overlapCount++;
+      }
+    });
+
+    const totalUnique = new Set([...filenameWords, ...contextWords]).size;
+    const overlapPercentage = totalUnique > 0 ? (overlapCount * 2) / (filenameWords.size + contextWords.size) * 100 : 0;
+
+    // Determinar nível de risco
+    let risk = 'low';
+    if (overlapPercentage > 70) {
+      risk = 'high';
+    } else if (overlapPercentage > 40) {
+      risk = 'medium';
+    }
+
+    // Sugerir variações se risco alto ou médio
+    let variations = [];
+    if (risk !== 'low') {
+      variations = this.generateContentVariations(filenameAnalysis, context);
+    }
+
+    return {
+      risk,
+      overlapPercentage,
+      variations
+    };
+  }
+
+  // Gerar variações de conteúdo para evitar repetições
+  generateContentVariations(filenameAnalysis, context) {
+    const variations = [];
+    const theme = this.detectTheme(filenameAnalysis, context);
+
+    // Variações de hook baseado no tema
+    const themeHooks = {
+      dinheiro: [
+        'O que 99% das pessoas erram sobre dinheiro',
+        'Por que você ainda não é rico (e como mudar isso)',
+        'O segredo dos milionários que ninguém revela',
+        'Como transformar sua relação com o dinheiro',
+        'Por que trabalhar duro não te deixa rico'
+      ],
+      sucesso: [
+        'O que realmente separa vencedores de perdedores',
+        'Por que seu plano de sucesso está falhando',
+        'O mindset que ninguém te ensina sobre conquistas',
+        'Como manter a motivação quando tudo dá errado',
+        'Por que o sucesso é mais sobre hábito do que talento'
+      ],
+      empresario: [
+        'Por que seu negócio não está crescendo (mesmo com esforço)',
+        'O erro fatal que empreendedores cometem no primeiro ano',
+        'Como validar sua ideia antes de investir um centavo',
+        'Por que copiar concorrentes está te deixando para trás',
+        'A métrica que nenhum empreendedor olha (mas deveria)'
+      ],
+      espiritual: [
+        'Por que suas orações parecem não ser respondidas',
+        'O que a fé realmente significa nos tempos difíceis',
+        'Como manter a esperança quando tudo parece perdido',
+        'Por que espiritualidade não é sobre ser perfeito',
+        'O que fazer quando você sente que Deus está distante'
+      ],
+      relacionamento: [
+        'Por que comunicação não é o que você pensa',
+        'O erro que casais cometem que destrói relacionamentos',
+        'Como amar alguém sem perder a si mesmo',
+        'Por que conflitos na verdade fortalecem relacionamentos',
+        'O que fazer quando você se sente sozinho no relacionamento'
+      ]
+    };
+
+    const hooks = themeHooks[theme] || themeHooks.sucesso;
+
+    // Gerar 3 variações de título
+    for (let i = 0; i < Math.min(3, hooks.length); i++) {
+      variations.push({
+        type: 'title',
+        content: hooks[i],
+        confidence: 'medium'
+      });
+    }
+
+    // Adicionar variação de abordagem
+    variations.push({
+      type: 'approach',
+      content: `Abordagem prática: 3 passos para aplicar isso hoje`,
+      confidence: 'high'
+    });
+
+    return variations;
   }
 
   // Gerar título otimizado para YouTube
