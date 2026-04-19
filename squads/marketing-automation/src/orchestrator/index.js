@@ -49,13 +49,16 @@ class Orchestrator {
 
   // Iniciar o orchestrador
   async start() {
-    console.log('\n========================================');
-    console.log('🎯 EQUIPE DE MARKETING AUTOMATION');
-    console.log('========================================');
-    console.log(`${AGENTS.BOSS.emoji} Chefe: ${AGENTS.BOSS.name}`);
-    console.log(`${AGENTS.ESPECIALISTA.emoji} ${AGENTS.ESPECIALISTA.name} - ${AGENTS.ESPECIALISTA.role}`);
-    console.log(`${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} - ${AGENTS.GUARDIAO.role}`);
-    console.log('========================================\n');
+    console.log('\n');
+    console.log('╔════════════════════════════════════════════════╗');
+    console.log('║        📋 EQUIPE DE MARKETING - OPEN SQUAD         ║');
+    console.log('╠════════════════════════════════════════════════╣');
+    console.log(`║ ${AGENTS.BOSS.emoji} DONO:        ${AGENTS.BOSS.name}                       ║`);
+    console.log(`║ ${AGENTS.ANALISTA.emoji} ANALISTA:   ${AGENTS.ANALISTA.name}                       ║`);
+    console.log(`║ ${AGENTS.GERENTE.emoji} GERENTE:    ${AGENTS.GERENTE.name}                       ║`);
+    console.log(`║ ${AGENTS.ESPECIALISTA.emoji} PROGRAMA:  ${AGENTS.ESPECIALISTA.name}                       ║`);
+    console.log(`║ ${AGENTS.GUARDIAO.emoji} GUARDIÃO:  ${AGENTS.GUARDIAO.name}                       ║`);
+    console.log('╚════════════════════════════════════════════════╝\n');
 
     this.isRunning = true;
 
@@ -71,7 +74,7 @@ class Orchestrator {
     // Executar pipeline inicial
     await this.runPipeline();
 
-    this.reportToBoss('Sistema iniciado e rodando! ✅');
+    this.reportToBoss('Sistema iniciado e rodando! ✅', AGENTS.ESPECIALISTA);
     console.log('✅ Orchestrator iniciado e rodando');
   }
 
@@ -147,17 +150,35 @@ class Orchestrator {
 
       // 4. Processar cada vídeo: criar rascunho → aprobar → agendar
       for (const video of pendingVideos.slice(0, 4)) { // Máximo 4 por execução
-        console.log(`\n🎬 ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} processando: ${video.filename}`);
+        console.log(`\n┌────────────────────────────────────────────`);
+        console.log(`│ ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} pegou vídeo: ${video.filename}`);
+        console.log(`└────────────────────────────────────────────`);
         
         const result = await this.publisher.publishVideo(video, existingSchedule, lastScheduledDate);
         
         if (result.success) {
-          console.log(`   ${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} aprovou: ${result.title}`);
-          console.log(`   📅 Agendado: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}`);
-          console.log(`   ⏰ Slot: ${result.slotName}`);
+          // Agente de conteúdo delivers
+          console.log(`   ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} →Gerou conteúdo`);
+          console.log(`      📺 Título: "${result.title}"`);
+          console.log(`      🏷️ Hashtags geradas`);
           
-          // Reportar ao boss
-          this.reportToBoss(`Novo vídeo agendado!\n   📺 Título: ${result.title}\n   📅 Data: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}\n   ⏰ Horário: ${result.slotName}`, AGENTS.ESPECIALISTA);
+          // Guardião aprova
+          console.log(`   ${AGENTS.GUARDIAO.emoji} ${AGENTS.GUARDIAO.name} →Revisou e aprovou`);
+          
+          // Especialista agenda
+          console.log(`   ${AGENTS.ESPECIALISTA.emoji} ${AGENTS.ESPECIALISTA.name} →Agendou`);
+          console.log(`      📅 Data: ${new Date(result.scheduledFor).toLocaleString('pt-BR')}`);
+          console.log(`      ⏰ Horário: ${result.slotName}`);
+          
+          // Reportar ao boss (entrega na mesa)
+          console.log(`\n   ╔══════════════════════════════════════════╗`);
+          console.log(`   ║ 📬 ENTREGA NA MESA DO BOSS ${AGENTS.BOSS.name}        ║`);
+          console.log(`   ╠══════════════════════════════════════════╣`);
+          console.log(`   ║ 📺 Título: ${result.title.substring(0, 30)}... ║`);
+          console.log(`   ║ 📅-Agende: ${new Date(result.scheduledFor).toLocaleDateString('pt-BR')}        ║`);
+          console.log(`   ║ ⏰-Slot: ${result.slotName}                   ║`);
+          console.log(`   ║ 📁 Vídeo: ${video.filename.substring(0, 20)}...     ║`);
+          console.log(`   ╚══════════════════════════════════════════╝\n`);
           
           // Marcar como processado
           await this.watcher.markAsProcessed(video.id);

@@ -10,6 +10,7 @@ class VideoWatcher {
   constructor(config) {
     this.watchFolder = config.WATCH_FOLDER;
     this.outputFolder = config.OUTPUT_FOLDER;
+    this.publishedFolder = config.PUBLISHED_FOLDER || path.join(config.WATCH_FOLDER, 'publicados');
     this.queue = [];
     this.processedFiles = new Set();
   }
@@ -205,6 +206,30 @@ class VideoWatcher {
         hashes: Array.from(this.processedFiles),
         lastUpdated: new Date().toISOString()
       }, { spaces: 2 });
+      
+      // Mover vídeo para pasta de publicados
+      await this.moveVideoToPublished(video);
+    }
+  }
+  
+  // Mover vídeo para pasta de publicados
+  async moveVideoToPublished(video) {
+    try {
+      const sourcePath = video.filepath || video.path;
+      const filename = video.filename;
+      const destFolder = this.publishedFolder;
+      
+      await fs.ensureDir(destFolder);
+      
+      const destPath = path.join(destFolder, filename);
+      
+      // Verificar se arquivo existe e mover
+      if (await fs.exists(sourcePath)) {
+        await fs.move(sourcePath, destPath);
+        console.log(`   📁 Movido para publicados: ${filename}`);
+      }
+    } catch (error) {
+      console.error(`   ⚠️ Erro ao mover vídeo: ${error.message}`);
     }
   }
 }
