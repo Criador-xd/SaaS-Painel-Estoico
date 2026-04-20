@@ -35,7 +35,8 @@ const { server: dashboardServer, addLog } = require('./server');
 // Inicializar componentes
 const watcher = new VideoWatcher({
   WATCH_FOLDER: config.WATCH_FOLDER || 'D:\\Videos Prontos projeto 2- ja postado',
-  OUTPUT_FOLDER: config.OUTPUT_FOLDER || path.join(__dirname, '..', '_output')
+  OUTPUT_FOLDER: config.OUTPUT_FOLDER || path.join(__dirname, '..', '_output'),
+  PUBLISHED_FOLDER: config.PUBLISHED_FOLDER
 });
 
 const publisher = new Publisher(config);

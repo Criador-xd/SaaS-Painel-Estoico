@@ -10,7 +10,7 @@ class VideoWatcher {
   constructor(config) {
     this.watchFolder = config.WATCH_FOLDER;
     this.outputFolder = config.OUTPUT_FOLDER;
-    this.publishedFolder = config.PUBLISHED_FOLDER || path.join(config.WATCH_FOLDER, 'publicados');
+    this.publishedFolder = config.PUBLISHED_FOLDER;
     this.queue = [];
     this.processedFiles = new Set();
   }
