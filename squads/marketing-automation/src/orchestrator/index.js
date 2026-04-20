@@ -149,7 +149,7 @@ class Orchestrator {
       }
 
       // 4. Processar cada vídeo: criar rascunho → aprobar → agendar
-      for (const video of pendingVideos.slice(0, 4)) { // Máximo 4 por execução
+      for (const video of pendingVideos) { // Processar todos os vídeos pendentes
         console.log(`\n┌────────────────────────────────────────────`);
         console.log(`│ ${AGENTS.ANALISTA.emoji} ${AGENTS.ANALISTA.name} pegou vídeo: ${video.filename}`);
         console.log(`└────────────────────────────────────────────`);
@@ -208,7 +208,14 @@ class Orchestrator {
     let pendingCount = 0;
     try {
       const files = await fs.readdir(queueFolder);
-      pendingCount = files.filter(f => f.endsWith('.json')).length;
+      for (const file of files) {
+        if (file.endsWith('.json')) {
+          const video = await fs.readJson(path.join(queueFolder, file));
+          if (video.status === 'pending') {
+            pendingCount++;
+          }
+        }
+      }
     } catch (e) {
       pendingCount = 0;
     }

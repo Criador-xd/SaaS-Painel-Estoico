@@ -31,11 +31,16 @@ class Scheduler {
     // O banco já armazena em UTC-3 (São Paulo), não precisa converter
     const now = new Date(new Date().getTime() - (3 * 60 * 60 * 1000));
 
-    // Se não tem último agendamento, usar data atual
-    let baseDate = lastScheduledDate ? new Date(lastScheduledDate) : new Date(now);
-    
-    // Se a base for no passado, usar agora
-    if (baseDate < now) {
+    // Se não tem último agendamento OU se é no passado, usar data atual como base
+    let baseDate;
+    if (lastScheduledDate) {
+      baseDate = new Date(lastScheduledDate);
+      // Se último agendamento é no passado, começar do próximo slot a partir de agora
+      if (baseDate < now) {
+        baseDate = new Date(now);
+        lastScheduledDate = null; // Ignorar para calcular a partir de agora
+      }
+    } else {
       baseDate = new Date(now);
     }
 
@@ -62,6 +67,30 @@ class Scheduler {
         dayOffset = 0;
       }
       // Se último foi antes das 10h, próximo é 10h (índice 0)
+      else {
+        nextSlotIndex = 0; // Manhã (10h)
+        dayOffset = 0;
+      }
+    } else {
+      // Sem agendamento anterior - determinar slot inicial baseado na hora atual
+      const currentHour = baseDate.getHours();
+      
+      // Se现在是 22h ou mais (até 23:59), próximo é Madrugada 3h
+      if (currentHour >= 22) {
+        nextSlotIndex = 3; // Madrugada (3h) - Próximo dia
+        dayOffset = 1;
+      }
+      // Se现在是 14h ou mais (até 21:59), próximo é Noite 22h
+      else if (currentHour >= 14) {
+        nextSlotIndex = 2; // Noite (22h) - Hoje ainda
+        dayOffset = 0;
+      }
+      // Se现在是 10h ou mais (até 13:59), próximo é Tarde 14h
+      else if (currentHour >= 10) {
+        nextSlotIndex = 1; // Tarde (14h) - Hoje ainda
+        dayOffset = 0;
+      }
+      // Caso contrário (0h-9:59), próximo é Manhã 10h
       else {
         nextSlotIndex = 0; // Manhã (10h)
         dayOffset = 0;

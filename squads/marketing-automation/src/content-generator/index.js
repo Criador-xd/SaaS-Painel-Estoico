@@ -12,9 +12,11 @@ class ContentGenerator {
   }
 
   async generateAllContent(videoPath) {
+    const originalName = path.basename(videoPath).replace(/\.(mp4|webm|mov)$/, '');
+    
     let videoInfo = {
       filename: path.basename(videoPath),
-      originalName: path.basename(videoPath).replace(/\.(mp4|webm|mov)$/, ''),
+      originalName: originalName,
       theme: 'sucesso',
       keywords: [],
       confidence: 'low'
@@ -26,6 +28,8 @@ class ContentGenerator {
       
       videoInfo = {
         ...videoInfo,
+        filename: analysis.filename,
+        originalName: analysis.originalName,
         theme: analysis.theme,
         keywords: analysis.keywords,
         confidence: analysis.confidence
@@ -61,6 +65,7 @@ class ContentGenerator {
       },
       
       metadata: {
+        originalName: videoInfo.originalName,
         theme: videoInfo.theme,
         keywords: videoInfo.keywords,
         confidence: videoInfo.confidence,

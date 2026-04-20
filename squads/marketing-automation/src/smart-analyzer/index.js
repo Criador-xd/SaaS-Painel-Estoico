@@ -105,8 +105,8 @@ class SmartAnalyzer {
     // 3. Detectar nicho/tema principal
     const theme = this.detectTheme(filenameAnalysis, context);
 
-    // 4. Extrair keywords do conteúdo
-    const keywords = this.extractKeywords(filenameAnalysis, context);
+    // 4. Extrair keywords do conteúdo - PRIORIZAR palavras do nome do arquivo
+    const keywords = this.extractKeywordsFromFilename(filenameAnalysis);
 
     // 5. Evitar repetição analisando conteúdo real vs nome do arquivo
     const contentAnalysis = this.analyzeContentRepetitionRisk(filenameAnalysis, context);
@@ -121,6 +121,24 @@ class SmartAnalyzer {
       repetitionRisk: contentAnalysis.risk,
       suggestedVariations: contentAnalysis.variations
     };
+  }
+
+  // Extrair keywords diretamente do nome do arquivo
+  extractKeywordsFromFilename(filenameAnalysis) {
+    const stopWords = [
+      'se', 'alguem', 'ninguem', 'eu', 'tambem', 'consigo', 'serei', 'primeiro',
+      'que', 'the', 'and', 'for', 'are', 'this', 'that', 'with', 'from',
+      '.mp4', '.mov', '.webm', '.avi', 'video', 'parte', 'part', ' Completo',
+      'completo', 'para', 'como', 'quando', 'onde', 'porque', 'assim', 'entao'
+    ];
+    
+    const words = filenameAnalysis.words.filter(w => 
+      w.length > 3 && 
+      !stopWords.includes(w.toLowerCase())
+    );
+    
+    // Retornar as palavras únicas do nome do arquivo
+    return [...new Set(words)].slice(0, 10);
   }
 
   analyzeFilename(filename) {
@@ -381,11 +399,19 @@ class SmartAnalyzer {
     return variations;
   }
 
-  // Gerar título otimizado para YouTube
+// Gerar título otimizado para YouTube
   generateYoutubeTitle(videoInfo) {
-    // Usar keywords do tema se as do vídeo não forem boas
-    let keyword = videoInfo.keywords[0];
-    if (!keyword || keyword.length < 4 || ['alquem', 'ninguem', 'tambem', 'consigo', 'serei'].includes(keyword)) {
+    // PRIORIZAR keywords extraídas do nome do arquivo
+    let keyword = videoInfo.keywords?.[0];
+    
+    // Se não tem keyword boa do vídeo, usar a primeira palavra do nome original
+    if (!keyword || keyword.length < 4) {
+      const originalWords = videoInfo.originalName?.split(/[\s_-]+/).filter(w => w.length > 3) || [];
+      keyword = originalWords[0] || null;
+    }
+    
+    // Se ainda não tem, usar tema
+    if (!keyword || ['alquem', 'ninguem', 'tambem', 'consigo', 'serei', 'video', 'parte'].includes(keyword.toLowerCase())) {
       const themeKeywords = {
         sucesso: ['Sucesso', 'Vitória', 'Determinação', 'Força', 'Coragem'],
         dinheiro: ['Dinheiro', 'Riqueza', 'Faturamento', 'Fortuna'],
@@ -414,8 +440,8 @@ class SmartAnalyzer {
     
     return `${emoji} ${title}`;
   }
-
-  // Gerar título para Instagram/Shorts
+    
+// Gerar título para Instagram/Shorts
   generateInstagramTitle(videoInfo) {
     let keyword = videoInfo.keywords[0];
     if (!keyword || keyword.length < 4 || ['alquem', 'ninguem', 'tambem', 'consigo', 'serei'].includes(keyword)) {
