@@ -1,0 +1,23 @@
+{
+  "skill_name": "social-carousel-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crie um carrossel sobre 'Como construir uma Mente Inabalável frente aos fracassos'. Use uma estética dark e estoica, focada no canal Mente Inabalável 360.",
+      "expected_output": "Planejamento completo com slides, prompts dark e estoicos, legenda com CTA",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Faça um carrossel sobre 'Os 5 hábitos de pessoas de alta performance'. Quero imagens que passem a ideia de luxo e disciplina.",
+      "expected_output": "Planejamento completo de 5 hábitos com imagens estilo Vida de Milionário",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Monte um planejamento para 'Por que a disciplina bate a motivação todos os dias'. O tom deve ser direto e focado em produtividade.",
+      "expected_output": "Planejamento direto e objetivo focado em disciplina vs motivação",
+      "files": []
+    }
+  ]
+}
