@@ -4,8 +4,13 @@ Este skill transforma o seu assistente em um especialista em copywriting viral p
 
 ## Como Usar
 
-Para ativar o skill, utilize uma das frases de ativação ou descreva o que você precisa:
+Para ativar o skill de forma ultra-rápida, use os atalhos:
 
+- `/viral [TEMA]`
+- `/copy [TEMA]`
+- `/post [TEMA]`
+
+Ou utilize as frases naturais:
 - "criar post viral sobre [TEMA]"
 - "gerar legenda instagram para [IDEIA]"
 - "copy para reels de [ASSUNTO]"

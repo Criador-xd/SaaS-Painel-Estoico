@@ -7,8 +7,11 @@ triggers:
   - "copy para reels"
   - "roteiro youtube shorts"
   - "legenda hibrida"
+  - "/viral"
+  - "/copy"
+  - "/post"
 author: Lucas
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Viral Copywriter Skill 🚀
