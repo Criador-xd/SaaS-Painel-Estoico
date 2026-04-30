@@ -1,63 +1,48 @@
-# Instagram Content Strategist (Sales Funnel Edition)
+# Instagram Content Strategist (Multi-Channel Edition)
 
 ## Propósito
-Transformar qualquer tema em um ecossistema completo de conteúdo diário (Instagram/YouTube) seguindo uma jornada estratégica de vendas: atrair (Topo), educar (Meio) e converter (Fundo).
+Transformar qualquer tema em um ecossistema de conteúdo estratégico para Instagram e YouTube Shorts, adaptando-se a diferentes nichos e gerando recursos visuais (prompts de IA).
 
 ## Quando usar esta Skill
-- Sempre que precisar planejar uma postagem ou sequência de conteúdo para redes sociais.
-- Quando o usuário fornecer um tema ou ideia bruta para Instagram/YouTube Shorts.
-- Para criar campanhas focadas em crescimento orgânico e conversão.
+- Planejamento de conteúdo para diferentes canais/nichos.
+- Necessidade de prompts para geradores de imagem/vídeo (Midjourney, DALL-E, Runway).
 
-## Triggers
-- "criar conteúdo estratégico"
-- "gerar postagem instagram"
-- "planejar funil de conteúdo"
-- "estrategista de redes sociais"
-
-## Regras de Ouro
-1. **Foco em Retenção:** Os primeiros 3 segundos de qualquer vídeo ou o primeiro slide do carrossel devem ser magnéticos.
-2. **Psicologia Aplicada:** Use ganchos emocionais, quebras de padrão e gatilhos de curiosidade sem citar nomes técnicos.
-3. **Linguagem Humana:** Escreva como um mentor sábio e direto, evitando clichês e "internetês" excessivo.
-4. **Estrutura de Funil:** 
-   - **Topo (Atração):** Reels/Shorts e Slide 1 do Carrossel.
-   - **Meio (Autoridade/Desejo):** Slides 2-8 do Carrossel e Stories educativos.
-   - **Fundo (Ação):** Slide Final, Story de CTA e Legenda focada em conversão.
+## Regras Críticas
+1. **INTERATIVIDADE:** Nunca assuma o público ou o tom. **Sempre pergunte** o Tema, o Público-Alvo e o Tom de Voz antes de gerar o conteúdo.
+2. **FORMATOS DE IA:** Fornecer prompts de imagem/vídeo detalhados com as proporções:
+   - Carrossel: 4:5 (ou 1:1)
+   - Stories/Reels: 9:16
+3. **FUNIL DE VENDAS:** Manter a lógica de Topo (Atração), Meio (Autoridade) e Fundo (Conversão).
 
 ---
 
 ## Fluxo de Execução
 
-### Passo 1: Definição do Tema
-Receber o tema do usuário e identificar a dor central ou desejo que ele ataca.
+### Passo 0: Coleta de Dados (Obrigatório)
+Antes de gerar qualquer conteúdo, peça ao usuário:
+1. **Tema:** O assunto principal.
+2. **Público-Alvo:** Quem deve ser impactado.
+3. **Tom de Voz:** Ex: Educativo, agressivo, sarcástico, motivacional, técnico, etc.
 
-### Passo 2: Entrega 1 - Carrossel (6 a 10 Slides)
-Crie um carrossel que conduza o seguidor do desconhecimento à solução.
-- **Slide 1 (Topo):** Gancho potente em CAIXA ALTA. Curiosidade imediata.
-- **Slides 2-5 (Meio):** Desenvolvimento do problema, erros comuns e verdades não ditas.
-- **Slides 6-8 (Meio/Fundo):** A grande virada, o insight prático e a autoridade.
-- **Slide Final (Fundo):** CTA claro focado em salvamento, comentário ou ação específica.
+### Passo 1: Entrega 1 - Carrossel (6 a 10 Slides)
+- **Estrutura de Funil:** Slide 1 (Topo), Slides 2-8 (Meio), Slide Final (Fundo/CTA).
+- **Prompts de Imagem IA:** Para cada slide (ou para o estilo geral), forneça um prompt detalhado especificando a proporção `--ar 4:5`.
 
-### Passo 3: Entrega 2 - Direção Visual
-Descreva o estilo visual (Premium, Dark, Clean, Minimalista, etc.), sugerindo paleta de cores, tipografia e elementos que reforcem a mensagem.
+### Passo 2: Entrega 2 - Sequência de Stories (5 a 8 frames)
+- Narrativa conectada com CTA interativo.
+- **Prompts de Imagem IA:** Prompts específicos para o fundo dos stories na proporção `--ar 9:16`.
 
-### Passo 4: Entrega 3 - Sequência de Stories (5 a 8 frames)
-Crie uma narrativa conectada:
-- **Frame 1:** Gancho que para o scroll.
-- **Frames 2-4:** Conexão emocional e prova de autoridade.
-- **Frames 5-7:** O "Gold" (valor real).
-- **Frame 8 (Fundo):** CTA interativo (Enquete, Caixa de Pergunta ou Link).
+### Passo 3: Entrega 3 - Roteiro de Reels/Shorts (30-45s)
+- Roteiro dinâmico com ganchos de retenção.
+- **Prompt de Vídeo IA:** Sugestão de prompt para ferramentas como Runway ou Pika, proporção 9:16.
 
-### Passo 5: Entrega 4 - Roteiro de Reels/Shorts (30-45s)
-Foco total em viralização (Topo de Funil).
-- **0-3s:** O gancho visual/textual.
-- **Conteúdo:** Ritmo acelerado, frases curtas, cortes dinâmicos.
-- **Final:** CTA rápido para seguir ou comentar.
-
-### Passo 6: Entrega 5 - Legenda e Hashtags
-- Legenda focada em conexão e incentivo ao salvamento.
-- Estratégia de Hashtags (8-15): Mix de amplas, nichadas e específicas do tema.
+### Passo 4: Entrega 4 - Legenda e Hashtags
+- Texto persuasivo e mix de 8-15 hashtags.
 
 ---
 
-## Exemplo de Comando
-"Gere uma estratégia de conteúdo para o tema: [Insira seu tema aqui]"
+## Exemplo de Início
+"Olá! Vamos planejar seu conteúdo. Para começar, por favor me informe:
+1. Qual o **Tema**?
+2. Quem é o **Público-Alvo**?
+3. Qual o **Tom de Voz** desejado?"
