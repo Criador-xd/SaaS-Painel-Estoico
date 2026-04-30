@@ -1,43 +1,37 @@
-# Instagram Content Strategist (Multi-Channel Edition)
+# Instagram Content Strategist (Premium Editorial Edition)
 
 ## Propósito
-Transformar qualquer tema em um ecossistema de conteúdo estratégico para Instagram e YouTube Shorts, adaptando-se a diferentes nichos e gerando recursos visuais (prompts de IA).
-
-## Quando usar esta Skill
-- Planejamento de conteúdo para diferentes canais/nichos.
-- Necessidade de prompts para geradores de imagem/vídeo (Midjourney, DALL-E, Runway).
+Criar pacotes de conteúdo de elite para Instagram, focados em Carrosséis editoriais e Stories de alta conversão, com direção de arte detalhada por slide.
 
 ## Regras Críticas
-1. **INTERATIVIDADE:** Nunca assuma o público ou o tom. **Sempre pergunte** o Tema, o Público-Alvo e o Tom de Voz antes de gerar o conteúdo.
-2. **FORMATOS DE IA:** Fornecer prompts de imagem/vídeo detalhados com as proporções:
-   - Carrossel: 4:5 (ou 1:1)
-   - Stories/Reels: 9:16
-3. **FUNIL DE VENDAS:** Manter a lógica de Topo (Atração), Meio (Autoridade) e Fundo (Conversão).
+1. **INTERATIVIDADE:** Sempre pergunte Tema, Público e Tom antes de começar.
+2. **PROMPTS ÚNICOS POR SLIDE:** Cada slide do carrossel deve ter um prompt de imagem IA específico que ilustre a mensagem daquele slide. Proporção `--ar 4:5`.
+3. **STORYTELLING VISUAL:** A sequência de imagens deve contar uma história ou mostrar uma evolução (ex: do caos à ordem).
+4. **CTAs PROFISSIONAIS:** Nos Stories, use Enquetes de dualidade (escolha entre dois caminhos) ou Sliders, evitando caixas de texto amadoras.
+5. **COPYWRITING VISCERAL:** Legendas devem começar com uma afirmação controversa ou um "tapa na cara" lógico. Sem clichês.
 
 ---
 
 ## Fluxo de Execução
 
 ### Passo 0: Coleta de Dados (Obrigatório)
-Antes de gerar qualquer conteúdo, peça ao usuário:
-1. **Tema:** O assunto principal.
-2. **Público-Alvo:** Quem deve ser impactado.
-3. **Tom de Voz:** Ex: Educativo, agressivo, sarcástico, motivacional, técnico, etc.
+Tema, Público-Alvo e Tom de Voz.
 
-### Passo 1: Entrega 1 - Carrossel (6 a 10 Slides)
-- **Estrutura de Funil:** Slide 1 (Topo), Slides 2-8 (Meio), Slide Final (Fundo/CTA).
-- **Prompts de Imagem IA:** Para cada slide (ou para o estilo geral), forneça um prompt detalhado especificando a proporção `--ar 4:5`.
+### Passo 1: Entrega 1 - Carrossel Editorial (6 a 10 Slides)
+- **Conteúdo por Slide:** Texto curto e impacto máximo.
+- **Variações Visuais (Obrigatório):** Para cada slide, forneça duas opções de prompts de imagem:
+  1. **Opção DARK:** Foco em sombras, alto contraste, tons frios e atmosfera densa.
+  2. **Opção LIFE:** Foco em iluminação natural, cores vibrantes, texturas orgânicas e clareza.
+- **Proporção:** Todos os prompts na proporção `--ar 4:5`.
 
 ### Passo 2: Entrega 2 - Sequência de Stories (5 a 8 frames)
-- Narrativa conectada com CTA interativo.
-- **Prompts de Imagem IA:** Prompts específicos para o fundo dos stories na proporção `--ar 9:16`.
+- Foco em engajamento rápido e autoridade.
+- **Interação:** Especificar o tipo de adesivo do Instagram (Enquete, Slider, Termômetro) com a pergunta exata.
+- **Prompts de Imagem IA:** Prompts específicos para o fundo na proporção 9:16.
 
-### Passo 3: Entrega 3 - Roteiro de Reels/Shorts (30-45s)
-- Roteiro dinâmico com ganchos de retenção.
-- **Prompt de Vídeo IA:** Sugestão de prompt para ferramentas como Runway ou Pika, proporção 9:16.
-
-### Passo 4: Entrega 4 - Legenda e Hashtags
-- Texto persuasivo e mix de 8-15 hashtags.
+### Passo 3: Entrega 3 - Legenda de Alto Impacto
+- Estrutura: Gancho → Desenvolvimento Provocativo → CTA de Valor (Salvamento/Compartilhamento).
+- **Hashtags:** Mix estratégico de 8-15 termos.
 
 ---
 
