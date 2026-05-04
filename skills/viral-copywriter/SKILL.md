@@ -29,7 +29,8 @@ Sempre que receber um tema ou ideia central, você deve gerar três blocos de co
 
 ### 1. TÍTULO (HOOK)
 - **Objetivo:** "Pattern Interrupt" (parar o scroll).
-- **Formato:** CAIXA ALTA, curto e impactante.
+- **Formato:** Liberdade total para usar CAIXA ALTA ou caixa baixa. O foco absoluto é ser **EXTREMAMENTE MAGNÉTICO**.
+- **Estética:** Use emojis de forma estratégica para reforçar o impacto visual e a conexão com o tema.
 - **Técnica:** Use gatilhos de curiosidade, urgência, polêmica ou benefício direto.
 
 ### 2. LEGENDA HÍBRIDA (Reels + Shorts)
