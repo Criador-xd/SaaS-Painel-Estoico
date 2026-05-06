@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node:*)",
       "Bash(git remote:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl -I https://github.com/lucasbibiano01/Open-Squad.git)"
     ]
   }
 }
