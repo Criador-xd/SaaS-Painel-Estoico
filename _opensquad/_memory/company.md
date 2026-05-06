@@ -1,21 +1,17 @@
-# Perfil da Empresa: Vida de Milionário (vidademilionarrio)
+# Perfil da Empresa: Mente Estoica Absoluta (@menteestoicaabsoluta)
 
 ## Visão Geral
-Marca focada em conteúdo motivacional, empreendedorismo, desenvolvimento financeiro e mentalidade de sucesso. Atua principalmente através de plataformas de vídeo curto (YouTube Shorts, Reels, TikTok) para inspirar um estilo de vida de abundância, disciplina e independência financeira. Recentemente, expandiu para temas de espiritualidade aplicada à prosperidade.
+Canal dedicado à disseminação da filosofia estoica aplicada à vida moderna. O foco é no desenvolvimento da resiliência mental, autodisciplina, controle emocional e sabedoria prática. O conteúdo busca transformar a mentalidade do espectador, ensinando-o a focar no que pode controlar e aceitar com serenidade o que não pode.
 
 ## Informações Adicionais
-- **Setor:** Conteúdo Digital / Educação Financeira / Desenvolvimento Pessoal
-- **Público-Alvo:** Jovens, aspirantes a empreendedores e pessoas interessadas em aumentar sua produtividade, renda e propósito de vida.
-- **Diferencial:** Lifestyle aspiracional com abordagem prática e espiritual (mindset de abundância).
-- **Hashtags Principais:** #mentalidade, #crescimentopessoal, #motivacional, #foco, #disciplina, #fé, #resiliência.
+- **Setor:** Filosofia / Desenvolvimento Pessoal / Saúde Mental
+- **Público-Alvo:** Homens e mulheres buscando paz interior, força mental para enfrentar desafios e uma vida com mais propósito e menos reatividade.
+- **Diferencial:** Abordagem profunda e direta dos clássicos (Marco Aurélio, Sêneca, Epicteto) com linguagem adaptada ao cotidiano atual.
+- **Hashtags Principais:** #estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia.
 
 ## Tom de Voz
-- **Personalidade:** Inspiradora, direta, ambiciosa e empática. Age como um "mentor sábio mas rigoroso".
-- **Linguagem:** Intercala frases de impacto direto (confronto com a zona de conforto) com mensagens de esperança e fé. Uso estratégico de emojis (✨, 💸, 🚀, 🙏).
+- **Personalidade:** Calma, sábia, inabalável e firme. Age como um "observador estoico" que guia através da lógica e da virtude.
+- **Linguagem:** Sóbria, direta, evitando exageros emocionais. Uso de frases curtas e poderosas que convidam à reflexão. Uso minimalista e estratégico de emojis (🏛️, 🌑, ⚔️, 🙏).
 
 ## Canais
-- **Canal Principal:** YouTube (@vidademilionarrio - UCHCcfbYS9AMfcqtNTw5tr8Q)
-- **Redes Sociais:** Foco em micro-conteúdo visual para engajamento rápido (Shorts/Reels).
-
-<!-- ATUALIZADO EM 2026-04-25 APÓS ANÁLISE DO CANAL -->
-
+- **Plataformas:** YouTube e Instagram (focado em carrosséis educativos e vídeos curtos de alto impacto reflexivo).
