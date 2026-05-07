@@ -71,9 +71,37 @@ PÁGINAS:
    - Campo de anotação opcional
    - Histórico dos últimos 7 dias (gráfico de linha)
 
-ESTILO:
-- Tema claro com acentos em roxo (#6366f1)
-- Fonte: Inter ou system-ui
-- Cards com bordas suaves e sombras sutis
-- Botões primários em roxo, secundários em cinza
-- Layout responsivo (mobile friendly)
+ESTILO RETRO/VINTAGE (mais leve e responsivo):
+
+CORES:
+- Fundo: #f5f0e6 (off-white/papel envelhecido)
+- Texto principal: #2d2d2d (quase preto)
+- Cor de acento: #8b4513 (marrom estilo papel kraft)
+- Secundário: #d4c5a9 (bege/camurça)
+- Sucesso: #4a7c59 (verde escuro/average)
+- Alerta: #c9a227 (dourado/amarelo antigo)
+
+TIPOGRAFIA:
+- Título: "Courier New" ou "Playfair Display" (fonte máquina de escrever/serifada)
+- Corpo: "Georgia" ou "Times New Roman" (serifada, leitura confortável)
+
+ELEMENTOS VISUAIS:
+- Bordas: linhas sólidas de 1-2px em marrom (#8b4513)
+- Cards: bordas arredondadas sutis (8px), fundo levemente mais claro que o fundo principal
+- Sombras: mínimas ou nenhuma (estilo papel)
+- Ícones: simples, linha (outline style), não preenchidos
+- Separadores: linhas horizontais discretas entre seções
+- Buttons: bordas grossas (2px), efeito de pressão (pressionado ao clicar)
+
+LAYOUT:
+- Máximo 800px de largura centralizado
+- Espaço generoso entre elementos (padding 24px+)
+- Menu superior simples com logo + navegação
+- Grid de 2 colunas no desktop, 1 coluna no mobile
+- Mobile-first: touch-friendly, botões grandes (min 44px)
+
+EFEITO RETRO:
+- Sem gradientes modernos
+- Sem sombras complexas
+- Formulários com visual de caderno/papel
+- Linhas zebradas sutil nas tabelas
