@@ -179,7 +179,7 @@ Homens mentalmente fracos não têm esse espaço. Eles recebem a ofensa e devolv
 ## [ PÁGINA 17 ]
 Homens inabaláveis habitam esse espaço. Eles recebem a ofensa, param, observam, e só então escolhem a reação fria e lógica.
 
-Você não tem a obrigação de ter uma opinião inflamada sobre tudo o que dá errado. Você tem o direito supremo de observar em silêncio.
+Você não tem a obrigação de ter uma opinião inflamada sobre tudo de errado que cruza o seu caminho. Você possui o direito supremo de observar em silêncio.
 
 *(Prompt Midjourney: `Minimalist dark vertical background. Deep charcoal gray gradient melting into total darkness, very serene and calm shadows. Absolute no text, vertical 9:16 --v 6.0 --style raw`)*
 ---
@@ -200,7 +200,7 @@ Você não tem a obrigação de ter uma opinião inflamada sobre tudo o que dá 
 
 A mentira mais letal que você conta a si mesmo todos os dias é: *"Eu resolvo isso amanhã"*.
 
-Você age como se tivesse um estoque infinito de dias no banco. Você queima horas preciosas assistindo à vida dos outros, enquanto os seus próprios projetos apodrecem na gaveta.
+Você vive e age como se tivesse um estoque infinito de dias no banco. Você queima horas preciosas assistindo à vida dos outros acontecer, enquanto os seus próprios projetos apodrecem na gaveta.
 
 *(Prompt Midjourney: `Minimalist dark vertical background. An ancient Roman sundial made of dark stone, faintly visible. A razor-sharp diagonal shadow cuts across it. Absolute no text, vertical 9:16 --v 6.0 --style raw`)*
 ---
@@ -279,7 +279,7 @@ Ao acordar, defina o seu FOCO ÚNICO do dia e premedite o que pode dar errado. N
 ---
 ## [ PÁGINA 27 ]
 **2. A Auditoria Noturna (A Navalha)**
-Antes de dormir, faça um raio-X frio sobre as suas atitudes. Como você reagiu aos problemas hoje? Em que momento você explodiu à toa? O que será corrigido amanhã?
+Antes de dormir, faça um raio-X frio sobre as suas atitudes. Como você reagiu aos problemas hoje? Em que momento você falhou? O que será corrigido amanhã?
 
 *(Prompt Midjourney: `Minimalist dark vertical background. A faint shadow of a glowing razor blade edge in pitch black darkness. Absolute no text, vertical 9:16 --v 6.0 --style raw`)*
 ---
@@ -297,7 +297,7 @@ Foi exatamente para automatizar a sua disciplina que o **App O Protocolo Inabal�
 
 ---
 ## [ PÁGINA 29: CALL TO ACTION ]
-Ele é o seu "Painel de Controle Mental". Sem distrações, sem feeds. Apenas um ambiente minimalista com seu Rastreador de Disciplina Diário e seu Diário Estoico programados no celular.
+Ele é o seu "Painel de Controle Mental". Sem distrações, sem feeds. Seu Rastreador de Disciplina e Diário Estoico programados no celular.
 
 A teoria acaba aqui. O seu próximo passo não é ler outro livro. É abrir a ferramenta.
 
