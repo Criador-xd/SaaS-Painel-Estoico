@@ -106,7 +106,7 @@ export const useStore = create<AppState>()(
         set({ view, currentChallenge: challenge });
       },
 
-      setUser: (user) => set({ user, view: 'home' }),
+      setUser: (user) => set({ user }),
 
       resetData: () => set({
         streak: 0,

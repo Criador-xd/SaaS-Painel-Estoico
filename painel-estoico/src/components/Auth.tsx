@@ -4,7 +4,7 @@ import { Shield, ArrowRight, Lock, Mail, AlertTriangle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 export const Auth = () => {
-  const { setUser } = useStore();
+  const { setUser, setView } = useStore();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,6 +22,7 @@ export const Auth = () => {
         const { data, error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         setUser({ name: data.user?.user_metadata?.name || 'Mestre', email });
+        setView('home');
       } else {
         const { data, error } = await supabase.auth.signUp({ 
           email, 
@@ -35,6 +36,7 @@ export const Auth = () => {
           setErrorMsg('Confirme seu e-mail para abrir os portões da Cidadela.');
         } else {
           setUser({ name, email });
+          setView('home');
         }
       }
     } catch (err: any) {

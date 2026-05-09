@@ -7,19 +7,41 @@ import { Cidadela } from './components/Cidadela';
 import { Meditation } from './components/Meditation';
 import { Auth } from './components/Auth';
 import { useStore } from './store/useStore';
+import { supabase } from './lib/supabase';
 
 function App() {
-  const { view, user, setView } = useStore();
+  const { view, user, setView, setUser } = useStore();
 
   useEffect(() => {
-    // Se não houver usuário, força a tela de Auth
-    if (!user && view !== 'auth') {
-      setView('auth');
-    }
-  }, [user, view, setView]);
+    // 1. Check active sessions and sets the user
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session) {
+        setUser({ 
+          name: session.user.user_metadata?.name || 'Iniciado', 
+          email: session.user.email || '' 
+        });
+      } else if (!user && view !== 'auth') {
+        setView('auth');
+      }
+    });
+
+    // 2. Listen for changes on auth state (sign in, sign out, etc.)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session) {
+        setUser({ 
+          name: session.user.user_metadata?.name || 'Iniciado', 
+          email: session.user.email || '' 
+        });
+      } else {
+        setUser(null as any); // Clear user
+        setView('auth');
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [setUser, setView]);
 
   const renderView = () => {
-    // Segurança máxima: se não tem usuário, SEMPRE mostra Auth
     if (!user) return <Auth />;
     
     switch (view) {
