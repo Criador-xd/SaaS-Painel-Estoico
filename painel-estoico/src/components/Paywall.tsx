@@ -1,6 +1,4 @@
-import React from 'react';
-import { Crown, Lock, ArrowRight, Shield, Check } from 'lucide-react';
-import { useStore } from '../store/useStore';
+import { Crown, Lock, ArrowRight, Check } from 'lucide-react';
 
 export const Paywall = ({ featureName, onBack }: { featureName: string, onBack: () => void }) => {
   return (

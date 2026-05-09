@@ -66,6 +66,7 @@ export const useStore = create<AppState>()(
         justica: 0
       },
       level: 1,
+      isPremium: false,
 
       setView: (view) => {
         const challenges = [
