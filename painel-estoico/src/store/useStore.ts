@@ -18,8 +18,14 @@ interface Concern {
   inControl: boolean;
 }
 
+interface User {
+  name: string;
+  email: string;
+}
+
 interface AppState {
-  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation';
+  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth';
+  user: User | null;
   streak: number;
   logs: Record<string, DayLog>;
   currentChallenge: string;
@@ -31,19 +37,22 @@ interface AppState {
     justica: number;
   };
   level: number;
-  setView: (view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation') => void;
+  setView: (view: AppState['view']) => void;
+  setUser: (user: User) => void;
   saveLog: (date: string, log: Partial<DayLog>) => void;
   updateStreak: () => void;
   setChallenge: (challenge: string) => void;
   addConcern: (text: string, inControl: boolean) => void;
   removeConcern: (id: string) => void;
   addVirtuePoints: (v: keyof AppState['virtues'], points: number) => void;
+  resetData: () => void;
 }
 
 export const useStore = create<AppState>()(
   persist(
     (set, get) => ({
-      view: 'home',
+      view: 'auth',
+      user: null,
       streak: 0,
       logs: {},
       currentChallenge: '',
@@ -96,18 +105,35 @@ export const useStore = create<AppState>()(
         
         set({ view, currentChallenge: challenge });
       },
+
+      setUser: (user) => set({ user, view: 'home' }),
+
+      resetData: () => set({
+        streak: 0,
+        logs: {},
+        currentChallenge: '',
+        concerns: [],
+        virtues: { sabedoria: 0, coragem: 0, temperanca: 0, justica: 0 },
+        level: 1,
+        view: 'auth',
+        user: null
+      }),
+
       addConcern: (text, inControl) => set((state) => ({
         concerns: [...state.concerns, { id: Math.random().toString(36).substr(2, 9), text, inControl }]
       })),
+
       removeConcern: (id) => set((state) => ({
         concerns: state.concerns.filter(c => c.id !== id)
       })),
+
       addVirtuePoints: (v, points) => set((state) => {
         const newVirtues = { ...state.virtues, [v]: state.virtues[v] + points };
         const totalPoints = Object.values(newVirtues).reduce((a, b) => a + b, 0);
         const newLevel = Math.floor(totalPoints / 100) + 1;
         return { virtues: newVirtues, level: newLevel };
       }),
+
       setChallenge: (currentChallenge) => set({ currentChallenge }),
       
       saveLog: (date, log) => set((state) => ({
@@ -122,13 +148,10 @@ export const useStore = create<AppState>()(
       
       updateStreak: () => {
         const { logs } = get();
-        const dates = Object.keys(logs).sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
-        
         let currentStreak = 0;
         const today = new Date().toISOString().split('T')[0];
         let checkDate = today;
         
-        // Simple streak logic: check consecutive completed days starting from today or yesterday
         while (logs[checkDate]?.completed) {
           currentStreak++;
           const d = new Date(checkDate);

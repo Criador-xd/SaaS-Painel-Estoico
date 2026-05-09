@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useStore } from '../store/useStore';
-import { ArrowLeft, Book, Flame, Shield, X, Target, Circle } from 'lucide-react';
+import { ArrowLeft, X } from 'lucide-react';
 
 export const Cidadela = () => {
-  const { setView, concerns, addConcern, removeConcern } = useStore();
+  const { setView, concerns, addConcern, removeConcern, resetData } = useStore();
   const [newConcern, setNewConcern] = useState('');
 
   const handleAdd = (inControl: boolean) => {
@@ -13,7 +13,6 @@ export const Cidadela = () => {
   };
 
   const inControlCount = concerns.filter(c => c.inControl).length;
-  const outOfControlCount = concerns.filter(c => !c.inControl).length;
   const total = concerns.length;
   const controlPercentage = total > 0 ? Math.round((inControlCount / total) * 100) : 100;
 
@@ -28,19 +27,19 @@ export const Cidadela = () => {
         </button>
       </header>
 
-      <div className="brand" style={{ textAlign: 'center' }}>Laboratório da Razão</div>
-      <h2 className="view-title">Círculo do Controle</h2>
+      <div className="brand" style={{ textAlign: 'center', opacity: 0.7 }}>Laboratório da Razão</div>
+      <h2 className="view-title" style={{ fontSize: '18px' }}>Círculo do Controle</h2>
 
       {/* Circle Stats */}
       <div className="glass-panel" style={{ padding: '20px', marginBottom: '24px', textAlign: 'center' }}>
-        <div className="cinzel" style={{ fontSize: '11px', color: 'var(--bronze)', marginBottom: '8px' }}>EFICIÊNCIA MENTAL</div>
-        <div style={{ fontSize: '32px', color: 'var(--gold)', fontWeight: 'bold' }}>{controlPercentage}%</div>
-        <div style={{ fontSize: '10px', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Energia em coisas controláveis</div>
+        <div className="cinzel" style={{ fontSize: '10px', color: 'var(--bronze)', marginBottom: '8px' }}>EFICIÊNCIA MENTAL</div>
+        <div style={{ fontSize: '32px', color: 'var(--gold)', fontWeight: 'bold', textShadow: '0 0 10px var(--gold-glow)' }}>{controlPercentage}%</div>
+        <div style={{ fontSize: '9px', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '1px' }}>Energia em coisas controláveis</div>
       </div>
 
       {/* Input Section */}
       <div style={{ marginBottom: '30px' }}>
-        <label>O que está te preocupando?</label>
+        <label className="cinzel" style={{ fontSize: '9px', color: 'var(--bronze)', display: 'block', marginBottom: '8px' }}>O que está te preocupando?</label>
         <input 
           type="text" 
           className="premium-input" 
@@ -50,43 +49,54 @@ export const Cidadela = () => {
           style={{ marginBottom: '12px' }}
         />
         <div style={{ display: 'flex', gap: '10px' }}>
-          <button onClick={() => handleAdd(true)} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '10px', borderColor: 'var(--success)' }}>
-            Eu Controlo
+          <button onClick={() => handleAdd(true)} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '9px', borderColor: 'var(--success)' }}>
+            EU CONTROLO
           </button>
-          <button onClick={() => handleAdd(false)} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '10px', borderColor: 'var(--error)' }}>
-            Fora de Controle
+          <button onClick={() => handleAdd(false)} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '9px', borderColor: 'var(--error)' }}>
+            FORA DE CONTROLE
           </button>
         </div>
       </div>
 
-      {/* Visual Circle */}
-      <div style={{ flex: 1, overflowY: 'auto' }}>
+      {/* List */}
+      <div style={{ flex: 1, overflowY: 'auto', marginBottom: '20px' }}>
         <div style={{ marginBottom: '20px' }}>
-          <label style={{ color: 'var(--gold)' }}>Dentro do Círculo (Focar)</label>
+          <label className="cinzel" style={{ fontSize: '9px', color: 'var(--gold)', display: 'block', marginBottom: '10px' }}>DENTRO DO CÍRCULO (FOCAR)</label>
           {concerns.filter(c => c.inControl).map(c => (
             <div key={c.id} className="glass-panel" style={{ padding: '12px 16px', marginBottom: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '14px' }}>{c.text}</span>
+              <span style={{ fontSize: '13px' }}>{c.text}</span>
               <button onClick={() => removeConcern(c.id)} style={{ background: 'none', border: 'none', color: 'var(--text-secondary)' }}><X size={14} /></button>
             </div>
           ))}
         </div>
 
         <div>
-          <label style={{ color: 'var(--error)' }}>Fora do Círculo (Desapegar)</label>
+          <label className="cinzel" style={{ fontSize: '9px', color: 'var(--error)', display: 'block', marginBottom: '10px' }}>FORA DO CÍRCULO (DESAPEGAR)</label>
           {concerns.filter(c => !c.inControl).map(c => (
-            <div key={c.id} className="glass-panel" style={{ padding: '12px 16px', marginBottom: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', opacity: 0.6 }}>
-              <span style={{ fontSize: '14px', textDecoration: 'line-through' }}>{c.text}</span>
+            <div key={c.id} className="glass-panel" style={{ padding: '12px 16px', marginBottom: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', opacity: 0.5 }}>
+              <span style={{ fontSize: '13px', textDecoration: 'line-through' }}>{c.text}</span>
               <button onClick={() => removeConcern(c.id)} style={{ background: 'none', border: 'none', color: 'var(--text-secondary)' }}><X size={14} /></button>
             </div>
           ))}
         </div>
       </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <button 
+          onClick={() => {
+            if (confirm("Deseja apagar toda a sua jornada? Isso resetará seu nível e registros.")) {
+              resetData();
+            }
+          }}
+          className="btn-premium" 
+          style={{ borderColor: 'rgba(255,82,82,0.3)', color: 'var(--error)', fontSize: '9px' }}
+        >
+          REINICIAR TODA A JORNADA
+        </button>
+        <button onClick={() => setView('home')} className="btn-premium" style={{ fontSize: '10px' }}>
+          VOLTAR AO TEMPLO
+        </button>
+      </div>
     </div>
   );
 };
-
-const Scale = ({ size }: { size: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/>
-  </svg>
-);

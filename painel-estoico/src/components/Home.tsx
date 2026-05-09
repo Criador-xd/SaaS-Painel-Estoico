@@ -2,7 +2,7 @@ import { useStore } from '../store/useStore';
 import { Sparkles, MessageCircle } from 'lucide-react';
 
 export const Home = () => {
-  const { streak, setView, currentChallenge, virtues, level } = useStore();
+  const { streak, setView, currentChallenge, virtues, level, user } = useStore();
   
   return (
     <div className="view-transition" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '40px 24px', position: 'relative' }}>
@@ -10,7 +10,7 @@ export const Home = () => {
       
       <header style={{ textAlign: 'center', marginBottom: '40px', zIndex: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-          <div className="brand" style={{ opacity: 0.8, fontSize: '14px', letterSpacing: '4px' }}>Mente Estoica</div>
+          <div className="brand" style={{ opacity: 0.8, fontSize: '14px', letterSpacing: '4px', textTransform: 'uppercase' }}>Mental de {user?.name.split(' ')[0]}</div>
           <div style={{ padding: '4px 12px', background: 'var(--gold)', borderRadius: '4px', fontSize: '10px', color: '#000', fontWeight: 'bold', boxShadow: '0 0 15px var(--gold-glow)' }}>NÍVEL {level}</div>
         </div>
         
@@ -39,13 +39,40 @@ export const Home = () => {
           </p>
         </div>
 
-        {/* Virtue Columns */}
-        <div style={{ width: '100%', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', marginBottom: '40px' }}>
-          {Object.entries(virtues).map(([v, val]) => (
-            <div key={v} className="virtue-column" style={{ height: '100px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center' }}>
-              <div className="virtue-column-fill" style={{ height: `${Math.min(val, 100)}%` }}></div>
-              <div className="cinzel" style={{ fontSize: '7px', letterSpacing: '1px', color: 'var(--gold)', zIndex: 1, textTransform: 'uppercase', marginBottom: '4px' }}>{v.substring(0, 3)}</div>
-              <div style={{ fontSize: '10px', fontWeight: 'bold', color: 'var(--text-primary)', zIndex: 1 }}>{val}</div>
+        {/* Virtue Columns - Redesigned for Clarity */}
+        <div style={{ width: '100%', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px', marginBottom: '40px' }}>
+          {[
+            { label: 'Sabedoria', key: 'sabedoria', icon: '📜' },
+            { label: 'Coragem', key: 'coragem', icon: '⚔️' },
+            { label: 'Temperança', key: 'temperanca', icon: '⚖️' },
+            { label: 'Justiça', key: 'justica', icon: '🏛️' }
+          ].map((v) => (
+            <div key={v.key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div className="virtue-column" style={{ 
+                height: '120px', 
+                width: '100%',
+                display: 'flex', 
+                flexDirection: 'column', 
+                justifyContent: 'flex-end', 
+                alignItems: 'center',
+                marginBottom: '8px'
+              }}>
+                <div className="virtue-column-fill" style={{ height: `${Math.min(virtues[v.key as keyof typeof virtues], 100)}%` }}></div>
+                <div style={{ fontSize: '14px', zIndex: 1, marginBottom: '10px' }}>{v.icon}</div>
+                <div style={{ fontSize: '11px', fontWeight: 'bold', color: 'var(--gold)', zIndex: 1, marginBottom: '4px' }}>
+                  {virtues[v.key as keyof typeof virtues]}
+                </div>
+              </div>
+              <div className="cinzel" style={{ 
+                fontSize: '7px', 
+                letterSpacing: '1px', 
+                color: 'var(--text-secondary)', 
+                textTransform: 'uppercase',
+                textAlign: 'center',
+                fontWeight: 'bold'
+              }}>
+                {v.label}
+              </div>
             </div>
           ))}
         </div>
@@ -108,32 +135,14 @@ export const Home = () => {
         </div>
       </main>
 
-      {/* Floating Oracle Button */}
-      <button 
-        style={{
-          position: 'absolute',
-          bottom: '30px',
-          right: '24px',
-          width: '56px',
-          height: '56px',
-          borderRadius: '50%',
-          background: 'var(--gold)',
-          border: 'none',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 10px 25px rgba(212,175,55,0.4)',
-          cursor: 'pointer',
-          zIndex: 10
-        }}
-        onClick={() => alert("O Oráculo diz: O que não te mata, te torna mais sábio. Continue sua jornada.")}
-      >
-        <MessageCircle size={24} color="#000" />
-      </button>
-
-      <footer style={{ textAlign: 'center', marginTop: '20px', paddingBottom: '20px', zIndex: 1, opacity: 0.6 }}>
-        <p className="playfair" style={{ fontSize: '14px', fontStyle: 'italic', color: 'var(--text-primary)' }}>
-          "Amor Fati."
+      {/* Footer - SOBER & SERIOUS */}
+      <footer style={{ textAlign: 'center', marginTop: '40px', paddingBottom: '30px', zIndex: 1 }}>
+        <p className="playfair" style={{ fontSize: '15px', fontStyle: 'italic', color: 'var(--text-primary)', marginBottom: '12px', opacity: 0.9, padding: '0 20px' }}>
+          "Nenhum homem é livre se não for mestre de si mesmo."
+        </p>
+        <div style={{ height: '1px', width: '30px', background: 'var(--bronze)', margin: '12px auto', opacity: 0.5 }}></div>
+        <p className="cinzel" style={{ fontSize: '10px', letterSpacing: '3px', color: 'var(--gold)', fontWeight: 'bold' }}>
+          A CIDADELA INTERIOR
         </p>
       </footer>
     </div>
