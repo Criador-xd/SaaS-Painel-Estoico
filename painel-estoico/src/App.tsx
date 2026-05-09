@@ -6,11 +6,12 @@ import { Timeline } from './components/Timeline';
 import { Cidadela } from './components/Cidadela';
 import { Meditation } from './components/Meditation';
 import { Auth } from './components/Auth';
+import { Paywall } from './components/Paywall';
 import { useStore } from './store/useStore';
 import { supabase } from './lib/supabase';
 
 function App() {
-  const { view, user, setView, setUser } = useStore();
+  const { view, user, isPremium, setView, setUser } = useStore();
 
   useEffect(() => {
     // 1. Check active sessions and sets the user
@@ -44,6 +45,14 @@ function App() {
   const renderView = () => {
     if (!user) return <Auth />;
     
+    // Check Premium Access
+    if (!isPremium && (view === 'cidadela' || view === 'timeline')) {
+      return <Paywall 
+        featureName={view === 'cidadela' ? 'Cidadela Interior' : 'Linha do Tempo de Mestre'} 
+        onBack={() => setView('home')} 
+      />;
+    }
+
     switch (view) {
       case 'home': return <Home />;
       case 'escudo': return <Escudo />;

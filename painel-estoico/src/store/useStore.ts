@@ -38,6 +38,7 @@ interface AppState {
     justica: number;
   };
   level: number;
+  isPremium: boolean;
   setView: (view: AppState['view']) => void;
   setUser: (user: User) => void;
   saveLog: (date: string, log: Partial<DayLog>) => void;
@@ -122,6 +123,7 @@ export const useStore = create<AppState>()(
               set({
                 level: profile.level || 1,
                 streak: profile.streak || 0,
+                isPremium: profile.is_premium || false,
                 virtues: {
                   sabedoria: profile.sabedoria || 0,
                   coragem: profile.coragem || 0,
@@ -141,6 +143,7 @@ export const useStore = create<AppState>()(
         concerns: [],
         virtues: { sabedoria: 0, coragem: 0, temperanca: 0, justica: 0 },
         level: 1,
+        isPremium: false,
         view: 'auth',
         user: null
       }),
