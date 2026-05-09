@@ -80,7 +80,7 @@ export const Escudo = () => {
           <div className="view-transition" style={{ textAlign: 'center', paddingTop: '40px' }}>
             <div style={{ 
               width: '100px', height: '100px', borderRadius: '50%', border: '2px solid var(--gold)', 
-              display: 'flex', alignItems: 'center', justifyCenter: 'center', margin: '0 auto 30px',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 30px',
               animation: isSealing ? 'rotate 1s linear infinite' : 'pulse-gold 2s infinite', color: 'var(--gold)'
             }}>
               {isSealing ? <div style={{ width: '40px', height: '40px', border: '2px solid var(--gold)', borderTopColor: 'transparent', borderRadius: '50%', animation: 'rotate 1s linear infinite' }}></div> : <Check size={48} style={{ margin: 'auto' }} />}

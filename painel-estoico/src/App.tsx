@@ -12,13 +12,14 @@ function App() {
   const { view, user, setView } = useStore();
 
   useEffect(() => {
-    // Initial view set if needed
-    if (!user) {
+    // Se não houver usuário, força a tela de Auth
+    if (!user && view !== 'auth') {
       setView('auth');
     }
-  }, [user, setView]);
+  }, [user, view, setView]);
 
   const renderView = () => {
+    // Segurança máxima: se não tem usuário, SEMPRE mostra Auth
     if (!user) return <Auth />;
     
     switch (view) {
@@ -37,7 +38,9 @@ function App() {
     <div className="app-container">
       <div className="marble-texture"></div>
       <div className="noise"></div>
-      {renderView()}
+      <div style={{ height: '100%', width: '100%', position: 'relative', zIndex: 1 }}>
+        {renderView()}
+      </div>
     </div>
   );
 }

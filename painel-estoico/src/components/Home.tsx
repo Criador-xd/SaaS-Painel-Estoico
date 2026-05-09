@@ -1,5 +1,5 @@
 import { useStore } from '../store/useStore';
-import { Sparkles, MessageCircle } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const Home = () => {
   const { streak, setView, currentChallenge, virtues, level, user } = useStore();
@@ -10,7 +10,7 @@ export const Home = () => {
       
       <header style={{ textAlign: 'center', marginBottom: '40px', zIndex: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-          <div className="brand" style={{ opacity: 0.8, fontSize: '14px', letterSpacing: '4px', textTransform: 'uppercase' }}>Mental de {user?.name.split(' ')[0]}</div>
+          <div className="brand" style={{ opacity: 0.8, fontSize: '14px', letterSpacing: '4px', textTransform: 'uppercase' }}>Mental de {user?.name?.split(' ')[0] || 'Iniciado'}</div>
           <div style={{ padding: '4px 12px', background: 'var(--gold)', borderRadius: '4px', fontSize: '10px', color: '#000', fontWeight: 'bold', boxShadow: '0 0 15px var(--gold-glow)' }}>NÍVEL {level}</div>
         </div>
         

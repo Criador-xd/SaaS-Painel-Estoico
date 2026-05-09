@@ -133,7 +133,7 @@ export const Navalha = () => {
           <div className="view-transition" style={{ textAlign: 'center', paddingTop: '20px' }}>
             <div style={{ 
               width: '80px', height: '80px', borderRadius: '50%', border: '2px solid var(--gold)', 
-              display: 'flex', alignItems: 'center', justifyCenter: 'center', margin: '0 auto 20px',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px',
               animation: isSaving ? 'rotate 1s linear infinite' : 'pulse-gold 2s infinite', color: 'var(--gold)'
             }}>
               {isSaving ? <div style={{ width: '30px', height: '30px', border: '2px solid var(--gold)', borderTopColor: 'transparent', borderRadius: '50%', animation: 'rotate 1s linear infinite' }}></div> : <Check size={40} style={{ margin: 'auto' }} />}

@@ -163,7 +163,7 @@ export const useStore = create<AppState>()(
       }
     }),
     {
-      name: 'painel-estoico-storage',
+      name: 'painel-estoico-v2',
     }
   )
 );
