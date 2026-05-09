@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Mental - Protocolo Inabalável</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A0A0A;
+            --surface-color: #1A1A1A;
+            --gold: #D4AF37;
+            --bronze: #A87A43;
+            --text-primary: #FFFFFF;
+            --text-secondary: #888888;
+            --border: #333333;
+            --success: #2ECC71;
+            --error: #E74C3C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: var(--bg-color);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 24px;
+            border: 1px solid var(--border);
+            overflow-y: auto;
+        }
+
+        /* Views */
+        .view {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .view.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Common Elements */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .back-btn {
+            align-self: flex-start;
+            color: var(--text-secondary);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand {
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: var(--bronze);
+            text-transform: uppercase;
+        }
+
+        .view-title {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            color: var(--gold);
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* --- HOME VIEW (Cidadela) --- */
+        .streak-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .streak-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 2px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .streak-circle::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: var(--gold);
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .streak-number {
+            font-family: 'Cinzel', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .streak-label {
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        .main-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        /* --- FORMS (Escudo & Navalha) --- */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--bronze);
+            margin-bottom: 8px;
+        }
+
+        textarea, input[type="text"], select {
+            width: 100%;
+            background-color: var(--surface-color);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 14px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            border-color: var(--gold);
+        }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .rating-btn {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .rating-btn.selected {
+            border-color: var(--gold);
+            color: var(--gold);
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 18px;
+            border-radius: 4px;
+            font-family: 'Cinzel', serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            border-color: var(--gold);
+            background-color: #222222;
+        }
+
+        .btn-gold {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .btn-full {
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+
+        /* --- CALENDAR (Linha do Tempo) --- */
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .cal-day {
+            aspect-ratio: 1;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .cal-day.completed {
+            background-color: rgba(212, 175, 55, 0.2);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .cal-header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .cal-header-day {
+            font-size: 9px;
+            color: var(--bronze);
+            text-transform: uppercase;
+        }
+
+        /* --- FOOTER --- */
+        .quote-container {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        .quote-text {
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .quote-author {
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--bronze);
+        }
+
+        /* Noise effect */
+        .noise {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0.03; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3BaseFilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg-color); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="app-container">
+        
+        <!-- VIEW: HOME -->
+        <section id="view-home" class="view active">
+            <header>
+                <div class="brand">Mente Estoica</div>
+            </header>
+
+            <main class="streak-container">
+                <div class="streak-circle">
+                    <div class="streak-number">14</div>
+                    <div class="streak-label">Dias Invictos</div>
+                </div>
+            </main>
+
+            <section class="main-actions">
+                <button onclick="showView('view-escudo')" class="btn btn-gold">Ativar Escudo</button>
+                <button onclick="showView('view-navalha')" class="btn">Usar Navalha</button>
+                <button onclick="showView('view-timeline')" class="btn" style="font-size: 11px; opacity: 0.7; border-style: dashed;">Linha do Tempo</button>
+            </section>
+
+            <footer class="quote-container">
+                <p class="quote-text">"A felicidade da sua vida depende da qualidade dos seus pensamentos."</p>
+                <p class="quote-author">— Marco Aurélio</p>
+            </footer>
+        </section>
+
+        <!-- VIEW: ESCUDO (Setup Matinal) -->
+        <section id="view-escudo" class="view">
+            <div class="back-btn" onclick="showView('view-home')">← Voltar</div>
+            <div class="brand" style="text-align: center;">O Escudo</div>
+            <h2 class="view-title">Setup Matinal</h2>
+
+            <div class="form-group">
+                <label>Foco Único do Dia</label>
+                <textarea placeholder="O que realmente importa hoje?"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Premeditatio Malorum</label>
+                <textarea placeholder="O que pode dar errado e como você reagirá?"></textarea>
+            </div>
+
+            <button onclick="saveAndHome()" class="btn btn-gold btn-full">Selar Compromisso</button>
+            
+            <footer class="quote-container">
+                <p class="quote-text">"Pela manhã, diga a si mesmo: eu encontrarei pessoas intrometidas, ingratas e insolentes."</p>
+                <p class="quote-author">— Marco Aurélio</p>
+            </footer>
+        </section>
+
+        <!-- VIEW: NAVALHA (Auditoria Noturna) -->
+        <section id="view-navalha" class="view">
+            <div class="back-btn" onclick="showView('view-home')">← Voltar</div>
+            <div class="brand" style="text-align: center;">A Navalha</div>
+            <h2 class="view-title">Auditoria Noturna</h2>
+
+            <div class="form-group">
+                <label>O que fiz de bom hoje?</label>
+                <textarea placeholder="Liste suas vitórias sobre si mesmo."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Onde eu falhei?</label>
+                <textarea placeholder="Seja brutalmente honesto."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Nível de Autodomínio (1-10)</label>
+                <div class="rating-grid">
+                    <div class="rating-btn" onclick="selectRating(this)">1</div>
+                    <div class="rating-btn" onclick="selectRating(this)">2</div>
+                    <div class="rating-btn" onclick="selectRating(this)">3</div>
+                    <div class="rating-btn" onclick="selectRating(this)">4</div>
+                    <div class="rating-btn" onclick="selectRating(this)">5</div>
+                    <div class="rating-btn" onclick="selectRating(this)">6</div>
+                    <div class="rating-btn" onclick="selectRating(this)">7</div>
+                    <div class="rating-btn" onclick="selectRating(this)">8</div>
+                    <div class="rating-btn" onclick="selectRating(this)">9</div>
+                    <div class="rating-btn" onclick="selectRating(this)">10</div>
+                </div>
+            </div>
+
+            <button onclick="saveAndHome()" class="btn btn-gold btn-full">Encerrar com Serenidade</button>
+
+            <footer class="quote-container">
+                <p class="quote-text">"Não devemos ir dormir sem antes fazer um exame de nossas ações."</p>
+                <p class="quote-author">— Sêneca</p>
+            </footer>
+        </section>
+
+        <!-- VIEW: TIMELINE (Linha do Tempo) -->
+        <section id="view-timeline" class="view">
+            <div class="back-btn" onclick="showView('view-home')">← Voltar</div>
+            <div class="brand" style="text-align: center;">Progresso</div>
+            <h2 class="view-title">Linha do Tempo</h2>
+
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="font-size: 12px; color: var(--bronze); letter-spacing: 2px;">Maio 2026</span>
+            </div>
+
+            <div class="cal-header">
+                <div class="cal-header-day">D</div>
+                <div class="cal-header-day">S</div>
+                <div class="cal-header-day">T</div>
+                <div class="cal-header-day">Q</div>
+                <div class="cal-header-day">Q</div>
+                <div class="cal-header-day">S</div>
+                <div class="cal-header-day">S</div>
+            </div>
+
+            <div class="calendar">
+                <div class="cal-day"></div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day completed">1</div><div class="cal-day completed">2</div><div class="cal-day completed">3</div>
+                <div class="cal-day completed">4</div><div class="cal-day completed">5</div><div class="cal-day completed">6</div><div class="cal-day completed">7</div><div class="cal-day completed">8</div><div class="cal-day completed">9</div><div class="cal-day completed">10</div>
+                <div class="cal-day completed">11</div><div class="cal-day completed">12</div><div class="cal-day completed">13</div><div class="cal-day completed">14</div><div class="cal-day">15</div><div class="cal-day">16</div><div class="cal-day">17</div>
+                <div class="cal-day">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day">22</div><div class="cal-day">23</div><div class="cal-day">24</div>
+                <div class="cal-day">25</div><div class="cal-day">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div><div class="cal-day">30</div><div class="cal-day">31</div>
+            </div>
+
+            <div style="margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px;">
+                <label>Estatísticas</label>
+                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 18px; color: var(--gold); font-family: 'Cinzel';">14</div>
+                        <div style="font-size: 9px; color: var(--text-secondary); text-transform: uppercase;">Dias Atuais</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 18px; color: var(--gold); font-family: 'Cinzel';">42</div>
+                        <div style="font-size: 9px; color: var(--text-secondary); text-transform: uppercase;">Recorde</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 18px; color: var(--gold); font-family: 'Cinzel';">98%</div>
+                        <div style="font-size: 9px; color: var(--text-secondary); text-transform: uppercase;">Aproveitamento</div>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="showView('view-home')" class="btn btn-full" style="margin-top: 40px;">Voltar</button>
+        </section>
+
+    </div>
+
+    <script>
+        function showView(viewId) {
+            // Hide all views
+            document.querySelectorAll('.view').forEach(view => {
+                view.classList.remove('active');
+            });
+            // Show requested view
+            document.getElementById(viewId).classList.add('active');
+            // Scroll to top
+            document.querySelector('.app-container').scrollTop = 0;
+        }
+
+        function selectRating(btn) {
+            document.querySelectorAll('.rating-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+
+        function saveAndHome() {
+            // Animation/Feedback could go here
+            showView('view-home');
+        }
+    </script>
+</body>
+</html>
