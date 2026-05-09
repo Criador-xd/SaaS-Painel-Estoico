@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { supabase } from '../lib/supabase';
 
 interface DayLog {
   date: string;
@@ -106,7 +107,32 @@ export const useStore = create<AppState>()(
         set({ view, currentChallenge: challenge });
       },
 
-      setUser: (user) => set({ user }),
+      setUser: async (user) => {
+        set({ user });
+        if (user) {
+          const { data: { session } } = await supabase.auth.getSession();
+          if (session) {
+            const { data: profile } = await supabase
+              .from('profiles')
+              .select('*')
+              .eq('id', session.user.id)
+              .single();
+            
+            if (profile) {
+              set({
+                level: profile.level || 1,
+                streak: profile.streak || 0,
+                virtues: {
+                  sabedoria: profile.sabedoria || 0,
+                  coragem: profile.coragem || 0,
+                  temperanca: profile.temperanca || 0,
+                  justica: profile.justica || 0
+                }
+              });
+            }
+          }
+        }
+      },
 
       resetData: () => set({
         streak: 0,
@@ -127,12 +153,25 @@ export const useStore = create<AppState>()(
         concerns: state.concerns.filter(c => c.id !== id)
       })),
 
-      addVirtuePoints: (v, points) => set((state) => {
+      addVirtuePoints: async (v, points) => {
+        const state = get();
         const newVirtues = { ...state.virtues, [v]: state.virtues[v] + points };
         const totalPoints = Object.values(newVirtues).reduce((a, b) => a + b, 0);
         const newLevel = Math.floor(totalPoints / 100) + 1;
-        return { virtues: newVirtues, level: newLevel };
-      }),
+        
+        set({ virtues: newVirtues, level: newLevel });
+
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session) {
+          await supabase.from('profiles').update({
+            sabedoria: newVirtues.sabedoria,
+            coragem: newVirtues.coragem,
+            temperanca: newVirtues.temperanca,
+            justica: newVirtues.justica,
+            level: newLevel
+          }).eq('id', session.user.id);
+        }
+      },
 
       setChallenge: (currentChallenge) => set({ currentChallenge }),
       
