@@ -45,11 +45,10 @@ function App() {
   const renderView = () => {
     if (!user) return <Auth />;
     
-    // Check Premium Access
-    if (!isPremium && (view === 'cidadela' || view === 'timeline')) {
+    // Bloqueio Total: Se não for premium, mostra o Paywall em qualquer lugar (exceto Auth)
+    if (!isPremium) {
       return <Paywall 
-        featureName={view === 'cidadela' ? 'Cidadela Interior' : 'Linha do Tempo de Mestre'} 
-        onBack={() => setView('home')} 
+        onBack={() => supabase.auth.signOut()} 
       />;
     }
 
