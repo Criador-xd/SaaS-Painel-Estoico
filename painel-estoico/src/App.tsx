@@ -7,6 +7,7 @@ import { Cidadela } from './components/Cidadela';
 import { Meditation } from './components/Meditation';
 import { Auth } from './components/Auth';
 import { Paywall } from './components/Paywall';
+import { Success } from './components/Success';
 import { useStore } from './store/useStore';
 import { supabase } from './lib/supabase';
 
@@ -14,6 +15,12 @@ function App() {
   const { view, user, isPremium, setView, setUser } = useStore();
 
   useEffect(() => {
+    // Check for success URL parameter
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('success') === 'true') {
+      setView('success');
+    }
+
     // 1. Check active sessions and sets the user
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session) {
@@ -45,8 +52,8 @@ function App() {
   const renderView = () => {
     if (!user) return <Auth />;
     
-    // Bloqueio Total: Se não for premium, mostra o Paywall em qualquer lugar (exceto Auth)
-    if (!isPremium) {
+    // Bloqueio Total: Se não for premium, mostra o Paywall em qualquer lugar (exceto Auth e Success)
+    if (!isPremium && view !== 'success') {
       return <Paywall 
         onBack={() => supabase.auth.signOut()} 
       />;
@@ -60,6 +67,7 @@ function App() {
       case 'cidadela': return <Cidadela />;
       case 'meditation': return <Meditation />;
       case 'auth': return <Auth />;
+      case 'success': return <Success />;
       default: return <Home />;
     }
   };
