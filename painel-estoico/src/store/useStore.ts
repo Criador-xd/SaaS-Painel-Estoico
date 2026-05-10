@@ -25,7 +25,7 @@ interface User {
 }
 
 interface AppState {
-  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success';
+  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success' | 'quiz';
   user: User | null;
   streak: number;
   logs: Record<string, DayLog>;

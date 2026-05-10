@@ -8,6 +8,7 @@ import { Meditation } from './components/Meditation';
 import { Auth } from './components/Auth';
 import { Paywall } from './components/Paywall';
 import { Success } from './components/Success';
+import { Quiz } from './components/Quiz';
 import { useStore } from './store/useStore';
 import { supabase } from './lib/supabase';
 
@@ -28,8 +29,8 @@ function App() {
           name: session.user.user_metadata?.name || 'Iniciado', 
           email: session.user.email || '' 
         });
-      } else if (!user && view !== 'auth' && view !== 'success') {
-        setView('auth');
+      } else if (!user && view !== 'auth' && view !== 'success' && view !== 'quiz') {
+        setView('quiz');
       }
     });
 
@@ -42,7 +43,7 @@ function App() {
         });
       } else {
         setUser(null as any); // Clear user
-        setView('auth');
+        if (view !== 'success' && view !== 'quiz') setView('quiz');
       }
     });
 
@@ -50,7 +51,10 @@ function App() {
   }, [setUser, setView]);
 
   const renderView = () => {
-    if (!user) return <Auth />;
+    if (!user) {
+      if (view === 'auth') return <Auth />;
+      return <Quiz onFinish={() => setView('auth')} />;
+    }
     
     // Bloqueio Total: Se não for premium, mostra o Paywall em qualquer lugar (exceto Auth e Success)
     if (!isPremium && view !== 'success') {
@@ -68,6 +72,7 @@ function App() {
       case 'meditation': return <Meditation />;
       case 'auth': return <Auth />;
       case 'success': return <Success />;
+      case 'quiz': return <Quiz onFinish={() => setView('auth')} />;
       default: return <Home />;
     }
   };
