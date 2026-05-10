@@ -28,7 +28,7 @@ function App() {
           name: session.user.user_metadata?.name || 'Iniciado', 
           email: session.user.email || '' 
         });
-      } else if (!user && view !== 'auth') {
+      } else if (!user && view !== 'auth' && view !== 'success') {
         setView('auth');
       }
     });
