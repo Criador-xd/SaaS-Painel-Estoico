@@ -20,7 +20,7 @@ version: "1.0.0"
 script:
   path: scripts/publish.js
   runtime: node
-  invoke: "node --env-file=.env {skill_path}/scripts/publish.js --images \"{images}\" --caption \"{caption}\""
+  invoke: "node --env-file=.env {skill_path}/scripts/publish.js --images \"{images}\" --caption \"{caption}\" --comment \"{comment}\""
 env:
   - INSTAGRAM_ACCESS_TOKEN
   - INSTAGRAM_USER_ID
@@ -49,7 +49,8 @@ Use the Instagram Publisher when you need to publish carousel posts directly to 
    ```
    node --env-file=.env squads/{squad}/tools/publish.js \
      --images "<comma-separated-ordered-paths>" \
-     --caption "<caption>"
+     --caption "<caption>" \
+     --comment "<first comment CTA>"
    ```
    Add `--dry-run` to test the full flow without actually publishing.
 5. On success: save the post URL and post ID to the step output file.

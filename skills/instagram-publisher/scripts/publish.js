@@ -9,13 +9,16 @@ import { fileURLToPath } from 'node:url';
 // ── Argument parsing ──────────────────────────────────────────
 
 export function parseArgs(argv) {
-  const args = { images: [], caption: '', dryRun: false };
+  const args = { images: [], caption: '', comment: '', dryRun: false };
   for (let i = 2; i < argv.length; i++) {
     if (argv[i] === '--images') {
       if (i + 1 < argv.length) args.images = argv[++i].split(',').map(s => s.trim());
     }
     else if (argv[i] === '--caption') {
       if (i + 1 < argv.length) args.caption = argv[++i];
+    }
+    else if (argv[i] === '--comment') {
+      if (i + 1 < argv.length) args.comment = argv[++i];
     }
     else if (argv[i] === '--dry-run') args.dryRun = true;
   }
@@ -101,10 +104,17 @@ export async function getPermalink(mediaId, accessToken) {
   return json.permalink ?? null;
 }
 
+export async function createComment(mediaId, message, accessToken) {
+  const params = new URLSearchParams({ message, access_token: accessToken });
+  const res = await fetch(`${IG_BASE}/${mediaId}/comments?${params}`, { method: 'POST' });
+  if (!res.ok) throw new Error(`createComment failed [${res.status}]: ${await res.text()}`);
+  return (await res.json()).id;
+}
+
 // ── Main ──────────────────────────────────────────────────────
 
 async function main() {
-  const { images, caption, dryRun } = parseArgs(process.argv);
+  const { images, caption, comment, dryRun } = parseArgs(process.argv);
 
   if (!images.length) throw new Error('--images is required (e.g. --images "slide1.jpg,slide2.jpg")');
   if (!caption) throw new Error('--caption is required');
@@ -153,6 +163,16 @@ async function main() {
   console.log(`\n✅ Published successfully!`);
   console.log(`   Post ID: ${postId}`);
   if (permalink) console.log(`   URL: ${permalink}`);
+
+  if (comment) {
+    console.log(`\n💬 Posting automated comment...`);
+    try {
+      const commentId = await createComment(postId, comment, INSTAGRAM_ACCESS_TOKEN);
+      console.log(`   ✅ Comment posted! Comment ID: ${commentId}`);
+    } catch (err) {
+      console.error(`   ❌ Failed to post comment: ${err.message}`);
+    }
+  }
 }
 
 // Run only when executed directly (not when imported for tests)
