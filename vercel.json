@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd painel-estoico && npm install && npm run build",
+  "outputDirectory": "painel-estoico/dist",
+  "framework": "vite"
+}
