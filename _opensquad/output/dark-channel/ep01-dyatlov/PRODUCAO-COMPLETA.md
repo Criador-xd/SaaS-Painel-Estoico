@@ -27,7 +27,7 @@
 
 🎙️ *"This is the story of the Dyatlov Pass Incident."*
 
-🎨 `2D cartoon animation, educational documentary style, dramatic aerial view of a massive dark mountain peak emerging from thick clouds, snow-covered barren slopes, ominous and foreboding atmosphere, title card feel without any text, blood-red sunset behind the peak, epic cinematic scale, 16:9, no text`
+🎨 `2D cartoon animation, educational documentary style, dramatic aerial view of a massive dark mountain peak emerging from thick clouds, snow-covered barren slopes, ominous and foreboding atmosphere, title card feel without any text, blood-red sunset behind the peak, epic cinematic scale, 16:9, no text'
 
 ---
 
