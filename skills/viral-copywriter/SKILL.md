@@ -1,16 +1,7 @@
 ---
 name: viral-copywriter
 description: Especialista em copywriting para redes sociais, focado em legendas híbridas de alta performance que funcionam simultaneamente para Reels e YouTube Shorts.
-triggers:
-  - "criar post viral"
-  - "gerar legenda instagram"
-  - "copy para reels"
-  - "roteiro youtube shorts"
-  - "legenda hibrida"
-  - "/viral"
-  - "/copy"
-  - "/post"
-author: Lucas
+type: prompt
 version: 1.2.0
 ---
 
