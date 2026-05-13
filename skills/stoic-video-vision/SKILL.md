@@ -1,0 +1,68 @@
+---
+name: stoic-video-vision
+description: >
+  Analisar vídeos de conteúdo estoico em pastas locais, gerar prompts criativos baseados na essência desses vídeos (porém com detalhes únicos) e automatizar a criação de imagens via DALL-E, salvando-as organizadamente em um diretório de alta performance.
+description_pt-BR: >
+  Analisar vídeos de conteúdo estoico em pastas locais, gerar prompts criativos baseados na essência desses vídeos (porém com detalhes únicos) e automatizar a criação de imagens via DALL-E, salvando-as organizadamente em um diretório de alta performance.
+type: script
+version: "1.0.0"
+script:
+  path: scripts/generate_stoic_image.py
+  runtime: python3
+  dependencies:
+    - openai
+    - requests
+env:
+  - OPENAI_API_KEY
+categories: [content, video, images, ai, automation, social-media]
+---
+
+# Stoic Video Vision
+
+## Purpose
+
+Analisar vídeos de conteúdo estoico em pastas locais, gerar prompts criativos baseados na essência desses vídeos (porém com detalhes únicos) e automatizar a criação de imagens via DALL-E, salvando-as organizadamente em um diretório de alta performance.
+
+## When to use
+
+Use esta skill quando precisar:
+- "analisar videos menteestoica"
+- "gerar prompts de video telegram"
+- "processar videos e criar imagens"
+- "criar imagem baseada no video [nome]"
+
+## Core Workflow
+
+1. **Escaneamento**: Varre o diretório `C:\Users\vibec\Downloads\Telegram Desktop\menteestoica` em busca de arquivos `.mp4`, `.mov` ou `.mkv`.
+2. **Análise de Contexto**:
+   - Identifica o tema estoico (ex: persistência, tempo, serenidade).
+   - Extrai metadados ou frames (se o ffmpeg estiver disponível) para entender a estética.
+3. **Engenharia de Prompt**:
+   - Cria um prompt para o DALL-E 3 que mantenha o "vibe" estoico, mas altere elementos como cenário, iluminação ou personagens para criar algo novo.
+4. **Geração de Imagem**:
+   - Executa o script `scripts/generate_stoic_image.py`.
+   - Passa o prompt gerado e o nome sugerido.
+5. **Arquivamento**:
+   - Salva o resultado final em `D:\IMAGENS SALVAS IA` com o formato `[NOME_ORIGINAL]_[DESCRICAO_CURTA].png`.
+
+## Principles
+
+- **Estética Premium**: Todos os prompts gerados devem focar em iluminação cinematográfica, tons sóbrios (estética Mente Estoica) e alta definição.
+- **Autonomia**: Se um vídeo falhar, registra o erro e continua para o próximo.
+- **Fidelidade**: O nome da imagem deve ser descritivo para fácil busca futura.
+
+## Usage
+
+```bash
+python3 skills/stoic-video-vision/scripts/generate_stoic_image.py "PROMPT" "NOME_DO_ARQUIVO"
+```
+
+Arguments:
+- `PROMPT`: O prompt criativo gerado a partir da análise do vídeo
+- `NOME_DO_ARQUIVO`: Nome descritivo para o arquivo de saída
+
+## Technical Requirements
+
+- Python 3.x
+- OpenAI API Key (configurada como variável de ambiente `OPENAI_API_KEY`)
+- Diretório de saída: `D:\IMAGENS SALVAS IA`
