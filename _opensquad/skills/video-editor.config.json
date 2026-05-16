@@ -1,0 +1,81 @@
+{
+  "skill_name": "Video Editor Pro",
+  "version": "1.0.0",
+  "description": "Edição de vídeo automatizada com legendas, músicas, ganchos e mais",
+  "category": "multimedia",
+  "paths": {
+    "input": "./videos/raw",
+    "output": "./videos/edited",
+    "temp": "./videos/temp",
+    "music_library": "./assets/music",
+    "subtitle_styles": "./assets/subtitle_styles"
+  },
+  "video": {
+    "min_duration": 10,
+    "max_duration": 1800,
+    "allowed_formats": ["mp4", "mov", "webm"],
+    "output_format": "mp4",
+    "resolution": "1080p",
+    "codec": "h264",
+    "bitrate": "5000k"
+  },
+  "analysis": {
+    "enabled": true,
+    "detect_scenes": true,
+    "detect_peaks": true,
+    "detect_silence": true,
+    "silence_threshold": -40,
+    "silence_duration": 2.0
+  },
+  "hooks": {
+    "enabled": true,
+    "count": 5,
+    "min_duration": 10,
+    "max_duration": 60,
+    "impact_threshold": 0.65,
+    "formats": [15, 30, 60],
+    "add_zoom": true,
+    "add_transitions": true
+  },
+  "subtitles": {
+    "enabled": true,
+    "language": "pt-BR",
+    "model": "base",
+    "style": "modern",
+    "font_size": 32,
+    "font_color": "#FFFFFF",
+    "background_color": "#000000",
+    "background_opacity": 0.7,
+    "position": "bottom"
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.6,
+    "fade_duration": 2.0,
+    "auto_sync_bpm": true,
+    "ducking": true,
+    "ducking_threshold": 0.3,
+    "default_genre": "ambient"
+  },
+  "effects": {
+    "transitions": "fade",
+    "transition_duration": 0.5,
+    "zoom_on_highlights": true,
+    "zoom_factor": 1.1,
+    "color_correction": true,
+    "auto_levels": true
+  },
+  "performance": {
+    "max_workers": 1,
+    "gpu_enabled": false,
+    "temp_cleanup": true,
+    "compression_level": 5,
+    "timeout_minutes": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "save_logs": true,
+    "log_directory": "./logs",
+    "verbose": false
+  }
+}

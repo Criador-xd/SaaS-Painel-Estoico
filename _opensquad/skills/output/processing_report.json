@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-05-16T01:48:32.984406",
+  "status": "success",
+  "video_analysis": {
+    "duration": 450.5,
+    "resolution": "1920x1080",
+    "fps": 30,
+    "peaks_detected": 3,
+    "scenes_identified": 3
+  },
+  "processing_results": {
+    "hooks_created": 3,
+    "subtitle_language": "pt-BR",
+    "music_synced": true,
+    "music_bpm": 80,
+    "edit_recommendations": 4
+  },
+  "quality_metrics": {
+    "analysis_confidence": 0.9,
+    "hook_quality": 0.92,
+    "subtitle_accuracy": 0.88,
+    "music_sync_accuracy": 0.95,
+    "overall_score": 0.91
+  },
+  "output_files": {
+    "video_with_subtitles": "./output/video_subtitled.mp4",
+    "video_with_music": "./output/video_with_music.mp4",
+    "hooks": [
+      {
+        "15": "./output/hooks/hook_001_15s.mp4",
+        "30": "./output/hooks/hook_001_30s.mp4",
+        "60": "./output/hooks/hook_001_60s.mp4"
+      },
+      {
+        "15": "./output/hooks/hook_002_15s.mp4",
+        "30": "./output/hooks/hook_002_30s.mp4",
+        "60": "./output/hooks/hook_002_60s.mp4"
+      },
+      {
+        "15": "./output/hooks/hook_003_15s.mp4",
+        "30": "./output/hooks/hook_003_30s.mp4",
+        "60": "./output/hooks/hook_003_60s.mp4"
+      }
+    ],
+    "srt_file": "./output/subtitles/video.srt",
+    "edit_script": "./output/edit_script.json"
+  }
+}

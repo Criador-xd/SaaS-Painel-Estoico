@@ -1,0 +1,26 @@
+# Requisitos do Video Editor Pro Skill
+
+# Processamento de Vídeo
+moviepy==1.0.3
+ffmpeg-python==0.2.1
+
+# Análise de Áudio
+librosa==0.10.0
+pydub==0.25.1
+numpy==1.24.3
+
+# Transcrição Automática
+openai-whisper==20230314
+
+# Visão Computacional
+opencv-python==4.8.0.74
+
+# Utilitários
+python-dotenv==1.0.0
+pyyaml==6.0
+requests==2.31.0
+
+# Desenvolvimento (opcional)
+pytest==7.4.0
+black==23.7.0
+pylint==2.17.5
