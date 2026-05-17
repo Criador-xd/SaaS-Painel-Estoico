@@ -1,0 +1,117 @@
+=== PLANEJAMENTO DO CARROSSEL 24 ===
+
+TEMA: Companhias — Quem anda com você
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Estética estoica sombria — múltiplas estátuas de mármore em composição, algumas iluminadas e outras na sombra, contraste entre figuras isoladas e agrupadas, textura de pedra clássica, atmosfera de fórum romano ao entardecer, contraluz dramático.
+
+============================================
+SLIDE 1
+============================================
+TEXTO: Mostre-me com quem andas e te direi até onde chegarás.
+
+PROMPT DA IMAGEM: Two marble statues — one standing tall in golden light, the other crouching in shadow — contrasting paths, dark Stoic aesthetic, dramatic chiaroscuro, classical sculpture style, ultra detailed, 4K --ar 4:5
+
+============================================
+SLIDE 2
+============================================
+TEXTO: Ferro afia ferro. Medíocre contamina medíocre.
+
+PROMPT DA IMAGEM: Two ancient Greek marble swords crossing each other in a shower of golden sparks, darkness surrounding, powerful duality symbolism, Stoic aesthetic, high contrast, 4K --ar 4:5
+
+============================================
+SLIDE 3
+============================================
+TEXTO: Você é a média das cinco pessoas com quem mais convive. Escolha com precisão cirúrgica.
+
+PROMPT DA IMAGEM: Five marble busts arranged in a semicircle, four in shadow, one illuminated — the central figure glowing with golden light, atmosphere of selection and discernment, Stoic dark aesthetic, 4K --ar 4:5
+
+============================================
+SLIDE 4
+============================================
+TEXTO: Quem tolera tudo na sua vida não te ama — te atrasa.
+
+PROMPT DA IMAGEM: A dark marble figure standing behind another, hands about to cover its eyes, dramatic tension, manipulation symbolism, Stoic aesthetic, chiaroscuro lighting, 4K --ar 4:5
+
+============================================
+SLIDE 5
+============================================
+TEXTO: Solidão estratégica dói no início. Más companhias doem para sempre.
+
+PROMPT DA IMAGEM: A single marble figure standing alone on a pedestal in a vast dark chamber, single beam of light from above, powerful solitude imagery, Stoic aesthetic, ultra detailed, 4K --ar 4:5
+
+============================================
+SLIDE 6
+============================================
+TEXTO: Ande com quem te faz querer ser melhor — ou ande sozinho.
+
+PROMPT DA IMAGEM: Two marble statues walking together on a dark path toward a distant golden sunrise, backs facing the viewer, companionship and purpose symbolism, Stoic aesthetic, cinematic, 4K --ar 4:5
+
+============================================
+LEGENDA (CAPTION)
+============================================
+
+Sêneca dizia: "Antes de qualquer outra coisa, escolha bem seus amigos."
+
+E ele não estava sendo poético. Estava sendo estratégico.
+
+O ambiente molda o caráter. As vozes que você escuta todo dia se tornam a voz dentro da sua cabeça. Se você convive com pessoas medíocres, a mediocridade deixa de parecer erro — passa a parecer normal.
+
+E aí você se perde.
+
+Olhe ao redor agora. As pessoas mais próximas de você te desafiam? Te cobram? Te inspiram a sair do raso? Ou te confortam na mediocridade com elogios vazios e complacência?
+
+Marco Aurélio, imperador do mundo conhecido, cercou-se de filósofos e mentores que o contradiziam. Ele sabia: bajulação é veneno com gosto de mel.
+
+Se afaste de quem não te eleva. Não por arrogância — por autopreservação.
+
+Solidão estratégica é temporária. Má companhia deixa cicatrizes permanentes.
+
+Escolha seu círculo como quem escolhe o alicerce de um templo.
+
+Salve. Reflita. Olhe ao redor com coragem.
+
+.
+
+.
+
+.
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #companhias #circulosocial #marcoaurelio #seneca #estoico #relacionamentos #influenciapositiva
+
+============================================
+STORIES DE APOIO
+============================================
+
+STORY 1:
+Frase sobre fundo de mármore com estátuas ao fundo:
+"Corte laços com respeito. Mas corte."
+— Estilo visual: textura de mármore escuro, estátua solitária ao fundo, tipografia serif branca centralizada, atmosfera de decisão firme
+PROMPT: Dark marble texture with solitary statue in background, white serif typography, powerful Stoic aesthetic for Instagram story, decisive mood, 4K --ar 9:16
+
+STORY 2:
+Enquete interativa:
+"Suas amizades atuais te empurram para frente ou te seguram?"
+Opção A: Empurram para frente
+Opção B: Me seguram de alguma forma
+— Estilo visual: fundo escuro minimalista, texto branco, botões limpos, sem distrações visuais
+PROMPT: Minimalist dark background for Instagram story poll, white serif text, clean elegant Stoic aesthetic, introspection theme, 4K --ar 9:16
+
+STORY 3:
+Citação de Marco Aurélio:
+"A qualidade da sua vida depende da qualidade dos seus pensamentos. E seus pensamentos dependem das suas companhias."
+— Estilo visual: busto de Marco Aurélio desfocado ao fundo, contraluz dourado, texto sobreposto
+PROMPT: Blurred Marcus Aurelius marble bust in dark background, golden backlight, white serif quote overlay, Stoic aesthetic for Instagram story, 4K --ar 9:16
+
+STORY 4:
+Reflexão com chamada para ação:
+"Marque aqui alguém que te faz ser melhor. Só um. Celebre quem te eleva."
+— Estilo visual: fundo preto puro, texto branco, espaço para marcação, minimalista e emocional
+PROMPT: Pure black background with white serif text, mention/tag prompt, emotional connection, Stoic minimalist aesthetic for Instagram story, 4K --ar 9:16
+
+============================================
+ÁUDIOS SUGERIDOS
+============================================
+- "In This Shirt" — The Irrepressibles (crescimento emocional profundo)
+- "Brother" — Kodaline (tema de conexão humana, emotivo)
+- Áudio ambiente: passos ecoando em corredor de pedra (caminhada simbólica)
+- Instrumental épico com cordas crescentes e sutis (tom de decisão e coragem)

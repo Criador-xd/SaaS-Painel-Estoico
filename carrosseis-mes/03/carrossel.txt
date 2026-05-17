@@ -1,0 +1,94 @@
+=== CARROSSEL 03: FOCO — ELIMINAR DISTRAÇÕES ===
+
+TEMA: A importância do foco absoluto e da eliminação do ruído externo e interno
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto, um único ponto de luz central, textura de mármore escuro com veios, rim light em branco frio, composições minimalistas com um só elemento iluminado
+
+---
+
+SLIDE 1 (Capa)
+Texto: "FOCO"
+Subtítulo: "Eliminar distrações"
+Image Prompt: A single sharp beam of cool white light piercing through complete darkness and hitting the center of a dark marble floor, creating a perfect circle of illumination, everything else swallowed by black, stark minimalism --ar 4:5
+
+---
+
+SLIDE 2
+Texto: "Quem persegue dois coelhos não alcança nenhum."
+Image Prompt: A marble archer statue in silhouette, bow drawn, aiming at a single distant point of light in the darkness, full concentration, tension in the pose, dramatic rim light --ar 4:5
+
+---
+
+SLIDE 3
+Texto: "Sua atenção é seu recurso mais escasso. Gaste com sabedoria."
+Image Prompt: A dark marble hand open with a single glowing white sphere resting on the palm, the only light source in the frame, illuminating the fine texture of the stone hand, intimate and precious --ar 4:5
+
+---
+
+SLIDE 4
+Texto: "Notificações não são inofensivas. São pequenos roubos de atenção."
+Image Prompt: Multiple faint cracks spreading across a once-perfect dark marble surface, each crack illuminated by a faint cold blue light from below, symbol of fragmented attention, abstract and moody --ar 4:5
+
+---
+
+SLIDE 5
+Texto: "Foco não é o que você inclui. É o que você exclui."
+Image Prompt: A marble sculptor's chisel striking a dark stone block, a single sharp shard flying off caught in mid-air, dramatic white backlight, act of deliberate removal and refinement --ar 4:5
+
+---
+
+SLIDE 6
+Texto: "Menos distrações. Mais profundidade."
+Image Prompt: A single dark marble doorway at the end of a long corridor, a warm light spilling from within, the corridor otherwise completely dark, path narrowing to one single point of focus --ar 4:5
+
+---
+
+LEGENDA (CAPTION):
+
+Vivemos no século da distração. Tudo foi desenhado para roubar sua atenção. E a maioria das pessoas entrega de graça.
+
+Mas aqui vai a verdade estoica: quem decide onde coloca o foco, decide o destino da própria vida.
+
+Sêneca já alertava sobre a mente dispersa — aquela que começa mil coisas e não termina nenhuma. Ocupada, mas não produtiva. Cansada, mas sem avanço real.
+
+Foco não é uma habilidade técnica.
+É uma decisão moral.
+É escolher o que importa e ter coragem de ignorar o resto.
+
+Quantas horas você perdeu hoje com o que não importa?
+Quantos minutos você deu ao que realmente transforma sua vida?
+
+Fecha as abas. Silencia o celular.
+Mergulha fundo no que importa.
+
+A profundidade vence sempre a dispersão.
+
+#estoicismo #foco #resiliencia #menteblindada #disciplina #sabedoria #pazinterior #filosofia #eliminardistracoes #trabalhoprofundo #mindfulness #produtividadeestoica #seneca #atencao #minimalismodigital
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "O que mais te distrai durante o dia?"
+Imagem prompt: A marble smartphone face-down on a dark stone surface, backlit by a single cold white beam, the phone itself in silhouette, stark anti-tech minimalism --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Não é que tenhamos pouco tempo, é que desperdiçamos muito." — Sêneca
+Imagem prompt: A dark marble sundial in near darkness, a single sharp beam of light hitting the center, the shadow needle pointing into the void, profound and ancient --ar 9:16
+
+STORY 3 — BASTIDORES
+Texto: "Como eu organizo minha rotina para manter o foco no que importa. Arrasta →"
+Imagem prompt: A dark marble desk with a single lit candle, a blank journal open, a fountain pen resting beside, minimalist stoic workspace in chiaroscuro --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Desliga tudo e faz o que precisa ser feito. Hoje."
+Imagem prompt: A marble door closing in the foreground, shutting out a chaos of blurred lights behind it, dark peace inside, symbolic of choosing focus over noise --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Intro" — The xx (minimalista e hipnótico)
+- "Adagio for Strings" — Samuel Barber (intenso e focado)
+- "The Blue Notebooks" — Max Richter (leitura introspectiva)
+- "Opening" — Philip Glass (minimalismo repetitivo e concentrado)

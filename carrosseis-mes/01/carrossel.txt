@@ -1,0 +1,94 @@
+=== CARROSSEL 01: DISCIPLINA — A BASE DE TUDO ===
+
+TEMA: Disciplina como fundamento essencial da vida estoica
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto profundo, textura de mármore escuro com veios sutis, iluminação em backlight dourado/âmbar, tipografia serifada branca, sombras dramáticas
+
+---
+
+SLIDE 1 (Capa)
+Texto: "DISCIPLINA" (título grande, centralizado, serif bold)
+Subtítulo: "A base de tudo"
+Image Prompt: A single ancient Greek marble column standing upright in complete darkness, dramatic golden backlight from behind illuminating its edges, fine marble texture visible, minimalist composition, dark stoic aesthetic, moody and powerful --ar 4:5
+
+---
+
+SLIDE 2
+Texto: "Sem disciplina, o talento é apenas potencial desperdiçado."
+Image Prompt: A weathered stone hand gripping an unlit torch upright against a black void, subtle amber rim light tracing the contours of the hand and torch, marble dust particles suspended in the air, stoic and austere --ar 4:5
+
+---
+
+SLIDE 3
+Texto: "Você não se torna forte no dia em que decide. Torna-se forte no dia em que repete."
+Image Prompt: Close-up of a cracked marble surface with a single thin golden line of light seeping through the crack, dark shadows around the edges, symbolic of breakthrough through repetition, minimalist --ar 4:5
+
+---
+
+SLIDE 4
+Texto: "A disciplina vence a motivação. A motivação some. A disciplina permanece."
+Image Prompt: A lone marble bust of a stoic figure seen from behind, facing a vast empty darkness, a narrow beam of warm light falling on the back of its head and shoulders, contemplative and severe --ar 4:5
+
+---
+
+SLIDE 5
+Texto: "Domine seus impulsos ou eles dominarão sua vida."
+Image Prompt: Two classical marble hands facing each other in the darkness, one open with chains falling away, the other clenched and bound by fading shadows, chiaroscuro lighting, powerful contrast --ar 4:5
+
+---
+
+SLIDE 6
+Texto: "Comece. Agora."
+Image Prompt: A single marble step emerging from total darkness, illuminated by a sharp diagonal beam of golden light, empty space above suggesting ascent, minimal and commanding, stoic aesthetic --ar 4:5
+
+---
+
+LEGENDA (CAPTION):
+
+A disciplina não é um dom. É uma decisão repetida todos os dias.
+
+Disciplina é o que resta quando a animação acaba.
+É o que te levanta antes do sol. O que te mantém firme quando ninguém está olhando.
+
+Marco Aurélio escrevia para si mesmo: "De manhã, quando custar a levantar, lembra-te: levanto-me para fazer o trabalho de um ser humano."
+
+A base de tudo não é o talento.
+Não é a sorte.
+É a repetição silenciosa do que precisa ser feito.
+
+Sem disciplina, até o propósito mais nobre vira apenas uma intenção bonita guardada na gaveta.
+
+A pergunta é simples:
+O que você está adiando que já sabe que precisa fazer?
+
+Comece. Agora.
+
+#estoicismo #disciplina #resiliencia #menteblindada #sabedoria #foco #pazinterior #filosofia #estoicismodiario #autodisciplina #marcusaurelius #mentalidadeforte #rotinaestoica #seneca
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "Qual hábito você sabe que transformaria sua vida — mas ainda não começou?"
+Imagem prompt: A single lit candle in complete darkness, wax slightly dripping, flame steady and still, minimal composition, warm amber glow on a dark marble surface --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Não são as coisas que nos perturbam, mas a opinião que temos delas." — Epicteto
+Imagem prompt: A weathered marble face of Epictetus statue in dramatic side lighting, half in shadow half illuminated, museum-like texture, powerful and austere --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "Por que disciplina é o tema mais importante do estoicismo. Arrasta pro lado →"
+Imagem prompt: A desk in near darkness with a single sheet of handwritten notes and a fountain pen, lamp casting a narrow warm pool of light, stoic scholar workspace --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Salva este carrossel. Volta aqui quando faltar força."
+Imagem prompt: Marble staircase ascending into light at the top, bottom steps in shadow, perspective from below looking up, symbolic of rising through discipline --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "In the End" — Linkin Park (versão instrumental/piano)
+- "Time" — Hans Zimmer (trecho lento e crescente)
+- "Experience" — Ludovico Einaudi (piano minimalista)
+- "Nuvole Bianche" — Ludovico Einaudi

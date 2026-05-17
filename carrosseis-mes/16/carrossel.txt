@@ -1,0 +1,92 @@
+===== CARROSSEL 16 =====
+TEMA: Comparação: O veneno da mente
+TIPO: Motivacional/Mindset
+ESTILO VISUAL: Estética estoica escura — mármore rachado com veios dourados, sombras profundas, contraluz dramático, tipografia serifada branca sobre fundo preto e cinza-chumbo. Sensação de peso e introspecção.
+
+==============================
+SLIDE 1
+==============================
+Texto: A comparação é um veneno silencioso.
+Promp: Dark stoic aesthetic, cracked black marble surface with subtle gold veins, dramatic backlight casting long shadows, white serif typography reading "A comparação é um veneno silencioso." centered in elegant font, shallow depth of field, 4:5 portrait orientation, cinematic lighting, moody atmosphere --ar 4:5
+
+==============================
+SLIDE 2
+==============================
+Texto: Você não vê a guerra — só o troféu.
+Promp: A single ancient bronze trophy on a dark marble pedestal, surrounded by complete darkness, a narrow beam of light from above illuminating only the trophy while shadows hide everything else, white serif text "Você não vê a guerra — só o troféu.", stoic moody aesthetic, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 3
+==============================
+Texto: Ninguém posta a derrota, a dúvida, o vazio.
+Promp: Dark marble wall with deep cracks, a faint ghostly silhouette barely visible in the shadows, low-key dramatic lighting, white serif typography reading "Ninguém posta a derrota, a dúvida, o vazio.", melancholic stoic aesthetic, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 4
+==============================
+Texto: Cada um corre sua própria maratona.
+Promp: Long empty corridor made of dark stone with a single distant light at the end, perspective leading into the unknown, solitary figure barely visible walking toward the light, white serif text "Cada um corre sua própria maratona.", cinematic depth, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 5
+==============================
+Texto: Olhe para dentro. Só isso importa.
+Promp: Extreme close-up of an ancient cracked mirror reflecting a faint flame, dark marble frame, deep shadows, white serif typography reading "Olhe para dentro. Só isso importa.", mystical stoic atmosphere, chiaroscuro lighting, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 6
+==============================
+Texto: @menteestoicaabsoluta
+Promp: Minimal dark marble texture with subtle golden veining, centered elegant white serif typography reading "@menteestoicaabsoluta" in refined font, soft backlight glow behind the text, stoic luxury aesthetic, clean composition, 4:5 portrait --ar 4:5
+
+==============================
+LEGENDA (CAPTION)
+==============================
+O veneno da comparação não destrói de uma vez — corrói lentamente.
+
+Você olha para o outro e esquece que só vê a vitrine. Ninguém expõe as noites em claro, as quedas, os recomeços silenciosos.
+
+O estoico sabe: o que o outro conquistou não diminui o que você pode construir.
+
+Sua única régua é quem você foi ontem.
+
+Respira. Para de olhar para o lado. Segue.
+
+—
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #comparação #autoconhecimento #evolução #mentesblindadas #crescimentopessoal #estoicismoaplicado
+
+==============================
+STORIES DE APOIO
+==============================
+
+STORY 1
+Formato: Frase sobre fundo escuro
+Texto: "A felicidade do outro não é a sua infelicidade."
+Promp: Dark marble background with subtle texture, single centered line of white serif text reading "A felicidade do outro não é a sua infelicidade.", soft vignette, stoic minimal aesthetic, 9:16 portrait --ar 9:16
+
+STORY 2
+Formato: Enquete interativa
+Texto: O que mais te faz comparar?
+Opções: Redes sociais / Colegas de trabalho / Família / Relacionamentos
+Promp: Dark veined marble background, elegant white serif text reading "O que mais te faz comparar?" at top, four subtle glass button shapes below with faded text options, stoic interactive aesthetic, soft glow, 9:16 portrait --ar 9:16
+
+STORY 3
+Formato: Reflexão em slide duplo (sequência)
+Texto parte 1: "Epicteto dizia: se queres progredir, aceita parecer tolo aos olhos dos outros."
+Texto parte 2: "O progresso real é invisível. Não precisa de plateia."
+Promp 1: Dark stoic background, white serif quote "Epicteto dizia: se queres progredir, aceita parecer tolo aos olhos dos outros.", marble texture, 9:16 portrait --ar 9:16
+Promp 2: Dark marble surface, white serif text "O progresso real é invisível. Não precisa de plateia.", stoic elegant aesthetic, 9:16 portrait --ar 9:16
+
+STORY 4
+Formato: Caixa de perguntas
+Texto: Qual comparação você precisa abandonar hoje? Deixa aqui.
+Promp: Dark marble background, elegant white serif text reading "Qual comparação você precisa abandonar hoje? Deixa aqui.", with a subtle question box glow area below, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+==============================
+ÁUDIOS SUGERIDOS
+==============================
+- "Experience" — Ludovico Einaudi (piano contemplativo)
+- "Time" — Hans Zimmer (construção dramática lenta)
+- "The Night Window" — Thomas Newman (atmosfera introspectiva)
+- "Samskeyti" — Sigur Rós (minimalismo emocional)

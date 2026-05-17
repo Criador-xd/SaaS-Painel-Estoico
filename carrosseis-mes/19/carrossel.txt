@@ -1,0 +1,91 @@
+===== CARROSSEL 19 =====
+TEMA: Simplicidade: Menos é mais
+TIPO: Motivacional/Mindset
+ESTILO VISUAL: Estética estoica escura — composições minimalistas, espaço negativo abundante, mármore liso com poucos elementos, contraluz suave que transmite paz e clareza. Tipografia serifada branca com muito respiro visual.
+
+==============================
+SLIDE 1
+==============================
+Texto: A riqueza não está no que você tem — está no que você não precisa.
+Promp: Dark stoic aesthetic, a single smooth dark marble pedestal in an otherwise empty void, soft gentle backlight creating a subtle halo around the empty space above the pedestal, white serif typography reading "A riqueza não está no que você tem — está no que você não precisa.", vast negative space, minimalist composition, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 2
+==============================
+Texto: Sêneca viveu com pouco para lembrar que pouco basta.
+Promp: A single clay bowl and a worn wooden cup on a dark stone table, illuminated by one narrow beam of light from a high window, deep shadows consuming everything else, white serif text "Sêneca viveu com pouco para lembrar que pouco basta.", ancient stoic simplicity, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 3
+==============================
+Texto: Acumulamos coisas. Perdemos a paz.
+Promp: Dark marble surface cluttered with scattered broken objects — shards, fragments, dust — lit harshly from the side creating chaotic shadows, white serif typography reading "Acumulamos coisas. Perdemos a paz.", contrast between chaos and peace, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 4
+==============================
+Texto: O essencial cabe numa mão.
+Promp: Extreme close-up of a weathered ancient hand open with palm facing up, a single small flame hovering above it in complete darkness, no other objects visible, white serif text "O essencial cabe numa mão.", profound stoic minimalism, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 5
+==============================
+Texto: Menos distração. Mais presença.
+Promp: Dark marble room with only one object — a single lit candle on the floor in the center — everything else in complete shadow, light gently radiating outward, white serif typography reading "Menos distração. Mais presença.", serene stoic atmosphere, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 6
+==============================
+Texto: @menteestoicaabsoluta
+Promp: Minimal dark marble texture with subtle clean veining, vast empty space, centered elegant white serif typography reading "@menteestoicaabsoluta" in refined font, soft backlight glow, stoic luxury minimalist aesthetic, clean composition, 4:5 portrait --ar 4:5
+
+==============================
+LEGENDA (CAPTION)
+==============================
+A simplicidade não é pobreza. É liberdade.
+
+Os estoicos sabiam: quanto menos você precisa, menos o mundo pode te tirar. A verdadeira abundância não se mede pelo que você acumula, mas pelo que você consegue viver sem.
+
+Sêneca, um dos homens mais ricos de Roma, praticava dias inteiros de privação voluntária. Não por necessidade — por disciplina. Para nunca esquecer que a paz não vem das coisas.
+
+Hoje, olhe ao redor. O que está sobrando? O que pesa e não serve?
+
+Menos coisas. Mais espaço para o que importa.
+
+—
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #simplicidade #minimalismo #menosémais #estoicismoaplicado #essencialismo #vidaestoica
+
+==============================
+STORIES DE APOIO
+==============================
+
+STORY 1
+Formato: Frase sobre fundo escuro
+Texto: "Não é o homem que tem pouco, mas o homem que deseja mais, que é pobre." — Sêneca
+Promp: Dark marble background with vast negative space, single centered white serif text reading "Não é o homem que tem pouco, mas o homem que deseja mais, que é pobre." with "— Sêneca" below in smaller italic, stoic minimal aesthetic, 9:16 portrait --ar 9:16
+
+STORY 2
+Formato: Checklist interativa
+Texto: O que você pode eliminar hoje?
+Opções: Uma notificação / Uma compra desnecessária / Um compromisso vazio / Um pensamento tóxico
+Promp: Dark marble background, elegant white serif text reading "O que você pode eliminar hoje?" at top, four subtle glass checklist items with text options, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+STORY 3
+Formato: Reflexão em texto
+Texto: "Simplificar não é perder. É escolher. O que fica depois da limpeza é o que realmente importa. O resto era ruído."
+Promp: Dark marble surface with clean negative space, white serif text reading "Simplificar não é perder. É escolher. O que fica depois da limpeza é o que realmente importa. O resto era ruído.", stoic contemplative aesthetic, 9:16 portrait --ar 9:16
+
+STORY 4
+Formato: Enquete
+Texto: O que mais pesa na sua vida agora?
+Opções: Excesso de coisas / Compromissos demais / Informação demais / Expectativas demais
+Promp: Dark marble background with subtle texture, elegant white serif text reading "O que mais pesa na sua vida agora?" at top, four glass buttons below, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+==============================
+ÁUDIOS SUGERIDOS
+==============================
+- "Comptine d'un autre été" — Yann Tiersen (piano minimalista)
+- "Avril 14th" — Aphex Twin (simplicidade eletrônica)
+- "The Blue Notebooks" — Max Richter (atmosfera meditativa)
+- "Petrichor" — Keaton Henson (piano contemplativo)

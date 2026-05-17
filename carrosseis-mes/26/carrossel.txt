@@ -1,0 +1,94 @@
+========================================
+CARROSSEL #26 — NOITE: REFLEXÃO E BALANÇO
+========================================
+
+TEMA: A importância do ritual noturno de reflexão — a prática estoica de revisar o dia antes de dormir.
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — céu noturno profundo, mármore escuro com veios sutis, luz de lamparina ou luar, sombras alongadas, tipografia branca serifada.
+
+=============================
+SLIDES
+=============================
+
+SLIDE 1 (Capa)
+Texto: "O poder está no que você revisa, não no que você ignora."
+Image Prompt: A dark marble surface with deep black and charcoal veins, illuminated by a single oil lamp's golden glow casting long dramatic shadows across the stone, ancient Stoic atmosphere, chiaroscuro lighting, 4:5 vertical composition --ar 4:5
+
+SLIDE 2
+Texto: "Todas as noites, os estoicos faziam três perguntas a si mesmos."
+Image Prompt: An ancient weathered stone wall at night, a single window with moonlight streaming through, dust particles floating in the light beam, dark contemplative mood, marble texture visible in the shadows, cinematic lighting --ar 4:5
+
+SLIDE 3
+Texto: "O que fiz bem hoje?"
+"O que fiz mal?"
+"O que ficou por fazer?"
+Image Prompt: Three classical marble columns in deep shadow, each partially illuminated by a different angle of moonlight, stark contrast between light and darkness, minimalist composition, ethereal atmosphere --ar 4:5
+
+SLIDE 4
+Texto: "Sem balanço, o erro de hoje será o erro de amanhã."
+Image Prompt: A cracked marble slab on a dark surface, a thin line of golden light emerging from the crack, symbolizing awareness breaking through, dramatic shadowplay, moody and philosophical aesthetic --ar 4:5
+
+SLIDE 5
+Texto: "Dormir em paz não é luxo. É disciplina."
+Image Prompt: A dark bedroom scene with a marble nightstand, a single extinguished candle with a thin trail of smoke rising, moonlight barely touching the edges of the stone, deep tranquility, serene darkness --ar 4:5
+
+SLIDE 6
+Texto: "Antes de fechar os olhos, feche as contas com o dia."
+Image Prompt: An ancient Roman sundial in darkness, illuminated only by starlight from above, marble base with deep shadows, cosmic and timeless atmosphere, the stars reflecting faintly on the polished stone surface --ar 4:5
+
+=============================
+LEGENDA (CAPTION)
+=============================
+
+Sêneca fazia isso toda noite. Marco Aurélio também.
+
+Antes de dormir, eles se perguntavam: o que acertei? Onde falhei? O que deixei escapar?
+
+Não era culpa. Era balanço.
+Não era autocrítica vazia. Era ajuste de rota.
+
+A mente que não se examina repete os mesmos buracos.
+A mente que se revisa constrói um caminho melhor a cada amanhecer.
+
+A quietude da noite não serve só para descansar o corpo.
+Serve para acertar as contas com o espírito.
+
+Hoje, antes de fechar os olhos, faça as três perguntas.
+Sem julgamento. Só com verdade.
+
+O estoico não foge do que viu em si mesmo.
+Ele usa o que viu para ser melhor.
+
+Boa noite. Bom balanço.
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #reflexao #autoconhecimento #rotinaestoica #crescimentopessoal #menteinabalavel #nofap #estoicismodiario
+
+=============================
+STORIES DE APOIO (3-4)
+=============================
+
+STORY 1 — ENQUETE INTERATIVA
+Texto na imagem: "Você revisa seu dia antes de dormir?"
+Opções: "Sim, toda noite" / "Quase nunca"
+Image Prompt: A dark marble surface with a single quill pen and parchment, dramatic side lighting creating long shadows, moody Stoic study aesthetic --ar 9:16
+
+STORY 2 — FRASE DE SÊNECA
+Texto na imagem: "Quando a luz se apagar e minha esposa, já acostumada ao meu hábito, se calar, examino todo o meu dia."
+— Sêneca, Sobre a Ira
+Image Prompt: Ancient Roman marble bust silhouette in near-total darkness, only the faintest rim light revealing the contours, dramatic and solemn atmosphere --ar 9:16
+
+STORY 3 — CHAMADA PARA O POST
+Texto na imagem: "As 3 perguntas que os estoicos faziam antes de dormir. Post novo no feed."
+Seta apontando para baixo.
+Image Prompt: A dark stone archway framing a distant point of warm golden light, deep shadows in the foreground, mysterious and inviting Stoic aesthetic --ar 9:16
+
+STORY 4 — REFLEXÃO FINAL
+Texto na imagem: "O homem que não examina seu dia, repete seus erros. O que examina, os transforma em força."
+Image Prompt: A single marble staircase step in dramatic chiaroscuro, light hitting only the top surface, the rest dissolving into complete darkness, minimalist and powerful composition --ar 9:16
+
+=============================
+ÁUDIOS SUGERIDOS
+=============================
+- "Nightfall" — melodic deep house with strings (uso em Reels com o carrossel)
+- Sons de natureza noturna: grilos + vento leve + fogueira (para story de reflexão)
+- Piano solo melancólico tipo "Comptine d'un autre été" (para story da frase de Sêneca)

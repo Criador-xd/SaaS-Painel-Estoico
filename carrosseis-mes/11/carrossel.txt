@@ -1,0 +1,90 @@
+================================================================
+CARROSSEL 11 — GRATIDÃO: ENXERGAR O QUE JÁ TEM
+================================================================
+
+TEMA: Gratidão — Enxergar o que já tem
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto profundo com textura sutil de mármore escuro, iluminação em contraluz dourada suave, tipografia serifada branca. Atmosfera de templo silencioso ao amanhecer.
+
+================================================================
+SLIDES
+================================================================
+
+SLIDE 1 (Capa)
+Texto: "GRATIDÃO"
+       "Enxergar o que já tem"
+Image Prompt: Dark Stoic aesthetic, a single beam of golden light piercing through darkness onto an ancient marble surface, minimal composition, white serif typography reading "GRATIDÃO" centered, deep black background with subtle marble texture, volumetric lighting, photorealistic, cinematic mood --ar 4:5
+
+SLIDE 2
+Texto: "Tudo que você persegue..."
+       "...já habita em você."
+Image Prompt: Dark Stoic aesthetic, a cloaked figure standing still in a vast dark marble hall, hands open at sides in acceptance, soft rim lighting from behind, deep shadows, contemplative atmosphere, white serif text overlay area at bottom, cinematic composition --ar 4:5
+
+SLIDE 3
+Texto: "A riqueza não está no muito."
+       "Está em reconhecer o suficiente."
+Image Prompt: Dark Stoic aesthetic, a single olive branch resting on aged dark marble, dramatic side lighting creating deep shadows, minimal and symbolic composition, dust particles floating in light beam, moody chiaroscuro, text space at bottom, photorealistic --ar 4:5
+
+SLIDE 4
+Texto: "Quem só vê o que falta..."
+       "...nunca descansa."
+Image Prompt: Dark Stoic aesthetic, an open hand reaching toward a distant fading light in darkness, dramatic backlight silhouette, dark marble textures in background, sense of longing transformed into stillness, white serif text overlay, cinematic tension --ar 4:5
+
+SLIDE 5
+Texto: "A gratidão não é sentimento."
+       "É disciplina do olhar."
+Image Prompt: Dark Stoic aesthetic, a stoic marble bust partially illuminated by warm golden light, half in deep shadow, dramatic chiaroscuro, ancient wisdom atmosphere, white serif text area, museum-quality lighting, photorealistic --ar 4:5
+
+SLIDE 6 (Encerramento)
+Texto: "@menteestoicaabsoluta"
+Image Prompt: Dark Stoic aesthetic, the same golden beam from slide 1 now fully illuminating a marble surface with subtle engraved Stoic symbols, deep black background, elegant white serif typography with the handle centered, cinematic final frame, sense of completion and peace --ar 4:5
+
+================================================================
+LEGENDA (CAPTION)
+================================================================
+
+A gratidão é uma prática de força, não de fraqueza.
+
+O estoico não espera pelo que virá. Ele reconhece o que já está diante de si — e nisso encontra paz.
+
+Enquanto o mundo grita por mais, o sábio silencia com o suficiente.
+
+Treine seu olhar. O que você já possui hoje que ontem era apenas desejo?
+
+Salve este carrossel. Volte a ele quando a mente esquecer o que já conquistou.
+
+#estoicismo #gratidão #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #estoicismoaplicado #mindsetestoico #reflexao #autoconhecimento #forçamental #vidacomproposito
+
+================================================================
+STORIES DE APOIO (3-4)
+================================================================
+
+STORY 1
+Formato: Frase + imagem
+Texto: "A gratidão transforma o que temos em suficiente."
+Image Prompt: Dark Stoic aesthetic, close-up of weathered marble surface with a single crack filled with golden light (kintsugi-inspired), dramatic lighting, deep shadows, powerful metaphor for finding beauty in imperfection, 9:16 vertical composition --ar 9:16
+
+STORY 2
+Formato: Enquete interativa
+Texto: "O que você já tem e às vezes esquece de valorizar?"
+Opções: "Saúde" / "Paz"
+Image Prompt: Dark Stoic aesthetic, a minimal hourglass on dark marble, sand grains suspended in mid-air as if time stopped, dramatic side lighting, deep contemplative mood, 9:16 vertical composition --ar 9:16
+
+STORY 3
+Formato: Citação com swipe-up para o carrossel
+Texto: "Deslize para cima e veja o carrossel completo."
+Image Prompt: Dark Stoic aesthetic, a silhouetted figure meditating at dawn, soft golden rim light outlining the body against darkness, marble floor reflecting faint light, peaceful and powerful, 9:16 vertical composition --ar 9:16
+
+STORY 4
+Formato: Pergunta reflexiva
+Texto: "O que você persegue que já está dentro de você?"
+Image Prompt: Dark Stoic aesthetic, an ancient marble column seen from below, dramatic upward perspective, soft light descending from above through darkness, sense of revelation and inner discovery, 9:16 vertical composition --ar 9:16
+
+================================================================
+ÁUDIOS SUGERIDOS
+================================================================
+
+- "Experience" — Ludovico Einaudi (piano instrumental contemplativo)
+- "Time" — Hans Zimmer (construção lenta e emocional)
+- "The Night Window" — Thomas Newman (atmosfera suave e reflexiva)
+- "Cornfield Chase" — Hans Zimmer (piano minimalista com crescendo)

@@ -1,0 +1,91 @@
+===== CARROSSEL 20 =====
+TEMA: Paciência: O timing da vida
+TIPO: Motivacional/Mindset
+ESTILO VISUAL: Estética estoica escura — erosão natural em pedra, camadas geológicas reveladas por contraluz, sensação de tempo lento e profundo. Mármore estratificado com veios que contam eras. Tipografia serifada branca e âmbar suave.
+
+==============================
+SLIDE 1
+==============================
+Texto: A pressa é inimiga da permanência.
+Promp: Dark stoic aesthetic, ancient marble with visible sedimentary layers like geological strata, dramatic side lighting revealing the depth of time in the stone, white serif typography reading "A pressa é inimiga da permanência.", timeless monumental feel, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 2
+==============================
+Texto: Epicteto passou décadas lapidando um único homem: ele mesmo.
+Promp: Close-up of a rough uncut dark stone being slowly shaped, chisel marks visible under dramatic side light, marble dust suspended in the light beam, white serif text "Epicteto passou décadas lapidando um único homem: ele mesmo.", stoic sculpting metaphor, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 3
+==============================
+Texto: A árvore que cresce rápido cai na primeira tempestade.
+Promp: Ancient twisted olive tree silhouette against dark background, its thick gnarled trunk showing centuries of slow growth, dramatic backlight creating haunting silhouette, white serif typography reading "A árvore que cresce rápido cai na primeira tempestade.", stoic nature metaphor, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 4
+==============================
+Texto: Tudo tem seu kairós — o momento certo, não o momento ansioso.
+Promp: A single drop of water suspended mid-air about to hit a dark marble surface, frozen in time, dramatic lighting catching the droplet perfectly, concentric ripples just beginning, white serif text "Tudo tem seu kairós — o momento certo, não o momento ansioso.", ancient Greek concept of timing, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 5
+==============================
+Texto: Confia no processo. O universo não tem pressa.
+Promp: Vast dark cosmic marble texture resembling a night sky with faint golden veins like distant constellations, immense scale, white serif typography reading "Confia no processo. O universo não tem pressa.", cosmic stoic perspective, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 6
+==============================
+Texto: @menteestoicaabsoluta
+Promp: Minimal dark marble texture with subtle amber veining, centered elegant white serif typography reading "@menteestoicaabsoluta" in refined font, soft warm backlight glow, stoic luxury aesthetic, clean composition, 4:5 portrait --ar 4:5
+
+==============================
+LEGENDA (CAPTION)
+==============================
+Nada que vale a pena floresce sob ansiedade.
+
+Os estoicos entendiam o kairós — o tempo certo, qualitativo, que não se mede em minutos mas em maturidade. A fruta cai quando está pronta. O carvalho leva décadas. A estrela queima por bilhões de anos antes de você vê-la.
+
+Sua impaciência é compreensível. Mas não é útil.
+
+Você está sendo lapidado agora — mesmo quando parece que nada acontece. O que cresce devagar, cria raiz. O que cria raiz, resiste.
+
+Respira. Confia. Continua.
+
+—
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #paciência #timing #confiança #processo #estoicismoaplicado #tempocerto #kairós
+
+==============================
+STORIES DE APOIO
+==============================
+
+STORY 1
+Formato: Frase sobre fundo escuro
+Texto: "Nenhum grande feito acontece de repente. Até as uvas e os figos levam tempo." — Epicteto
+Promp: Dark marble background with sedimentary layers, single centered white serif text reading "Nenhum grande feito acontece de repente. Até as uvas e os figos levam tempo." with "— Epicteto" below in smaller italic, stoic timeless aesthetic, 9:16 portrait --ar 9:16
+
+STORY 2
+Formato: Enquete
+Texto: O que mais testa sua paciência?
+Opções: Resultados lentos / Pessoas indecisas / Seu próprio progresso / O incontrolável
+Promp: Dark layered marble background, elegant white serif text reading "O que mais testa sua paciência?" at top, four subtle glass button shapes with text options, stoic reflective aesthetic, 9:16 portrait --ar 9:16
+
+STORY 3
+Formato: Reflexão em texto
+Texto: "A ansiedade quer colher o que ainda não foi plantado. A paciência rega o solo e confia na estação. O fruto sempre vem — mas no tempo dele, não no seu."
+Promp: Dark marble with gold veins resembling roots spreading, white serif text reading "A ansiedade quer colher o que ainda não foi plantado. A paciência rega o solo e confia na estação.", stoic contemplative aesthetic, soft amber glow, 9:16 portrait --ar 9:16
+
+STORY 4
+Formato: Termômetro de paciência (slider)
+Texto: Como está sua paciência hoje?
+Slider: 🌪️ — 🏔️
+Promp: Dark marble background, elegant white serif text reading "Como está sua paciência hoje?" at top, horizontal slider area with 🌪️ on left and 🏔️ on right, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+==============================
+ÁUDIOS SUGERIDOS
+==============================
+- "River Flows in You" — Yiruma (piano fluido e paciente)
+- "Turning" — Hans Zimmer (construção lenta e recompensadora)
+- "Wait" — M83 (atmosfera etérea e gradual)
+- "Divenire" — Ludovico Einaudi (crescendo paciente e épico)

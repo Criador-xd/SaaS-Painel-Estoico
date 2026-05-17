@@ -1,0 +1,92 @@
+================================================================
+CARROSSEL 14 — JULGAMENTO: NÃO ROTULAR EVENTOS
+================================================================
+
+TEMA: Julgamento — Não rotular eventos
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto puro com textura de pedra lisa e fria, contraluz branco neutro sem tom quente ou frio (luz da verdade), tipografia serifada branca com alto contraste. Atmosfera de clareza impessoal, imparcialidade absoluta.
+
+================================================================
+SLIDES
+================================================================
+
+SLIDE 1 (Capa)
+Texto: "JULGAMENTO"
+       "Não rotular eventos"
+Image Prompt: Dark Stoic aesthetic, a perfectly balanced ancient scale in darkness, both plates empty and level, pure white neutral light illuminating from directly above, deep black smooth stone background, white serif typography reading "JULGAMENTO" centered, photorealistic, impartial atmosphere --ar 4:5
+
+SLIDE 2
+Texto: "O evento é neutro."
+       "O rótulo é seu."
+Image Prompt: Dark Stoic aesthetic, a blank stone tablet standing in complete darkness, pure white light hitting its surface evenly, no inscriptions, no marks, just raw stone ready for meaning to be assigned, deep black background, white serif text overlay, powerful minimalism --ar 4:5
+
+SLIDE 3
+Texto: "Chamar a chuva de 'ruim'..."
+       "...não impede a colheita."
+Image Prompt: Dark Stoic aesthetic, rain falling through a beam of neutral white light onto dark marble, each droplet catching light like a diamond, the scene neither sad nor joyful — simply present, deep black background, white serif text area, poetic neutrality --ar 4:5
+
+SLIDE 4
+Texto: "Sofremos mais pela opinião..."
+       "...do que pelo fato."
+Image Prompt: Dark Stoic aesthetic, a cracked marble surface with a single eye carved into it, pure white light illuminating the crack, the eye observing without expression, deep black shadows, metaphor for perception vs. reality, white serif text overlay, photorealistic and unsettling --ar 4:5
+
+SLIDE 5
+Texto: "O sábio não pergunta 'por que eu?'."
+       "Pergunta 'o que posso fazer com isso?'."
+Image Prompt: Dark Stoic aesthetic, a pair of hands shaping raw dark clay on marble, pure white neutral light from above, the act of creation from formless material, deep black background, metaphor for transforming events through action, white serif text area, cinematic --ar 4:5
+
+SLIDE 6 (Encerramento)
+Texto: "@menteestoicaabsoluta"
+Image Prompt: Dark Stoic aesthetic, the scale from slide 1 now bathed in full neutral white light, perfectly still and balanced, deep black background, elegant white serif typography with the handle, cinematic final frame, sense of absolute clarity and peace through non-judgment --ar 4:5
+
+================================================================
+LEGENDA (CAPTION)
+================================================================
+
+Nada é bom ou ruim por natureza. É sua mente que pinta o mundo com essas cores.
+
+Epicteto ensinou: não são os eventos que perturbam os homens, mas os julgamentos que fazem sobre eles.
+
+A chuva não veio para te atrapalhar. Ela simplesmente veio. O que você constrói a partir dela é escolha sua.
+
+Rotular é aprisionar. Observar é libertar.
+
+Da próxima vez que algo te abalar, pare e pergunte: isso é o fato ou é o que estou dizendo a mim mesmo sobre ele?
+
+Salve este carrossel. Volte a ele quando a mente estiver contando histórias que não aconteceram.
+
+#estoicismo #julgamento #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #estoicismoaplicado #percepçao #mindsetestoico #autocontrole #equilibrio #claridade
+
+================================================================
+STORIES DE APOIO (3-4)
+================================================================
+
+STORY 1
+Formato: Frase + imagem
+Texto: "O evento não mudou. Sua interpretação, sim."
+Image Prompt: Dark Stoic aesthetic, a single stone sitting on dark marble, lit by pure white light, casting no shadow of distortion, absolute simplicity and clarity, 9:16 vertical composition --ar 9:16
+
+STORY 2
+Formato: Enquete
+Texto: "Você costuma rotular eventos antes de entendê-los?"
+Opções: "Sim, sempre" / "Estou aprendendo"
+Image Prompt: Dark Stoic aesthetic, two identical doors in darkness, one labeled with words fading away, the other blank, pure white light between them, metaphor for choice of perception, 9:16 vertical composition --ar 9:16
+
+STORY 3
+Formato: Swipe-up para carrossel
+Texto: "Deslize para cima e veja o carrossel completo."
+Image Prompt: Dark Stoic aesthetic, mist clearing over dark marble, revealing a smooth untouched surface beneath, pure white light descending, sense of clarity emerging from confusion, 9:16 vertical composition --ar 9:16
+
+STORY 4
+Formato: Reflexão
+Texto: "Qual 'tragédia' do seu passado hoje você vê como lição?"
+Image Prompt: Dark Stoic aesthetic, a closed ancient book on dark marble, pure white light resting on its cover, the pages holding unknown stories, 9:16 vertical composition --ar 9:16
+
+================================================================
+ÁUDIOS SUGERIDOS
+================================================================
+
+- "Clair de Lune" — Debussy (piano etéreo e imparcial)
+- "Comptine d'un autre été" — Yann Tiersen (melancolia neutra, bela e simples)
+- "Spiegel im Spiegel" — Arvo Pärt (minimalismo que evoca clareza)
+- "The Light" — The Album Leaf (atmosfera instrumental contemplativa)

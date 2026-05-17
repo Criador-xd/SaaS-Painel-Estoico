@@ -1,0 +1,92 @@
+========================================
+CARROSSEL #27 — FRACASSO: O DEGRAU, NÃO O FIM
+========================================
+
+TEMA: Ressignificar o fracasso como ferramenta de crescimento sob a ótica estoica — toda queda é um mestre disfarçado.
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — mármore rachado mas com luz emergindo das fissuras (kintsugi conceitual), contrastes fortes, sensação de movimento ascendente, tipografia branca serifada.
+
+=============================
+SLIDES
+=============================
+
+SLIDE 1 (Capa)
+Texto: "O fracasso não é o oposto do sucesso. É o que vem antes."
+Image Prompt: A massive marble block split in two, a beam of intense golden light bursting through the crack from below, fragments suspended in mid-air, powerful and dramatic upward energy, dark surroundings --ar 4:5
+
+SLIDE 2
+Texto: "Epicteto foi escravo. Tornou-se imortal."
+Image Prompt: A pair of broken iron chains on dark marble, one link glowing with golden light as if being transformed, deep shadows, symbolic and austere composition --ar 4:5
+
+SLIDE 3
+Texto: "A rocha mais sólida um dia foi lava. O caos precede a forma."
+Image Prompt: Dark volcanic stone texture transitioning into polished marble, a thin line of orange magma glow separating the two states, geological and philosophical metaphor, dramatic lighting --ar 4:5
+
+SLIDE 4
+Texto: "O estoico não pergunta 'por que eu?' Ele pergunta 'o que eu faço com isso?'"
+Image Prompt: A shattered marble column on the ground, pieces scattered in darkness, but one hand-like shadow reaching toward the largest fragment, backlit by a single source of soft white light --ar 4:5
+
+SLIDE 5
+Texto: "Cada tombo revela onde o chão era falso. Agradeça."
+Image Prompt: A cracked dark marble floor seen from above, one section collapsed revealing a golden glow underneath, the crack forming an almost arrow-like shape pointing upward --ar 4:5
+
+SLIDE 6
+Texto: "O que te derruba não define você. O que você faz no chão, sim."
+Image Prompt: A fallen marble statue hand reaching upward from darkness, the fingertips just touching a beam of light, renaissance drama lighting, powerful resilience symbolism --ar 4:5
+
+=============================
+LEGENDA (CAPTION)
+=============================
+
+Ninguém quer cair. Mas todo estoico sabe: a queda é professora.
+
+Epicteto nasceu escravo. Teve a perna quebrada pelo seu dono. Foi exilado. E ainda assim — ou por causa disso — tornou-se um dos maiores filósofos da história.
+
+O que ele ensinou? Que o obstáculo é o caminho.
+Que a ruína de um plano é só o plano real se revelando.
+
+Você perdeu? Aprendeu.
+Falhou? Ganhou informação.
+Caiu? Agora sabe onde não pisa mais.
+
+O fracasso não é um veredito sobre o seu valor.
+É só o capítulo que antecede a virada.
+
+A rocha mais sólida um dia foi lava disforme.
+O caos precede a forma. A dor precede a força.
+
+Levante. Mas não se apresse. Analise o chão primeiro.
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #fracasso #superacao #crescimento #forçamental #resilienciaestoica #motivacao #estoicismodiario
+
+=============================
+STORIES DE APOIO (3-4)
+=============================
+
+STORY 1 — PERGUNTA ABERTA
+Texto na imagem: "Qual foi seu maior fracasso... e o que ele te ensinou?"
+Caixa de resposta aberta.
+Image Prompt: A dark marble wall with a single crack running diagonally, thin golden light visible within the crack, contemplative and intimate atmosphere --ar 9:16
+
+STORY 2 — FRASE DE EPICTETO
+Texto na imagem: "As circunstâncias não fazem o homem. Apenas o revelam a si mesmo."
+— Epicteto
+Image Prompt: A broken ancient Greek column in shadow, dramatic spotlight on the broken edge revealing marble veining detail, museum-like lighting, powerful solitude --ar 9:16
+
+STORY 3 — CHAMADA PARA O POST
+Texto na imagem: "Se o fracasso te paralisou, esse post é pra você. Slide 3 vai doer. Slide 6 vai curar. Feed novo."
+Seta apontando para baixo.
+Image Prompt: Dramatic dark marble texture with a single beam of light cutting diagonally across the entire frame, high contrast, mysterious and compelling --ar 9:16
+
+STORY 4 — CITAÇÃO CINEMATOGRÁFICA
+Texto na imagem: "Por que caímos, senhor? Para aprendermos a nos levantar."
+— Alfred Pennyworth, Batman Begins
+Image Prompt: Dark Gothamesque architecture in marble, a narrow shaft of moonlight illuminating a single stone step, cinematic and dramatic atmosphere --ar 9:16
+
+=============================
+ÁUDIOS SUGERIDOS
+=============================
+- "The Nights" — Avicii (tom de superação melódica)
+- Trilha sonora de Batman Begins — Hans Zimmer (para stories dramáticos)
+- "Rise" — Hans Zimmer (The Dark Knight Rises) — para story do Epicteto
+- Efeito sonoro de pedra rachando + vento (para story interativo)

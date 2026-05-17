@@ -1,0 +1,91 @@
+================================================================
+CARROSSEL 13 — TEMPO: O RECURSO MAIS VALIOSO
+================================================================
+
+TEMA: Tempo — O recurso mais valioso
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto com textura de mármore envelhecido e rachaduras sutis, contraluz âmbar quente com tom de pôr do sol, tipografia serifada branca. Atmosfera de urgência contida e reverência pelo presente.
+
+================================================================
+SLIDES
+================================================================
+
+SLIDE 1 (Capa)
+Texto: "TEMPO"
+       "O recurso mais valioso"
+Image Prompt: Dark Stoic aesthetic, an ancient sundial on cracked dark marble, a single warm amber light beam hitting the dial precisely, deep black background with subtle aged stone texture, white serif typography reading "TEMPO" centered, photorealistic, timeless atmosphere --ar 4:5
+
+SLIDE 2
+Texto: "Você pode reconquistar dinheiro."
+       "Tempo, não."
+Image Prompt: Dark Stoic aesthetic, a shattered hourglass on dark marble, glass fragments catching warm amber light, sand scattered in a pattern suggesting irreversible flow, dramatic lighting, deep shadows, white serif text overlay area, powerful symbolism --ar 4:5
+
+SLIDE 3
+Texto: "Cada minuto que passa..."
+       "...alguém daria tudo por ele."
+Image Prompt: Dark Stoic aesthetic, an elderly weathered hand reaching toward a beam of warm light in darkness, dark marble textures, dramatic chiaroscuro, profound sense of the preciousness of moments, white serif text area, photorealistic and moving --ar 4:5
+
+SLIDE 4
+Texto: "Não é falta de tempo."
+       "É falta de prioridade."
+Image Prompt: Dark Stoic aesthetic, a single candle burning in complete darkness on dark marble, the flame sharp and unwavering, warm amber glow, minimal composition, metaphor for focused and intentional living, white serif text overlay, cinematic --ar 4:5
+
+SLIDE 5
+Texto: "O presente é o único chão..."
+       "...onde seus pés realmente tocam."
+Image Prompt: Dark Stoic aesthetic, bare feet standing firmly on dark marble ground, warm light from above illuminating only the feet and immediate ground, everything else in deep shadow, powerful sense of grounding and presence, white serif text area --ar 4:5
+
+SLIDE 6 (Encerramento)
+Texto: "@menteestoicaabsoluta"
+Image Prompt: Dark Stoic aesthetic, the sundial from slide 1 now glowing with full amber light as if at golden hour, deep black background with aged marble, elegant white serif typography with the handle, cinematic final frame, sense of timeless wisdom --ar 4:5
+
+================================================================
+LEGENDA (CAPTION)
+
+O TEMPO NÃO ESPERA — E NÃO NEGOCIA.
+
+Sêneca já advertia: não é que tenhamos pouco tempo, é que desperdiçamos muito dele.
+
+Cada hora gasta no que não importa é uma hora roubada do que realmente importa. E o pior ladrão mora dentro de você: a distração.
+
+O estoico trata o tempo como seu bem mais escasso — porque é.
+
+Pergunte-se hoje: o que você está adiando que merecia sua atenção agora?
+
+Salve este carrossel. Leia quando precisar lembrar que o relógio não reinicia.
+
+#estoicismo #tempo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #estoicismoaplicado #produtividadeconsciente #mindsetestoico #prioridade #presente #vidacomproposito
+
+================================================================
+STORIES DE APOIO (3-4)
+================================================================
+
+STORY 1
+Formato: Frase + imagem
+Texto: "Você trata seu tempo como algo infinito? Ele não é."
+Image Prompt: Dark Stoic aesthetic, a pocket watch hanging in darkness by a thin thread, warm amber light illuminating the watch face, the thread about to break, dramatic tension, dark marble background, 9:16 vertical composition --ar 9:16
+
+STORY 2
+Formato: Enquete
+Texto: "O que mais rouba seu tempo?"
+Opções: "Redes sociais" / "Indecisão"
+Image Prompt: Dark Stoic aesthetic, sand slipping through fingers in dramatic warm light, the grains catching light like tiny stars before falling into darkness, metaphor for lost moments, 9:16 vertical composition --ar 9:16
+
+STORY 3
+Formato: Swipe-up para carrossel
+Texto: "Deslize para cima e veja o carrossel completo."
+Image Prompt: Dark Stoic aesthetic, a solitary figure walking toward a warm amber horizon in darkness, silhouetted, marble floor extending forward, sense of purposeful movement into the unknown, 9:16 vertical composition --ar 9:16
+
+STORY 4
+Formato: Pergunta aberta
+Texto: "Se hoje fosse seu último dia, o que faria diferente amanhã?"
+Image Prompt: Dark Stoic aesthetic, dawn light breaking over a dark marble landscape, warm golden tones emerging from complete blackness, sense of new beginning and urgency, 9:16 vertical composition --ar 9:16
+
+================================================================
+ÁUDIOS SUGERIDOS
+================================================================
+
+- "Time" — Hans Zimmer (clássico atemporal sobre o tema)
+- "Experience" — Ludovico Einaudi (piano que constrói urgência emocional)
+- "A Time of Quiet Between Storms" — Hans Zimmer (atmosfera contemplativa)
+- "River Flows in You" — Yiruma (piano fluido representando a passagem do tempo)

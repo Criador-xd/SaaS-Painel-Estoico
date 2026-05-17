@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════╗
+║  CARROSSEL 06 — MEMENTO MORI            ║
+║  Tema: A brevidade da vida              ║
+║  Tipo: Motivacional / Mindset           ║
+║  Estilo: Mármore escuro, ampulhetas,    ║
+║  luz em fade, caveiras sutis, sombras   ║
+╚══════════════════════════════════════════╝
+
+──────────────────────────────────────────
+SLIDE 1 — CAPA
+──────────────────────────────────────────
+Texto: "A cada dia que passa, você está mais perto do fim. E isso não é tristeza. É lucidez."
+
+Prompt: A close-up of an antique bronze hourglass on dark polished marble, the last grains of sand falling through a narrow funnel, dramatic chiaroscuro lighting from a single source, deep shadows swallowing the edges, cinematic atmosphere, ultra-detailed texture on the glass and metal, moody and contemplative --ar 4:5
+
+──────────────────────────────────────────
+SLIDE 2
+──────────────────────────────────────────
+Texto: "Você não tem tempo infinito. Pare de agir como se tivesse."
+
+Prompt: A solitary human hand reaching toward a faint, distant light in absolute darkness, fingers slightly open, the light barely illuminating the fingertips, marble texture on the stone floor beneath, dust particles suspended in the air, hyper-realistic, ethereal and melancholic --ar 4:5
+
+──────────────────────────────────────────
+SLIDE 3
+──────────────────────────────────────────
+Texto: "A morte não é o oposto da vida. É o que dá peso a cada escolha."
+
+Prompt: A weathered marble bust of a Stoic philosopher seen from behind, facing a vast dark void with a single beam of golden light cutting diagonally across the scene, volumetric light rays, ancient stone texture with cracks, profound sense of scale and silence --ar 4:5
+
+──────────────────────────────────────────
+SLIDE 4
+──────────────────────────────────────────
+Texto: "Quem se lembra da morte não desperdiça o dia."
+
+Prompt: A wide shot of an empty Roman temple interior at twilight, tall marble columns framing the composition, the last orange glow of sunset bleeding through the entrance, long shadows stretching across the stone floor, abandoned, sacred, timeless --ar 4:5
+
+──────────────────────────────────────────
+SLIDE 5
+──────────────────────────────────────────
+Texto: "Viva como se cada manhã fosse um presente que não merece."
+
+Prompt: A single white lily resting on a slab of black obsidian, morning dew droplets on the petals, soft backlight creating a delicate rim light, extreme close-up macro shot, the background dissolving into pure black --ar 4:5
+
+──────────────────────────────────────────
+SLIDE 6 — FECHAMENTO
+──────────────────────────────────────────
+Texto: "Memento Mori. Lembre-se de que você vai morrer. Só assim você começa a viver."
+
+Prompt: A minimalist composition of a human skull in deep shadow, only half of the skull illuminated by a cold silver light, resting on ancient cracked marble, the word "MEMENTO MORI" carved in Latin serif letters on the stone beneath, dark academic aesthetic, profound gravitas --ar 4:5
+
+══════════════════════════════════════════
+LEGENDA
+══════════════════════════════════════════
+
+Memento Mori.
+
+Lembre-se de que você vai morrer.
+
+Essa frase não é sobre medo. É sobre clareza. Os estoicos repetiam isso diariamente — não para se entristecer, mas para despertar.
+
+Se o tempo é limitado, cada hora importa. Cada conversa importa. Cada decisão carrega um peso que você talvez esteja ignorando.
+
+A morte não tira o sentido da vida. Ela entrega o sentido.
+
+Pergunte-se hoje:
+
+▶ Estou gastando meu tempo com o que realmente importa?
+▶ Estou adiando quem eu deveria ser?
+▶ Se hoje fosse o último dia, do que eu me orgulharia?
+
+Viver com a morte no horizonte não é ser sombrio. É ser livre.
+
+Viva com urgência. Viva com intenção.
+
+#estoicismo #mementomori #resiliencia #menteblindada #sabedoria #filosofia #pazinterior #foco #disciplina #vidacomproposito #reflexao #autoconhecimento #crescimentopessoal #mentalidadeforte
+
+══════════════════════════════════════════
+STORIES DE APOIO
+══════════════════════════════════════════
+
+STORY 1 — Citação
+Texto: "Você poderia deixar esta vida agora mesmo. Deixe que isso determine o que você faz, diz e pensa." — Marco Aurélio
+
+Prompt: A weathered page of an ancient leather-bound journal with handwritten Latin text, lit by a single flickering candle from the side, melting wax dripping onto dark wood, the flame just out of frame, warm amber tones against deep black --ar 9:16
+
+STORY 2 — Pergunta de engajamento
+Texto: "Se você soubesse que tem apenas um ano de vida... o que mudaria hoje?"
+
+Prompt: An open pocket watch with a cracked glass face resting on dark marble, the hands frozen at midnight, soft moonlight illumination, melancholic and intimate mood, shallow depth of field blurring the edges into darkness --ar 9:16
+
+STORY 3 — Bastidores / Reflexão
+Texto: "A ideia do Memento Mori não é te assustar. É te acordar."
+
+Prompt: A single black quill pen lying diagonally across a piece of aged parchment on a dark wooden desk, dust motes floating in a shaft of morning light, extreme minimalism, academic dark aesthetic, profound stillness --ar 9:16
+
+══════════════════════════════════════════
+ÁUDIOS SUGERIDOS
+══════════════════════════════════════════
+▶ "Experience" — Ludovico Einaudi (piano contemplativo e profundo)
+▶ "Time" — Hans Zimmer (construção lenta e impactante)
+▶ "The Departure" — Max Richter (atmosfera solene e reflexiva)
+▶ "On the Nature of Daylight" — Max Richter (tom melancólico e belo)

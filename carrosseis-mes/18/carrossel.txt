@@ -1,0 +1,90 @@
+===== CARROSSEL 18 =====
+TEMA: Ego: O inimigo interno
+TIPO: Motivacional/Mindset
+ESTILO VISUAL: Estética estoica escura — estátuas gregas quebradas, mármore fragmentado, contraluz que revela rachaduras, sensação de humildade e queda. Tipografia serifada branca e cinza-claro.
+
+==============================
+SLIDE 1
+==============================
+Texto: O ego constrói muros. A humildade constrói pontes.
+Promp: Dark stoic aesthetic, a massive cracked marble wall with faint golden light seeping through the fractures, white serif typography reading "O ego constrói muros. A humildade constrói pontes." centered, dramatic shadows, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 2
+==============================
+Texto: Marco Aurélio, imperador do mundo, escrevia para si mesmo.
+Promp: Ancient Roman bust of Marcus Aurelius in dramatic chiaroscuro lighting, half face illuminated half in complete shadow, worn marble texture, white serif text "Marco Aurélio, imperador do mundo, escrevia para si mesmo.", historical stoic reverence, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 3
+==============================
+Texto: Quem precisa provar que é forte... já perdeu.
+Promp: Fragmented Greek statue pieces scattered on dark marble floor, dramatic overhead spotlight creating long shadows from each fragment, white serif typography reading "Quem precisa provar que é forte... já perdeu.", stoic reflection on vanity, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 4
+==============================
+Texto: O silêncio do sábio vale mais que o grito do tolo.
+Promp: A single ancient column standing in vast darkness, faint light barely revealing its weathered surface, complete solitude, white serif text "O silêncio do sábio vale mais que o grito do tolo.", minimalist stoic composition, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 5
+==============================
+Texto: Mate o ego antes que ele mate seu crescimento.
+Promp: Dark marble statue of a figure in the process of breaking apart, cracks spreading from the center outward, intense backlight glowing through the fractures, white serif typography reading "Mate o ego antes que ele mate seu crescimento.", powerful stoic rebirth imagery, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 6
+==============================
+Texto: @menteestoicaabsoluta
+Promp: Minimal dark marble texture with subtle golden veining, centered elegant white serif typography reading "@menteestoicaabsoluta" in refined font, soft backlight glow, stoic luxury aesthetic, clean composition, 4:5 portrait --ar 4:5
+
+==============================
+LEGENDA (CAPTION)
+==============================
+O ego é o único inimigo que dorme no seu próprio quarto.
+
+Ele sussurra que você já sabe o suficiente. Que não precisa ouvir. Que está acima dos outros. E lentamente te isola do que realmente importa: o aprendizado.
+
+Marco Aurélio comandava o império mais poderoso do mundo e ainda assim escrevia lembretes para si mesmo sobre humildade. Ele sabia que o poder externo é frágil — o interno exige cultivo diário.
+
+A sabedoria estoica não se exibe. Ela escuta mais do que fala.
+
+Pergunte-se hoje: o que meu ego está me impedindo de aprender?
+
+—
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #ego #humildade #autoconhecimento #estoicismoaplicado #crescimentopessoal #marcoaurélio
+
+==============================
+STORIES DE APOIO
+==============================
+
+STORY 1
+Formato: Frase sobre fundo escuro
+Texto: "A opinião que os outros têm de você não te define. A opinião que você tem de si mesmo, sim."
+Promp: Dark marble background with subtle gold veining, single centered white serif text in elegant serif, soft vignette glow, stoic minimal aesthetic, 9:16 portrait --ar 9:16
+
+STORY 2
+Formato: Quiz rápido
+Texto: Seu ego já te sabotou?
+Opções: Sim, e muito / Algumas vezes / Acho que não / Não sei identificar
+Promp: Dark marble background, elegant white serif text reading "Seu ego já te sabotou?" at top, four subtle glass buttons with text options below, stoic reflective aesthetic, 9:16 portrait --ar 9:16
+
+STORY 3
+Formato: Reflexão em texto
+Texto: "O ego reage. A sabedoria responde. Entre o estímulo e a ação, existe um espaço. Nesse espaço está seu poder de escolha."
+Promp: Dark marble surface with subtle fractures, white serif text reading "O ego reage. A sabedoria responde. Entre o estímulo e a ação, existe um espaço. Nesse espaço está seu poder de escolha.", stoic contemplative aesthetic, soft backlight, 9:16 portrait --ar 9:16
+
+STORY 4
+Formato: Caixa de perguntas
+Texto: O que você deixou de aprender por orgulho? Refletiu sobre isso hoje?
+Promp: Dark marble background, elegant white serif text reading "O que você deixou de aprender por orgulho? Refletiu sobre isso hoje?", subtle question glow area, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+==============================
+ÁUDIOS SUGERIDOS
+==============================
+- "Agape" — Nicholas Britell (piano minimalista e profundo)
+- "On the Nature of Daylight" — Max Richter (cordas introspectivas)
+- "Grace" — Tony Anderson (construção atmosférica)
+- "The End of All Things" — Howard Shore (peso e silêncio)

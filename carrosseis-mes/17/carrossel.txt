@@ -1,0 +1,91 @@
+===== CARROSSEL 17 =====
+TEMA: Medo: Enfrentar o desconhecido
+TIPO: Motivacional/Mindset
+ESTILO VISUAL: Estética estoica escura — névoa sobre superfície de mármore negro, contraluz intenso rompendo a escuridão, sensação de abismo e coragem. Tipografia serifada branca e prateada.
+
+==============================
+SLIDE 1
+==============================
+Texto: O medo não some. Você aprende a atravessá-lo.
+Promp: Dark stoic aesthetic, thick fog rolling over black marble floor, a single beam of intense white light piercing through the darkness from above, white serif typography reading "O medo não some. Você aprende a atravessá-lo.", dramatic contrast, 4:5 portrait, cinematic --ar 4:5
+
+==============================
+SLIDE 2
+==============================
+Texto: Tudo que você quer está do outro lado do desconforto.
+Promp: A dark stone archway opening into blinding white light, sharp silhouette of the arch in the foreground, no visible ground beyond — just light and void, white serif text "Tudo que você quer está do outro lado do desconforto.", stoic and cinematic, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 3
+==============================
+Texto: Sêneca treinava a pobreza para não temê-la.
+Promp: Ancient Roman philosopher silhouette seated alone in a dim stone chamber, single oil lamp casting faint warm light, shadows engulfing the rest, white serif typography reading "Sêneca treinava a pobreza para não temê-la.", historical stoic atmosphere, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 4
+==============================
+Texto: O desconhecido não é inimigo. É território.
+Promp: Expansive dark landscape of jagged obsidian rock formations under a vast starless sky, one faint glowing path winding through the darkness, white serif text "O desconhecido não é inimigo. É território.", epic stoic scale, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 5
+==============================
+Texto: A coragem não é ausência de medo. É ação apesar dele.
+Promp: Close-up of a weathered stone hand gripping the edge of a dark cliff, dramatic lighting from below, veins of light cracking through the darkness above, white serif typography reading "A coragem não é ausência de medo. É ação apesar dele.", raw stoic power, 4:5 portrait --ar 4:5
+
+==============================
+SLIDE 6
+==============================
+Texto: @menteestoicaabsoluta
+Promp: Minimal dark marble texture with subtle silver veining, centered elegant white serif typography reading "@menteestoicaabsoluta" in refined font, soft backlight glow behind the text, stoic luxury aesthetic, clean composition, 4:5 portrait --ar 4:5
+
+==============================
+LEGENDA (CAPTION)
+==============================
+O medo é um alarme, não uma sentença.
+
+Ele existe para te alertar — não para te paralisar. Os estoicos ensinavam o premeditatio malorum: visualize o pior cenário, encare-o mentalmente, e verá que pode suportá-lo.
+
+O desconhecido assusta porque você ainda não pisou nele. Mas cada passo expande seu território interior.
+
+Sêneca dizia que sofremos mais na imaginação do que na realidade.
+
+Hoje, faça uma coisa que te assusta. Mesmo pequena. É assim que se constrói coragem.
+
+—
+
+#estoicismo #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #coragem #medo #enfrenteseusmedos #estoicismoaplicado #crescimentopessoal #forçamental
+
+==============================
+STORIES DE APOIO
+==============================
+
+STORY 1
+Formato: Frase sobre fundo escuro
+Texto: "Sofremos mais na imaginação do que na realidade." — Sêneca
+Promp: Dark marble background with subtle silver veining, single centered line of white serif text reading "Sofremos mais na imaginação do que na realidade." with "— Sêneca" below in smaller italic, soft vignette, stoic minimal aesthetic, 9:16 portrait --ar 9:16
+
+STORY 2
+Formato: Termômetro interativo (slider emoji)
+Texto: Qual o nível do seu medo hoje?
+Emoji slider: 😌 — 😰
+Promp: Dark veined marble background, elegant white serif text reading "Qual o nível do seu medo hoje?" at top, horizontal slider area with emoji icons 😌 on left and 😰 on right, stoic interactive aesthetic, soft dramatic glow, 9:16 portrait --ar 9:16
+
+STORY 3
+Formato: Reflexão em texto
+Texto: "O medo que você evita cresce. O medo que você encara diminui. Não existe atalho — só travessia."
+Promp: Dark marble surface with fog overlay, white serif text reading "O medo que você evita cresce. O medo que você encara diminui. Não existe atalho — só travessia.", stoic contemplative aesthetic, diffuse backlight, 9:16 portrait --ar 9:16
+
+STORY 4
+Formato: Enquete
+Texto: O que você vai enfrentar essa semana?
+Opções: Uma conversa difícil / Um novo desafio / Sair da zona de conforto / Aceitar a incerteza
+Promp: Dark marble background, elegant white serif text reading "O que você vai enfrentar essa semana?" at top, four subtle glass button shapes below with text options, stoic interactive aesthetic, 9:16 portrait --ar 9:16
+
+==============================
+ÁUDIOS SUGERIDOS
+==============================
+- "Cornfield Chase" — Hans Zimmer (tensão e superação)
+- "Nuvole Bianche" — Ludovico Einaudi (construção emocional)
+- "Arrival of the Birds" — The Cinematic Orchestra (crescendo inspirador)
+- "The Hand of Fate" — James Newton Howard (drama épico contido)

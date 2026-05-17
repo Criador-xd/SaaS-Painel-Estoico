@@ -1,0 +1,96 @@
+=== CARROSSEL 05: PROPÓSITO — VIVER COM INTENÇÃO ===
+
+TEMA: A importância de viver com propósito e intenção, não no piloto automático
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — mármore com iluminação dourada quente e direcional, fundo preto absoluto, composições que sugerem direção e clareza, tipografia serifada branca, tom de convicção e destino
+
+---
+
+SLIDE 1 (Capa)
+Texto: "PROPÓSITO"
+Subtítulo: "Viver com intenção"
+Image Prompt: A single dark marble path leading straight into a distant warm golden light at the vanishing point, the rest of the frame in complete darkness, perspective shot from the start of the path, clarity of direction --ar 4:5
+
+---
+
+SLIDE 2
+Texto: "Quem tem um 'porquê' suporta qualquer 'como'."
+Image Prompt: A marble compass on a dark stone surface, needle pointing firmly toward a distant golden star in the void, everything else in shadow, unwavering direction, profound purpose --ar 4:5
+
+---
+
+SLIDE 3
+Texto: "Você não está aqui por acaso. Nada na natureza está."
+Image Prompt: A marble seed cracked open on dark soil, a tiny golden seedling emerging toward a beam of light from above, the marble shell beside it in shadow, birth of purpose from something hard --ar 4:5
+
+---
+
+SLIDE 4
+Texto: "O dia que você descobre por que acorda, nenhuma manhã é pesada."
+Image Prompt: A marble bed in darkness, the sheets stone and abandoned, a single figure silhouette walking toward a distant golden sunrise visible through a stone archway, leaving sleep for purpose --ar 4:5
+
+---
+
+SLIDE 5
+Texto: "A direção importa mais que a velocidade."
+Image Prompt: A marble arrow carved into the floor of a dark stone corridor, pointing straight ahead toward a warm light source, the arrow itself illuminated by rim light, clarity and conviction --ar 4:5
+
+---
+
+SLIDE 6
+Texto: "Viva como se cada dia fosse inteiro. Não um ensaio."
+Image Prompt: A marble sundial in a shaft of golden afternoon light, the shadow falling precisely on a marked point, everything else in darkness, the preciousness of a single day captured in stone --ar 4:5
+
+---
+
+LEGENDA (CAPTION):
+
+A maioria das pessoas não vive. Apenas existe.
+
+Acorda, trabalha, dorme, repete. Sem direção. Sem intenção.
+
+O estoicismo exige mais de você. Exige que você pare e se pergunte: estou vivendo do jeito que escolhi — ou apenas sendo levado?
+
+Sêneca dizia que a maior parte da vida se vai fazendo o que não se quer, o resto se vai não fazendo nada, e o todo se vai sem propósito.
+
+Propósito não é um destino distante.
+É a razão pela qual você faz o que faz hoje.
+
+Não espere uma revelação mística.
+Propósito se constrói. Dia após dia. Escolha após escolha.
+
+O que faz você levantar da cama?
+Se não souber responder, talvez ainda não esteja vivendo. Talvez só esteja esperando.
+
+A vida não tem ensaio.
+Cada dia é a apresentação.
+
+#estoicismo #proposito #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #vivercomintencao #seneca #ikigai #vidacomproposito #crescimentopessoal #mentalidadeforte
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "Se o dinheiro não fosse problema, o que você faria todos os dias?"
+Imagem prompt: A single marble quill suspended over a blank dark stone tablet, a thin golden beam of light illuminating the tip, the question hanging in the void, infinite possibility --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Enquanto adiamos, a vida passa." — Sêneca
+Imagem prompt: A marble hourglass in near darkness, the last grains of sand falling through a thin beam of golden light, urgency and finality, profound stillness --ar 9:16
+
+STORY 3 — BASTIDORES
+Texto: "Como descobri meu propósito aplicando princípios estoicos. Arrasta →"
+Imagem prompt: A marble staircase spiraling upward into a warm golden light, the bottom steps in shadow, perspective from the climber's view, journey of ascent --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Pergunte-se hoje: o que estou construindo com meu tempo?"
+Imagem prompt: A marble hand placing a final stone block onto a small but complete structure, golden light illuminating the finished work, sense of accomplishment and meaning --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Now We Are Free" — Hans Zimmer (Gladiator)
+- "Comptine d'un autre été" — Yann Tiersen (piano reflexivo)
+- "Arrival of the Birds" — The Cinematic Orchestra (crescente e inspirador)
+- "On the Nature of Daylight" — Max Richter (contemplação profunda)

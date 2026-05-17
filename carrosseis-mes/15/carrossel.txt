@@ -1,0 +1,92 @@
+================================================================
+CARROSSEL 15 — HÁBITOS: CONSTRUIR QUEM VOCÊ É
+================================================================
+
+TEMA: Hábitos — Construir quem você é
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto com textura de mármore bruto com veios brancos, contraluz em tom bronze metálico (forja, construção), tipografia serifada branca. Atmosfera de disciplina silenciosa, construção paciente.
+
+================================================================
+SLIDES
+================================================================
+
+SLIDE 1 (Capa)
+Texto: "HÁBITOS"
+       "Construir quem você é"
+Image Prompt: Dark Stoic aesthetic, a chisel and hammer resting on rough dark marble block, warm bronze light from the side as if from a forge, deep black background with raw stone texture, white serif typography reading "HÁBITOS" centered, photorealistic, atmosphere of patient craftsmanship --ar 4:5
+
+SLIDE 2
+Texto: "Você não decide seu destino."
+       "Você decide seus dias."
+Image Prompt: Dark Stoic aesthetic, a series of small hammer marks on dark marble, each mark precise and intentional, warm bronze side lighting revealing the texture of each impact, deep black background, metaphor for daily actions compounding, white serif text overlay --ar 4:5
+
+SLIDE 3
+Texto: "A repetição não é prisão."
+       "É fundação."
+Image Prompt: Dark Stoic aesthetic, a partially carved marble column emerging from raw stone in darkness, warm bronze light illuminating the carved sections while raw stone remains in shadow, deep black background, powerful metaphor for habit shaping identity, white serif text area --ar 4:5
+
+SLIDE 4
+Texto: "O que você faz todo dia..."
+       "...é quem você será amanhã."
+Image Prompt: Dark Stoic aesthetic, a staircase carved into dark marble descending into warm bronze light, each step worn smooth by countless footsteps, deep shadows behind, metaphor for the cumulative path of daily discipline, white serif text overlay, cinematic depth --ar 4:5
+
+SLIDE 5
+Texto: "Disciplina não é um evento."
+       "É um compromisso silencioso."
+Image Prompt: Dark Stoic aesthetic, a single hand placing one stone onto a growing wall of dark marble blocks, warm bronze light from within the structure, the act of building captured in stillness, deep black background, white serif text area, sense of quiet determination --ar 4:5
+
+SLIDE 6 (Encerramento)
+Texto: "@menteestoicaabsoluta"
+Image Prompt: Dark Stoic aesthetic, the marble block from slide 1 now fully sculpted into a stoic bust, warm bronze light wrapping around it, deep black background, elegant white serif typography with the handle, cinematic final frame, sense of completion through daily discipline --ar 4:5
+
+================================================================
+LEGENDA (CAPTION)
+================================================================
+
+Você é o que faz repetidamente. Não o que pensa, não o que planeja — o que executa.
+
+Aristóteles disse: a excelência não é um ato, mas um hábito. O estoico vive isso em silêncio, dia após dia.
+
+Não prometa revoluções. Comprometa-se com pequenas ações diárias que ninguém vê. É ali, no invisível, que o caráter se forja.
+
+Hoje, escolha um hábito. Apenas um. E honre-o como se fosse um voto.
+
+Salve este carrossel. Leia amanhã de manhã. E depois de amanhã também.
+
+A repetição é sua aliada. Use-a.
+
+#estoicismo #habitos #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #estoicismoaplicado #rotinaestoica #mindsetestoico #construçao #consistencia #vidacomproposito
+
+================================================================
+STORIES DE APOIO (3-4)
+================================================================
+
+STORY 1
+Formato: Frase + imagem
+Texto: "Um dia de disciplina não muda nada. Mil dias mudam tudo."
+Image Prompt: Dark Stoic aesthetic, close-up of stacked dark marble blocks, warm bronze light revealing the perfect alignment, each block identical but together forming something monumental, 9:16 vertical composition --ar 9:16
+
+STORY 2
+Formato: Enquete
+Texto: "Qual hábito você quer construir nos próximos 30 dias?"
+Opções: "Leitura" / "Exercício"
+Image Prompt: Dark Stoic aesthetic, a single dark marble step illuminated by warm bronze light, the first step of a staircase disappearing upward into shadow, 9:16 vertical composition --ar 9:16
+
+STORY 3
+Formato: Swipe-up para carrossel
+Texto: "Deslize para cima e veja o carrossel completo."
+Image Prompt: Dark Stoic aesthetic, an archway carved from dark marble leading into warm bronze light, the path ahead illuminated but unknown, 9:16 vertical composition --ar 9:16
+
+STORY 4
+Formato: Reflexão pessoal
+Texto: "O que você faz todos os dias que seu 'eu do futuro' agradecerá?"
+Image Prompt: Dark Stoic aesthetic, a pair of weathered work boots resting on dark marble floor, warm bronze light hitting them from above, tools of daily discipline at rest, 9:16 vertical composition --ar 9:16
+
+================================================================
+ÁUDIOS SUGERIDOS
+================================================================
+
+- "Extreme Ways" — Moby (versão instrumental, construção rítmica)
+- "Heart of Courage" — Two Steps from Hell (épico e motivacional)
+- "Time" — Hans Zimmer (construção lenta que representa disciplina diária)
+- "A Sky Full of Stars" — Piano Guys versão (piano que cresce em intensidade)

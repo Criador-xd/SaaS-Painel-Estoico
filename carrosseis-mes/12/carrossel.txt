@@ -1,0 +1,89 @@
+================================================================
+CARROSSEL 12 — DESAPEGO: LIBERTAR-SE DO EXTERNO
+================================================================
+
+TEMA: Desapego — Libertar-se do externo
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto absoluto com textura de pedra vulcânica, contraluz frio prateado, tipografia serifada branca com espaçamento elegante. Atmosfera de libertação e leveza na escuridão.
+
+================================================================
+SLIDES
+================================================================
+
+SLIDE 1 (Capa)
+Texto: "DESAPEGO"
+       "Libertar-se do externo"
+Image Prompt: Dark Stoic aesthetic, a single white feather floating in complete darkness, illuminated by a cold silver light from above, minimal and elegant composition, deep black volcanic stone texture background, white serif typography reading "DESAPEGO" centered, photorealistic, ethereal mood --ar 4:5
+
+SLIDE 2
+Texto: "Tudo que é externo..."
+       "...pode ser tirado de você."
+Image Prompt: Dark Stoic aesthetic, hands releasing grains of sand into darkness, the sand dissolving into light particles, dramatic silver rim lighting, dark marble surface below, symbolic of letting go, white serif text overlay area, cinematic atmosphere --ar 4:5
+
+SLIDE 3
+Texto: "Sua paz não pode morar..."
+       "...onde você não pode entrar."
+Image Prompt: Dark Stoic aesthetic, a solitary ancient key floating above an open palm in darkness, dramatic cold backlight, deep shadows, dark obsidian textures, metaphor for inner access and self-possession, white serif text area, photorealistic --ar 4:5
+
+SLIDE 4
+Texto: "O apego é algema."
+       "O desapego é asa."
+Image Prompt: Dark Stoic aesthetic, broken chains resting on dark volcanic stone, one link transforming into a bird's feather at the edge, dramatic silver and white lighting, powerful contrast, deep shadows, white serif text overlay, cinematic and symbolic --ar 4:5
+
+SLIDE 5
+Texto: "Quem não precisa de nada..."
+       "...o mundo não pode ferir."
+Image Prompt: Dark Stoic aesthetic, a stoic marble figure standing with arms slightly open, facing a breaking storm in the distance, completely still and untouched, dramatic backlight, dark marble hall, sense of invulnerability through detachment, white serif text area --ar 4:5
+
+SLIDE 6 (Encerramento)
+Texto: "@menteestoicaabsoluta"
+Image Prompt: Dark Stoic aesthetic, the feather from slide 1 now resting peacefully on dark marble, soft silver light wrapping around it, deep black background, elegant white serif typography with the handle, cinematic final frame, sense of freedom and stillness --ar 4:5
+
+================================================================
+LEGENDA (CAPTION)
+================================================================
+
+Apegar-se ao externo é entregar as chaves da sua paz ao que você não controla.
+
+O estoico compreende: tudo que vem de fora, um dia volta. Pessoas, bens, títulos — são empréstimos do tempo.
+
+Desapegar não é não amar. É amar sem exigir permanência.
+
+O que ninguém pode tirar de você? Apenas aquilo que já está dentro.
+
+Salve este carrossel. Releia quando sentir que está segurando o que já deveria ter soltado.
+
+#estoicismo #desapego #resiliencia #menteblindada #disciplina #sabedoria #foco #pazinterior #filosofia #estoicismoaplicado #liberaçao #mindsetestoico #autocontrole #forçamental #leveza
+
+================================================================
+STORIES DE APOIO (3-4)
+================================================================
+
+STORY 1
+Formato: Frase + imagem
+Texto: "Segurar demais também cansa."
+Image Prompt: Dark Stoic aesthetic, a clenched fist slowly opening in dramatic silver light, dark volcanic stone background, the moment of release captured mid-motion, deep shadows, powerful visual metaphor, 9:16 vertical composition --ar 9:16
+
+STORY 2
+Formato: Caixa de perguntas
+Texto: "Do que você precisa se desapegar hoje?"
+Image Prompt: Dark Stoic aesthetic, an empty ancient vessel on dark marble, dramatic cold lighting from above, profound emptiness that feels like freedom rather than lack, 9:16 vertical composition --ar 9:16
+
+STORY 3
+Formato: Citação com swipe-up
+Texto: "Deslize para cima e veja o carrossel completo."
+Image Prompt: Dark Stoic aesthetic, mist rising from dark stone, soft silver light piercing through, abstract and ethereal, sense of release and transcendence, 9:16 vertical composition --ar 9:16
+
+STORY 4
+Formato: Reflexão
+Texto: "O que você perderia se tudo externo desaparecesse hoje?"
+Image Prompt: Dark Stoic aesthetic, a single figure standing at the edge of darkness looking into light, silhouetted, dramatic contrast, marble textures, contemplation of impermanence, 9:16 vertical composition --ar 9:16
+
+================================================================
+ÁUDIOS SUGERIDOS
+================================================================
+
+- "Weightless" — Marconi Union (atmosfera de leveza e libertação)
+- "Nuvole Bianche" — Ludovico Einaudi (piano com construção emocional)
+- "Arrival of the Birds" — The Cinematic Orchestra (crescendo orquestral sutil)
+- "On the Nature of Daylight" — Max Richter (cordas profundas e reflexivas)
