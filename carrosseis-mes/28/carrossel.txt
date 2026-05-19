@@ -1,0 +1,88 @@
+=== CARROSSEL 28: SUCESSO — O QUE REALMENTE IMPORTA ===
+
+TEMA: Redefinição estoica do sucesso — virtude, não fama ou fortuna
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto profundo, textura de mármore escuro com veios sutis, iluminação em backlight dourado/âmbar, tipografia serifada branca, sombras dramáticas
+
+---
+
+SLIDE 1 (Capa)
+Texto: "SUCESSO" (título grande, centralizado, serif bold)
+Subtítulo: "O que realmente importa"
+Image Prompt: A golden laurel wreath resting on a dark marble pedestal, barely illuminated by a single shaft of light from above, everything else in shadow, minimalist stoic composition --ar 4:5
+
+---
+
+SLIDE 2
+Texto: "Sêneca disse: 'Não é feliz quem não se considera feliz.' Sucesso não é o que você tem. É quem você se torna."
+Image Prompt: A marble scroll partially unrolled, ancient Greek text barely visible, lying on a dark stone surface, warm side light revealing the texture of the parchment and stone --ar 4:5
+
+---
+
+SLIDE 3
+Texto: "O mundo te diz que sucesso é dinheiro, fama, seguidores. O estoicismo te diz que sucesso é virtude."
+Image Prompt: A pile of golden coins sitting on a marble surface, but the focus is on a single wilting flower next to them, dramatic side lighting, symbolic contrast between wealth and meaning --ar 4:5
+
+---
+
+SLIDE 4
+Texto: "Você pode vencer o mundo e perder a si mesmo. Ou pode vencer a si mesmo e conquistar o que realmente importa."
+Image Prompt: A solitary figure standing at the edge of a cliff overlooking a vast dark ocean, tiny but upright, horizon barely visible with a thin line of golden light, cinematic and vast --ar 4:5
+
+---
+
+SLIDE 5
+Texto: "No final da vida, ninguém perguntará quanto você ganhou. Perguntarão como você viveu."
+Image Prompt: Two weathered marble hands gently holding a small glowing orb of warm light, dark background, delicate flame-like glow illuminating the veined marble texture --ar 4:5
+
+---
+
+SLIDE 6
+Texto: "Construa um legado de caráter. O resto é poeira."
+Image Prompt: A marble tombstone with no name carved on it, partially cracked by time, overgrown with a single small green vine, soft golden dawn light, peaceful and timeless --ar 4:5
+
+---
+
+LEGENDA (CAPTION):
+
+O mundo tem uma definição de sucesso. O estoicismo tem outra.
+
+Sucesso não é o que você acumula. É o que você se torna no processo.
+
+Sêneca escreveu: "Não é feliz quem não se considera feliz." A riqueza externa não preenche o vazio interno. A fama não cura a culpa. Os seguidores não substituem o caráter.
+
+O verdadeiro sucesso estoico é simples: viver de acordo com a sua natureza racional. Agir com virtude. Tratar cada dia como uma oportunidade de ser melhor do que foi ontem.
+
+No final da sua vida, o que vai importar não é o tamanho da sua conta bancária. É o tamanho da sua integridade.
+
+Construa um legado de caráter. O resto é poeira.
+
+#estoicismo #sucesso #oquerealmenteimporta #virtude #resiliencia #menteblindada #sabedoria #foco #pazinterior #filosofia #seneca #vidasimples #altoperformance #reflexao
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "O que significa sucesso para você hoje — e o que significava há 5 anos?"
+Imagem prompt: A vintage compass on a dark marble surface, needle pointing slightly off center, soft golden light from one side, contemplative mood --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "A riqueza consiste não em ter grandes posses, mas em ter poucas necessidades." — Epicteto
+Imagem prompt: A marble statue head of Epictetus in profile, dark background with a single warm rim light tracing his features, museum-like dignity --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "Redefinir sucesso foi o tema mais difícil deste mês. Desliza pro lado →"
+Imagem prompt: An ancient scale (balance) with one side slightly lower, both pans empty, dark moody lighting, symbolic of measuring what truly matters --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Salva este carrossel. Redefine o que significa sucesso pra você."
+Imagem prompt: Open hands receiving a warm golden light from above, dark background, peaceful and accepting posture, symbolic of gratitude and true wealth --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Experience" — Ludovico Einaudi
+- "Nuvole Bianche" — Ludovico Einaudi
+- "Time" — Hans Zimmer (final crescente)
+- "Interstellar Main Theme" — Hans Zimmer

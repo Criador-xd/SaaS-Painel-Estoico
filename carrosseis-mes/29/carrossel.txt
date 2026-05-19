@@ -1,0 +1,90 @@
+=== CARROSSEL 29: LEGADO — O QUE VOCÊ DEIXA ===
+
+TEMA: Reflexão estoica sobre o impacto que deixamos no mundo
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — fundo preto profundo, textura de mármore escuro com veios sutis, iluminação em backlight dourado/âmbar, tipografia serifada branca, sombras dramáticas
+
+---
+
+SLIDE 1 (Capa)
+Texto: "LEGADO" (título grande, centralizado, serif bold)
+Subtítulo: "O que você deixa"
+Image Prompt: A marble pillar standing alone in an infinite dark void, golden engravings barely visible on its surface, a single beam of light illuminating the top as if from an unseen source, timeless and monumental --ar 4:5
+
+---
+
+SLIDE 2
+Texto: "Marco Aurélio sabia: 'A alma se tinge da cor de seus pensamentos.' O que você pensa hoje é o que você deixa amanhã."
+Image Prompt: An open ancient book on a dark marble lectern, golden ink seeming to glow from within the pages, warm light floating above it like dust motes in a beam of sunlight --ar 4:5
+
+---
+
+SLIDE 3
+Texto: "Você não precisa ser lembrado pelo mundo. Precisa ser lembrado por quem viveu com você."
+Image Prompt: Two marble busts facing each other in darkness, a thin line of golden light connecting their gazes, intimate and powerful, symbol of true connection --ar 4:5
+
+---
+
+SLIDE 4
+Texto: "O que você faz no silêncio, quando ninguém vê — isso é o seu verdadeiro legado."
+Image Prompt: A pair of hands in darkness planting a single seed into cracked dry marble ground, a faint golden glow emerging from where the seed touches the earth, symbolic hope --ar 4:5
+
+---
+
+SLIDE 5
+Texto: "Herança não é dinheiro. É caráter transmitido. Valores vividos. Exemplos que ecoam."
+Image Prompt: An old marble bench in an empty dark garden, a single warm lantern hanging above it casting a pool of light, peaceful and contemplative atmosphere --ar 4:5
+
+---
+
+SLIDE 6
+Texto: "Viva de tal forma que sua ausência seja sentida. Mas sua presença, inesquecível."
+Image Prompt: A marble doorway with warm golden light pouring through the open entrance, the space beyond is bright and unknown, inviting yet solemn, symbolic of the passage we all leave behind --ar 4:5
+
+---
+
+LEGENDA (CAPTION):
+
+O que você vai deixar quando partir?
+
+Não estou falando de dinheiro. Nem de bens materiais. Estou falando do que realmente permanece quando você não está mais aqui.
+
+Suas palavras. Seus exemplos. A forma como você tratou as pessoas. As batalhas silenciosas que venceu. A dignidade com que enfrentou a dor.
+
+Marco Aurélio escreveu: "A alma se tinge da cor de seus pensamentos." Cada pensamento que você cultiva hoje é um tijolo no edifício do seu caráter — e esse edifício é o que você deixa para quem vem depois.
+
+O estoicismo nos ensina que o legado não é construído com grandes feitos públicos. É construído com pequenas virtudes privadas. Com a escolha de ser honesto quando ninguém está vendo. De ser gentil quando ninguém merece. De ser firme quando tudo desaba.
+
+Construa seu legado hoje. Não amanhã.
+
+O que você quer que digam de você quando você não estiver mais aqui?
+
+#estoicismo #legado #oquedeixamos #marcoaurelio #resiliencia #menteblindada #sabedoria #foco #pazinterior #filosofia #virtude #vida compropósito #reflexao #carater
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "O que você quer que lembrem de você quando você não estiver mais aqui?"
+Imagem prompt: An antique hourglass on dark marble, sand almost run out, soft golden side light, contemplative and solemn --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Não vivas como se fosses viver dez mil anos. O destino pende sobre ti." — Marco Aurélio
+Imagem prompt: Marble bust of Marcus Aurelius in warm side profile lighting against pure darkness, textured stone visible, imperial and wise --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "Este foi o carrossel mais difícil de escrever. O legado é um espelho. Desliza pro lado →"
+Imagem prompt: A fountain pen and inkwell on a dark wooden desk, handwritten letter half finished, candle nearly melted, late night scholar atmosphere --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Salva este carrossel. Comece a construir seu legado hoje."
+Imagem prompt: Footprints leading into a bright golden horizon from a dark foreground, solitary trail, symbolic of the path we leave behind us --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Interstellar Main Theme" — Hans Zimmer
+- "Time" — Hans Zimmer
+- "Elegy for the Arctic" — Ludovico Einaudi
+- "Oltremare" — Ludovico Einaudi
