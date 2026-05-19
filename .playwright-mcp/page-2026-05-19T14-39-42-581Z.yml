@@ -1,0 +1,942 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil":
+              - generic:
+                - generic:
+                  - img "Imagem de perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat Control Shift O" [ref=e125] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e27]:
+                    - img [ref=e127]
+                    - generic [ref=e130]: Novo chat
+                  - generic [ref=e131]:
+                    - generic "Control" [ref=e132]:
+                      - generic [ref=e133]: Ctrl
+                      - text: +
+                    - generic "Shift" [ref=e134]:
+                      - generic [ref=e135]: Shift
+                      - text: +
+                    - generic [ref=e137]: O
+              - listitem [ref=e32]:
+                - button "Buscar chats Control K" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e34]:
+                    - img [ref=e140]
+                    - generic [ref=e143]: Buscar chats
+                  - generic [ref=e144]:
+                    - generic "Control" [ref=e145]:
+                      - generic [ref=e146]: Ctrl
+                      - text: +
+                    - generic [ref=e148]: K
+            - button "Projetos" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e154]: Projetos
+            - link "Codex" [ref=e39] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: Codex
+              - img [ref=e47]
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Mais
+            - generic [ref=e155]:
+              - button "Recentes" [expanded] [ref=e157] [cursor=pointer]:
+                - heading "Recentes" [level=2] [ref=e158]
+              - list [ref=e160]:
+                - listitem [ref=e161]:
+                  - generic [ref=e162]:
+                    - link "Image Description Request" [ref=e163] [cursor=pointer]:
+                      - /url: /c/6a0c0982-0874-83e9-afd8-57a32fb21b84
+                      - generic [ref=e165]: Image Description Request
+                      - generic [ref=e167]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Image Description Request" [ref=e169] [cursor=pointer]:
+                      - img [ref=e171]
+                - listitem [ref=e173]:
+                  - generic [ref=e174]:
+                    - link "Cena cinematográfica de imperador" [ref=e175] [cursor=pointer]:
+                      - /url: /c/6a02b1d7-02b8-83e9-8da7-6714b4092db2
+                      - generic [ref=e177]: Cena cinematográfica de imperador
+                      - generic [ref=e179]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Cena cinematográfica de imperador" [ref=e181] [cursor=pointer]:
+                      - img [ref=e183]
+                - listitem [ref=e185]:
+                  - generic [ref=e186]:
+                    - link "Filosofia e Pintura" [ref=e187] [cursor=pointer]:
+                      - /url: /c/6a040f4d-fa94-83e9-8ce4-80f723dc90a7
+                      - generic [ref=e189]: Filosofia e Pintura
+                      - generic [ref=e191]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Filosofia e Pintura" [ref=e193] [cursor=pointer]:
+                      - img [ref=e195]
+                - listitem [ref=e197]:
+                  - generic [ref=e198]:
+                    - link "Prompt para imagem histórica" [ref=e199] [cursor=pointer]:
+                      - /url: /c/6a0349ef-dc9c-83e9-906c-4a9aab97cc9a
+                      - generic [ref=e201]: Prompt para imagem histórica
+                      - generic [ref=e203]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Prompt para imagem histórica" [ref=e205] [cursor=pointer]:
+                      - img [ref=e207]
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]:
+              - img "Imagem de perfil" [ref=e209]
+              - generic [ref=e63]:
+                - generic [ref=e65]: lucas rocha
+                - generic [ref=e68]: Plus
+            - button "Baixar aplicativos" [ref=e71]:
+              - img [ref=e73]
+    - generic [ref=e76]:
+      - banner:
+        - generic [ref=e79]:
+          - button "Compartilhar" [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e86] [cursor=pointer]:
+            - img [ref=e87]
+      - main [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e211]:
+            - generic [ref=e214]:
+              - button "Prompt 1" [ref=e215] [cursor=pointer]
+              - button "Prompt 2" [ref=e216] [cursor=pointer]
+              - button "Prompt 3" [ref=e217] [cursor=pointer]
+              - button "Prompt 4" [ref=e218] [cursor=pointer]
+              - button "Prompt 5" [ref=e219] [cursor=pointer]
+              - button "Prompt 6" [ref=e220] [cursor=pointer]
+              - button "Prompt 7" [ref=e221] [cursor=pointer]
+              - button "Prompt 8" [ref=e222] [cursor=pointer]
+              - button "Prompt 9" [ref=e223] [cursor=pointer]
+              - button "Prompt 10" [ref=e224] [cursor=pointer]
+              - button "Prompt 11" [ref=e225] [cursor=pointer]
+              - button "Prompt 12" [ref=e226] [cursor=pointer]
+              - button "Prompt 13" [ref=e227] [cursor=pointer]
+              - button "Prompt 14" [ref=e228] [cursor=pointer]
+              - button "Prompt 15" [ref=e229] [cursor=pointer]
+              - button "Prompt 16" [ref=e230] [cursor=pointer]
+              - button "Prompt 17" [ref=e231] [cursor=pointer]
+              - button "Prompt 18" [ref=e232] [cursor=pointer]
+              - button "Prompt 19" [ref=e233] [cursor=pointer]
+              - button "Prompt 20" [ref=e234] [cursor=pointer]
+              - button "Prompt 21" [ref=e235] [cursor=pointer]
+              - button "Prompt 22" [ref=e236] [cursor=pointer]
+              - button "Prompt 23" [ref=e237] [cursor=pointer]
+              - button "Prompt 24" [ref=e238] [cursor=pointer]
+              - button "Prompt 25" [ref=e239] [cursor=pointer]
+              - button "Prompt 26" [ref=e240] [cursor=pointer]
+            - generic [ref=e244]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e245]
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - button "Thought for 26s" [ref=e250] [cursor=pointer]:
+                    - text: Thought for 26s
+                    - img [ref=e251]
+                  - generic [ref=e257]:
+                    - 'button "Imagem gerada: Solitary column in golden light" [ref=e258] [cursor=pointer]':
+                      - generic [ref=e259]:
+                        - 'img "Imagem gerada: Solitary column in golden light" [ref=e1169]'
+                        - img [ref=e1170]
+                    - generic [ref=e264]:
+                      - button "Editar imagem" [ref=e266] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e268] [cursor=pointer]:
+                        - img [ref=e270]
+                - generic [ref=e272]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e277]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e278]
+              - generic [ref=e280]:
+                - generic [ref=e281]:
+                  - button "Thought for 28s" [ref=e283] [cursor=pointer]:
+                    - text: Thought for 28s
+                    - img [ref=e284]
+                  - generic [ref=e290]:
+                    - 'button "Imagem gerada: Gripping the flame of time" [ref=e291] [cursor=pointer]':
+                      - generic [ref=e292]:
+                        - 'img "Imagem gerada: Gripping the flame of time" [ref=e294]'
+                        - img [ref=e296]
+                    - generic [ref=e299]:
+                      - button "Editar imagem" [ref=e301] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e303] [cursor=pointer]:
+                        - img [ref=e305]
+                - generic [ref=e307]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e312]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e313]
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - button "Thought for 30s" [ref=e318] [cursor=pointer]:
+                    - text: Thought for 30s
+                    - img [ref=e319]
+                  - generic [ref=e325]:
+                    - 'button "Imagem gerada: Glowing fracture in dark marble" [ref=e326] [cursor=pointer]':
+                      - generic [ref=e327]:
+                        - 'img "Imagem gerada: Glowing fracture in dark marble" [ref=e329]'
+                        - img [ref=e331]
+                    - generic [ref=e334]:
+                      - button "Editar imagem" [ref=e336] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e338] [cursor=pointer]:
+                        - img [ref=e340]
+                - generic [ref=e342]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e347]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e348]
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - button "Thought for 49s" [ref=e353] [cursor=pointer]:
+                    - text: Thought for 49s
+                    - img [ref=e354]
+                  - generic [ref=e360]:
+                    - 'button "Imagem gerada: Golden halo around ancient column" [ref=e361] [cursor=pointer]':
+                      - generic [ref=e362]:
+                        - 'img "Imagem gerada: Golden halo around ancient column" [ref=e364]'
+                        - img [ref=e366]
+                    - generic [ref=e369]:
+                      - button "Editar imagem" [ref=e371] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e373] [cursor=pointer]:
+                        - img [ref=e375]
+                - generic [ref=e377]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e382]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e383]
+              - generic [ref=e385]:
+                - generic [ref=e386]:
+                  - button "Thought for 36s" [ref=e388] [cursor=pointer]:
+                    - text: Thought for 36s
+                    - img [ref=e389]
+                  - generic [ref=e395]:
+                    - 'button "Imagem gerada: Stone hand holding ancient torch" [ref=e396] [cursor=pointer]':
+                      - generic [ref=e397]:
+                        - 'img "Imagem gerada: Stone hand holding ancient torch" [ref=e399]'
+                        - img [ref=e401]
+                    - generic [ref=e404]:
+                      - button "Editar imagem" [ref=e406] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e408] [cursor=pointer]:
+                        - img [ref=e410]
+                - generic [ref=e412]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e417]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e418]
+              - generic [ref=e420]:
+                - generic [ref=e421]:
+                  - button "Thought for 58s" [ref=e423] [cursor=pointer]:
+                    - text: Thought for 58s
+                    - img [ref=e424]
+                  - generic [ref=e430]:
+                    - 'button "Imagem gerada: The power of discipline and talent" [ref=e431] [cursor=pointer]':
+                      - generic [ref=e432]:
+                        - 'img "Imagem gerada: The power of discipline and talent" [ref=e434]'
+                        - img [ref=e436]
+                    - generic [ref=e439]:
+                      - button "Editar imagem" [ref=e441] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e443] [cursor=pointer]:
+                        - img [ref=e445]
+                - generic [ref=e447]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e452]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e453]
+              - generic [ref=e455]:
+                - generic [ref=e456]:
+                  - button "Thought for 58s" [ref=e458] [cursor=pointer]:
+                    - text: Thought for 58s
+                    - img [ref=e459]
+                  - generic [ref=e465]:
+                    - 'button "Imagem gerada: The strength of discipline" [ref=e466] [cursor=pointer]':
+                      - generic [ref=e467]:
+                        - 'img "Imagem gerada: The strength of discipline" [ref=e469]'
+                        - img [ref=e471]
+                    - generic [ref=e474]:
+                      - button "Editar imagem" [ref=e476] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e478] [cursor=pointer]:
+                        - img [ref=e480]
+                - generic [ref=e482]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e487]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e488]
+              - generic [ref=e490]:
+                - generic [ref=e491]:
+                  - button "Thought for 52s" [ref=e493] [cursor=pointer]:
+                    - text: Thought for 52s
+                    - img [ref=e494]
+                  - generic [ref=e500]:
+                    - 'button "Imagem gerada: Towering hand with bronze torch" [ref=e501] [cursor=pointer]':
+                      - generic [ref=e502]:
+                        - 'img "Imagem gerada: Towering hand with bronze torch" [ref=e504]'
+                        - img [ref=e506]
+                    - generic [ref=e509]:
+                      - button "Editar imagem" [ref=e511] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e513] [cursor=pointer]:
+                        - img [ref=e515]
+                - generic [ref=e517]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e522]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e523]
+              - generic [ref=e525]:
+                - generic [ref=e526]:
+                  - button "Thought for 43s" [ref=e528] [cursor=pointer]:
+                    - text: Thought for 43s
+                    - img [ref=e529]
+                  - generic [ref=e535]:
+                    - 'button "Imagem gerada: Epic golden column in smoky haze" [ref=e536] [cursor=pointer]':
+                      - generic [ref=e537]:
+                        - 'img "Imagem gerada: Epic golden column in smoky haze" [ref=e539]'
+                        - img [ref=e541]
+                    - generic [ref=e544]:
+                      - button "Editar imagem" [ref=e546] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e548] [cursor=pointer]:
+                        - img [ref=e550]
+                - generic [ref=e552]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e557]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e558]
+              - generic [ref=e560]:
+                - generic [ref=e561]:
+                  - button "Thought for 50s" [ref=e563] [cursor=pointer]:
+                    - text: Thought for 50s
+                    - img [ref=e564]
+                  - generic [ref=e570]:
+                    - 'button "Imagem gerada: Discipline embodied in marble" [ref=e571] [cursor=pointer]':
+                      - generic [ref=e572]:
+                        - 'img "Imagem gerada: Discipline embodied in marble" [ref=e1171]'
+                        - img [ref=e1172]
+                    - generic [ref=e577]:
+                      - button "Editar imagem" [ref=e579] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e581] [cursor=pointer]:
+                        - img [ref=e583]
+                - generic [ref=e585]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e590]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e591]
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - button "Thought for 40s" [ref=e596] [cursor=pointer]:
+                    - text: Thought for 40s
+                    - img [ref=e597]
+                  - generic [ref=e603]:
+                    - 'button "Imagem gerada: Golden crack and inspiring words" [ref=e604] [cursor=pointer]':
+                      - generic [ref=e605]:
+                        - 'img "Imagem gerada: Golden crack and inspiring words" [ref=e607]'
+                        - img [ref=e609]
+                    - generic [ref=e612]:
+                      - button "Editar imagem" [ref=e614] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e616] [cursor=pointer]:
+                        - img [ref=e618]
+                - generic [ref=e620]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e625]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e626]
+              - generic [ref=e628]:
+                - generic [ref=e629]:
+                  - button "Thought for 2m 10s" [ref=e631] [cursor=pointer]:
+                    - text: Thought for 2m 10s
+                    - img [ref=e632]
+                  - generic [ref=e638]:
+                    - 'button "Imagem gerada: Gripping potential and disciplined strength" [ref=e639] [cursor=pointer]':
+                      - generic [ref=e640]:
+                        - 'img "Imagem gerada: Gripping potential and disciplined strength" [ref=e642]'
+                        - img [ref=e644]
+                    - generic [ref=e647]:
+                      - button "Editar imagem" [ref=e649] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e651] [cursor=pointer]:
+                        - img [ref=e653]
+                - generic [ref=e655]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e660]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e661]
+              - generic [ref=e663]:
+                - generic [ref=e664]:
+                  - button "Thought for 45s" [ref=e666] [cursor=pointer]:
+                    - text: Thought for 45s
+                    - img [ref=e667]
+                  - generic [ref=e673]:
+                    - 'button "Imagem gerada: Discipline versus motivation in classical form" [ref=e674] [cursor=pointer]':
+                      - generic [ref=e675]:
+                        - 'img "Imagem gerada: Discipline versus motivation in classical form" [ref=e677]'
+                        - img [ref=e679]
+                    - generic [ref=e682]:
+                      - button "Editar imagem" [ref=e684] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e686] [cursor=pointer]:
+                        - img [ref=e688]
+                - generic [ref=e690]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e695]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e696]
+              - generic [ref=e698]:
+                - generic [ref=e699]:
+                  - button "Thought for 44s" [ref=e701] [cursor=pointer]:
+                    - text: Thought for 44s
+                    - img [ref=e702]
+                  - generic [ref=e708]:
+                    - 'button "Imagem gerada: Master your impulses, free your life" [ref=e709] [cursor=pointer]':
+                      - generic [ref=e710]:
+                        - 'img "Imagem gerada: Master your impulses, free your life" [ref=e712]'
+                        - img [ref=e714]
+                    - generic [ref=e717]:
+                      - button "Editar imagem" [ref=e719] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e721] [cursor=pointer]:
+                        - img [ref=e723]
+                - generic [ref=e725]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e730]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e731]
+              - generic [ref=e733]:
+                - generic [ref=e734]:
+                  - button "Thought for 46s" [ref=e736] [cursor=pointer]:
+                    - text: Thought for 46s
+                    - img [ref=e737]
+                  - generic [ref=e743]:
+                    - 'button "Imagem gerada: Chiaroscuro marble with elegant typography" [ref=e744] [cursor=pointer]':
+                      - generic [ref=e745]:
+                        - 'img "Imagem gerada: Chiaroscuro marble with elegant typography" [ref=e747]'
+                        - img [ref=e749]
+                    - generic [ref=e752]:
+                      - button "Editar imagem" [ref=e754] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e756] [cursor=pointer]:
+                        - img [ref=e758]
+                - generic [ref=e760]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e765]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e766]
+              - generic [ref=e768]:
+                - generic [ref=e769]:
+                  - button "Thought for 55s" [ref=e771] [cursor=pointer]:
+                    - text: Thought for 55s
+                    - img [ref=e772]
+                  - generic [ref=e778]:
+                    - 'button "Imagem gerada: Elegant marble water droplet design" [ref=e779] [cursor=pointer]':
+                      - generic [ref=e780]:
+                        - 'img "Imagem gerada: Elegant marble water droplet design" [ref=e782]'
+                        - img [ref=e784]
+                    - generic [ref=e787]:
+                      - button "Editar imagem" [ref=e789] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e791] [cursor=pointer]:
+                        - img [ref=e793]
+                - generic [ref=e795]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e800]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e801]
+              - generic [ref=e803]:
+                - generic [ref=e804]:
+                  - button "Thought for 47s" [ref=e806] [cursor=pointer]:
+                    - text: Thought for 47s
+                    - img [ref=e807]
+                  - generic [ref=e813]:
+                    - 'button "Imagem gerada: Archway of philosophical reflection" [ref=e814] [cursor=pointer]':
+                      - generic [ref=e815]:
+                        - 'img "Imagem gerada: Archway of philosophical reflection" [ref=e817]'
+                        - img [ref=e819]
+                    - generic [ref=e822]:
+                      - button "Editar imagem" [ref=e824] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e826] [cursor=pointer]:
+                        - img [ref=e828]
+                - generic [ref=e830]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e835]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e836]
+              - generic [ref=e838]:
+                - generic [ref=e839]:
+                  - button "Thought for 52s" [ref=e841] [cursor=pointer]:
+                    - text: Thought for 52s
+                    - img [ref=e842]
+                  - generic [ref=e848]:
+                    - 'button "Imagem gerada: Masks of emotion and control" [ref=e849] [cursor=pointer]':
+                      - generic [ref=e850]:
+                        - 'img "Imagem gerada: Masks of emotion and control" [ref=e852]'
+                        - img [ref=e854]
+                    - generic [ref=e857]:
+                      - button "Editar imagem" [ref=e859] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e861] [cursor=pointer]:
+                        - img [ref=e863]
+                - generic [ref=e865]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e870]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e871]
+              - generic [ref=e873]:
+                - generic [ref=e874]:
+                  - button "Thought for 43s" [ref=e876] [cursor=pointer]:
+                    - text: Thought for 43s
+                    - img [ref=e877]
+                  - generic [ref=e883]:
+                    - 'button "Imagem gerada: Shattered vessel and spilled reflections" [ref=e884] [cursor=pointer]':
+                      - generic [ref=e885]:
+                        - 'img "Imagem gerada: Shattered vessel and spilled reflections" [ref=e887]'
+                        - img [ref=e889]
+                    - generic [ref=e892]:
+                      - button "Editar imagem" [ref=e894] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e896] [cursor=pointer]:
+                        - img [ref=e898]
+                - generic [ref=e900]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e905]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e906]
+              - generic [ref=e908]:
+                - generic [ref=e909]:
+                  - button "Thought for 51s" [ref=e911] [cursor=pointer]:
+                    - text: Thought for 51s
+                    - img [ref=e912]
+                  - generic [ref=e918]:
+                    - 'button "Imagem gerada: Silent warrior in a shattered temple" [ref=e919] [cursor=pointer]':
+                      - generic [ref=e920]:
+                        - 'img "Imagem gerada: Silent warrior in a shattered temple" [ref=e922]'
+                        - img [ref=e924]
+                    - generic [ref=e927]:
+                      - button "Editar imagem" [ref=e929] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e931] [cursor=pointer]:
+                        - img [ref=e933]
+                - generic [ref=e935]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e940]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e941]
+              - generic [ref=e943]:
+                - generic [ref=e944]:
+                  - button "Thought for 42s" [ref=e946] [cursor=pointer]:
+                    - text: Thought for 42s
+                    - img [ref=e947]
+                  - generic [ref=e953]:
+                    - 'button "Imagem gerada: Reflective serenity in marble elegance" [ref=e954] [cursor=pointer]':
+                      - generic [ref=e955]:
+                        - 'img "Imagem gerada: Reflective serenity in marble elegance" [ref=e957]'
+                        - img [ref=e959]
+                    - generic [ref=e962]:
+                      - button "Editar imagem" [ref=e964] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e966] [cursor=pointer]:
+                        - img [ref=e968]
+                - generic [ref=e970]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e975]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e976]
+              - generic [ref=e978]:
+                - generic [ref=e979]:
+                  - button "Thought for 46s" [ref=e981] [cursor=pointer]:
+                    - text: Thought for 46s
+                    - img [ref=e982]
+                  - generic [ref=e988]:
+                    - 'button "Imagem gerada: Cinematic spotlight on dark marble" [ref=e989] [cursor=pointer]':
+                      - generic [ref=e990]:
+                        - 'img "Imagem gerada: Cinematic spotlight on dark marble" [ref=e992]'
+                        - img [ref=e994]
+                    - generic [ref=e997]:
+                      - button "Editar imagem" [ref=e999] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e1001] [cursor=pointer]:
+                        - img [ref=e1003]
+                - generic [ref=e1005]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e1010]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e1011]
+              - generic [ref=e1013]:
+                - generic [ref=e1014]:
+                  - button "Thought for 47s" [ref=e1016] [cursor=pointer]:
+                    - text: Thought for 47s
+                    - img [ref=e1017]
+                  - generic [ref=e1023]:
+                    - 'button "Imagem gerada: Aims in the darkness" [ref=e1024] [cursor=pointer]':
+                      - generic [ref=e1025]:
+                        - 'img "Imagem gerada: Aims in the darkness" [ref=e1027]'
+                        - img [ref=e1029]
+                    - generic [ref=e1032]:
+                      - button "Editar imagem" [ref=e1034] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e1036] [cursor=pointer]:
+                        - img [ref=e1038]
+                - generic [ref=e1040]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e1045]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e1046]
+              - generic [ref=e1048]:
+                - generic [ref=e1049]:
+                  - button "Thought for 51s" [ref=e1051] [cursor=pointer]:
+                    - text: Thought for 51s
+                    - img [ref=e1052]
+                  - generic [ref=e1058]:
+                    - 'button "Imagem gerada: Offering wisdom in light" [ref=e1059] [cursor=pointer]':
+                      - generic [ref=e1060]:
+                        - 'img "Imagem gerada: Offering wisdom in light" [ref=e1062]'
+                        - img [ref=e1064]
+                        - img [ref=e1066]
+                    - generic [ref=e1068]:
+                      - button "Editar imagem" [ref=e1070] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e1072] [cursor=pointer]:
+                        - img [ref=e1074]
+                - generic [ref=e1076]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e1080]:
+              - heading "Você disse:" [level=4] [ref=e1081]
+              - generic [ref=e1083]:
+                - generic [ref=e1091]: "Generate a 4:5 portrait image for an Instagram stoic carousel slide. TEXT ON IMAGE — elegant white serif font, centered, wide letter-spacing, as if carved in dark marble: \"Notificações não são inofensivas. São pequenos roubos de atenção.\" Typography: white serif, clean, aristocratic. Thin decorative line above the quote. BACKGROUND: Multiple faint cracks spreading across a once-perfect dark marble surface, each crack illuminated by a faint cold blue light from below, symbol of fragmented attention, abstract and moody, cold tones, hyper-realistic, 8k, moody. Dark stoic aesthetic. Portuguese accents exact."
+                - generic [ref=e1092]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e1096]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e1097]
+              - generic [ref=e1099]:
+                - generic [ref=e1103]:
+                  - button "Imagem gerada" [ref=e1106] [cursor=pointer]:
+                    - generic: Prévia
+                  - button [ref=e1114] [cursor=pointer]
+                - generic [ref=e1122]:
+                  - group "Ações de resposta"
+            - generic [ref=e1126]:
+              - heading "Você disse:" [level=4] [ref=e1127]
+              - generic [ref=e1129]:
+                - generic [ref=e1137]: "Generate a 4:5 portrait image for an Instagram stoic carousel slide. TEXT ON IMAGE — elegant white serif font, centered, wide letter-spacing, as if carved in dark marble: \"Foco não é o que você inclui. É o que você exclui.\" Typography: white serif, clean, aristocratic. Thin decorative line above the quote. BACKGROUND: A marble sculptor's chisel striking a dark stone block, a single sharp shard flying off caught in mid-air, dramatic white backlight, act of deliberate removal and refinement, cold tones, hyper-realistic, 8k, moody. Dark stoic aesthetic. Portuguese accents exact."
+                - generic [ref=e1138]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+                    - generic:
+                      - button "Resposta anterior":
+                        - img
+                      - generic: 2/2
+                      - button "Próxima resposta" [disabled]:
+                        - img
+            - generic [ref=e1142]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e1143]
+              - generic [ref=e1147]:
+                - generic [ref=e1150]: Pensando
+                - paragraph [ref=e1157]: Transmissão interrompida. Aguardando a mensagem completa…
+          - generic [ref=e92]:
+            - generic:
+              - generic:
+                - button:
+                  - img
+            - generic [ref=e98]:
+              - generic [ref=e102]:
+                - button "Adicionar arquivos e mais" [ref=e105] [cursor=pointer]:
+                  - img
+                - textbox "Converse com o ChatGPT" [active] [ref=e1158]:
+                  - paragraph [ref=e1159]: "Generate a 4:5 portrait image for an Instagram stoic carousel slide. TEXT ON IMAGE — elegant white serif font, centered, wide letter-spacing, as if carved in dark marble: \"Foco não é o que você inclui. É o que você exclui.\" Typography: white serif, clean, aristocratic. Thin decorative line above the quote. BACKGROUND: A marble sculptor's chisel striking a dark stone block, a single sharp shard flying off caught in mid-air, dramatic white backlight, act of deliberate removal and refinement, cold tones, hyper-realistic, 8k, moody. Dark stoic aesthetic. Portuguese accents exact."
+                - generic [ref=e109]:
+                  - button "Thinking" [ref=e1163] [cursor=pointer]:
+                    - generic [ref=e1164]: Thinking
+                    - img
+                  - generic [ref=e110]:
+                    - button "Iniciar ditado" [ref=e1165] [cursor=pointer]:
+                      - img
+                    - button "Parar de responder" [ref=e1166] [cursor=pointer]:
+                      - img [ref=e1167]
+              - button [ref=e115]
+              - button [ref=e116]
+            - generic [ref=e122]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e123]
+  - status [ref=e124]

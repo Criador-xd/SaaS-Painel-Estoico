@@ -27,3 +27,18 @@
 [  593740ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
 [  755733ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
 [  876392ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1619048ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1825478ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2014365ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2185895ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2296885ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2440293ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2578692ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[23401966ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[23549951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[23563609ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://chatgpt.com/backend-api/f/conversation:0
+[23655601ms] RequestError: A network error occurred. Please check your connection and try again. If this issue persists please contact us through our help center at [help.openai.com](https://help.openai.com/).
+    at e.createWithErrorMessage (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:2:35989)
+    at A (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:138:158432)
+    at https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:138:160962
+[23656002ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/f/conversation/resume:0
