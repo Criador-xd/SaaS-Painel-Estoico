@@ -10,3 +10,11 @@
     at sl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:82074)
     at Ud (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126839)
     at Hd (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126812) @ https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:60
+[  359113ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  463299ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  471838ms] [WARNING] The `beforetoggle` event handler for a popover triggered another popover to be shown or hidden. Or a `loseinterest` event handler was cancelled. This is not recommended. @ https://chatgpt.com/cdn/assets/conversation-small-jtq6eoppdmgb8j5y.js:38
+[  559205ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  921930ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1068122ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1246313ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1426276ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
