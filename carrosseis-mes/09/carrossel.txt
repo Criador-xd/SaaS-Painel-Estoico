@@ -1,57 +1,49 @@
-╔══════════════════════════════════════════╗
-║  CARROSSEL 09 — SILÊNCIO                ║
-║  Tema: O poder da quietude              ║
-║  Tipo: Motivacional / Mindset           ║
-║  Estilo: Águas paradas, figuras         ║
-║  solitárias, espaços vazios, névoa,     ║
-║  minimalismo extremo, texturas suaves   ║
-╚══════════════════════════════════════════╝
+=== CARROSSEL 09: SILÊNCIO — O PODER DA QUIETUDE ===
 
-──────────────────────────────────────────
-SLIDE 1 — CAPA
-──────────────────────────────────────────
-Texto: "Quem fala muito se perde. Quem escuta se encontra."
+TEMA: O poder transformador do silêncio e da introspecção
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — águas paradas, figuras solitárias, espaços vazios, névoa, minimalismo extremo, texturas suaves, tipografia serifada branca
 
-Prompt: A perfectly still dark lake surface at dawn, not a single ripple, the silhouette of a lone figure sitting on a marble ledge at the water's edge, thick morning fog hovering above the water, the world reduced to black water and grey mist, profound silence and minimalism --ar 4:5
+---
 
-──────────────────────────────────────────
+SLIDE 1 (Capa)
+Texto: "SILÊNCIO" (título grande, centralizado, serif bold)
+Subtítulo: "O poder da quietude"
+Image Prompt: A perfectly still dark lake surface at dawn, not a single ripple, the silhouette of a lone figure sitting on a marble ledge at the water's edge, thick morning fog hovering above the water, the world reduced to black water and grey mist, profound silence and minimalism --ar 4:5
+
+---
+
 SLIDE 2
-──────────────────────────────────────────
 Texto: "O barulho do mundo abafa o que sua alma tenta dizer."
+Image Prompt: An empty marble amphitheater seen from the top row, concentric stone steps descending into a dark center, a single column of soft light falling on the central stage, nobody present, the architecture itself feeling like a meditation, vast and silent --ar 4:5
 
-Prompt: An empty marble amphitheater seen from the top row, concentric stone steps descending into a dark center, a single column of soft light falling on the central stage, nobody present, the architecture itself feeling like a meditation, vast and silent --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 3
-──────────────────────────────────────────
 Texto: "Sabedoria não grita. Sussurra. E só os quietos ouvem."
+Image Prompt: A close-up of an ancient marble ear carved into a temple wall, soft golden light filtering through a crack in the stone above, delicate moss tracing the edges, the texture of aged marble deeply detailed, intimate and sacred atmosphere --ar 4:5
 
-Prompt: A close-up of an ancient marble ear carved into a temple wall, soft golden light filtering through a crack in the stone above, delicate moss tracing the edges, the texture of aged marble deeply detailed, intimate and sacred atmosphere --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 4
-──────────────────────────────────────────
 Texto: "Antes de responder, pare. Antes de julgar, escute. Antes de agir, pense."
+Image Prompt: A single candle burning steadily in complete darkness, the flame perfectly still as if frozen in time, a thin trail of smoke rising straight upward, no wind, no movement, the wax pooling slowly at the base, meditation on stillness --ar 4:5
 
-Prompt: A single candle burning steadily in complete darkness, the flame perfectly still as if frozen in time, a thin trail of smoke rising straight upward, no wind, no movement, the wax pooling slowly at the base, meditation on stillness --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 5
-──────────────────────────────────────────
 Texto: "O homem mais forte da sala geralmente é o mais silencioso."
+Image Prompt: A solitary marble throne in an empty circular chamber, a shaft of moonlight falling directly onto the seat from an unseen opening above, everything else in total shadow, the throne unoccupied, power emanating from absence, cinematic and haunting --ar 4:5
 
-Prompt: A solitary marble throne in an empty circular chamber, a shaft of moonlight falling directly onto the seat from an unseen opening above, everything else in total shadow, the throne unoccupied, power emanating from absence, cinematic and haunting --ar 4:5
+---
 
-──────────────────────────────────────────
-SLIDE 6 — FECHAMENTO
-──────────────────────────────────────────
-Texto: "No silêncio, não há máscaras. Só a verdade que você evita encarar."
+SLIDE 6
+Texto: "No silêncio, não há máscaras. Só a verdade."
+Image Prompt: A human face carved from white marble, eyes closed, expression perfectly serene, emerging from raw dark stone as if unfinished, the contrast between smooth marble and rough rock, Michelangelo-inspired, deep meditation captured in stone --ar 4:5
 
-Prompt: A human face carved from white marble, eyes closed, expression perfectly serene, emerging from raw dark stone as if unfinished, the contrast between smooth marble and rough rock, Michelangelo-inspired, deep meditation captured in stone --ar 4:5
+---
 
-══════════════════════════════════════════
-LEGENDA
-══════════════════════════════════════════
+LEGENDA (CAPTION):
 
 Vivemos num mundo que tem medo do silêncio.
 
@@ -76,3 +68,31 @@ Só você e sua respiração.
 É desconfortável? Talvez. Mas é ali que a força nasce.
 
 #estoicismo #silêncio #resiliencia #menteblindada #sabedoria #filosofia #pazinterior #foco #disciplina #introspeccao #meditacao #autoconhecimento #crescimentopessoal #estóicodiário
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "Quando foi a última vez que você ficou 5 minutos em silêncio absoluto?"
+Imagem prompt: A marble silhouette of a meditating figure, one tiny point of golden light at the center of the chest, the rest pure darkness, inner light in the vast silence --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Em toda parte há silêncio para quem sabe ouvir." — Sêneca
+Imagem prompt: A marble wind chime hanging motionless in darkness, no wind, complete stillness, one single chime catching a faint gleam of light, the potential for sound in perfect quiet --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "O que acontece quando você para de consumir barulho. Arrasta →"
+Imagem prompt: A marble desk at dawn, no books no devices, just empty space and the first light, the beginning of clarity through emptiness --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Desliga as notificações por 1 hora hoje. Vê o que acontece."
+Imagem prompt: A marble phone lying face-down on dark stone, a beam of light illuminating the back of the device, the screen unseen, freedom from the digital world --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Comptine d'un autre été" — Yann Tiersen (piano minimalista)
+- "On the Nature of Daylight" — Max Richter (contemplação profunda)
+- "Gymnopédie No.1" — Erik Satie (piano etéreo)
+- "The Whole Truth" — Max Richter (silêncio cinematográfico)

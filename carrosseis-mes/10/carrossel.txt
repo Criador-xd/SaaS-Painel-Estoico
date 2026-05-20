@@ -1,57 +1,49 @@
-╔══════════════════════════════════════════╗
-║  CARROSSEL 10 — AÇÃO                    ║
-║  Tema: Parar de adiar                   ║
-║  Tipo: Motivacional / Mindset           ║
-║  Estilo: Movimento, amanhecer,          ║
-║  primeiros passos, motion blur sutil,   ║
-║  contraste entre inércia e impulso      ║
-╚══════════════════════════════════════════╝
+=== CARROSSEL 10: AÇÃO — PARAR DE ADIAR ===
 
-──────────────────────────────────────────
-SLIDE 1 — CAPA
-──────────────────────────────────────────
-Texto: "A diferença entre quem você é e quem poderia ser... é só uma decisão adiada."
+TEMA: O poder de agir agora, superar a procrastinação e vencer a inércia
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — movimento, amanhecer, primeiros passos, motion blur sutil, contraste entre inércia e impulso, tipografia serifada branca
 
-Prompt: A split composition — left side a heavy marble block sitting motionless in shadow, right side the same block beginning to crack with golden light bursting through the fissures, dust particles exploding outward, the moment of breakthrough frozen in time, dramatic contrast --ar 4:5
+---
 
-──────────────────────────────────────────
+SLIDE 1 (Capa)
+Texto: "AÇÃO" (título grande, centralizado, serif bold)
+Subtítulo: "Parar de adiar"
+Image Prompt: A split composition — left side a heavy marble block sitting motionless in shadow, right side the same block beginning to crack with golden light bursting through the fissures, dust particles exploding outward, the moment of breakthrough frozen in time, dramatic contrast --ar 4:5
+
+---
+
 SLIDE 2
-──────────────────────────────────────────
 Texto: "Você não precisa estar pronto. Você precisa começar."
+Image Prompt: A single human footprint pressed into dark wet marble-like sand at the edge of a black shore, the first step of a path leading into mist, soft dawn light just breaking on the distant horizon, the rest of the footprints fading into fog --ar 4:5
 
-Prompt: A single human footprint pressed into dark wet marble-like sand at the edge of a black shore, the first step of a path leading into mist, soft dawn light just breaking on the distant horizon, the rest of the footprints fading into fog --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 3
-──────────────────────────────────────────
 Texto: "O 'momento perfeito' é uma armadilha que sua mente criou."
+Image Prompt: A broken hourglass lying on its side on a marble slab, sand spilled in a chaotic pattern across the dark stone, a hand visible at the edge of the frame reaching to turn it upright, the glass reflecting fractured light --ar 4:5
 
-Prompt: A broken hourglass lying on its side on a marble slab, sand spilled in a chaotic pattern across the dark stone, a hand visible at the edge of the frame reaching to turn it upright, the glass reflecting fractured light --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 4
-──────────────────────────────────────────
 Texto: "Planejar é conforto. Executar é coragem."
+Image Prompt: A marble staircase ascending into a bright opening above, the lower steps in deep shadow and the upper steps bathed in warm golden light, a single foot visible on the threshold step between dark and light, the moment of crossing, architectural grandeur --ar 4:5
 
-Prompt: A marble staircase ascending into a bright opening above, the lower steps in deep shadow and the upper steps bathed in warm golden light, a single foot visible on the threshold step between dark and light, the moment of crossing, architectural grandeur --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 5
-──────────────────────────────────────────
 Texto: "Marco Aurélio não escrevia sobre o que faria. Ele agia. Todas as manhãs."
+Image Prompt: An ancient Roman desk at dawn — an open codex, a lit oil lamp almost out of fuel, a quill resting in an inkwell, the first rays of sunlight creeping across the marble desk surface, the lamp's flame still fighting against the coming day --ar 4:5
 
-Prompt: An ancient Roman desk at dawn — an open codex, a lit oil lamp almost out of fuel, a quill resting in an inkwell, the first rays of sunlight creeping across the marble desk surface, the lamp's flame still fighting against the coming day --ar 4:5
+---
 
-──────────────────────────────────────────
-SLIDE 6 — FECHAMENTO
-──────────────────────────────────────────
+SLIDE 6
 Texto: "Pare de adiar sua própria vida. O próximo passo é agora."
+Image Prompt: A cloaked figure walking away from the camera into a vast sunlit horizon, the figure casting a long shadow backward, the path ahead bright and undefined, the ground transitioning from dark marble tiles to golden cracked earth, epic and decisive --ar 4:5
 
-Prompt: A cloaked figure walking away from the camera into a vast sunlit horizon, the figure casting a long shadow backward, the path ahead bright and undefined, the ground transitioning from dark marble tiles to golden cracked earth, epic and decisive --ar 4:5
+---
 
-══════════════════════════════════════════
-LEGENDA
-══════════════════════════════════════════
+LEGENDA (CAPTION):
 
 Adiar é a forma mais silenciosa de desistir.
 
@@ -82,3 +74,31 @@ Levante. Dê o primeiro passo. Depois o segundo.
 A disciplina vence o talento. E a ação vence a intenção.
 
 #estoicismo #ação #disciplina #resiliencia #menteblindada #sabedoria #filosofia #pazinterior #foco #produtividade #marcoaurelio #paredeaditar #crescimentopessoal #fazacontecer
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "O que você está adiando AGORA que sabe que precisa fazer?"
+Imagem prompt: A marble clock face without hands, the numbers glowing faintly, a crack running through the center, time running out but still possible --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Não espere por uma vida perfeita. Comece a viver a que você tem." — Sêneca
+Imagem prompt: A marble gate slightly ajar in a stone wall, golden light spilling through the crack, the darkness outside the gate contrasting with the warm invitation within --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "Como parei de esperar e comecei a construir. Arrasta →"
+Imagem prompt: A marble hammer resting on a block of uncut stone, a single ray of light hitting the tool, the first blow yet to be struck, potential energy --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Faz agora. Os 5 minutos que vão mudar seu dia."
+Imagem prompt: A marble sundial catching the first ray of morning light, the shadow marking a new hour, a new chance to begin --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Time" — Hans Zimmer (crescente e urgente)
+- "Heart of Courage" — Two Steps From Hell (épico e decisivo)
+- "The Last of the Mohicans" — Trevor Jones & Randy Edelman (fúria e determinação)
+- "Rise" — Epic Score (ação e superação)

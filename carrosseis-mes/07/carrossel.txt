@@ -1,56 +1,49 @@
-╔══════════════════════════════════════════╗
-║  CARROSSEL 07 — ACEITAÇÃO               ║
-║  Tema: O que não podemos controlar       ║
-║  Tipo: Motivacional / Mindset           ║
-║  Estilo: Tempestades, âncoras, mãos     ║
-║  abertas, céu nublado, contrastes       ║
-╚══════════════════════════════════════════╝
+=== CARROSSEL 07: ACEITAÇÃO — O QUE NÃO PODEMOS CONTROLAR ===
 
-──────────────────────────────────────────
-SLIDE 1 — CAPA
-──────────────────────────────────────────
-Texto: "A paz não vem de controlar o mundo. Vem de parar de tentar."
+TEMA: Aceitação estoica — distinguir o que controlamos do que não controlamos
+TIPO: Motivacional / Mindset
+ESTILO VISUAL: Dark Stoic aesthetic — tempestades, mãos abertas, âncoras, céu nublado, contrastes entre caos e quietude, tipografia serifada branca
 
-Prompt: An open human hand palm-up emerging from absolute darkness, perfectly still, a single raindrop suspended mid-air about to land in the center of the palm, dramatic side lighting, hyper-realistic skin texture, marble background barely visible in the shadows --ar 4:5
+---
 
-──────────────────────────────────────────
+SLIDE 1 (Capa)
+Texto: "ACEITAÇÃO" (título grande, centralizado, serif bold)
+Subtítulo: "O que não podemos controlar"
+Image Prompt: An open human hand palm-up emerging from absolute darkness, perfectly still, a single raindrop suspended mid-air about to land in the center of the palm, dramatic side lighting, hyper-realistic skin texture, marble background barely visible in the shadows --ar 4:5
+
+---
+
 SLIDE 2
-──────────────────────────────────────────
 Texto: "O que os outros pensam, dizem ou fazem... não está sob seu domínio."
+Image Prompt: A solitary ancient oak tree being battered by an invisible storm, its roots deeply anchored into cracked marble ground, motion blur on the branches suggesting violent wind, the trunk solid and unmoving, monochromatic dark tones, powerful contrast between chaos and stillness --ar 4:5
 
-Prompt: A solitary ancient oak tree being battered by an invisible storm, its roots deeply anchored into cracked marble ground, motion blur on the branches suggesting violent wind, the trunk solid and unmoving, monochromatic dark tones, powerful contrast between chaos and stillness --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 3
-──────────────────────────────────────────
 Texto: "Sofremos não pelo que acontece, mas pelo que exigimos que acontecesse."
+Image Prompt: A broken Greek column lying horizontally on dark marble, a single beam of cold moonlight illuminating the fractured marble surface, moss growing in the cracks suggesting age and acceptance, melancholic beauty, ultra-detailed stone texture --ar 4:5
 
-Prompt: A broken Greek column lying horizontally on dark marble, a single beam of cold moonlight illuminating the fractured marble surface, moss growing in the cracks suggesting age and acceptance, melancholic beauty, ultra-detailed stone texture --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 4
-──────────────────────────────────────────
 Texto: "Aceitar não é desistir. É escolher onde sua energia realmente vale a pena."
+Image Prompt: An anchor half-submerged in dark still water, the chain rising into fog above the frame, the water surface perfectly reflective and mirror-like, misty atmosphere, minimalist composition, profound sense of grounded calm --ar 4:5
 
-Prompt: An anchor half-submerged in dark still water, the chain rising into fog above the frame, the water surface perfectly reflective and mirror-like, misty atmosphere, minimalist composition, profound sense of grounded calm --ar 4:5
+---
 
-──────────────────────────────────────────
 SLIDE 5
-──────────────────────────────────────────
 Texto: "Existe uma força silenciosa em quem para de lutar contra o inevitável."
+Image Prompt: A figure in a dark cloak standing at the edge of a marble cliff facing a vast turbulent sea under storm clouds, the figure completely still despite the chaos ahead, distant lightning illuminating the horizon, epic scale, cinematic --ar 4:5
 
-Prompt: A figure in a dark cloak standing at the edge of a marble cliff facing a vast turbulent sea under storm clouds, the figure completely still despite the chaos ahead, distant lightning illuminating the horizon, epic scale, cinematic --ar 4:5
+---
 
-──────────────────────────────────────────
-SLIDE 6 — FECHAMENTO
-──────────────────────────────────────────
-Texto: "Controle o que é seu. Solte o que não é. Essa é a arte de viver."
+SLIDE 6
+Texto: "Controle o que é seu. Solte o que não é."
+Image Prompt: Two hands carved from white marble, one closed in a fist and the other fully open, resting side by side on a black obsidian surface, dramatic top-down lighting casting sharp shadows, minimalist sculpture aesthetic, timeless and symbolic --ar 4:5
 
-Prompt: Two hands carved from white marble, one closed in a fist and the other fully open, resting side by side on a black obsidian surface, dramatic top-down lighting casting sharp shadows, minimalist sculpture aesthetic, timeless and symbolic --ar 4:5
+---
 
-══════════════════════════════════════════
-LEGENDA
-══════════════════════════════════════════
+LEGENDA (CAPTION):
 
 Existe um tipo de força que ninguém ensina.
 
@@ -73,3 +66,31 @@ O resto... aceite. Não por fraqueza, mas por inteligência.
 Solte. Respire. Siga.
 
 #estoicismo #resiliencia #aceitacao #menteblindada #sabedoria #filosofia #pazinterior #foco #disciplina #dicotomiadocontrole #epicteto #autocontrole #inteligenciaemocional #mentalidadeforte
+
+---
+
+STORIES DE APOIO:
+
+STORY 1 — PERGUNTA REFLEXIVA
+Texto: "O que você está tentando controlar hoje que não depende de você?"
+Imagem prompt: A single marble die (dice) resting on dark stone, uncertain which face will land, dramatic side lighting casting long shadows, fate and chance symbolized in minimalist stone --ar 9:16
+
+STORY 2 — CITAÇÃO ESTOICA
+Texto: "Não são as coisas que nos perturbam, mas a opinião que temos delas." — Epicteto
+Imagem prompt: A weathered marble face of Epictetus statue in dramatic side lighting, half in shadow half illuminated, museum-like texture, powerful and austere --ar 9:16
+
+STORY 3 — BASTIDORES DO CARROSSEL
+Texto: "Por que aceitar é a forma mais corajosa de lutar. Arrasta pro lado →"
+Imagem prompt: A stormy sea calmed to a mirror-flat surface, the sky clearing, a single marble pillar standing where the waves once crashed --ar 9:16
+
+STORY 4 — CHAMADA PARA AÇÃO
+Texto: "Salva este carrossel. Volta aqui quando sentir que precisa controlar tudo."
+Imagem prompt: Open hands releasing glowing dust particles into the darkness, the particles floating upward like released worries, cinematic lighting --ar 9:16
+
+---
+
+ÁUDIOS SUGERIDOS:
+- "Time" — Hans Zimmer (crescente e reflexivo)
+- "The Rain" — Ludovico Einaudi (piano melancólico e sereno)
+- "Arrival of the Birds" — The Cinematic Orchestra (crescente e esperançoso)
+- "Nocturne in E Minor" — Chopin (introspecção profunda)
