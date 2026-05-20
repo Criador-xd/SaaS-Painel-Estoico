@@ -1,0 +1,336 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil":
+              - generic:
+                - generic:
+                  - img "Imagem de perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat Control Shift O" [ref=e123] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e27]:
+                    - img [ref=e125]
+                    - generic [ref=e128]: Novo chat
+                  - generic [ref=e129]:
+                    - generic "Control" [ref=e130]:
+                      - generic [ref=e131]: Ctrl
+                      - text: +
+                    - generic "Shift" [ref=e132]:
+                      - generic [ref=e133]: Shift
+                      - text: +
+                    - generic [ref=e135]: O
+              - listitem [ref=e32]:
+                - button "Buscar chats Control K" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e34]:
+                    - img [ref=e138]
+                    - generic [ref=e141]: Buscar chats
+                  - generic [ref=e142]:
+                    - generic "Control" [ref=e143]:
+                      - generic [ref=e144]: Ctrl
+                      - text: +
+                    - generic [ref=e146]: K
+            - button "Projetos" [ref=e147] [cursor=pointer]:
+              - img [ref=e149]
+              - generic [ref=e152]: Projetos
+            - link "Codex" [ref=e39] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: Codex
+              - img [ref=e47]
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Mais
+            - generic [ref=e153]:
+              - button "Recentes" [expanded] [ref=e155] [cursor=pointer]:
+                - heading "Recentes" [level=2] [ref=e156]
+              - list [ref=e158]:
+                - listitem [ref=e327]:
+                  - generic [ref=e328]:
+                    - link "New chat" [ref=e329] [cursor=pointer]:
+                      - /url: /c/6a0d2c27-09f8-83e9-b687-c6f1d176e7d4
+                      - generic [ref=e331]: New chat
+                      - generic [ref=e333]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para New chat" [ref=e335] [cursor=pointer]:
+                      - img [ref=e337]
+                - listitem [ref=e159]:
+                  - generic [ref=e160]:
+                    - link "Image Description Request" [ref=e161] [cursor=pointer]:
+                      - /url: /c/6a0c0982-0874-83e9-afd8-57a32fb21b84
+                      - generic [ref=e163]: Image Description Request
+                      - generic [ref=e165]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Image Description Request" [ref=e167] [cursor=pointer]:
+                      - img [ref=e169]
+                - listitem [ref=e171]:
+                  - generic [ref=e172]:
+                    - link "Respostas a Comentários Reflexivos" [ref=e173] [cursor=pointer]:
+                      - /url: /c/6a0d0c2d-107c-83e9-ba8f-1e6921c1b201
+                      - generic [ref=e175]: Respostas a Comentários Reflexivos
+                      - generic [ref=e177]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Respostas a Comentários Reflexivos" [ref=e179] [cursor=pointer]:
+                      - img [ref=e181]
+                - listitem [ref=e183]:
+                  - generic [ref=e184]:
+                    - link "Stoic Instagram Carousel, não lida" [ref=e185] [cursor=pointer]:
+                      - /url: /c/6a0c8306-bc78-83e9-be1b-5f514edc1114
+                      - generic [ref=e187]: Stoic Instagram Carousel
+                      - generic [ref=e190]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Stoic Instagram Carousel" [ref=e194] [cursor=pointer]:
+                      - img [ref=e196]
+                - listitem [ref=e198]:
+                  - generic [ref=e199]:
+                    - link "Image Generation Request" [ref=e200] [cursor=pointer]:
+                      - /url: /c/6a0c79bf-a8c8-83e9-9be0-b1e30219635c
+                      - generic [ref=e202]: Image Generation Request
+                      - generic [ref=e204]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Image Generation Request" [ref=e206] [cursor=pointer]:
+                      - img [ref=e208]
+                - listitem [ref=e210]:
+                  - generic [ref=e211]:
+                    - link "Image Request Stoic Aesthetic" [ref=e212] [cursor=pointer]:
+                      - /url: /c/6a0c76c1-1780-83e9-a8b6-5eb7a8f984b3
+                      - generic [ref=e214]: Image Request Stoic Aesthetic
+                      - generic [ref=e216]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Image Request Stoic Aesthetic" [ref=e218] [cursor=pointer]:
+                      - img [ref=e220]
+                - listitem [ref=e222]:
+                  - generic [ref=e223]:
+                    - link "Cena cinematográfica de imperador" [ref=e224] [cursor=pointer]:
+                      - /url: /c/6a02b1d7-02b8-83e9-8da7-6714b4092db2
+                      - generic [ref=e226]: Cena cinematográfica de imperador
+                      - generic [ref=e228]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Cena cinematográfica de imperador" [ref=e230] [cursor=pointer]:
+                      - img [ref=e232]
+                - listitem [ref=e234]:
+                  - generic [ref=e235]:
+                    - link "Filosofia e Pintura" [ref=e236] [cursor=pointer]:
+                      - /url: /c/6a040f4d-fa94-83e9-8ce4-80f723dc90a7
+                      - generic [ref=e238]: Filosofia e Pintura
+                      - generic [ref=e240]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Filosofia e Pintura" [ref=e242] [cursor=pointer]:
+                      - img [ref=e244]
+                - listitem [ref=e246]:
+                  - generic [ref=e247]:
+                    - link "Prompt para imagem histórica" [ref=e248] [cursor=pointer]:
+                      - /url: /c/6a0349ef-dc9c-83e9-906c-4a9aab97cc9a
+                      - generic [ref=e250]: Prompt para imagem histórica
+                      - generic [ref=e252]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Prompt para imagem histórica" [ref=e254] [cursor=pointer]:
+                      - img [ref=e256]
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]:
+              - img "Imagem de perfil" [ref=e258]
+              - generic [ref=e63]:
+                - generic [ref=e65]: lucas rocha
+                - generic [ref=e68]: Plus
+            - button "Baixar aplicativos" [ref=e71]:
+              - img [ref=e73]
+    - generic [ref=e76]:
+      - banner:
+        - generic [ref=e79]:
+          - button "Compartilhar" [ref=e310] [cursor=pointer]:
+            - generic [ref=e311]:
+              - img [ref=e312]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e315] [cursor=pointer]:
+            - img [ref=e316]
+      - main [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e340]:
+            - generic [ref=e362]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e363]
+              - generic [ref=e365]:
+                - generic [ref=e366]:
+                  - button "Thought for 40s" [ref=e393] [cursor=pointer]:
+                    - text: Thought for 40s
+                    - img [ref=e394]
+                  - generic [ref=e399]:
+                    - 'button "Imagem gerada: Memento mori in shadows and light" [ref=e400] [cursor=pointer]':
+                      - generic [ref=e401]:
+                        - 'img "Imagem gerada: Memento mori in shadows and light" [ref=e403]'
+                        - img [ref=e405]
+                        - img [ref=e407]
+                    - generic [ref=e409]:
+                      - button "Editar imagem" [ref=e411] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e413] [cursor=pointer]:
+                        - img [ref=e415]
+                - generic [ref=e388]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e458]:
+              - heading "Você disse:" [level=4] [ref=e459]
+              - generic [ref=e461]:
+                - generic [ref=e467]:
+                  - checkbox "Mostrar mais" [ref=e468]
+                  - generic [ref=e470]: "Crie a imagem SLIDE 1 (CAPA) para um carrossel do Instagram sobre Memento Mori. Estilo dark stoic aesthetic, proporção 4:5. Título centralizado em letras serifadas grandes, brancas, bold: \"MEMENTO MORI\" Subtítulo em serifado menor: \"A brevidade da vida\" Imagem: Close-up de uma ampulheta antiga de bronze sobre mármore escuro polido, os últimos grãos de areia caindo através de um funil estreito, iluminação dramática claro-escuro de uma única fonte, sombras profundas engolindo as bordas, atmosfera cinematográfica, textura ultra-detalhada no vidro e metal, mood contemplativo --ar 4:5 Capricha nas letras serifadas, elas precisam estar nítidas e elegantes."
+                  - generic [ref=e471] [cursor=pointer]:
+                    - generic [ref=e472]: Mostrar mais
+                    - img [ref=e473]
+                - generic [ref=e475]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e478]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e479]
+              - generic [ref=e481]:
+                - generic [ref=e488]:
+                  - button "Thought for 43s" [ref=e540] [cursor=pointer]:
+                    - text: Thought for 43s
+                    - img [ref=e541]
+                  - generic [ref=e545]:
+                    - 'button "Imagem gerada: Memento mori with antique hourglass" [ref=e546] [cursor=pointer]':
+                      - generic [ref=e547]:
+                        - 'img "Imagem gerada: Memento mori with antique hourglass" [ref=e549]'
+                        - img [ref=e551]
+                        - img [ref=e553]
+                    - generic [ref=e555]:
+                      - button "Editar imagem" [ref=e557] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e559] [cursor=pointer]:
+                        - img [ref=e561]
+                - generic [ref=e513]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e580]:
+              - heading "Você disse:" [level=4] [ref=e581]
+              - generic [ref=e583]:
+                - generic [ref=e589]:
+                  - checkbox "Mostrar mais" [ref=e590]
+                  - generic [ref=e592]: "Crie a imagem SLIDE 2 do carrossel Memento Mori (Instagram 4:5, dark stoic aesthetic). Texto na imagem em letras serifadas bold brancas: \"Você não tem tempo infinito. Pare de agir como se tivesse.\" Imagem: Uma mão humana solitária se estendendo em direção a uma luz distante e fraca na escuridão absoluta, dedos ligeiramente abertos, a luz mal iluminando as pontas dos dedos, textura de mármore no chão de pedra abaixo, partículas de poeira suspensas no ar, hiper-realista, etéreo e melancólico --ar 4:5 Capricha nas letras serifadas!"
+                  - generic [ref=e593] [cursor=pointer]:
+                    - generic [ref=e594]: Mostrar mais
+                    - img [ref=e595]
+                - generic [ref=e597]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e600]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e601]
+              - generic [ref=e603]:
+                - generic [ref=e610]:
+                  - generic [ref=e622]:
+                    - button "Planning slide 2 based on previous consistency" [ref=e625] [cursor=pointer]:
+                      - generic [ref=e627]:
+                        - generic [ref=e629]: Planning slide 2 based on previous consistency
+                        - img [ref=e630]
+                    - paragraph [ref=e634] [cursor=pointer]: I’ll decide whether to use Portuguese or English for the prompt.
+                  - generic "Gerando imagem…" [ref=e616]
+                - generic [ref=e635]:
+                  - group "Ações de resposta"
+          - generic [ref=e96]:
+            - generic:
+              - generic:
+                - button:
+                  - img
+            - generic [ref=e102]:
+              - generic [ref=e106]:
+                - button "Adicionar arquivos e mais" [ref=e109] [cursor=pointer]:
+                  - img
+                - textbox "Converse com o ChatGPT" [active] [ref=e259]:
+                  - paragraph [ref=e568]: Pergunte alguma coisa
+                - generic [ref=e113]:
+                  - button "Thinking" [ref=e264] [cursor=pointer]:
+                    - generic [ref=e265]: Thinking
+                    - img
+                  - generic [ref=e114]:
+                    - button "Iniciar ditado" [ref=e266] [cursor=pointer]:
+                      - img
+                    - button "Parar de responder" [ref=e618] [cursor=pointer]:
+                      - img [ref=e619]
+              - button [ref=e119]
+              - button [ref=e120]
+            - generic [ref=e326]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e121]
+  - status [ref=e122]

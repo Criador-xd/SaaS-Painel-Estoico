@@ -7,44 +7,45 @@
 ╚══════════════════════════════════════════╝
 
 ──────────────────────────────────────────
-SLIDE 1 — CAPA
+SLIDE 1 (Capa)
 ──────────────────────────────────────────
-Texto: "A cada dia que passa, você está mais perto do fim. E isso não é tristeza. É lucidez."
-
-Prompt: A close-up of an antique bronze hourglass on dark polished marble, the last grains of sand falling through a narrow funnel, dramatic chiaroscuro lighting from a single source, deep shadows swallowing the edges, cinematic atmosphere, ultra-detailed texture on the glass and metal, moody and contemplative --ar 4:5
+Texto: "MEMENTO MORI"
+Subtítulo: "A brevidade da vida"
+Image Prompt: A close-up of an antique bronze hourglass on dark polished marble, the last grains of sand falling through a narrow funnel, dramatic chiaroscuro lighting from a single source, deep shadows swallowing the edges, cinematic atmosphere, ultra-detailed texture on the glass and metal, moody and contemplative --ar 4:5
 
 ──────────────────────────────────────────
 SLIDE 2
 ──────────────────────────────────────────
 Texto: "Você não tem tempo infinito. Pare de agir como se tivesse."
 
-Prompt: A solitary human hand reaching toward a faint, distant light in absolute darkness, fingers slightly open, the light barely illuminating the fingertips, marble texture on the stone floor beneath, dust particles suspended in the air, hyper-realistic, ethereal and melancholic --ar 4:5
+Image Prompt: A solitary human hand reaching toward a faint, distant light in absolute darkness, fingers slightly open, the light barely illuminating the fingertips, marble texture on the stone floor beneath, dust particles suspended in the air, hyper-realistic, ethereal and melancholic --ar 4:5
 
 ──────────────────────────────────────────
 SLIDE 3
 ──────────────────────────────────────────
 Texto: "A morte não é o oposto da vida. É o que dá peso a cada escolha."
 
-Prompt: A weathered marble bust of a Stoic philosopher seen from behind, facing a vast dark void with a single beam of golden light cutting diagonally across the scene, volumetric light rays, ancient stone texture with cracks, profound sense of scale and silence --ar 4:5
+Image Prompt: A weathered marble bust of a Stoic philosopher seen from behind, facing a vast dark void with a single beam of golden light cutting diagonally across the scene, volumetric light rays, ancient stone texture with cracks, profound sense of scale and silence --ar 4:5
 
 ──────────────────────────────────────────
 SLIDE 4
 ──────────────────────────────────────────
 Texto: "Quem se lembra da morte não desperdiça o dia."
 
-Prompt: A wide shot of an empty Roman temple interior at twilight, tall marble columns framing the composition, the last orange glow of sunset bleeding through the entrance, long shadows stretching across the stone floor, abandoned, sacred, timeless --ar 4:5
+Image Prompt: A wide shot of an empty Roman temple interior at twilight, tall marble columns framing the composition, the last orange glow of sunset bleeding through the entrance, long shadows stretching across the stone floor, abandoned, sacred, timeless --ar 4:5
 
 ──────────────────────────────────────────
 SLIDE 5
 ──────────────────────────────────────────
 Texto: "Viva como se cada manhã fosse um presente que não merece."
 
-Prompt: A single white lily resting on a slab of black obsidian, morning dew droplets on the petals, soft backlight creating a delicate rim light, extreme close-up macro shot, the background dissolving into pure black --ar 4:5
+Image Prompt: A single white lily resting on a slab of black obsidian, morning dew droplets on the petals, soft backlight creating a delicate rim light, extreme close-up macro shot, the background dissolving into pure black --ar 4:5
 
 ──────────────────────────────────────────
 SLIDE 6 — FECHAMENTO
 ──────────────────────────────────────────
-Texto: "Memento Mori. Lembre-se de que você vai morrer. Só assim você começa a viver."
+Texto: "MEMENTO MORI"
+Subtítulo: "Lembre-se de que você vai morrer. Só assim você começa a viver."
 
 Prompt: A minimalist composition of a human skull in deep shadow, only half of the skull illuminated by a cold silver light, resting on ancient cracked marble, the word "MEMENTO MORI" carved in Latin serif letters on the stone beneath, dark academic aesthetic, profound gravitas --ar 4:5
 
