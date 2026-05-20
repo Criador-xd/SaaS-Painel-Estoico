@@ -1,0 +1,24 @@
+[    4702ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "chatgpt.new-onboarding.conversational-onboarding.conversation.title.imagegen-waiting-cta" for locale "pt-BR", using default message (Explore ChatGPT) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:57:5318)
+    at OH (https://chatgpt.com/cdn/assets/8b34dbc2-o7rh6k6i7fq20x59.js:2:102190)
+    at mje (https://chatgpt.com/cdn/assets/8b34dbc2-o7rh6k6i7fq20x59.js:15:5355)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126839)
+    at Hd (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126812) @ https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:60
+[   41616ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://chatgpt.com/backend-api/files/download/file_000000001bd071fba5c73467a9126267?conversation_id=6a0c0982-0874-83e9-afd8-57a32fb21b84&inline=false:0
+[   41619ms] [ERROR] RequestError: Request timeout
+    at pTe (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:5:121824)
+    at async qGe (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:25:12478)
+    at async uMe (https://chatgpt.com/cdn/assets/conversation-small-jtq6eoppdmgb8j5y.js:8:59181)
+    at async queryFn (https://chatgpt.com/cdn/assets/conversation-small-jtq6eoppdmgb8j5y.js:8:60103) undefined @ https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:60
+[   41819ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://chatgpt.com/backend-api/files/download/file_00000000ab4471f58f443accbed976f9?conversation_id=6a0c0982-0874-83e9-afd8-57a32fb21b84&inline=false:0
+[   41821ms] [ERROR] RequestError: Request timeout
+    at pTe (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:5:121824)
+    at async qGe (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:25:12478)
+    at async uMe (https://chatgpt.com/cdn/assets/conversation-small-jtq6eoppdmgb8j5y.js:8:59181)
+    at async queryFn (https://chatgpt.com/cdn/assets/conversation-small-jtq6eoppdmgb8j5y.js:8:60103) undefined @ https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:60

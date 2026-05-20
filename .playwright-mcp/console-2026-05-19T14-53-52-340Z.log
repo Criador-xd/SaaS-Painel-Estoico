@@ -1,0 +1,27 @@
+[    2561ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "chatgpt.new-onboarding.conversational-onboarding.conversation.title.imagegen-waiting-cta" for locale "pt-BR", using default message (Explore ChatGPT) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:57:5318)
+    at OH (https://chatgpt.com/cdn/assets/8b34dbc2-o7rh6k6i7fq20x59.js:2:102190)
+    at mje (https://chatgpt.com/cdn/assets/8b34dbc2-o7rh6k6i7fq20x59.js:15:5355)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126839)
+    at Hd (https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:8:126812) @ https://chatgpt.com/cdn/assets/2340486e-itwnxde1kmxanlww.js:60
+[   41552ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  197970ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  447225ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  901103ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1263688ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1448957ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1681141ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1825582ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1866880ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://chatgpt.com/backend-api/f/conversation:0
+[ 1958714ms] RequestError: A network error occurred. Please check your connection and try again. If this issue persists please contact us through our help center at [help.openai.com](https://help.openai.com/).
+    at e.createWithErrorMessage (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:2:35989)
+    at A (https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:138:158432)
+    at https://chatgpt.com/cdn/assets/4813494d-ramzk1qd0g266n15.js:138:160962
+[ 1959253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/f/conversation/resume:0
+[ 2061602ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0

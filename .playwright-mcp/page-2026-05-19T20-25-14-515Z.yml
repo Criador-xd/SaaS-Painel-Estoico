@@ -1,0 +1,94 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat" [ref=e26] [cursor=pointer]:
+                  - /url: /
+                  - img [ref=e28]
+                  - generic [ref=e31]: Novo chat
+              - listitem [ref=e32]:
+                - button "Buscar chats" [ref=e33] [cursor=pointer]:
+                  - img [ref=e35]
+                  - generic [ref=e38]: Buscar chats
+            - link "Codex" [ref=e39] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: Codex
+              - img [ref=e47]
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Mais
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e59] [cursor=pointer]:
+            - generic [ref=e63]:
+              - generic [ref=e65]: lucas rocha
+              - generic [ref=e68]: Plus
+            - button "Baixar aplicativos" [ref=e71]:
+              - img [ref=e73]
+    - generic [ref=e76]:
+      - banner:
+        - generic [ref=e79]:
+          - button "Compartilhar" [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e86] [cursor=pointer]:
+            - img [ref=e87]
+      - main [ref=e89]:
+        - generic [ref=e92]:
+          - generic:
+            - generic:
+              - button:
+                - img
+          - generic [ref=e98]:
+            - generic [ref=e102]:
+              - button "Adicionar arquivos e mais" [ref=e105] [cursor=pointer]:
+                - img
+              - textbox "Converse com o ChatGPT" [active] [ref=e108]:
+                - /placeholder: Pergunte alguma coisa
+              - button "Enviar prompt" [disabled] [ref=e112]:
+                - img [ref=e113]
+            - button [ref=e115]
+            - button [ref=e116]
+          - generic [ref=e122]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e123]
+  - status [ref=e124]

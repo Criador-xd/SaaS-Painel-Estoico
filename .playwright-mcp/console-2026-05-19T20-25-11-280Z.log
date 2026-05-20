@@ -1,0 +1,80 @@
+[    5566ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[  110605ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  290062ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  417841ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  620938ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  822061ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  849815ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/m:0
+[  849816ms] [ERROR] Error sending segment performance metrics TypeError: Failed to fetch
+    at o (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:59:3287)
+    at h (https://chatgpt.com/cdn/assets/fd7f274b-ld9jmu2af7gukna1.js:1:1360)
+    at e.<anonymous> (https://chatgpt.com/cdn/assets/fd7f274b-ld9jmu2af7gukna1.js:1:2871)
+    at c (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:73:259240)
+    at Object.next (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:73:258525)
+    at https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:73:258177
+    at new Promise (<anonymous>)
+    at bOt (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:73:257977)
+    at e.send (https://chatgpt.com/cdn/assets/fd7f274b-ld9jmu2af7gukna1.js:1:2687)
+    at e.<anonymous> (https://chatgpt.com/cdn/assets/fd7f274b-ld9jmu2af7gukna1.js:1:2571) @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  849818ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223154622&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  849819ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/backend-api/sentinel/heartbeat:0
+[  850323ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223161599&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  850811ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/statsc/flush:0
+[  850812ms] [ERROR] TypeError: Failed to fetch
+    at o (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:59:3287)
+    at roe.postMetrics (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48658)
+    at https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48049 {json: {"counters":[{"namespace":"default","metric":"chat…alues":[3581.199999988079]}],"client_type":"web"}} @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  852334ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223163606&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  852457ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D4dc92dd1-19b6-46a9-adfc-37c28aefb9ef:0
+[  852460ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3Dbf3befd9-c5b1-479f-994a-affd029240bd:0
+[  853467ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D59d88962-2438-4a31-a89f-3b9088c94e05:0
+[  853470ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D5bbaf21e-38e2-495f-a599-78df370d8265:0
+[  855476ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3Dbfb7e7c9-7a82-442a-bee3-201cfacc47c8:0
+[  855481ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D5c746d95-d04b-4b5f-aec6-750831a37eae:0
+[  856839ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223168115&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  856840ms] [ERROR]  ERROR  [Statsig] A networking error occurred during POST request to https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223168115&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1. TypeError: Failed to fetch TypeError: Failed to fetch
+    at o (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:59:3287)
+    at cie (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:2:72343)
+    at sie (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:2:72276)
+    at e.default.<anonymous> (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:130108)
+    at Generator.next (<anonymous>)
+    at https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:127532
+    at new Promise (<anonymous>)
+    at t (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:127332)
+    at e.default._sendRequest (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:129323)
+    at https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:160434 @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  859485ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3Dd2e62457-cf40-4d85-ac71-f92db56a4427:0
+[  859488ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D2fafa982-6d2d-4a8d-81ab-9447b80f0e9b:0
+[  867500ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D577d5c4f-b916-43c4-a0fe-7e801181bfa4:0
+[  867504ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3D49c42160-6b88-4d75-863d-4a8377f20745:0
+[  881807ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/ces/statsc/flush:0
+[  881808ms] [ERROR] TypeError: Failed to fetch
+    at o (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:59:3287)
+    at roe.postMetrics (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48658)
+    at https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48049 {json: {"counters":[{"namespace":"internal","metric":"pos…"value":25}],"histograms":[],"client_type":"web"}} @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  892562ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  892564ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  892565ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3Dc9003e43-2c52-49cd-ac29-d1378fa16477:0
+[  892587ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/telemetry/intake?ddforward=%2Fapi%2Fv2%2Flogs%3Fddsource%3Dbrowser%26dd-api-key%3Dpub1f79f8ac903a5872ae5f53026d20a77c%26dd-evp-origin-version%3D6.22.0%26dd-evp-origin%3Dbrowser%26dd-request-id%3De31a40cb-41a4-4a50-b1f4-47cc6fcc8cbd:0
+[  902301ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  905868ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  906023ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223214626&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  906024ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/backend-api/sentinel/heartbeat:0
+[  906531ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223217807&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  911314ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223219812&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[  923406ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  923407ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[  925820ms] [ERROR]  ERROR  [Statsig] A networking error occurred during POST request to https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223227096&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1. Error: Timeout of 10000ms expired. Error: Timeout of 10000ms expired.
+    at https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:62:130189 @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  929494ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/ces/statsc/flush:0
+[  929494ms] [ERROR] TypeError: Failed to fetch
+    at o (https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:59:3287)
+    at roe.postMetrics (https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48658)
+    at https://chatgpt.com/cdn/assets/4813494d-hsgc2lxflrjptm3a.js:3:48049 {json: {"counters":[{"namespace":"internal","metric":"pos…"value":25}],"histograms":[],"client_type":"web"}} @ https://chatgpt.com/cdn/assets/2340486e-okywg9mvs31xq2d5.js:60
+[  929495ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/ces/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.32.6&t=1779223227096&sid=46067ff1-ff47-4a6d-b182-77d4c3dc001e&ec=14&gz=1:0
+[ 1399246ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[ 1399400ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[ 1446811ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://chatgpt.com/backend-api/sentinel/heartbeat:0
+[ 1472849ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[ 1472873ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chatgpt.com/backend-api/aip/connectors/links/list_accessible:0
+[ 1641758ms] [WARNING] The `beforetoggle` event handler for a popover triggered another popover to be shown or hidden. Or a `loseinterest` event handler was cancelled. This is not recommended. @ https://chatgpt.com/cdn/assets/conversation-small-bja57es985n1x8a1.js:38
