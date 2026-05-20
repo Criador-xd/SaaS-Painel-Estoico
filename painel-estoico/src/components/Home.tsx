@@ -129,6 +129,15 @@ export const Home = () => {
           A VISÃO DO ALTO
         </button>
 
+        <button onClick={() => setView('squad-publicador')} className="btn-premium" style={{ 
+          background: 'linear-gradient(90deg, transparent, rgba(124,58,237,0.05), transparent)',
+          borderColor: 'rgba(124,58,237,0.3)',
+          color: '#7C3AED',
+          marginBottom: '20px'
+        }}>
+          SQUAD PUBLICADOR
+        </button>
+
         <div style={{ display: 'flex', gap: '12px', width: '100%' }}>
           <button onClick={() => setView('timeline')} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '9px', opacity: 0.7 }}>PROGRESSO</button>
           <button onClick={() => setView('cidadela')} className="btn-premium" style={{ flex: 1, padding: '12px', fontSize: '9px', opacity: 0.7 }}>CIDADELA</button>

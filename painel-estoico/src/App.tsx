@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Home } from './components/Home';
 import { Escudo } from './components/Escudo';
 import { Navalha } from './components/Navalha';
@@ -9,20 +9,21 @@ import { Auth } from './components/Auth';
 import { Paywall } from './components/Paywall';
 import { Success } from './components/Success';
 import { Quiz } from './components/Quiz';
+import { SquadPublicador } from './components/SquadPublicador';
+import { HistoricoAgendamento } from './components/HistoricoAgendamento';
 import { useStore } from './store/useStore';
 import { supabase } from './lib/supabase';
 
 function App() {
   const { view, user, isPremium, setView, setUser } = useStore();
+  const [pubView, setPubView] = useState<'squad-publicador' | 'historico'>('squad-publicador');
 
   useEffect(() => {
-    // Check for success URL parameter
     const params = new URLSearchParams(window.location.search);
     if (params.get('success') === 'true') {
       setView('success');
     }
 
-    // 1. Check active sessions and sets the user
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session) {
         setUser({ 
@@ -34,7 +35,6 @@ function App() {
       }
     });
 
-    // 2. Listen for changes on auth state (sign in, sign out, etc.)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session) {
         setUser({ 
@@ -42,7 +42,7 @@ function App() {
           email: session.user.email || '' 
         });
       } else {
-        setUser(null as any); // Clear user
+        setUser(null as any);
         if (view !== 'success' && view !== 'quiz') setView('quiz');
       }
     });
@@ -56,11 +56,8 @@ function App() {
       return <Quiz onFinish={() => setView('auth')} />;
     }
     
-    // Bloqueio Total: Se não for premium, mostra o Paywall em qualquer lugar (exceto Auth e Success)
     if (!isPremium && view !== 'success') {
-      return <Paywall 
-        onBack={() => supabase.auth.signOut()} 
-      />;
+      return <Paywall onBack={() => supabase.auth.signOut()} />;
     }
 
     switch (view) {
@@ -73,6 +70,10 @@ function App() {
       case 'auth': return <Auth />;
       case 'success': return <Success />;
       case 'quiz': return <Quiz onFinish={() => setView('auth')} />;
+      case 'squad-publicador':
+        return pubView === 'historico'
+          ? <HistoricoAgendamento onBack={() => setPubView('squad-publicador')} />
+          : <SquadPublicador onViewHistory={() => setPubView('historico')} />;
       default: return <Home />;
     }
   };

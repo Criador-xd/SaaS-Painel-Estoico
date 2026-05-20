@@ -25,7 +25,7 @@ interface User {
 }
 
 interface AppState {
-  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success' | 'quiz';
+  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success' | 'quiz' | 'squad-publicador';
   user: User | null;
   streak: number;
   logs: Record<string, DayLog>;
@@ -102,6 +102,11 @@ export const useStore = create<AppState>()(
           "Passe 10 minutos na natureza ou olhando para o céu.",
           "Releia seu parágrafo favorito do Ebook e medite sobre ele."
         ];
+        
+        if (view === 'squad-publicador') {
+          set({ view, currentChallenge: '' });
+          return;
+        }
         
         const day = new Date().getDate();
         const challenge = challenges[(day - 1) % challenges.length];

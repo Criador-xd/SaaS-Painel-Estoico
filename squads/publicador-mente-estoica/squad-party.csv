@@ -1,0 +1,6 @@
+AgentName,AgentRole,AgentFile
+Reader,Leitor de Arquivos Locais,.agent/reader.md
+Copywriter,Criador de Legendas Estoicas,.agent/copywriter.md
+Guardian,Validador de Regras,.agent/guardian.md
+Scheduler,Agendador de Publicações,.agent/scheduler.md
+Publisher,Publicador nas Redes,.agent/publisher.md
