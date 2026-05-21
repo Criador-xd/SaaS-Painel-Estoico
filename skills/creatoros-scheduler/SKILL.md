@@ -7,7 +7,7 @@ description: >
   (Instagram + YouTube), comentário automático em 5 min e agendamento.
   Após agendar, move os vídeos para a pasta de publicados.
 type: prompt
-version: 1.0.0
+version: 1.1.0
 categories: [social-media, scheduling, content, instagram, youtube, automation]
 ---
 
@@ -120,7 +120,13 @@ await page.waitForTimeout(3000);
 
 ### 8. Agendar
 
-- Preencha `input[type="datetime-local"]` com a data/hora desejada (formato: `YYYY-MM-DDTHH:mm`)
+**REGRRA DE OURO — SINCORNIA DE HORÁRIOS:**
+- **PRIMEIRO VÍDEO do lote:** Pergunte ao usuário qual horário ele quer (ex: 03:00). Preencha manualmente em `input[type="datetime-local"]` (formato: `YYYY-MM-DDTHH:mm`)
+- **DEMAIS VÍDEOS:** SEMPRE clique em **"Aplicar próximo horário"** — isso faz o sistema calcular automaticamente o próximo slot disponível baseado nos horários recomendados, evitando que dois vídeos caiam no mesmo horário
+- O botão "Aplicar próximo horário" aparece com base no último reels publicado (ex: "Último reels: 21/05, 03:00" → "Próximo reels: 21/05, 10:00")
+- Exemplo: `await page.locator('button:has-text("Aplicar próximo horário")').click();`
+
+**Ação final:**
 - Clique em `button:has-text("Agendar")`
 - Confirme a mensagem "Publicação agendada com sucesso!"
 
@@ -132,8 +138,9 @@ await page.waitForTimeout(3000);
 
 - A plataforma suporta upload de até 10 arquivos por vez
 - Para múltiplos vídeos, AGENDE UM POR VEZ (cada um precisa de análise e copy próprio)
-- Após cada agendamento bem-sucedido, navegue novamente para `/publisher`
+- Após cada agendamento bem-sucedido, o sistema redireciona para `/publisher/history` — navegue de volta para `/publisher`
 - Repita o ciclo para cada vídeo
+- **CRÍTICO:** Do segundo vídeo em diante, SEMPRE clique em "Aplicar próximo horário" ANTES de clicar em "Agendar" — isso distribui os vídeos nos slots corretos automaticamente
 - Se o OCR de um vídeo falhar (sem texto detectado), use o contexto do canal e nome do arquivo para inferir o tema
 
 ## Tratamento de Erros
@@ -171,5 +178,12 @@ await page.evaluate(() => { /* expande Instagram, preenche legenda */ });
 await page.evaluate(() => { /* expande YouTube, preenche título + descrição */ });
 
 // Comment + approval + schedule
-// ... switches, datetime-local, agendar
+// ... switches
+
+// APLICAR PRÓXIMO HORÁRIO (a partir do 2º vídeo)
+await page.locator('button:has-text("Aplicar próximo horário")').click();
+await page.waitForTimeout(500);
+
+// Agendar
+await page.locator('button:has-text("Agendar")').click();
 ```

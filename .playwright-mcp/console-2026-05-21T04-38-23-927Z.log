@@ -1,0 +1,2 @@
+[   61947ms] [ERROR] Erro ao carregar histórico: {message: TypeError: Failed to fetch, details: TypeError: Failed to fetch
+    at https://creatoro…ai.lovable.app/assets/index-CRv_tOEm.js:667:3941), hint: , code: } @ https://creatorosai.lovable.app/assets/index-CRv_tOEm.js:669
