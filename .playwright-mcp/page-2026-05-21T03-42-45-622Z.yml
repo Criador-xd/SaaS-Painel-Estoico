@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - region "Notifications (F8)":
+      - list
+    - region "Notifications alt+T"
+    - generic [ref=e4]: Loading...
+  - complementary "Edit with Lovable" [ref=e5]:
+    - link "Edit with Lovable" [ref=e6] [cursor=pointer]:
+      - /url: https://lovable.dev/projects/39c064e2-130c-46b6-a35b-da0bc9abb94e?utm_source=lovable-badge
+      - generic [ref=e7]: Edit with
+      - img [ref=e8]
+    - button "Dismiss" [ref=e13] [cursor=pointer]:
+      - img [ref=e14]
