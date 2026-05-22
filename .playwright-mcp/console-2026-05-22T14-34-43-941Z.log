@@ -1,0 +1,10 @@
+[    3866ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[   84830ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  500300ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  572599ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  636493ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  687998ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1047972ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1158515ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1268814ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1736531ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
