@@ -1,0 +1,156 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil":
+              - generic:
+                - generic:
+                  - img "Imagem de perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT Plus
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat Control Shift O" [ref=e123] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e27]:
+                    - img [ref=e125]
+                    - generic [ref=e128]: Novo chat
+                  - generic [ref=e129]:
+                    - generic "Control" [ref=e130]:
+                      - generic [ref=e131]: Ctrl
+                      - text: +
+                    - generic "Shift" [ref=e132]:
+                      - generic [ref=e133]: Shift
+                      - text: +
+                    - generic [ref=e135]: O
+              - listitem [ref=e32]:
+                - button "Buscar chats Control K" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e34]:
+                    - img [ref=e138]
+                    - generic [ref=e141]: Buscar chats
+                  - generic [ref=e142]:
+                    - generic "Control" [ref=e143]:
+                      - generic [ref=e144]: Ctrl
+                      - text: +
+                    - generic [ref=e146]: K
+            - button "Projetos" [ref=e147] [cursor=pointer]:
+              - img [ref=e149]
+              - generic [ref=e152]: Projetos
+            - link "Codex" [ref=e39] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: Codex
+              - img [ref=e47]
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Mais
+            - generic [ref=e153]:
+              - button "Recentes" [expanded] [ref=e155] [cursor=pointer]:
+                - heading "Recentes" [level=2] [ref=e156]
+              - list [ref=e158]:
+                - listitem [ref=e173]:
+                  - generic [ref=e174]:
+                    - link "Instagram Carousel Design" [ref=e175] [cursor=pointer]:
+                      - /url: /c/6a0f2897-ee78-83e9-b57f-7328f6c81995
+                      - generic [ref=e177]: Instagram Carousel Design
+                      - generic [ref=e178]:
+                        - generic [ref=e180]:
+                          - generic:
+                            - generic:
+                              - img
+                        - img [ref=e182]
+                    - button "Abrir opções de conversa para Instagram Carousel Design" [ref=e186] [cursor=pointer]:
+                      - img [ref=e188]
+                - listitem [ref=e190]:
+                  - generic [ref=e191]:
+                    - link "Carrossel Gratidão" [ref=e192] [cursor=pointer]:
+                      - /url: /c/6a0efb48-f97c-83e9-9d17-259deb057555
+                      - generic [ref=e194]: Carrossel Gratidão
+                      - generic [ref=e196]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para Carrossel Gratidão" [ref=e198] [cursor=pointer]:
+                      - img [ref=e200]
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]:
+              - img "Imagem de perfil" [ref=e202]
+              - generic [ref=e63]:
+                - generic [ref=e65]: lucas rocha
+                - generic [ref=e68]: Plus
+            - button "Baixar aplicativos" [ref=e71]:
+              - img [ref=e73]
+    - generic [ref=e76]:
+      - banner:
+        - generic [ref=e272]:
+          - button "Compartilhar" [ref=e348] [cursor=pointer]:
+            - generic [ref=e349]:
+              - img [ref=e350]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e353] [cursor=pointer]:
+            - img [ref=e354]
+      - main [ref=e85]:
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - generic:
+              - img
+          - generic [ref=e288]:
+            - generic:
+              - generic:
+                - button:
+                  - img
+            - generic [ref=e294]:
+              - generic [ref=e298]:
+                - button "Adicionar arquivos e mais" [ref=e301] [cursor=pointer]:
+                  - img
+                - textbox "Converse com o ChatGPT" [active] [ref=e304]:
+                  - paragraph [ref=e305]: Pergunte alguma coisa
+                - generic [ref=e306]:
+                  - button "Thinking" [ref=e310] [cursor=pointer]:
+                    - generic [ref=e311]: Thinking
+                    - img
+                  - generic [ref=e312]:
+                    - button "Iniciar ditado" [ref=e313] [cursor=pointer]:
+                      - img
+                    - button "Parar de responder" [ref=e356] [cursor=pointer]:
+                      - img [ref=e357]
+              - button [ref=e320]
+              - button [ref=e321]
+            - generic [ref=e364]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e121]
+  - status [ref=e122]
