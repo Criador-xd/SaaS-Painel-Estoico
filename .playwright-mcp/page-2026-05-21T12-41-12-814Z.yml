@@ -1,0 +1,302 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil":
+              - generic:
+                - generic:
+                  - img "Imagem de perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT Plus
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat Control Shift O" [ref=e125] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e27]:
+                    - img [ref=e127]
+                    - generic [ref=e130]: Novo chat
+                  - generic [ref=e131]:
+                    - generic "Control" [ref=e132]:
+                      - generic [ref=e133]: Ctrl
+                      - text: +
+                    - generic "Shift" [ref=e134]:
+                      - generic [ref=e135]: Shift
+                      - text: +
+                    - generic [ref=e137]: O
+              - listitem [ref=e32]:
+                - button "Buscar chats Control K" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e34]:
+                    - img [ref=e140]
+                    - generic [ref=e143]: Buscar chats
+                  - generic [ref=e144]:
+                    - generic "Control" [ref=e145]:
+                      - generic [ref=e146]: Ctrl
+                      - text: +
+                    - generic [ref=e148]: K
+            - button "Projetos" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e154]: Projetos
+            - link "Codex" [ref=e39] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: Codex
+              - img [ref=e47]
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Mais
+            - generic [ref=e333]:
+              - button "Recentes" [expanded] [ref=e335] [cursor=pointer]:
+                - heading "Recentes" [level=2] [ref=e336]
+              - list [ref=e338]:
+                - listitem [ref=e339]:
+                  - generic [ref=e340]:
+                    - link "New chat" [ref=e341] [cursor=pointer]:
+                      - /url: /c/6a0efb48-f97c-83e9-9d17-259deb057555
+                      - generic [ref=e343]: New chat
+                      - generic [ref=e345]:
+                        - generic:
+                          - generic:
+                            - img
+                    - button "Abrir opções de conversa para New chat" [ref=e347] [cursor=pointer]:
+                      - img [ref=e349]
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]:
+              - img "Imagem de perfil" [ref=e155]
+              - generic [ref=e63]:
+                - generic [ref=e65]: lucas rocha
+                - generic [ref=e68]: Plus
+            - button "Baixar aplicativos" [ref=e71]:
+              - img [ref=e73]
+    - generic [ref=e76]:
+      - banner:
+        - generic [ref=e158]:
+          - button "Compartilhar" [ref=e272] [cursor=pointer]:
+            - generic [ref=e273]:
+              - img [ref=e274]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e277] [cursor=pointer]:
+            - img [ref=e278]
+      - main [ref=e89]:
+        - generic [ref=e164]:
+          - generic [ref=e281]:
+            - generic [ref=e725]:
+              - button "Prompt 1" [ref=e726] [cursor=pointer]
+              - button "Prompt 2" [ref=e727] [cursor=pointer]
+              - button "Prompt 3" [ref=e728] [cursor=pointer]
+              - button "Prompt 4" [ref=e729] [cursor=pointer]
+              - button "Prompt 5" [ref=e730] [cursor=pointer]
+            - generic [ref=e352]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e353]
+              - generic [ref=e355]:
+                - generic [ref=e356]:
+                  - button "Thought for 44s" [ref=e383] [cursor=pointer]:
+                    - text: Thought for 44s
+                    - img [ref=e384]
+                  - generic [ref=e389]:
+                    - 'button "Imagem gerada: Light reaches out in gratitude" [ref=e390] [cursor=pointer]':
+                      - generic [ref=e391]:
+                        - 'img "Imagem gerada: Light reaches out in gratitude" [ref=e393]'
+                        - img [ref=e395]
+                        - img [ref=e397]
+                    - generic [ref=e399]:
+                      - button "Editar imagem" [ref=e402] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e404] [cursor=pointer]:
+                        - img [ref=e406]
+                - generic [ref=e378]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e430]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e431]
+              - generic [ref=e433]:
+                - generic [ref=e440]:
+                  - button "Thought for 58s" [ref=e517] [cursor=pointer]:
+                    - text: Thought for 58s
+                    - img [ref=e518]
+                  - generic [ref=e522]:
+                    - 'button "Imagem gerada: Holding light in humbled reverence" [ref=e523] [cursor=pointer]':
+                      - generic [ref=e524]:
+                        - 'img "Imagem gerada: Holding light in humbled reverence" [ref=e526]'
+                        - img [ref=e528]
+                        - img [ref=e530]
+                    - generic [ref=e532]:
+                      - button "Editar imagem" [ref=e535] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e537] [cursor=pointer]:
+                        - img [ref=e539]
+                - generic [ref=e472]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e558]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e559]
+              - generic [ref=e561]:
+                - generic [ref=e568]:
+                  - button "Thought for 54s" [ref=e620] [cursor=pointer]:
+                    - text: Thought for 54s
+                    - img [ref=e621]
+                  - generic [ref=e625]:
+                    - 'button "Imagem gerada: The elegance of simplicity and light" [ref=e626] [cursor=pointer]':
+                      - generic [ref=e627]:
+                        - 'img "Imagem gerada: The elegance of simplicity and light" [ref=e629]'
+                        - img [ref=e631]
+                        - img [ref=e633]
+                    - generic [ref=e635]:
+                      - button "Editar imagem" [ref=e638] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e640] [cursor=pointer]:
+                        - img [ref=e642]
+                - generic [ref=e618]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e649]:
+              - heading "Você disse:" [level=4] [ref=e650]
+              - generic [ref=e652]:
+                - generic [ref=e660]: "CARROSSEL 11: GRATIDÃO (Instagram 4:5, dark stoic aesthetic, serif bold white text). SLIDE 4 Texto \"Quem só vê o que falta... nunca descansa.\" Imagem: A marble hand reaching upward from darkness toward a distant vanishing point of golden light, the fingertips almost touching the light but frozen in reverence not desperation, dramatic perspective pulling the eye upward, the vastness of darkness versus the single point of warmth, cinematic depth and longing --ar 4:5"
+                - generic [ref=e661]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e664]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e665]
+              - generic [ref=e667]:
+                - generic [ref=e674]:
+                  - button "Thought for 49s" [ref=e694] [cursor=pointer]:
+                    - text: Thought for 49s
+                    - img [ref=e695]
+                  - generic [ref=e700]:
+                    - 'button "Imagem gerada: Reaching for the light" [ref=e701] [cursor=pointer]':
+                      - generic [ref=e702]:
+                        - 'img "Imagem gerada: Reaching for the light" [ref=e704]'
+                        - img [ref=e706]
+                        - img [ref=e708]
+                    - generic [ref=e710]:
+                      - button "Editar imagem" [ref=e713] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e715] [cursor=pointer]:
+                        - img [ref=e717]
+                - generic [ref=e719]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e733]:
+              - heading "Você disse:" [level=4] [ref=e734]
+              - generic [ref=e736]:
+                - generic [ref=e744]: "CARROSSEL 11: GRATIDÃO (Instagram 4:5, dark stoic aesthetic, serif bold white text). SLIDE 5 Texto \"A gratidão não é sentimento. É disciplina do olhar.\" Imagem: A weathered marble bust of Marcus Aurelius in dramatic side profile, half illuminated by warm golden backlight tracing the contours of the face, half consumed by complete shadow, museum-quality chiaroscuro, the gaze of ancient wisdom, hyper-realistic marble texture with subtle cracks --ar 4:5"
+                - generic [ref=e745]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e748]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e749]
+              - generic [ref=e751]:
+                - generic [ref=e758]:
+                  - generic [ref=e778]:
+                    - button "Creating slide 5 with visual continuity" [ref=e781] [cursor=pointer]:
+                      - generic [ref=e783]:
+                        - generic [ref=e785]: Creating slide 5 with visual continuity
+                        - img [ref=e786]
+                    - paragraph [ref=e790] [cursor=pointer]: No need for extra search—it’s all about keeping consistency across the slides.
+                  - generic "Gerando imagem…" [ref=e764]
+                - generic [ref=e791]:
+                  - group "Ações de resposta"
+          - generic [ref=e176]:
+            - button [ref=e448] [cursor=pointer]:
+              - img [ref=e449]
+            - generic [ref=e182]:
+              - generic [ref=e186]:
+                - button "Adicionar arquivos e mais" [ref=e189] [cursor=pointer]:
+                  - img
+                - textbox "Converse com o ChatGPT" [active] [ref=e192]:
+                  - paragraph [ref=e193]: "CARROSSEL 11: GRATIDÃO (Instagram 4:5, dark stoic aesthetic, serif bold white text). SLIDE 6 (Fechamento) Texto \"Treine seu olhar. O suficiente já está aqui.\" Imagem: Two marble hands clasped together in profound darkness, a soft warm golden inner glow emanating from between the fingers, hairline cracks in the marble sealed with gold light kintsugi-inspired, deeply textured ancient stone, powerful stillness, completion and peace --ar 4:5"
+                - generic [ref=e194]:
+                  - button "Thinking" [ref=e198] [cursor=pointer]:
+                    - generic [ref=e199]: Thinking
+                    - img
+                  - generic [ref=e200]:
+                    - button "Iniciar ditado" [ref=e201] [cursor=pointer]:
+                      - img
+                    - button "Parar de responder" [ref=e774] [cursor=pointer]:
+                      - img [ref=e775]
+              - button [ref=e208]
+              - button [ref=e209]
+            - generic [ref=e332]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e123]
+  - status [ref=e124]

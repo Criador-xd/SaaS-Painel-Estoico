@@ -1,0 +1,23 @@
+[    2286ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[   13288ms] [WARNING] The resource https://chatgpt.com/cdn/assets/conversation-small-j9zth6cj.css was preloaded using link preload in Early Hints but not used within a few seconds from the window's load event. @ https://chatgpt.com/c/6a0d2c27-09f8-83e9-b687-c6f1d176e7d4:0
+[   13288ms] [WARNING] The resource https://chatgpt.com/cdn/assets/root-clh426sj.css was preloaded using link preload in Early Hints but not used within a few seconds from the window's load event. @ https://chatgpt.com/c/6a0d2c27-09f8-83e9-b687-c6f1d176e7d4:0
+[ 1841097ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/f/conversation:0
+[ 1843732ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1880036ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/f/conversation:0
+[ 1881680ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 2604160ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[ 2604413ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/init:0
+[ 2604802ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/6a0d2c27-09f8-83e9-b687-c6f1d176e7d4:0
+[ 2604838ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "toast.announcement.titleOnly" for locale "pt-BR", using default message ({title}) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:57:5318)
+    at Nwe (https://chatgpt.com/cdn/assets/4813494d-hztr09legl6qn36y.js:5:108558)
+    at https://chatgpt.com/cdn/assets/4813494d-hztr09legl6qn36y.js:5:111188
+    at _l (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:94360)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116935)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116708)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:118153)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116708) @ https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:60
+[ 2613346ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0

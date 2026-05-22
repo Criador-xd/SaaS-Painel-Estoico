@@ -1,0 +1,28 @@
+[    2271ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[    2684ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/6a0d2c27-09f8-83e9-b687-c6f1d176e7d4:0
+[    2778ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "toast.announcement.titleOnly" for locale "pt-BR", using default message ({title}) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:57:5318)
+    at Nwe (https://chatgpt.com/cdn/assets/4813494d-hztr09legl6qn36y.js:5:108558)
+    at https://chatgpt.com/cdn/assets/4813494d-hztr09legl6qn36y.js:5:111188
+    at _l (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:94360)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116935)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116708)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:118153)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:8:116708) @ https://chatgpt.com/cdn/assets/2340486e-h06iz7nbjwpldvrl.js:60
+[    3592ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/init:0
+[  154536ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  261335ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  345363ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  480062ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  602849ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  827097ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  850766ms] [WARNING] The `beforetoggle` event handler for a popover triggered another popover to be shown or hidden. Or a `loseinterest` event handler was cancelled. This is not recommended. @ https://chatgpt.com/cdn/assets/conversation-small-ndun8uvlm180jv2t.js:38
+[ 1137109ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/1.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
+[ 1137109ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/2.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
+[ 1137109ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/3.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
+[ 1137110ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/4.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
+[ 1137110ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/5.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
+[ 1137110ms] [ERROR] Not allowed to load local resource: file:///C:/Users/vibec/Downloads/CARROCEL%20MENTEESTOICA%20ABSOLUTA/6.png @ https://chatgpt.com/c/6a0efb48-f97c-83e9-9d17-259deb057555:0
