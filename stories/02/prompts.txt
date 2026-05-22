@@ -1,0 +1,14 @@
+PROMPT 1 (FRAME 1):
+Imagem vertical 9:16 para Instagram Stories. Fundo preto absoluto, minimalista, degradê sutil preto para cinza escuro. Atmosfera de silêncio e profundidade. Estilo cinematográfico, fotorealista, film grain, 8K. Sem texto.
+
+PROMPT 2 (FRAME 2):
+Imagem vertical 9:16 para Instagram Stories. Estátua grega clássica de mármore com rachaduras sutis, iluminação lateral fria e sombria, contraluz dramático. Atmosfera de melancolia e peso existencial. Cores preto, cinza, branco. Estilo cinematográfico, fotorealista, film grain, 8K. Sem texto.
+
+PROMPT 3 (FRAME 3):
+Imagem vertical 9:16 para Instagram Stories. Colunas de templo grego antigo (estilo Parthenon) com feixe de luz dourada atravessando dramaticamente. Iluminação volumetric lighting, raios de sol visíveis com partículas de poeira. Atmosfera de esperança e iluminação interior. Teal and orange color grading. Estilo cinematográfico, fotorealista, film grain, 8K. Sem texto.
+
+PROMPT 4 (FRAME 4):
+Imagem vertical 9:16 para Instagram Stories. Textura de pedra escura antiga, parede de basalto ou granito com rugosidade e detalhes minerais. Iluminação suave e difusa, tons de cinza escuro e preto. Atmosfera de solidez e introspecção. Close-up da superfície. Estilo cinematográfico, fotorealista, film grain, 8K. Sem texto.
+
+PROMPT 5 (FRAME 5):
+Imagem vertical 9:16 para Instagram Stories. Fundo escuro de templo grego com ponto de luz central suave e quente, como portal de luz dourada no fim de corredor de colunas. Chiaroscuro dramático, luz dourada contrastando com sombras profundas. Atmosfera de revelação e chegada. Estilo cinematográfico, fotorealista, film grain, 8K. Sem texto.

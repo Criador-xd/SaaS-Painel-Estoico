@@ -1,0 +1,16 @@
+FRAME 1 — CHOQUE ESTOICO
+Epicteto viveu sozinho a vida inteira. E disse algo sobre solidão que incomoda.
+
+FRAME 2 — A FERIDA
+Você tem medo de ficar sozinho. Mas a solidão que assusta não é a falta de gente. É o encontro forçado consigo mesmo.
+
+FRAME 3 — A PONTE
+Os estoicos viam a solidão como laboratório. É no silêncio que você se ouve. E é se ouvindo que você se fortalece.
+
+FRAME 4 — COMPROMISSO
+Você evita ficar sozinho consigo mesmo?
+[Enquete: Evito sim | Encaro de boa]
+
+FRAME 5 — A CHAVE
+O que Epicteto ensinou sobre usar a solidão como força está no post. Link na bio.
+[Seta: Link na bio]

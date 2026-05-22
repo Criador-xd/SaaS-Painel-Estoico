@@ -5,3 +5,19 @@
 [  271211ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
 [  352014ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
 [  537584ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[ 1132762ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[ 1132937ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/6a0fdd16-5460-83e9-baa8-2e96940c977d:0
+[ 1133142ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "toast.announcement.titleOnly" for locale "pt-BR", using default message ({title}) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at Fwe (https://chatgpt.com/cdn/assets/4813494d-ocq9s27id7qxgxl5.js:5:108641)
+    at https://chatgpt.com/cdn/assets/4813494d-ocq9s27id7qxgxl5.js:5:111271
+    at _l (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:94360)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:116935)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:116708)
+    at Fu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:118153)
+    at Pu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:116708) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[ 1133195ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/conversation/init:0
+[27261613ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
