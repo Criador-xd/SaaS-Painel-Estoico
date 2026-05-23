@@ -1,0 +1,31 @@
+[      97ms] [ERROR] Access to XMLHttpRequest at 'https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1' from origin 'https://www.tiktok.com' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The value of the 'Access-Control-Allow-Credentials' header in the response is '' which must be 'true' when the request's credentials mode is 'include'. The credentials mode of requests initiated by the XMLHttpRequest is controlled by the withCredentials attribute. @ https://www.tiktok.com/@AlmaEstoica:0
+[     100ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1:0
+[     482ms] [WARNING] [i18n] missing key [en] Webapp Close_button Close_button @ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.common.lib.edbb8e05.js:0
+[     600ms] [ERROR] Check show get coins entrance failed TypeError: Cannot read properties of undefined (reading 'data') @ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/webapp-desktop.abf30f85.js:0
+[     602ms] [WARNING] STORIES {e: TypeError: Cannot read properties of undefined (reading 'statusCode')
+    at https://sf16-website-l…} @ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41956.3f3b3337.js:0
+[     604ms] [WARNING] [00:01.763][warn][demux.fetch](1) PlayerError: Failed to fetch
+    at https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/28596.32bb1561.js:11:37496 @ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/17255.b2f19e99.js:0
+[     690ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'includes')
+    at l.getConfigRegion (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:25349)
+    at l.gerReportUrl (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:25458)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:27736)
+    at f (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:3652)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:4998)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:4081)
+    at a (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:457)
+    at c (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:660)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:719)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:600)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:29201)
+    at value (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:27589)
+    at value (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:27184)
+    at value (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:42112)
+    at value (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:42419)
+    at window.registToModule (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:16240)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:29:67)
+[     690ms] Uncaught TypeError: Cannot read properties of undefined (reading 'includes')
+    at l.getConfigRegion (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:25349)
+    at l.gerReportUrl (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:25458)
+    at <anonymous> (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:35220)
+    at s (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_278fdf08.js:4:35120)

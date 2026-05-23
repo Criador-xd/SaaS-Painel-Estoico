@@ -1,0 +1,76 @@
+- generic [active] [ref=e1]:
+  - img
+  - generic [ref=e2]:
+    - region "Notifications alt+T"
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e7]:
+          - link "Ir ao feed do TikTok Para você" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+            - strong: TikTok
+          - searchbox "Pesquisar" [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]:
+              - img [ref=e19]
+              - generic [ref=e21]: Pesquisar
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - link "Para você" [ref=e25] [cursor=pointer]:
+              - /url: /
+              - listitem "Para você" [ref=e26]:
+                - generic [ref=e27]:
+                  - img [ref=e30]
+                  - generic [ref=e32]: Para você
+            - link "Explorar" [ref=e34] [cursor=pointer]:
+              - /url: /explore
+              - listitem "Explorar" [ref=e35]:
+                - generic [ref=e36]:
+                  - img [ref=e39]
+                  - generic [ref=e42]: Explorar
+            - link "Seguindo" [ref=e44] [cursor=pointer]:
+              - /url: /following
+              - listitem "Seguindo" [ref=e45]:
+                - generic [ref=e46]:
+                  - img [ref=e50]
+                  - generic [ref=e52]: Seguindo
+            - link "LIVE" [ref=e55] [cursor=pointer]:
+              - /url: /live
+              - listitem "LIVE" [ref=e56]:
+                - generic [ref=e57]:
+                  - img [ref=e60]
+                  - generic [ref=e63]: LIVE
+            - link "Carregar" [ref=e65] [cursor=pointer]:
+              - /url: /tiktokstudio/upload?from=webapp&tab=video
+              - listitem "Carregar" [ref=e66]:
+                - generic [ref=e67]:
+                  - img [ref=e70]
+                  - generic [ref=e73]: Carregar
+            - link "Perfil" [ref=e75] [cursor=pointer]:
+              - /url: /@
+              - listitem "Perfil" [ref=e76]:
+                - generic [ref=e77]:
+                  - img [ref=e80]
+                  - generic [ref=e82]: Perfil
+            - listitem "Mais" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]:
+                - img [ref=e89]
+                - generic [ref=e92]: Mais
+          - button "Entrar" [ref=e95] [cursor=pointer]:
+            - generic [ref=e97]: Entrar
+          - generic [ref=e99]:
+            - heading [level=4]
+            - heading [level=4]
+            - heading [level=4]
+            - generic [ref=e100]: © 2026 TikTok
+      - main [ref=e104]:
+        - generic [ref=e105]:
+          - img [ref=e106]
+          - paragraph [ref=e109]: Não foi possível localizar esta conta
+          - paragraph [ref=e110]: Procurando vídeos? Experimente navegar por nossos criadores, hashtags e sons populares.
+      - generic [ref=e113]:
+        - button [ref=e116] [cursor=pointer]:
+          - img [ref=e118]
+        - button [ref=e123] [cursor=pointer]:
+          - img [ref=e125]
+        - button "Entrar" [ref=e130] [cursor=pointer]:
+          - generic [ref=e132]: Entrar
