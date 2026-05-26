@@ -1,0 +1,97 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat" [ref=e26] [cursor=pointer]:
+                  - /url: /
+                  - img [ref=e28]
+                  - generic [ref=e31]: Novo chat
+              - listitem [ref=e32]:
+                - button "Buscar chats" [ref=e33] [cursor=pointer]:
+                  - img [ref=e35]
+                  - generic [ref=e38]: Buscar chats
+            - link "Galeria" [ref=e39] [cursor=pointer]:
+              - /url: /library
+              - img [ref=e41]
+              - generic [ref=e44]: Galeria
+            - link "Aplicativos" [ref=e45] [cursor=pointer]:
+              - /url: /apps
+              - img [ref=e47]
+              - generic [ref=e50]: Aplicativos
+            - link "Codex" [ref=e51] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e52]:
+                - img [ref=e54]
+                - generic [ref=e57]: Codex
+              - img [ref=e59]
+            - generic [ref=e62] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e67]: Mais
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e71] [cursor=pointer]:
+            - generic [ref=e75]:
+              - generic [ref=e77]: lucas rocha
+              - generic [ref=e80]: Plus
+            - button "Baixar aplicativos" [ref=e83]:
+              - img [ref=e85]
+    - generic [ref=e88]:
+      - banner:
+        - button "Ativar chat temporário" [ref=e94] [cursor=pointer]:
+          - img [ref=e95]
+      - main [ref=e97]:
+        - generic [ref=e98]:
+          - heading "Ei, lucas . Tudo pronto para começar?" [level=1] [ref=e106]:
+            - generic [ref=e107]:
+              - text: Ei,
+              - button "lucas" [ref=e109] [cursor=pointer]
+              - text: . Tudo pronto para começar?
+          - generic [ref=e116]:
+            - generic [ref=e120]:
+              - button "Adicionar arquivos e mais" [ref=e123] [cursor=pointer]:
+                - img
+              - textbox "Converse com o ChatGPT" [active] [ref=e126]:
+                - /placeholder: Pergunte alguma coisa
+              - button "Enviar prompt" [disabled] [ref=e130]:
+                - img [ref=e131]
+            - button [ref=e133]
+            - button [ref=e134]
+  - alert [ref=e135]
+  - status [ref=e136]

@@ -1,0 +1,214 @@
+- generic [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - navigation "Barra lateral":
+        - generic:
+          - generic:
+            - generic:
+              - button "Abrir barra lateral":
+                - img
+        - generic:
+          - generic:
+            - link "Novo chat":
+              - /url: /
+              - generic:
+                - img
+              - generic: Novo chat
+          - generic:
+            - button "Buscar chats":
+              - generic:
+                - img
+              - generic: Buscar chats
+          - generic:
+            - button "Recentes":
+              - generic:
+                - img
+              - generic: Recentes
+        - generic:
+          - generic:
+            - button "Abrir menu do perfil":
+              - generic:
+                - generic:
+                  - img "Imagem de perfil"
+      - generic [ref=e10]:
+        - heading "Histórico de chats" [level=2] [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Histórico de chats" [ref=e13]:
+            - generic [ref=e16]:
+              - link "Início" [ref=e17] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e18]: ChatGPT
+              - button "Fechar barra lateral" [expanded] [ref=e20]:
+                - img [ref=e21]
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Novo chat Control Shift O" [ref=e135] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e27]:
+                    - img [ref=e137]
+                    - generic [ref=e140]: Novo chat
+                  - generic [ref=e141]:
+                    - generic "Control" [ref=e142]:
+                      - generic [ref=e143]: Ctrl
+                      - text: +
+                    - generic "Shift" [ref=e144]:
+                      - generic [ref=e145]: Shift
+                      - text: +
+                    - generic [ref=e147]: O
+              - listitem [ref=e32]:
+                - button "Buscar chats Control K" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e34]:
+                    - img [ref=e150]
+                    - generic [ref=e153]: Buscar chats
+                  - generic [ref=e154]:
+                    - generic "Control" [ref=e155]:
+                      - generic [ref=e156]: Ctrl
+                      - text: +
+                    - generic [ref=e158]: K
+            - button "Projetos" [ref=e159] [cursor=pointer]:
+              - img [ref=e161]
+              - generic [ref=e164]: Projetos
+            - link "Galeria" [ref=e39] [cursor=pointer]:
+              - /url: /library
+              - img [ref=e41]
+              - generic [ref=e44]: Galeria
+            - link "Aplicativos" [ref=e45] [cursor=pointer]:
+              - /url: /apps
+              - img [ref=e47]
+              - generic [ref=e50]: Aplicativos
+            - link "Codex" [ref=e51] [cursor=pointer]:
+              - /url: /codex
+              - generic [ref=e52]:
+                - img [ref=e54]
+                - generic [ref=e57]: Codex
+              - img [ref=e59]
+            - generic [ref=e62] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e67]: Mais
+            - generic [ref=e165]:
+              - button "Recentes" [expanded] [ref=e167] [cursor=pointer]:
+                - heading "Recentes" [level=2] [ref=e168]
+              - list [ref=e170]:
+                - listitem [ref=e498]:
+                  - link "Minimalist cinematic illustration" [ref=e499] [cursor=pointer]:
+                    - /url: /c/6a124f27-4b24-83e9-adb5-4da832ba9c99
+                    - generic [ref=e501]: Minimalist cinematic illustration
+                    - button "Abrir opções de conversa para Minimalist cinematic illustration" [ref=e504]:
+                      - img [ref=e506]
+                - listitem [ref=e171]:
+                  - link "Imagem para Instagram Reels" [ref=e172] [cursor=pointer]:
+                    - /url: /c/6a106a04-c2b8-83e9-84fe-c64869a532ca
+                    - generic [ref=e174]: Imagem para Instagram Reels
+                    - button "Abrir opções de conversa para Imagem para Instagram Reels" [ref=e177]:
+                      - img [ref=e179]
+          - button "lucas rocha Plus, abra o menu do perfil" [ref=e71] [cursor=pointer]:
+            - generic [ref=e72]:
+              - img "Imagem de perfil" [ref=e181]
+              - generic [ref=e75]:
+                - generic [ref=e77]: lucas rocha
+                - generic [ref=e80]: Plus
+            - button "Baixar aplicativos" [ref=e83]:
+              - img [ref=e85]
+    - generic [ref=e88]:
+      - banner:
+        - generic [ref=e91]:
+          - button "Compartilhar" [ref=e448] [cursor=pointer]:
+            - generic [ref=e449]:
+              - img [ref=e450]
+              - text: Compartilhar
+          - button "Abrir opções de conversa" [ref=e453] [cursor=pointer]:
+            - img [ref=e454]
+      - main [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e457]:
+            - generic [ref=e459]:
+              - heading "Você disse:" [level=4] [ref=e460]
+              - generic [ref=e462]:
+                - generic [ref=e467]: Minimalist cinematic illustration of a calm person standing inside a transparent, unbreakable glass dome during a storm — rain and wind outside, serene light inside, warm earth tones, soft shadows, ultra-detailed, 4K
+                - generic [ref=e468]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e471]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e472]
+              - generic [ref=e474]:
+                - generic [ref=e481]:
+                  - button "Thought for 37s" [ref=e528] [cursor=pointer]:
+                    - text: Thought for 37s
+                    - img [ref=e529]
+                  - generic [ref=e534]:
+                    - 'button "Imagem gerada: Refúgio tranquilo em meio à tempestade" [ref=e535] [cursor=pointer]':
+                      - generic [ref=e536]:
+                        - 'img "Imagem gerada: Refúgio tranquilo em meio à tempestade" [ref=e538]'
+                        - img [ref=e540]
+                        - img [ref=e542]
+                    - generic [ref=e544]:
+                      - button "Editar imagem" [ref=e547] [cursor=pointer]: Editar
+                      - button "Compartilhar esta imagem" [ref=e549] [cursor=pointer]:
+                        - img [ref=e551]
+                - generic [ref=e522]:
+                  - group "Ações de resposta":
+                    - button "Copiar resposta":
+                      - generic:
+                        - img
+                    - button "Imagem satisfatória":
+                      - generic:
+                        - img
+                    - button "Imagem insatisfatória":
+                      - generic:
+                        - img
+                    - button "Mais ações":
+                      - img
+            - generic [ref=e575]:
+              - heading "Você disse:" [level=4] [ref=e576]
+              - generic [ref=e578]:
+                - generic [ref=e583]: "Split-screen minimalist illustration: left side — hand writing in a journal titled \"MEU\", with icons of brain, breath, choice; right side — blurred chaotic city, broken clock, storm clouds — all behind a thin vertical line. Warm/cool contrast, clean lines, 4K"
+                - generic [ref=e584]:
+                  - group "Suas ações de mensagem":
+                    - button "Copiar mensagem":
+                      - generic:
+                        - img
+                    - button "Editar mensagem":
+                      - generic:
+                        - img
+            - generic [ref=e587]:
+              - heading "O ChatGPT disse:" [level=4] [ref=e588]
+              - generic [ref=e590]:
+                - button "Pensando Gerando uma imagem mais detalhada. Aguarde um instante." [ref=e593] [cursor=pointer]:
+                  - generic [ref=e594]:
+                    - generic [ref=e595]: Pensando
+                    - generic [ref=e596]: Gerando uma imagem mais detalhada. Aguarde um instante.
+                - generic "Gerando imagem…" [ref=e603]
+                - generic [ref=e608]:
+                  - group "Ações de resposta"
+          - generic [ref=e108]:
+            - generic:
+              - generic:
+                - button:
+                  - img
+            - generic [ref=e114]:
+              - generic [ref=e118]:
+                - button "Adicionar arquivos e mais" [ref=e121] [cursor=pointer]:
+                  - img
+                - textbox "Converse com o ChatGPT" [active] [ref=e182]:
+                  - paragraph [ref=e183]: Pergunte alguma coisa
+                - generic [ref=e125]:
+                  - button "Thinking" [ref=e187] [cursor=pointer]:
+                    - generic [ref=e188]: Thinking
+                    - img
+                  - generic [ref=e126]:
+                    - button "Iniciar ditado" [ref=e189] [cursor=pointer]:
+                      - img
+                    - button "Parar de responder" [ref=e605] [cursor=pointer]:
+                      - img [ref=e606]
+              - button [ref=e131]
+              - button [ref=e132]
+            - generic [ref=e497]: O ChatGPT pode cometer erros. Por isso, lembre-se de conferir informações relevantes.
+  - alert [ref=e133]
+  - status [ref=e134]

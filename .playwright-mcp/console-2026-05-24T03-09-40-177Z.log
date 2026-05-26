@@ -1,0 +1,1085 @@
+[    3287ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "A+SqVd" for locale "pt-BR", using default message (Lockdown mode) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at Nvr (https://chatgpt.com/cdn/assets/conversation-small-jtx78k7tb5aa4eso.js:281:127256)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at Hd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126812)
+    at Vd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126673) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    3295ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at Hd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126812)
+    at Vd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126673) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    3772ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    3830ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    4149ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://chatgpt.com/backend-api/codex/surface_usage:0
+[    4570ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    4806ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    4811ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "RU7krg" for locale "pt-BR", using default message (Unavailable in Lockdown mode) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at KRe (https://chatgpt.com/cdn/assets/conversation-small-jtx78k7tb5aa4eso.js:8:155157)
+    at ra (https://chatgpt.com/cdn/assets/4d59f34c-njminuqin2ww34t6.js:1:32882)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:81862)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    4814ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "RU7krg" for locale "pt-BR", using default message (Unavailable in Lockdown mode) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at KRe (https://chatgpt.com/cdn/assets/conversation-small-jtx78k7tb5aa4eso.js:8:155157)
+    at IGn (https://chatgpt.com/cdn/assets/conversation-small-jtx78k7tb5aa4eso.js:224:29890)
+    at ra (https://chatgpt.com/cdn/assets/4d59f34c-njminuqin2ww34t6.js:1:35601)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:81862)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[    4988ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   20592ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   20966ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   21586ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   23008ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   23684ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   24076ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   24413ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   24860ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   25225ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   25808ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[   26118ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   27283ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   27409ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   27911ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   44215ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   45603ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   75186ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   77556ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   90465ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   90843ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   91417ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   91787ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   91980ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   92437ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[   93339ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  155778ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  155841ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  156540ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  157095ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  157961ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  158383ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  158926ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  159857ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  160159ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  162248ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  177541ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  178711ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  201315ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  203688ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  215218ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  215561ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  216054ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  216432ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  216962ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  218007ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  231317ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  231788ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  232425ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  233298ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  234004ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  234399ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  235032ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  235392ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  235876ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  236866ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  257411ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  257737ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  278221ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  280810ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  292363ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  292821ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  293616ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  293861ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  294349ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  295493ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  321970ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  322358ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  322960ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  323718ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  324427ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://chatgpt.com/backend-api/sentinel/ping:0
+[  324815ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  325250ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  326121ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  326434ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  328672ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  343807ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  345578ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  385521ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  388236ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  399877ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  400216ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  400704ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  401139ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  401672ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
+[  402612ms] [ERROR] xl: [@formatjs/intl Error MISSING_TRANSLATION] Missing message: "LvUdnm" for locale "pt-BR", using default message (Lockdown) as fallback.
+
+    at new xl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:53:79)
+    at Tl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:287)
+    at lu (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:57:5318)
+    at BQ (https://chatgpt.com/cdn/assets/8b34dbc2-juezr0qyl4clei09.js:5:12532)
+    at Xo (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:48747)
+    at Hc (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:71424)
+    at sl (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:82074)
+    at Ud (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:126839)
+    at J (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125908)
+    at Bd (https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:8:125748) @ https://chatgpt.com/cdn/assets/2340486e-el67lw3u8yh92afb.js:60
