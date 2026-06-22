@@ -19,14 +19,24 @@ interface Concern {
   inControl: boolean;
 }
 
+interface QuizResult {
+  title: string;
+  color: string;
+  desc: string;
+  bullets: string[];
+}
+
 interface User {
   name: string;
   email: string;
 }
 
 interface AppState {
-  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success' | 'quiz' | 'squad-publicador';
+  view: 'home' | 'escudo' | 'navalha' | 'timeline' | 'cidadela' | 'meditation' | 'auth' | 'success' | 'quiz' | 'offer' | 'squad-publicador';
   user: User | null;
+  quizResult: QuizResult | null;
+  quizScore: number;
+  userEmail: string;
   streak: number;
   logs: Record<string, DayLog>;
   currentChallenge: string;
@@ -41,6 +51,7 @@ interface AppState {
   isPremium: boolean;
   setView: (view: AppState['view']) => void;
   setUser: (user: User) => void;
+  setQuizResult: (result: QuizResult, score: number, email: string) => void;
   saveLog: (date: string, log: Partial<DayLog>) => void;
   updateStreak: () => void;
   setChallenge: (challenge: string) => void;
@@ -67,6 +78,9 @@ export const useStore = create<AppState>()(
       },
       level: 1,
       isPremium: false,
+      quizResult: null,
+      quizScore: 0,
+      userEmail: '',
 
       setView: (view) => {
         const challenges = [
@@ -112,6 +126,10 @@ export const useStore = create<AppState>()(
         const challenge = challenges[(day - 1) % challenges.length];
         
         set({ view, currentChallenge: challenge });
+      },
+
+      setQuizResult: (result, score, email) => {
+        set({ quizResult: result, quizScore: score, userEmail: email });
       },
 
       setUser: async (user) => {

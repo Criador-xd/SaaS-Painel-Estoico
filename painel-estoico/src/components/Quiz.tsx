@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, Brain, ShieldAlert, Target, Zap, Lock, Crown, CheckCircle, Mail } from 'lucide-react';
+import { useStore } from '../store/useStore';
 import { trackQuizStart, trackQuizComplete, trackCheckoutClick } from '../lib/analytics';
 
 interface Question {
@@ -138,9 +139,10 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
     }
     setSubmitting(true);
     const result = getResult(score);
+    useStore.getState().setQuizResult(result, score, email);
     await trackQuizComplete(email, score, result.title);
-    setStep('result');
     setSubmitting(false);
+    onFinish();
   };
 
   const handleCheckoutClick = () => {
@@ -281,7 +283,11 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
         </div>
 
         <button
-          onClick={() => setStep('result')}
+          onClick={() => {
+            const result = getResult(score);
+            useStore.getState().setQuizResult(result, score, email);
+            onFinish();
+          }}
           className="cinzel"
           style={{ marginTop: '32px', background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '11px', letterSpacing: '1px' }}
         >
@@ -322,7 +328,11 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
         href="https://pay.kiwify.com.br/QIlYjAh"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={handleCheckoutClick}
+        onClick={() => {
+          const result = getResult(score);
+          useStore.getState().setQuizResult(result, score, email);
+          handleCheckoutClick();
+        }}
         className="btn-premium"
         style={{
           width: '100%', padding: '20px', background: 'linear-gradient(135deg, var(--gold), #b8860b)',
@@ -340,7 +350,7 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
       </p>
 
       <button
-        onClick={onFinish}
+        onClick={() => useStore.getState().setView('auth')}
         style={{ marginTop: '24px', background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '11px', letterSpacing: '1px' }}
         className="cinzel"
       >

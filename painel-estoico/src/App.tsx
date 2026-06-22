@@ -7,6 +7,7 @@ import { Cidadela } from './components/Cidadela';
 import { Meditation } from './components/Meditation';
 import { Auth } from './components/Auth';
 import { Paywall } from './components/Paywall';
+import { Offer } from './components/Offer';
 import { Success } from './components/Success';
 import { Quiz } from './components/Quiz';
 import { AnalyticsDashboard } from './components/AnalyticsDashboard';
@@ -59,9 +60,11 @@ function App() {
       return <AnalyticsDashboard onBack={() => setShowDashboard(false)} />;
     }
 
+    if (view === 'offer') return <Offer />;
+
     if (!user) {
       if (view === 'auth') return <Auth />;
-      return <Quiz onFinish={() => setView('auth')} />;
+      return <Quiz onFinish={() => setView('offer')} />;
     }
     
     if (!isPremium && view !== 'success') {
@@ -77,7 +80,8 @@ function App() {
       case 'meditation': return <Meditation />;
       case 'auth': return <Auth />;
       case 'success': return <Success />;
-      case 'quiz': return <Quiz onFinish={() => setView('auth')} />;
+      case 'offer': return <Offer />;
+      case 'quiz': return <Quiz onFinish={() => setView('offer')} />;
       case 'squad-publicador':
         return pubView === 'historico'
           ? <HistoricoAgendamento onBack={() => setPubView('squad-publicador')} />
