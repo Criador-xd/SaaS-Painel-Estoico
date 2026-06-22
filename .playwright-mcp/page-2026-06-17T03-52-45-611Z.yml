@@ -1,0 +1,29 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - img [ref=e9]
+    - heading "PROTOCOLO" [level=1] [ref=e11]
+    - paragraph [ref=e13]: "\"A porta da sabedoria nunca se abre para quem não está disposto a sacrificar quem era.\""
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - img [ref=e18]
+          - generic [ref=e20]: IDENTIFICAÇÃO
+        - textbox "Como deseja ser chamado?" [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - generic [ref=e27]: E-MAIL PARA O CÓDICE
+        - textbox "seu@dominio.com" [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - img [ref=e31]
+          - generic [ref=e34]: SENHA DE ACESSO
+        - textbox "••••••••" [ref=e35]
+      - button "SELAR COMPROMISSO" [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]:
+          - text: SELAR COMPROMISSO
+          - img [ref=e38]
+    - button "Já selou o compromisso? Retorne." [ref=e41] [cursor=pointer]
+  - contentinfo [ref=e42]:
+    - paragraph [ref=e43]: MEMORANDUM ESTOICISMO DE ELITE

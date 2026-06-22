@@ -1,0 +1,8 @@
+[    2386ms] [LOG] Starting FB @ https://assets.kiwify.com.br/custom_checkout/3-0cfe0c12b2fb0a37490f04a38c264958d7033603.js:0
+[    2386ms] [LOG] Loading fbevnts @ https://assets.kiwify.com.br/custom_checkout/3-0cfe0c12b2fb0a37490f04a38c264958d7033603.js:0
+[    3274ms] [WARNING] [Meta Pixel] - You are sending a non-standard event 'pageView'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information. @ https://connect.facebook.net/en_US/fbevents.js:183
+[    8693ms] [WARNING] The resource https://pay.kiwify.com.br/favicon.ico was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://pay.kiwify.com.br/QIlYjAh:0
+[ 2769193ms] [LOG] Starting FB @ https://assets.kiwify.com.br/custom_checkout/3-0cfe0c12b2fb0a37490f04a38c264958d7033603.js:0
+[ 2769193ms] [LOG] Loading fbevnts @ https://assets.kiwify.com.br/custom_checkout/3-0cfe0c12b2fb0a37490f04a38c264958d7033603.js:0
+[ 2769768ms] [WARNING] [Meta Pixel] - You are sending a non-standard event 'pageView'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information. @ https://connect.facebook.net/en_US/fbevents.js:183
+[ 2774828ms] [WARNING] The resource https://pay.kiwify.com.br/favicon.ico was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://pay.kiwify.com.br/QIlYjAh:0

@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e6]:
+        - generic [ref=e7]:
+          - link "Supabase" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/org/jicnsgadurpppvksllmq
+            - img "Supabase" [ref=e10]
+          - generic [ref=e11]:
+            - generic [ref=e13] [cursor=pointer]: Feedback
+            - generic [ref=e14]:
+              - button "Search..." [ref=e15]:
+                - generic [ref=e16]:
+                  - img [ref=e17]
+                  - paragraph [ref=e20]: Search...
+                - generic [ref=e22]: Ctrl K
+              - button "Help" [ref=e23] [cursor=pointer]:
+                - generic [ref=e24]:
+                  - img [ref=e25]
+                  - generic [ref=e28]: Help
+              - button "Advisor Center" [ref=e30] [cursor=pointer]:
+                - generic [ref=e31]:
+                  - img [ref=e32]
+                  - generic [ref=e34]: Advisor Center
+            - button [ref=e35] [cursor=pointer]:
+              - img [ref=e38]
+      - generic [ref=e40]:
+        - button "Sidebar control" [ref=e48] [cursor=pointer]:
+          - img [ref=e50]
+        - generic [ref=e57]:
+          - generic [ref=e61]:
+            - heading "Integrations" [level=4] [ref=e63]
+            - generic [ref=e64]:
+              - menu "Sidebar" [disabled] [ref=e66]:
+                - list [ref=e67]:
+                  - generic [ref=e69]: Explore
+              - menu "Sidebar" [disabled] [ref=e75]:
+                - list [ref=e76]:
+                  - generic [ref=e78]: Installed
+          - separator [disabled] [ref=e83]:
+            - img [ref=e85]
+          - main [ref=e94]
+    - generic [ref=e98]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e99]:
+        - button "Close banner" [ref=e101] [cursor=pointer]:
+          - img [ref=e103]
+        - generic [ref=e106]:
+          - generic [ref=e107]: Notice
+          - generic [ref=e108]:
+            - paragraph [ref=e109]: We've updated our Terms of Service
+            - paragraph [ref=e110]: Updates define the responsibilities of both you and Supabase in the use of AI.
+          - button "Learn more" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: Learn more
+  - alert [ref=e113]

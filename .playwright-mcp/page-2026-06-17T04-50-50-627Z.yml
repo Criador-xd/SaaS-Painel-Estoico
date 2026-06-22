@@ -1,0 +1,175 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link "Supabase" [ref=e9] [cursor=pointer]:
+              - /url: /dashboard/org/jicnsgadurpppvksllmq
+              - img "Supabase" [ref=e10]
+            - generic [ref=e11]:
+              - img [ref=e13]
+              - generic [ref=e15]:
+                - link "SaaS-Estoicismo Free" [ref=e16] [cursor=pointer]:
+                  - /url: /dashboard/org/jicnsgadurpppvksllmq
+                  - img [ref=e17]
+                  - generic [ref=e27]: SaaS-Estoicismo
+                  - generic [ref=e28]: Free
+                - button [ref=e29] [cursor=pointer]:
+                  - img [ref=e31]
+              - generic [ref=e34]:
+                - img [ref=e36]
+                - generic [ref=e38]:
+                  - link "SaaS-Estoicismo" [ref=e39] [cursor=pointer]:
+                    - /url: /dashboard/project/qltuguhvvepusmglppyi
+                    - img [ref=e40]
+                    - generic "SaaS-Estoicismo" [ref=e43]
+                  - button [ref=e44] [cursor=pointer]:
+                    - img [ref=e46]
+                - img [ref=e50]
+                - generic [ref=e52]:
+                  - link "main Production" [ref=e53] [cursor=pointer]:
+                    - /url: /dashboard/project/qltuguhvvepusmglppyi
+                    - generic "main" [ref=e54]
+                    - generic [ref=e55]: Production
+                  - button [ref=e56] [cursor=pointer]:
+                    - img [ref=e58]
+            - button "Connect" [disabled] [ref=e62]:
+              - img [ref=e64]
+              - generic [ref=e66]: Connect
+          - generic [ref=e67]:
+            - generic [ref=e69] [cursor=pointer]: Feedback
+            - generic [ref=e70]:
+              - button "Search..." [ref=e71]:
+                - generic [ref=e72]:
+                  - img [ref=e73]
+                  - paragraph [ref=e76]: Search...
+                - generic [ref=e78]: Ctrl K
+              - button "Help" [ref=e79] [cursor=pointer]:
+                - generic [ref=e80]:
+                  - img [ref=e81]
+                  - generic [ref=e84]: Help
+              - button "Advisor Center" [ref=e86] [cursor=pointer]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - generic [ref=e90]: Advisor Center
+              - button "SQL Editor" [ref=e91] [cursor=pointer]:
+                - generic [ref=e92]:
+                  - img [ref=e93]
+                  - generic [ref=e95]: SQL Editor
+              - button "AI Assistant" [ref=e96] [cursor=pointer]:
+                - generic [ref=e97]:
+                  - img [ref=e100]
+                  - generic [ref=e103]: AI Assistant
+            - button [ref=e104] [cursor=pointer]:
+              - figure [ref=e106]:
+                - img [ref=e107]
+      - generic [ref=e109]:
+        - generic [ref=e113]:
+          - list [ref=e116]:
+            - generic [ref=e117]:
+              - listitem [ref=e118]:
+                - link "Project Overview" [ref=e119] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi
+                  - img [ref=e120]
+                  - generic: Project Overview
+              - listitem [ref=e122]:
+                - button "Table Editor" [disabled]:
+                  - img
+                  - generic: Table Editor
+              - listitem [ref=e123]:
+                - button "SQL Editor" [disabled]:
+                  - img
+                  - generic: SQL Editor
+            - generic [ref=e124]:
+              - listitem [ref=e125]:
+                - button "Database" [disabled]:
+                  - img
+                  - generic: Database
+              - listitem [ref=e126]:
+                - button "Authentication" [disabled]:
+                  - img
+                  - generic: Authentication
+              - listitem [ref=e127]:
+                - button "Storage" [disabled]:
+                  - img
+                  - generic: Storage
+              - listitem [ref=e128]:
+                - link "Edge Functions" [ref=e129] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/functions
+                  - img [ref=e130]
+                  - generic: Edge Functions
+              - listitem [ref=e135]:
+                - button "Realtime" [disabled]:
+                  - img
+                  - generic: Realtime
+            - generic [ref=e136]:
+              - listitem [ref=e138]:
+                - button "Advisors" [disabled]:
+                  - img
+                  - generic: Advisors
+              - listitem [ref=e139]:
+                - button "Observability" [disabled]:
+                  - img
+                  - generic: Observability
+              - listitem [ref=e140]:
+                - link "Logs" [ref=e141] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/logs/explorer
+                  - img [ref=e142]
+                  - generic: Logs
+              - listitem [ref=e143]:
+                - button "Integrations" [disabled]:
+                  - img
+                  - generic: Integrations
+            - listitem [ref=e145]:
+              - link "Project Settings" [ref=e146] [cursor=pointer]:
+                - /url: /dashboard/project/qltuguhvvepusmglppyi/settings/general
+                - img [ref=e147]
+                - generic: Project Settings
+          - button "Sidebar control" [ref=e152] [cursor=pointer]:
+            - img [ref=e154]
+        - generic [ref=e161]:
+          - generic [ref=e165]:
+            - heading "Integrations" [level=4] [ref=e167]
+            - generic [ref=e168]:
+              - menu "Sidebar" [disabled] [ref=e170]:
+                - list [ref=e171]:
+                  - generic [ref=e174]:
+                    - generic [ref=e178]: Explore
+                    - generic [ref=e179]:
+                      - link "All" [disabled] [ref=e180] [cursor=pointer]:
+                        - /url: /dashboard/project/qltuguhvvepusmglppyi/integrations
+                        - menuitem "All" [disabled] [ref=e181]:
+                          - generic "All" [ref=e184]:
+                            - generic [ref=e185]: All
+                      - link "Wrappers" [disabled] [ref=e186] [cursor=pointer]:
+                        - /url: /dashboard/project/qltuguhvvepusmglppyi/integrations?category=wrapper
+                        - menuitem "Wrappers" [disabled] [ref=e187]:
+                          - generic "Wrappers" [ref=e190]:
+                            - generic [ref=e191]: Wrappers
+                      - link "Postgres Modules" [disabled] [ref=e192] [cursor=pointer]:
+                        - /url: /dashboard/project/qltuguhvvepusmglppyi/integrations?category=postgres_extension
+                        - menuitem "Postgres Modules" [disabled] [ref=e193]:
+                          - generic "Postgres Modules" [ref=e196]:
+                            - generic [ref=e197]: Postgres Modules
+              - menu "Sidebar" [disabled] [ref=e199]:
+                - list [ref=e200]:
+                  - generic [ref=e202]: Installed
+          - separator [disabled] [ref=e207]:
+            - img [ref=e209]
+          - main [ref=e218]:
+            - img [ref=e221]
+    - generic [ref=e226]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e227]:
+        - button "Close banner" [ref=e229] [cursor=pointer]:
+          - img [ref=e231]
+        - generic [ref=e234]:
+          - generic [ref=e235]: Notice
+          - generic [ref=e236]:
+            - paragraph [ref=e237]: We've updated our Terms of Service
+            - paragraph [ref=e238]: Updates define the responsibilities of both you and Supabase in the use of AI.
+          - button "Learn more" [ref=e239] [cursor=pointer]:
+            - generic [ref=e240]: Learn more
+  - alert [ref=e241]: Integrations | Supabase

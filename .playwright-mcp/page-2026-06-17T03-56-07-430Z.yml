@@ -1,0 +1,177 @@
+- generic [ref=e9]:
+  - generic [ref=e14]:
+    - generic [ref=e17]:
+      - button "Pagar com" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: Pagar com
+        - img [ref=e22]
+      - generic [ref=e26]: OU
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - textbox [ref=e31]
+        - generic: Nome
+      - generic [ref=e33]:
+        - textbox [ref=e34]
+        - generic: E-mail
+      - generic [ref=e36]:
+        - textbox [ref=e37]
+        - generic: Confirmar e-mail
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - textbox [ref=e41]
+          - generic: CPF/CNPJ
+        - group [ref=e43]:
+          - generic: Telefone
+          - generic [ref=e44]:
+            - button "Country Code Selector" [ref=e45] [cursor=pointer]:
+              - generic [ref=e46]:
+                - generic [ref=e48]: "+55"
+                - generic [ref=e49]: ▼
+            - textbox "Telefone" [ref=e50]
+      - generic [ref=e53]:
+        - textbox [ref=e54]
+        - generic: Instagram
+      - generic [ref=e57]:
+        - textbox [ref=e58]
+        - generic: CEP
+    - generic [ref=e59]:
+      - generic [ref=e61]:
+        - link "Cartão" [ref=e62] [cursor=pointer]:
+          - /url: "javascript:"
+          - img [ref=e63]
+          - img [ref=e67]
+          - text: Cartão
+        - link "Boleto" [ref=e69] [cursor=pointer]:
+          - /url: "javascript:"
+          - img [ref=e70]
+          - text: Boleto
+        - link "Pix" [ref=e73] [cursor=pointer]:
+          - /url: "javascript:"
+          - img [ref=e74]
+          - text: Pix
+        - link "Cartão + Pix" [ref=e78] [cursor=pointer]:
+          - /url: "javascript:"
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - img [ref=e82]
+          - text: Cartão + Pix
+      - generic [ref=e86]:
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e93]:
+              - textbox [ref=e94]
+              - generic: Número do cartão
+              - img [ref=e96]
+            - generic [ref=e100]:
+              - generic [ref=e102]:
+                - generic [ref=e104]:
+                  - combobox [ref=e105]:
+                    - option
+                    - option "01"
+                    - option "02"
+                    - option "03"
+                    - option "04"
+                    - option "05"
+                    - option "06"
+                    - option "07"
+                    - option "08"
+                    - option "09"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                  - generic: Mês
+                - generic [ref=e107]:
+                  - combobox [ref=e108]:
+                    - option
+                    - option "2026"
+                    - option "2027"
+                    - option "2028"
+                    - option "2029"
+                    - option "2030"
+                    - option "2031"
+                    - option "2032"
+                    - option "2033"
+                    - option "2034"
+                    - option "2035"
+                    - option "2036"
+                    - option "2037"
+                    - option "2038"
+                    - option "2039"
+                    - option "2040"
+                    - option "2041"
+                    - option "2042"
+                    - option "2043"
+                    - option "2044"
+                    - option "2045"
+                    - option "2046"
+                    - option "2047"
+                    - option "2048"
+                    - option "2049"
+                    - option "2050"
+                    - option "2051"
+                    - option "2052"
+                  - generic: Ano
+              - generic [ref=e110]:
+                - textbox [ref=e111]
+                - generic: Cód. segurança
+                - img [ref=e113]
+          - generic [ref=e117]:
+            - combobox [ref=e118]:
+              - option "6x de R$ 5,24" [selected]
+              - option "5x de R$ 6,18"
+              - option "4x de R$ 7,60"
+              - option "3x de R$ 9,96"
+              - option "2x de R$ 14,69"
+              - option "R$ 27,90"
+            - generic: Parcelas
+        - generic [ref=e119]:
+          - checkbox "Salvar dados para as próximas compras" [checked] [ref=e120]
+          - generic [ref=e121]: Salvar dados para as próximas compras
+        - generic [ref=e123]:
+          - img [ref=e125]
+          - generic [ref=e129]: Protegemos seus dados de pagamento com criptografia para garantir segurança bancária.
+    - generic [ref=e130]:
+      - generic [ref=e132] [cursor=pointer]: Pagar agora
+      - generic [ref=e133]:
+        - link [ref=e135] [cursor=pointer]:
+          - /url: https://www.kiwify.com.br
+          - img [ref=e136]
+        - combobox [ref=e138]:
+          - option "🇧🇷 Brasil" [selected]
+          - option "🌍 Internacional"
+        - article [ref=e139]:
+          - generic [ref=e140]:
+            - text: Ao clicar em 'Pagar agora', eu declaro que (i) estou ciente que a Kiwify está processando essa compra em nome de Lucas Bibiano da rocha e que não possui responsabilidade pelo conteúdo, oferta, e nem faz controle prévio do infoproduto; (ii) que li e concordo com os
+            - link "Termos de Compra" [ref=e141] [cursor=pointer]:
+              - /url: https://kiwify.com.br/termos-de-uso/
+            - text: ","
+            - link "Termos de Uso" [ref=e142] [cursor=pointer]:
+              - /url: https://kiwify.com.br/termos-de-uso/
+            - text: ", e"
+            - link "Política de Privacidade" [ref=e143] [cursor=pointer]:
+              - /url: https://kiwify.com.br/politica-de-privacidade/
+            - text: .
+          - button "Denunciar esse produto." [ref=e144] [cursor=pointer]
+          - generic [ref=e145]:
+            - generic [ref=e146]: "*Parcelamento com acréscimo."
+            - generic [ref=e147]: Este site está protegido pelo Google reCAPTCHA.
+            - link "Política de Privacidade" [ref=e148] [cursor=pointer]:
+              - /url: https://policies.google.com/privacy
+            - text: e
+            - link "Termos de Serviço" [ref=e149] [cursor=pointer]:
+              - /url: https://policies.google.com/terms
+            - text: .
+  - generic [ref=e150]:
+    - generic [ref=e152]:
+      - paragraph [ref=e153]: ✅ Acesso Vitalício ao Painel de Controle Mental.
+      - paragraph [ref=e154]: ✅ Ebook Digital Manual do Estoico Moderno.
+      - paragraph [ref=e155]: ✅ Sincronização Cloud de todos os seus dados.
+      - paragraph [ref=e156]: ✅ Suporte Prioritário da Irmandade Elite.
+    - paragraph [ref=e159]
+    - generic [ref=e164]:
+      - generic [ref=e166]: O Método Mente Estoica foi o divisor de águas.
+      - generic [ref=e167]:
+        - img [ref=e168]
+        - img [ref=e170]
+        - img [ref=e172]
+        - img [ref=e174]
+      - generic [ref=e177]: Felipe Fontana

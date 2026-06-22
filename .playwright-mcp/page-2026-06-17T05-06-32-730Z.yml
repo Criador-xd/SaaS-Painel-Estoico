@@ -1,0 +1,260 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link "Supabase" [ref=e9] [cursor=pointer]:
+              - /url: /dashboard/org/jicnsgadurpppvksllmq
+              - img "Supabase" [ref=e10]
+            - generic [ref=e11]:
+              - img [ref=e13]
+              - generic [ref=e15]:
+                - link "SaaS-Estoicismo Free" [ref=e16] [cursor=pointer]:
+                  - /url: /dashboard/org/jicnsgadurpppvksllmq
+                  - img [ref=e17]
+                  - generic [ref=e27]: SaaS-Estoicismo
+                  - generic [ref=e28]: Free
+                - button [ref=e29] [cursor=pointer]:
+                  - img [ref=e31]
+              - generic [ref=e34]:
+                - img [ref=e36]
+                - generic [ref=e38]:
+                  - link "SaaS-Estoicismo" [ref=e39] [cursor=pointer]:
+                    - /url: /dashboard/project/qltuguhvvepusmglppyi
+                    - img [ref=e40]
+                    - generic "SaaS-Estoicismo" [ref=e43]
+                  - button [ref=e44] [cursor=pointer]:
+                    - img [ref=e46]
+                - img [ref=e50]
+                - generic [ref=e52]:
+                  - link "main Production" [ref=e53] [cursor=pointer]:
+                    - /url: /dashboard/project/qltuguhvvepusmglppyi
+                    - generic "main" [ref=e54]
+                    - generic [ref=e55]: Production
+                  - button [ref=e56] [cursor=pointer]:
+                    - img [ref=e58]
+            - button "Connect" [ref=e62] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e66]: Connect
+          - generic [ref=e67]:
+            - generic [ref=e69] [cursor=pointer]: Feedback
+            - generic [ref=e70]:
+              - button "Search..." [ref=e71]:
+                - generic [ref=e72]:
+                  - img [ref=e73]
+                  - paragraph [ref=e76]: Search...
+                - generic [ref=e78]: Ctrl K
+              - button "Help" [ref=e79] [cursor=pointer]:
+                - generic [ref=e80]:
+                  - img [ref=e81]
+                  - generic [ref=e84]: Help
+              - button "Advisor Center" [ref=e86] [cursor=pointer]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - generic [ref=e90]: Advisor Center
+              - button "SQL Editor" [ref=e91] [cursor=pointer]:
+                - generic [ref=e92]:
+                  - img [ref=e93]
+                  - generic [ref=e95]: SQL Editor
+              - button "AI Assistant" [ref=e96] [cursor=pointer]:
+                - generic [ref=e97]:
+                  - img [ref=e100]
+                  - generic [ref=e103]: AI Assistant
+            - button [ref=e104] [cursor=pointer]:
+              - figure [ref=e106]:
+                - img [ref=e107]
+      - generic [ref=e109]:
+        - generic [ref=e113]:
+          - list [ref=e116]:
+            - generic [ref=e117]:
+              - listitem [ref=e118]:
+                - link "Project Overview" [ref=e119] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi
+                  - img [ref=e120]
+                  - generic: Project Overview
+              - listitem [ref=e122]:
+                - link "Table Editor" [ref=e123] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/editor
+                  - img [ref=e124]
+                  - generic: Table Editor
+              - listitem [ref=e126]:
+                - link "SQL Editor" [ref=e127] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/sql
+                  - img [ref=e128]
+                  - generic: SQL Editor
+            - generic [ref=e130]:
+              - listitem [ref=e131]:
+                - link "Database" [ref=e132] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/database/schemas
+                  - img [ref=e133]
+                  - generic: Database
+              - listitem [ref=e137]:
+                - link "Authentication" [ref=e138] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/auth/users
+                  - img [ref=e139]
+                  - generic: Authentication
+              - listitem [ref=e141]:
+                - link "Storage" [ref=e142] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/storage/files
+                  - img [ref=e143]
+                  - generic: Storage
+              - listitem [ref=e145]:
+                - link "Edge Functions" [ref=e146] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/functions
+                  - img [ref=e147]
+                  - generic: Edge Functions
+              - listitem [ref=e152]:
+                - link "Realtime" [ref=e153] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/realtime/inspector
+                  - img [ref=e154]
+                  - generic: Realtime
+            - generic [ref=e156]:
+              - listitem [ref=e158]:
+                - link "Advisors" [ref=e159] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/advisors/security
+                  - img [ref=e160]
+                  - generic: Advisors
+              - listitem [ref=e162]:
+                - link "Observability" [ref=e163] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/observability
+                  - img [ref=e164]
+                  - generic: Observability
+              - listitem [ref=e172]:
+                - link "Logs" [ref=e173] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/logs/explorer
+                  - img [ref=e174]
+                  - generic: Logs
+              - listitem [ref=e175]:
+                - link "Integrations" [ref=e176] [cursor=pointer]:
+                  - /url: /dashboard/project/qltuguhvvepusmglppyi/integrations
+                  - img [ref=e177]
+                  - generic: Integrations
+            - listitem [ref=e181]:
+              - link "Project Settings" [ref=e182] [cursor=pointer]:
+                - /url: /dashboard/project/qltuguhvvepusmglppyi/settings/general
+                - img [ref=e183]
+                - generic: Project Settings
+          - button "Sidebar control" [ref=e188] [cursor=pointer]:
+            - img [ref=e190]
+        - generic [ref=e192]:
+          - generic [ref=e197]:
+            - generic [ref=e201]:
+              - heading "Table Editor" [level=4] [ref=e203]
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - button "schema public" [ref=e208] [cursor=pointer]:
+                    - generic [ref=e210]:
+                      - paragraph [ref=e211]: schema
+                      - paragraph [ref=e212]: public
+                    - img [ref=e214]
+                  - button "New table" [ref=e218] [cursor=pointer]:
+                    - img [ref=e220]
+                    - generic [ref=e221]: New table
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - generic [ref=e224]:
+                      - generic [ref=e225]: Search tables
+                      - textbox "Search tables..." [ref=e226]
+                      - button [ref=e227]:
+                        - img [ref=e228]
+                      - img [ref=e231]
+                    - button [ref=e234] [cursor=pointer]:
+                      - img [ref=e236]
+                  - generic [ref=e240]:
+                    - button "View analytics_events" [ref=e241] [cursor=pointer]:
+                      - button [ref=e242]:
+                        - img [ref=e243]
+                      - generic [ref=e246]: analytics_events
+                    - button "View daily_logs" [ref=e247] [cursor=pointer]:
+                      - button [ref=e248]:
+                        - img [ref=e249]
+                      - generic [ref=e252]: daily_logs
+                    - button "View funnel_daily" [ref=e253] [cursor=pointer]:
+                      - button [ref=e254]:
+                        - img [ref=e255]
+                      - generic [ref=e259]: funnel_daily
+                    - button "View funnel_summary" [ref=e260] [cursor=pointer]:
+                      - button [ref=e261]:
+                        - img [ref=e262]
+                      - generic [ref=e266]: funnel_summary
+                    - button "View profiles" [ref=e267] [cursor=pointer]:
+                      - button [ref=e268]:
+                        - img [ref=e269]
+                      - generic [ref=e272]: profiles
+            - separator [ref=e273]:
+              - img [ref=e275]
+            - main [ref=e284]:
+              - generic [ref=e285]:
+                - button "Collapse sidebar" [ref=e287]:
+                  - img [ref=e288]
+                  - generic [ref=e291]: Collapse sidebar
+                - generic [ref=e294]:
+                  - generic [ref=e297] [cursor=pointer]:
+                    - img [ref=e299]
+                    - generic [ref=e301]:
+                      - heading "Create a table" [level=3] [ref=e302]
+                      - paragraph [ref=e303]: Design and create a new database table
+                  - generic [ref=e304]:
+                    - heading "Recent items" [level=2] [ref=e305]
+                    - generic [ref=e307]:
+                      - img [ref=e308]
+                      - generic [ref=e310]:
+                        - paragraph [ref=e311]: No recent items yet
+                        - paragraph [ref=e312]: Items will appear here as you browse through your project
+          - separator [ref=e313]:
+            - img [ref=e315]
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - generic [ref=e326]: SQL Editor
+              - generic [ref=e327]:
+                - combobox [ref=e328] [cursor=pointer]:
+                  - img [ref=e330]
+                - button [ref=e332] [cursor=pointer]:
+                  - img [ref=e334]
+                - button [ref=e339] [cursor=pointer]:
+                  - img [ref=e341]
+            - generic [ref=e344]:
+              - generic [ref=e347]:
+                - code [ref=e350]:
+                  - generic [ref=e351]:
+                    - generic [ref=e356]: "1"
+                    - textbox "Editor content" [active] [ref=e364]
+                - paragraph [ref=e365]:
+                  - text: Hit
+                  - generic [ref=e366]: Ctrl ⇧ K
+                  - text: to edit with the Assistant
+              - generic [ref=e367]:
+                - button "Save as snippet" [disabled]:
+                  - generic: Save as snippet
+                - button "Run Ctrl ↵" [ref=e368] [cursor=pointer]:
+                  - generic [ref=e369]: Run
+                  - generic [ref=e371]: Ctrl ↵
+    - generic [ref=e375]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e376]:
+        - button "Close banner" [ref=e378] [cursor=pointer]:
+          - img [ref=e380]
+        - generic [ref=e383]:
+          - generic [ref=e384]:
+            - generic [ref=e385]: New
+            - generic [ref=e386]:
+              - generic [ref=e389]: name·where id = 10
+              - generic [ref=e390]:
+                - generic [ref=e391]:
+                  - generic [ref=e392]: "-"
+                  - generic [ref=e393]: Red
+                - generic [ref=e394]:
+                  - generic [ref=e395]: +
+                  - generic [ref=e396]: Blue
+          - generic [ref=e397]:
+            - paragraph [ref=e398]: Queue row edits in Table Editor
+            - paragraph [ref=e399]: Batch multiple row edits and review them before saving to your database
+          - link "Enable in preferences" [ref=e400] [cursor=pointer]:
+            - /url: /dashboard/account/me#dashboard
+            - generic [ref=e401]: Enable in preferences
+  - alert [ref=e402]: Table Editor | Supabase
+  - generic [ref=e403]:
+    - alert
+    - alert

@@ -1,0 +1,11 @@
+- generic [ref=e5]:
+  - img [ref=e6]
+  - heading "O PROTOCOLO INABALÁVEL" [level=1] [ref=e8]
+  - paragraph [ref=e9]: Descubra o nível real de força da sua mente diante do caos moderno.
+  - button "INICIAR DIAGNÓSTICO" [ref=e10] [cursor=pointer]:
+    - text: INICIAR DIAGNÓSTICO
+    - img [ref=e11]
+  - paragraph [ref=e13]: "TEMPO ESTIMADO: 2 MINUTOS"
+  - button "MÉTRICAS" [ref=e14] [cursor=pointer]:
+    - img [ref=e15]
+    - text: MÉTRICAS

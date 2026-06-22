@@ -9,6 +9,7 @@ import { Auth } from './components/Auth';
 import { Paywall } from './components/Paywall';
 import { Success } from './components/Success';
 import { Quiz } from './components/Quiz';
+import { AnalyticsDashboard } from './components/AnalyticsDashboard';
 import { SquadPublicador } from './components/SquadPublicador';
 import { HistoricoAgendamento } from './components/HistoricoAgendamento';
 import { useStore } from './store/useStore';
@@ -17,6 +18,9 @@ import { supabase } from './lib/supabase';
 function App() {
   const { view, user, isPremium, setView, setUser } = useStore();
   const [pubView, setPubView] = useState<'squad-publicador' | 'historico'>('squad-publicador');
+  const params = new URLSearchParams(window.location.search);
+  const isAdmin = params.get('admin') === '1';
+  const [showDashboard, setShowDashboard] = useState(isAdmin);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -51,6 +55,10 @@ function App() {
   }, [setUser, setView]);
 
   const renderView = () => {
+    if (showDashboard) {
+      return <AnalyticsDashboard onBack={() => setShowDashboard(false)} />;
+    }
+
     if (!user) {
       if (view === 'auth') return <Auth />;
       return <Quiz onFinish={() => setView('auth')} />;
