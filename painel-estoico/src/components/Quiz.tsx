@@ -237,7 +237,7 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
             Seu resultado está a um passo
           </h2>
           <p className="playfair" style={{ fontSize: '15px', color: 'var(--text-primary)', lineHeight: 1.6, maxWidth: '360px', margin: '0 auto' }}>
-            Digite seu e-mail para receber seu diagnóstico completo e o plano de ação personalizado.
+            Digite seu e-mail para liberar seu diagnóstico completo e a recomendação personalizada.
           </p>
         </div>
 
@@ -281,18 +281,6 @@ export const Quiz = ({ onFinish }: { onFinish: () => void }) => {
             Seus dados estão seguros. Nada de spam. Apenas seu diagnóstico e conteúdos da Mente Estoica.
           </p>
         </div>
-
-        <button
-          onClick={() => {
-            const result = getResult(score);
-            useStore.getState().setQuizResult(result, score, email);
-            onFinish();
-          }}
-          className="cinzel"
-          style={{ marginTop: '32px', background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '11px', letterSpacing: '1px' }}
-        >
-          PULAR — QUERO VER O RESULTADO DIRETO
-        </button>
       </div>
     );
   }
