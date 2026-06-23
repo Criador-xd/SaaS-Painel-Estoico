@@ -12,8 +12,18 @@ export const Offer = () => {
 
     document.body.classList.add('offer-page-active');
     appContainer?.classList.add('offer-page-active');
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+    const frame = window.requestAnimationFrame(() => {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    });
 
     return () => {
+      window.cancelAnimationFrame(frame);
       document.body.classList.remove('offer-page-active');
       appContainer?.classList.remove('offer-page-active');
     };
