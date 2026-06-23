@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import { trackCheckoutClick } from '../lib/analytics';
 
-const checkoutUrl = 'https://pay.kiwify.com.br/QIlYjAh';
+const checkoutUrl = 'https://pay.cakto.com.br/358mo8v_937394';
 
 export const Offer = () => {
   const { quizResult, userEmail } = useStore();
@@ -493,7 +493,7 @@ export const Offer = () => {
           <div className="offer-logo-mark">M</div>
           <span>Mente Estoica</span>
         </div>
-        <div className="offer-secure-label">✓ Checkout protegido pela Kiwify</div>
+        <div className="offer-secure-label">✓ Checkout protegido pela Cakto</div>
       </header>
 
       <section className="offer-shell">
@@ -590,7 +590,7 @@ export const Offer = () => {
                 Finalizar compra segura
               </a>
               <p className="offer-note">
-                Você será redirecionado para a Kiwify para pagar com Pix, cartão ou boleto.
+                Você será redirecionado para a Cakto para pagar com Pix, cartão ou boleto.
               </p>
             </div>
           </div>
@@ -600,7 +600,7 @@ export const Offer = () => {
               <div className="offer-check">✓</div>
               <div>
                 <strong>Compra protegida</strong>
-                <span>Pagamento processado em ambiente seguro pela Kiwify.</span>
+                <span>Pagamento processado em ambiente seguro pela Cakto.</span>
               </div>
             </div>
             <div className="offer-trust-item">
