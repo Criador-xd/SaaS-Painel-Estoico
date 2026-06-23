@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import { trackCheckoutClick } from '../lib/analytics';
 
@@ -6,6 +7,18 @@ const checkoutUrl = 'https://pay.kiwify.com.br/QIlYjAh';
 export const Offer = () => {
   const { quizResult, userEmail } = useStore();
 
+  useEffect(() => {
+    const appContainer = document.querySelector('.app-container');
+
+    document.body.classList.add('offer-page-active');
+    appContainer?.classList.add('offer-page-active');
+
+    return () => {
+      document.body.classList.remove('offer-page-active');
+      appContainer?.classList.remove('offer-page-active');
+    };
+  }, []);
+
   const handleCheckoutClick = () => {
     trackCheckoutClick(userEmail || undefined, quizResult?.title);
   };
@@ -13,23 +26,48 @@ export const Offer = () => {
   return (
     <main className="offer-page">
       <style>{`
-        body:has(.offer-page) {
-          height: auto;
+        body.offer-page-active {
+          height: auto !important;
           min-height: 100vh;
-          overflow-y: auto;
-          overflow-x: hidden;
-          width: auto;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          width: 100% !important;
+        }
+
+        .app-container.offer-page-active {
+          border-left: 0 !important;
+          border-right: 0 !important;
+          box-shadow: none !important;
+          height: auto !important;
+          max-width: none !important;
+          min-height: 100vh;
+          overflow: visible !important;
+          width: 100% !important;
+        }
+
+        .app-container.offer-page-active > div {
+          height: auto !important;
+          min-height: 100vh;
+          overflow: visible !important;
+        }
+
+        body:has(.offer-page) {
+          height: auto !important;
+          min-height: 100vh;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          width: 100% !important;
         }
 
         .app-container:has(.offer-page) {
-          border-left: 0;
-          border-right: 0;
-          box-shadow: none;
-          height: auto;
-          max-width: none;
+          border-left: 0 !important;
+          border-right: 0 !important;
+          box-shadow: none !important;
+          height: auto !important;
+          max-width: none !important;
           min-height: 100vh;
-          overflow: visible;
-          width: 100%;
+          overflow: visible !important;
+          width: 100% !important;
         }
 
         .app-container:has(.offer-page) > div {
