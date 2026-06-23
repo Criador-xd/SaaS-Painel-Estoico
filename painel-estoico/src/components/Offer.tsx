@@ -13,6 +13,31 @@ export const Offer = () => {
   return (
     <main className="offer-page">
       <style>{`
+        body:has(.offer-page) {
+          height: auto;
+          min-height: 100vh;
+          overflow-y: auto;
+          overflow-x: hidden;
+          width: auto;
+        }
+
+        .app-container:has(.offer-page) {
+          border-left: 0;
+          border-right: 0;
+          box-shadow: none;
+          height: auto;
+          max-width: none;
+          min-height: 100vh;
+          overflow: visible;
+          width: 100%;
+        }
+
+        .app-container:has(.offer-page) > div {
+          height: auto !important;
+          min-height: 100vh;
+          overflow: visible;
+        }
+
         .offer-page {
           --offer-bg: #090909;
           --offer-surface: #111111;
@@ -24,6 +49,9 @@ export const Offer = () => {
           --offer-gold: #d7a84b;
           --offer-gold-2: #ffd275;
           --offer-green: #77d17b;
+          background:
+            radial-gradient(circle at 50% -8%, rgba(215, 168, 75, 0.18), transparent 34rem),
+            linear-gradient(180deg, #111 0%, var(--offer-bg) 52%);
           width: min(1160px, calc(100% - 32px));
           margin: 0 auto;
           padding: 28px 0 46px;
