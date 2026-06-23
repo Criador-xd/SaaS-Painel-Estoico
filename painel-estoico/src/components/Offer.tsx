@@ -55,7 +55,13 @@ export const Offer = () => {
           width: 100% !important;
         }
 
-        .app-container.offer-page-active > div {
+        .app-container.offer-page-active > .noise {
+          display: none !important;
+          height: 0 !important;
+          min-height: 0 !important;
+        }
+
+        .app-container.offer-page-active > div:last-child {
           height: auto !important;
           min-height: 100vh;
           overflow: visible !important;
@@ -80,7 +86,13 @@ export const Offer = () => {
           width: 100% !important;
         }
 
-        .app-container:has(.offer-page) > div {
+        .app-container:has(.offer-page) > .noise {
+          display: none !important;
+          height: 0 !important;
+          min-height: 0 !important;
+        }
+
+        .app-container:has(.offer-page) > div:last-child {
           height: auto !important;
           min-height: 100vh;
           overflow: visible;
